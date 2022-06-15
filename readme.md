@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8876507a0ec5ecb2e4e3d048285d075202550f05
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 585b145f177e4e0792054e11f83911c0fad49430
+ms.sourcegitcommit: 9f66e4932aaf188d3be327646561dc7fe8e5c7a5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139839328"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "143996843"
 ---
 # <a name="pl-300-microsoft-power-bi-data-analyst"></a>PL-300: Microsoft Power BI Data Analyst
 
@@ -12,7 +12,7 @@ Dieses Repository enthält praktische Übungen für den Microsoft-Kurs [PL-300: 
 
 - **Sind Sie ein MCT?** – Lesen Sie unser [GitHub-Benutzerhandbuch für MCTs](https://microsoftlearning.github.io/MCT-User-Guide/).
 - **Müssen Sie die Lab-Anweisungen manuell erstellen?** – Anweisungen sind im Repository [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) verfügbar
-- **Benötigen Sie eine Auffrischung, in welchen Labs welches Modul verwendet wird?** - Sehen Sie sich die [GitHub-Seite](https://microsoftlearning.github.io/DA-100-Analyzing-Data-with-Power-BI/) an.
+- **Benötigen Sie eine Auffrischung, in welchen Labs welches Modul verwendet wird?** - Sehen Sie sich die [GitHub-Seite](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/) an.
 
 ## <a name="what-are-we-doing"></a>Was tun wir?
 
