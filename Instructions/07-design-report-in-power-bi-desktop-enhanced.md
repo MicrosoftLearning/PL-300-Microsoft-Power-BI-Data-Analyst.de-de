@@ -2,12 +2,12 @@
 lab:
   title: Entwerfen eines Berichts in Power BI Desktop, Teil 2
   module: Module 7 - Create Reports
-ms.openlocfilehash: 13dbd8523318739a7e005f1023ab2ae8b32ce8a1
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 113abb71cee132e348d3513f171efe6cec317046
+ms.sourcegitcommit: f09183b2093a7f8de629f89b54d70bcad85598b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139839518"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "146109732"
 ---
 # <a name="design-a-report-in-power-bi-desktop-part-2"></a>**Entwerfen eines Berichts in Power BI Desktop, Teil 2**
 
@@ -63,7 +63,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei 
 
     ![Bild 12](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image1.png)
 
-1. Navigieren Sie im Browserfenster von Microsoft Edge zu **https://powerbi.com**.
+1. Navigieren Sie im Browserfenster von Microsoft Edge zu **https://powerbi.microsoft.com**.
 
     *Tipp: Sie können auch auf der Favoritenleiste von Microsoft Edge die Option für den Power BI-Dienst verwenden.*
 
@@ -117,7 +117,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Start
 
     ![Bild 6](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image8.png)
 
-8. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\08-design-report-in-power-bi-desktop-enhanced\Starter**.
+8. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter**.
 
 9. Wählen Sie die Datei **Sales Analysis** aus.
 
@@ -245,7 +245,7 @@ Bei dieser Aufgabe erstellen Sie eine neue Seite und konfigurieren sie als Drill
 
     - Sales \| Profit Margin
 
-12. Konfigurieren Sie die Formatoptionen für das Visual, und legen Sie im Abschnitt **Raster** die Eigenschaft **Textgröße** auf **20 Pt** fest.
+12. Konfigurieren Sie die Formatoptionen für das Visual, und legen Sie im Abschnitt **Werte** die Eigenschaft **Textgröße** auf **20 Pt** fest.
 
     *Der Entwurf der Drillthroughseite ist nun fast abgeschlossen. In der nächsten Übung reichern Sie die Seite mit bedingter Formatierung an.*
 
@@ -307,11 +307,11 @@ In dieser Aufgabe optimieren Sie die Drillthroughseite, indem Sie bedingte Forma
 
 9. Konfigurieren Sie die bedingte Formatierung der Hintergrundfarbe für das Feld **Farbe**.
 
-10. Wählen Sie im Fenster **Hintergrundfarbe – Farbe** in der Dropdownliste **Formatieren nach** die Option **Feldwert** aus.
+10. Wählen Sie im Fenster **Hintergrundfarbe – Farbe** in der Dropdownliste **Formatstil** die Option **Feldwert** aus.
 
-    ![Bild 113](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image35.png)
+    
 
-11. Wählen Sie in der Dropdownliste **Basierend auf Feld** die Option **Produkt \| Formatierung \| Background Color Format** (Format der Hintergrundfarbe) aus.
+11. Wählen Sie in der Dropdownliste **Welches Feld sollten wir als Grundlage nehmen?** die Optionen **Product \| Formatting \| Background Color Format** („Produkt“ > „Formatierung“ > „Format der Hintergrundfarbe“) aus.
 
     ![Bild 114](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image36.png)
 
@@ -401,15 +401,15 @@ In dieser Aufgabe fügen Sie zwei Schaltflächen hinzu und weisen ihnen jeweils 
 
 2. Platzieren Sie die Schaltfläche direkt unterhalb des Slicers **Year**.
 
-3. Wählen Sie die Schaltfläche aus, und legen Sie im Bereich **Schaltfläche formatieren** die Eigenschaft **Schaltflächentext** auf **Ein** fest.
+3. Klicken Sie auf die Schaltfläche, wählen Sie im Bereich **Format button** (Schaltfläche formatieren) die Option **Allgemein** aus, und legen Sie die Eigenschaft **Titel** auf **Ein** fest.
 
     ![Bild 126](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image49.png)
 
-4. Erweitern Sie den Abschnitt **Schaltflächentext**, und geben Sie dann im Feld **Schaltflächentext** den Text **Balkendiagramm** ein.
+4. Erweitern Sie den Abschnitt **Titel**, und geben Sie dann im Feld **Text** **Balkendiagramm** ein.
 
 5. Erweitern Sie den Abschnitt **Hintergrund**, und legen Sie dann eine Komplementärfarbe als Hintergrundfarbe fest.
 
-6. Legen Sie die Eigenschaft **Aktion** auf **Ein** fest (am unteren Ende der Liste).
+6. Klicken Sie auf die **Schaltfläche**, und legen Sie die Eigenschaft **Aktion** auf **Ein** fest.
 
     ![Bild 127](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image50.png)
 
@@ -471,7 +471,7 @@ In dieser Übung erkunden Sie den Bericht im Power BI-Dienst.
 
 In dieser Aufgabe erkunden Sie den Bericht im Power BI-Dienst.
 
-1. Klicken Sie im Browserfenster von Microsoft Edge im Power BI-Dienst im **Navigationsbereich** auf den Bericht **Sales Analysis**.
+1. Klicken Sie im Browserfenster von Microsoft Edge im Power BI-Dienst im **Navigationsbereich** auf **Mein Arbeitsbereich**, und wählen Sie dann den Bericht **Sales Analysis** aus.
 
 2. Klicken Sie zum Testen des Drillthroughberichts auf der Seite **Übersicht** im Visual **Quantity by Category** (Menge nach Kategorie) mit der rechten Maustaste auf die Leiste **Clothing** (Bekleidung), und wählen Sie dann die Option **Drillthrough \| Produktdetails** aus.
 

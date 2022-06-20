@@ -2,12 +2,12 @@
 lab:
   title: Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1
   module: Module 5 - Create Model Calculations using DAX in Power BI
-ms.openlocfilehash: 27cbc5c39cdc89c2a54422bbe3468cd13c553ddc
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 3bbdf3dfb4b302a9b3c28005976ff34764c1c542
+ms.sourcegitcommit: d88b7941fe3805f0bc2979ea864c5483ec289c75
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139839412"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "146071708"
 ---
 # <a name="create-dax-calculations-in-power-bi-desktop-part-1"></a>**Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1**
 
@@ -75,7 +75,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
     ![Bild 47](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image4.png)
 
-1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Starter**.
+1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter**.
 
 1. Wählen Sie die Datei **Sales Analysis** aus.
 
@@ -113,7 +113,7 @@ In dieser Aufgabe erstellen Sie die Tabelle **Salesperson** (direkte Beziehung z
 
     ![Bild 4](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image10.png)
 
-    *Der Einfachheit halber können Sie alle DAX-Definitionen in diesem Lab aus den Codebeispielen in der Datei **D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** kopieren.*
+    *Der Einfachheit halber können Sie alle DAX-Definitionen in diesem Lab aus den Codebeispielen in der Datei **D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** kopieren.*
 
     *Eine berechnete Tabelle wird erstellt, indem zuerst der Tabellenname eingegeben wird, gefolgt vom Gleichheitssymbol (=), gefolgt von einer DAX-Formel, die eine Tabelle zurückgibt. Beachten Sie, dass der Tabellenname nicht bereits im Datenmodell vorhanden sein darf.*
 
@@ -141,7 +141,7 @@ In dieser Aufgabe erstellen Sie die Tabelle **Salesperson** (direkte Beziehung z
 
     ![Abbildung 2](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image12.png)
 
-8. Wenn Sie aufgefordert werden, den Löschvorgang zu bestätigen, klicken Sie auf **Löschen**.
+8. Klicken Sie bei Aufforderung auf **OK**, um den Löschvorgang zu bestätigen.
 
     ![Bild 3](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image13.png)
 
@@ -208,7 +208,7 @@ In dieser Aufgabe erstellen Sie die Tabelle **Date**.
 
 In dieser Aufgabe fügen Sie zusätzliche Spalten hinzu, um das Filtern und Gruppieren nach verschiedenen Zeiträumen zu ermöglichen. Sie erstellen auch eine berechnete Spalte, um die Sortierreihenfolge anderer Spalten zu steuern.
 
-*Der Einfachheit halber können Sie alle DAX-Definitionen in diesem Lab aus den Codebeispielen in der Datei **D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** kopieren.*
+*Der Einfachheit halber können Sie alle DAX-Definitionen in diesem Lab aus den Codebeispielen in der Datei **D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** kopieren.*
 
 1. Klicken Sie auf dem kontextbezogenen Menüband **Tabellentools** in der Gruppe **Berechnungen** auf **Neue Spalte**.
 
@@ -375,7 +375,7 @@ In dieser Aufgabe erstellen Sie einfache Measures. Einfache Measures aggregieren
 
     ![Bild 27](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image35.png)
 
-    *Im Lab **Modellieren von Daten in Power BI Desktop, Teil 2** haben Sie die Spalte **Unit Price** so festgelegt, dass sie nach **Durchschnitt** zusammengefasst wird. Das Ergebnis, das im Matrixvisual angezeigt wird, ist der durchschnittliche monatliche Einzelpreis (Summe der Einzelpreise dividiert durch die Anzahl der Einzelpreise).*
+    *Im Lab **Modellieren von Daten in Power BI Desktop** haben Sie die Spalte **Unit Price** so festgelegt, dass sie nach **Durchschnitt** zusammengefasst wird. Das Ergebnis, das im Matrixvisual angezeigt wird, ist der durchschnittliche monatliche Einzelpreis (Summe der Einzelpreise dividiert durch die Anzahl der Einzelpreise).*
 
 2. Beachten Sie, dass im Bereich der Visualfelder (unterhalb des Bereichs **Visualisierungen**) im Bereich **Werte** der **Unit Price** aufgeführt ist.
 
@@ -473,9 +473,96 @@ In dieser Aufgabe erstellen Sie einfache Measures. Einfache Measures aggregieren
 
     ![Bild 39](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image43.png)
 
+### <a name="task-2-create-additional-measures"></a>**Aufgabe 2: Erstellen zusätzlicher Measures**
+
+In dieser Aufgabe erstellen Sie zusätzliche Measures, die komplexere Formeln verwenden.
+
+1. Wählen Sie in der Ansicht „Bericht“ **Seite 1** aus.
+
+    ![Bild 40](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image44.png)
+
+2. Überprüfen Sie das Tabellenvisual, und beachten Sie dabei die Summe für die Spalte **Target**.
+
+    ![Bild 41](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image45.png)
+
+    
+
+3. Wählen Sie das Tabellenvisual aus, und entfernen Sie dann im Bereich **Visualisierungen** das Feld **Ziel**.
+
+    ![Bild 42](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image46.png)
+
+4. Benennen Sie die Spalte **Targets \| Target** in **Targets \| TargetAmount** um.
+
+    *Tipp: Es gibt mehrere Möglichkeiten, die Spalte in der Ansicht „Bericht“ umzubenennen: Im Bereich **Felder** können Sie mit der rechten Maustaste auf die Spalte klicken und dann **Umbenennen** auswählen. Alternativ können Sie auf die Spalte doppelklicken oder **F2** drücken.*
+
+    *Sie sind im Begriff, ein Measure namens **Target** zu erstellen. In einer Tabelle ist es nicht möglich, dass eine Spalte und ein Measure denselben Namen haben.*
+
+5. Erstellen Sie das folgende Measure für die Tabelle **Targets**:
 
 
-### <a name="task-2-finish-up"></a>**Aufgabe 2: Abschluss**
+    **DAX**
+
+
+    ```
+    Target =
+
+    IF(
+
+    HASONEVALUE('Salesperson (Performance)'[Salesperson]),
+
+    SUM(Targets[TargetAmount])
+
+    )
+    ```
+
+
+    *Die Funktion „HASONEVALUE()“ prüft, ob ein einzelner Wert in der Spalte **Salesperson** gefiltert wird. Falls TRUE, gibt der Ausdruck die Summe der Zielbeträge (für genau diesen Vertriebsmitarbeiter) zurück. Bei „false“ wird „BLANK“ zurückgegeben.*
+
+6. Formatieren Sie das Measure **Target** ohne Dezimalstellen.
+
+    *Tipp: Sie können das kontextbezogene Menüband **Measuretools** verwenden.*
+
+7. Blenden Sie die Spalte **TargetAmount** aus.
+
+    *Tipp: Im Bereich **Felder** können Sie mit der rechten Maustaste auf die Spalte klicken und dann **Ausblenden** auswählen.*
+
+8. Fügen Sie das Measure **Target** dem Tabellenvisual hinzu.
+
+9. Beachten Sie, dass die Gesamtsumme der Spalte **Target** jetzt BLANK ist.
+
+    ![Bild 43](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image47.png)
+
+10. Erstellen Sie mithilfe der Definitionen in der Codeausschnittsdatei die folgenden zwei Measures für die Tabelle **Targets**:
+
+    - Variance
+
+    - Variance Margin
+
+11. Formatieren Sie das Measure **Variance** ohne Dezimalstellen.
+
+12. Formatieren Sie das Measure **Variance Margin** als Prozentsatz mit zwei Dezimalstellen.
+
+13. Fügen Sie die Measures **Variance** und **Variance Margin** zum Tabellenvisual hinzu.
+
+14. Ändern Sie die Größe des Tabellenvisuals, sodass alle Spalten und Zeilen angezeigt werden.
+
+    ![Bild 44](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image48.png)
+
+    *Auch wenn es den Anschein hat, dass nicht alle Vertriebsmitarbeiter*innen die Zielvorgaben erfüllen, denken Sie daran, dass das Tabellenvisual noch nicht nach einem bestimmten Zeitraum gefiltert wurde. Sie erstellen Umsatzleistungsberichte, die nach einem von Benutzer*innen ausgewählten Zeitraum im Lab **Entwerfen eines Berichts in Power BI Desktop, Teil 1** filtern.*
+
+15. Klappen Sie rechts oben im Bereich **Felder** den Bereich zu, und klappen Sie ihn dann auf.
+
+    ![Bild 45](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image49.png)
+
+    *Durch das Zuklappen und erneute Öffnen des Bereichs wird der Inhalt zurückgesetzt.*
+
+16. Beachten Sie, dass die Tabelle **Targets** jetzt oben in der Liste steht.
+
+    ![Bild 46](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image50.png)
+
+    *Tabellen, die nur sichtbare Measures enthalten, werden automatisch am Anfang der Liste angezeigt.*
+
+### <a name="task-3-finish-up"></a>**Aufgabe 3: Abschluss**
 
 Mit dieser Aufgabe schließen Sie das Lab ab.
 

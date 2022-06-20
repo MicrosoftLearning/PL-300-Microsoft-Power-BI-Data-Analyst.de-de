@@ -2,12 +2,12 @@
 lab:
   title: Erstellen eines Power BI-Dashboards
   module: Module 8 - Create Dashboards
-ms.openlocfilehash: 777dc5fb86f71c926a347c736896834fdf2baed2
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 2ddb086b004fca3fa322e10570f9163342514808
+ms.sourcegitcommit: f09183b2093a7f8de629f89b54d70bcad85598b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139839507"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "146109910"
 ---
 # <a name="create-a-power-bi-dashboard"></a>**Erstellen eines Power BI-Dashboards**
 
@@ -61,7 +61,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei 
 
     ![Bild 42](Linked_image_Files/09-create-power-bi-dashboard_image2.png)
 
-2. Navigieren Sie im Browserfenster von Microsoft Edge zu **https://powerbi.com**.
+2. Navigieren Sie im Browserfenster von Microsoft Edge zu **https://powerbi.microsoft.com**.
 
     *Tipp: Sie können auch auf der Favoritenleiste von Microsoft Edge die Option für den Power BI-Dienst verwenden.*
 
@@ -115,7 +115,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Start
 
     ![Bild 34](Linked_image_Files/09-create-power-bi-dashboard_image9.png)
 
-8. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\09-create-power-bi-dashboard\Starter**.
+8. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\08-create-power-bi-dashboard\Starter**.
 
 9. Wählen Sie die Datei **Sales Analysis** aus.
 
@@ -159,7 +159,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein Datas
 
     ![Bild 5](Linked_image_Files/09-create-power-bi-dashboard_image16.png)
 
-4. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\08-design-report-in-power-bi-desktop-enhanced\Solution**.
+4. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\08-create-power-bi-dashboard\Solution**.
 
 5. Wählen Sie die Datei **SalesAnalysis.pbix** aus, und klicken Sie dann auf **Öffnen**.
 
@@ -181,7 +181,7 @@ In dieser Aufgabe erstellen Sie das Dashboard **Sales Monitoring** (Umsatzüberw
 
 4. Zeigen Sie mit dem Mauszeiger auf das Visual **Sales and Profit Margin by Month** (Spalte/Zeile), um ein Dashboard zu erstellen und ein Visual anzuheften.
 
-5. Klicken Sie auf die Reißzwecke in der oberen rechten Ecke.
+5. Klicken Sie in der unteren rechten Ecke auf die Reißzwecke.
 
     ![Bild 43](Linked_image_Files/09-create-power-bi-dashboard_image18.png)
 
@@ -193,7 +193,7 @@ In dieser Aufgabe erstellen Sie das Dashboard **Sales Monitoring** (Umsatzüberw
 
     ![Abbildung 1](Linked_image_Files/09-create-power-bi-dashboard_image20.png)
 
-8. Öffnen Sie den **Navigationsbereich** und dann das Dashboard **Sales Monitoring**.
+8. Öffnen Sie den **Navigationsbereich**, klicken Sie auf **Mein Arbeitsbereich**, und öffnen Sie dann das Dashboard **Sales Monitoring**.
 
     ![Bild 44](Linked_image_Files/09-create-power-bi-dashboard_image21.png)
 
@@ -337,7 +337,7 @@ In dieser Aufgabe öffnen Sie die Power BI Desktop-Datei **Sales Analysis**, f�
 
 2. Wenn die Aktualisierung abgeschlossen ist, speichern Sie die Power BI Desktop-Datei.
 
-3. Klicken Sie zum Veröffentlichen der Datei in Ihrem Arbeitsbereich auf der Registerkarte **Start** des Menübands innerhalb der Gruppe **Freigeben** auf **Veröffentlichen**.
+3. Klicken Sie auf der Registerkarte **Start** des Menübands innerhalb der Gruppe **Freigeben** auf **Veröffentlichen** und dann auf **Auswählen**, um die Datei in Ihrem Arbeitsbereich zu veröffentlichen.
 
     ![Bild 59](Linked_image_Files/09-create-power-bi-dashboard_image48.png)
 
@@ -351,11 +351,11 @@ In dieser Aufgabe öffnen Sie die Power BI Desktop-Datei **Sales Analysis**, f�
 
 ## <a name="exercise-3-review-the-dashboard"></a>**Übung 3: Überprüfen des Dashboards**
 
-In dieser Übung überprüfen Sie das Dashboard, um aktualisierte Umsätze zu erkennen und festzustellen, ob die Warnung ausgelöst wurde.
+In dieser Übung überprüfen Sie das Dashboard, um aktualisierte Umsatzdaten anzuzeigen.
 
 ### <a name="task-1-review-the-dashboard"></a>**Aufgabe 1: Überprüfen des Dashboards**
 
-In dieser Aufgabe überprüfen Sie das Dashboard, um aktualisierte Umsätze zu erkennen und festzustellen, ob die Warnung ausgelöst wurde.
+Bei dieser Aufgabe überprüfen Sie das Dashboard, um aktualisierte Umsatzdaten anzuzeigen.
 
 1. Überprüfen Sie im Fenster des Microsoft Edge-Browsers im Power BI-Dienst das Dashboard für **Sales Monitoring**.
 
@@ -367,22 +367,6 @@ In dieser Aufgabe überprüfen Sie das Dashboard, um aktualisierte Umsätze zu e
 
     ![Bild 33](Linked_image_Files/09-create-power-bi-dashboard_image50.png)
 
-    *Die Warnung auf der Kachel **Sales YTD** (Umsatz seit Jahresbeginn) sollte ebenfalls ausgelöst worden sein. Nach kurzer Zeit sollten Sie durch die Warnung benachrichtigt werden, dass der Umsatz nun den konfigurierten Schwellenwert überschreitet.*
+    
 
-4. Beachten Sie, dass die Kachel **Sales YTD** auf **$37M** aktualisiert wurde.
-
-5. Vergewissern Sie sich, dass auf der Kachel **Sales YTD** ein Symbol für eine Warnbenachrichtigung angezeigt wird.
-
-    *Wenn die Benachrichtigung nicht angezeigt wird, müssen Sie möglicherweise **F5** drücken, um den Browser zu aktualisieren. Wenn die Benachrichtigung immer noch nicht angezeigt wird, warten Sie noch einige Minuten.*
-
-    ![Bild 35](Linked_image_Files/09-create-power-bi-dashboard_image51.png)
-
-    *Warnbenachrichtigungen werden auf der Dashboardkachel angezeigt und können per E-Mail übermittelt werden. Zudem können Pushbenachrichtigungen an mobile Apps, einschließlich Apple Watch, gesendet werden.*
-
-6. Klicken Sie in der rechten oberen Ecke auf der Webseite auf das Symbol **Benachrichtigungen**.
-
-    ![Bild 58](Linked_image_Files/09-create-power-bi-dashboard_image52.png)
-
-7. Überprüfen Sie im Bereich **Alle Benachrichtigungen** die Details der Warnungsbenachrichtigung.
-
-8. Klicken Sie auf **Schließen**, um den Bereich zu schließen.
+4. Klicken Sie auf **Schließen**, um den Bereich zu schließen.

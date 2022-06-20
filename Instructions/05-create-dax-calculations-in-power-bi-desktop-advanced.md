@@ -2,12 +2,12 @@
 lab:
   title: Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 2
   module: Module 5 - Create Model Calculations using DAX in Power BI
-ms.openlocfilehash: 80cfdfcfcb2072277760670c549cebaaca434cb9
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 01d7f76dff212103ec9d08e6fe284356be9887f5
+ms.sourcegitcommit: d88b7941fe3805f0bc2979ea864c5483ec289c75
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139839306"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "146071610"
 ---
 # <a name="create-dax-calculations-in-power-bi-desktop-part-2"></a>**Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 2**
 
@@ -73,7 +73,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
     ![Bild 9](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
 
-1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Starter**.
+1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter**.
 
 1. Wählen Sie die Datei **Sales Analysis** aus.
 
@@ -125,13 +125,11 @@ In dieser Aufgabe erstellen Sie ein Matrixvisual, um das Testen Ihrer neuen Meas
 
     *Zur Erinnerung: Die Hierarchie **Regions** hat die Ebenen **Group**, **Country** und **Region**.*
 
-7. Um das Visual zu formatieren, wählen Sie unter dem Bereich **Visualisierungen** den Bereich **Format** aus.
+7. Um das Visual zu formatieren, wählen Sie im Bereich **Visualisierungen** den Bereich **Format** aus.
 
     ![Bild 14](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image12.png)
 
 8. Geben Sie in das Feld **Suchen** den Begriff **Abgestuft** ein.
-
-    ![Bild 15](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image13.png)
 
 9. Legen Sie die Eigenschaft **Abgestuftes Layout** auf **Aus** fest.
 
@@ -151,7 +149,7 @@ In dieser Aufgabe erstellen Sie mehrere Measures mit DAX-Ausdrücken, die den Fi
 
 1. Fügen Sie der Tabelle **Sales** ein Measure basierend auf dem folgenden Ausdruck hinzu:
 
-    *Der Einfachheit halber können Sie alle DAX-Definitionen in diesem Lab aus der Datei **D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** kopieren.*
+    *Der Einfachheit halber können Sie alle DAX-Definitionen in diesem Lab aus der Datei **D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** kopieren.*
 
 
     **DAX**

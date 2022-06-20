@@ -1,13 +1,13 @@
 ---
 lab:
   title: Erzwingen von Sicherheit auf Zeilenebene
-  module: Module 13 - Row-Level Security
-ms.openlocfilehash: b4b468b1c34d0cb562edd9ec407b07c9ee2efa1d
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+  module: Module 12 - Row-Level Security
+ms.openlocfilehash: 6ccc19e9835dca06ec613e386c82fb0270a28ed5
+ms.sourcegitcommit: 51f448b208842f1333cb683b7775618edb41c126
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139839336"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "141580173"
 ---
 # <a name="enforce-row-level-security"></a>**Erzwingen von Sicherheit auf Zeilenebene**
 
@@ -73,7 +73,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
     ![Bild 5](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image4.png)
 
-1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\12-row-level-security\Starter**.
+1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\10-row-level-security\Starter**.
 
 1. Wählen Sie die Datei **Sales Analysis** aus.
 
@@ -185,7 +185,7 @@ In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, 
 
     ![Bild 18](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image35.png)
 
-### <a name="task-2-finish-up"></a>**Aufgabe 2: Abschluss**
+### <a name="task-3-finish-up"></a>**Aufgabe 3: Abschluss**
 
 Mit dieser Aufgabe schließen Sie das Lab ab.
 

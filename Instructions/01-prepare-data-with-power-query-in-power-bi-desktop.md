@@ -2,12 +2,12 @@
 lab:
   title: Vorbereiten von Daten in Power BI Desktop
   module: Module 2 - Get Data in Power BI
-ms.openlocfilehash: deaa403224e029a08c91ed5137693d51ac30fcab
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: c44eb33136e3d429a44f6e091897388f4eed4135
+ms.sourcegitcommit: 6853b027da7f5e739951c3eef54f4cd458854c66
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139839421"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "146274813"
 ---
 # <a name="prepare-data-in-power-bi-desktop"></a>**Vorbereiten von Daten in Power BI Desktop**
 
@@ -133,6 +133,8 @@ In dieser Aufgabe erstellen Sie Abfragen basierend auf SQL Server-Tabellen.
 
     ![Bild 22](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image13.png)
 
+4. Wenn Sie zur Eingabe von Anmeldeinformationen aufgefordert werden, klicken Sie im Fenster **SQL Server-Datenbank** auf **Aktuelle Anmeldeinformationen verwenden**. Klicken Sie anschließend auf **Verbinden**.
+
 4. Erweitern Sie im Fenster **Navigator** auf der linken Seite die Datenbank **AdventureWorksDW2020**.
 
     Die Datenbank **AdventureWorksDW2020** basiert auf der Beispieldatenbank **AdventureWorksDW2017**. Sie wurde für die Zwecke der Lernziele der Kurslabs angepasst.
@@ -213,13 +215,13 @@ In dieser Aufgabe zeigen Sie eine Vorschau der Daten für die SQL Server-Abfrage
 
     ![Bild 43](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
 
-    Wenn die Anzahl von verschiedenen und eindeutigen Werten übereinstimmt, enthält die Spalte nur eindeutige Werte. Beim Modellieren ist wichtig, dass einige Modelltabellen eindeutige Spalten enthalten. Sie können diese eindeutigen Spalten zum Erstellen von 1:n-Beziehungen verwenden. Dies werden Sie im Lab **Modellieren von Daten in Power BI Desktop, Teil 1** ausführen.
+    Wenn die Anzahl von verschiedenen und eindeutigen Werten übereinstimmt, enthält die Spalte nur eindeutige Werte. Beim Modellieren ist wichtig, dass einige Modelltabellen eindeutige Spalten enthalten. Sie können diese eindeutigen Spalten zum Erstellen von 1:n-Beziehungen verwenden. Dies werden Sie im Lab **Modellieren von Daten in Power BI Desktop** ausführen.
 
 11. Wählen Sie im Bereich **Abfragen** die Abfrage **DimEmployeeSalesTerritory** aus.
 
     ![Bild 44](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image27.png)
 
-    Die Tabelle **DimEmployeeSalesTerritory** enthält je eine Zeile für jeden Mitarbeiter und die von diesem verwalteten Regionen des Vertriebsgebiets. Sie unterstützt das Zuordnen von vielen Regionen zu einem einzelnen Mitarbeiter. Einige Mitarbeiter verwalten eine, zwei oder möglicherweise sogar mehr Regionen. Beim Modellieren dieser Daten müssen Sie eine m:n-Beziehung definieren. Dies werden Sie im Lab **Modellieren von Daten in Power BI Desktop, Teil 2** ausführen.
+    Die Tabelle **DimEmployeeSalesTerritory** enthält je eine Zeile für jeden Mitarbeiter und die von diesem verwalteten Regionen des Vertriebsgebiets. Sie unterstützt das Zuordnen von vielen Regionen zu einem einzelnen Mitarbeiter. Einige Mitarbeiter verwalten eine, zwei oder möglicherweise sogar mehr Regionen. Wenn Sie diese Daten modellieren, müssen Sie eine m:n-Beziehung definieren.
 
 12. Wählen Sie im Bereich **Abfragen** die Abfrage für **DimProduct** aus.
 
@@ -261,7 +263,7 @@ In dieser Aufgabe zeigen Sie eine Vorschau der Daten für die SQL Server-Abfrage
 
     ![Bild 52](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image32.png)
 
-    Die Tabelle **DimSalesTerritory** enthält je eine Zeile für jede Vertriebsregion, einschließlich des **Unternehmenshauptsitzes**. Regionen werden einem Land zugewiesen, und Länder werden Gruppen zugewiesen. Im Lab **Modellieren von Daten in Power BI Desktop, Teil 1** erstellen Sie eine Hierarchie zur Unterstützung der Analyse auf Regions-, Länder- oder Gruppenebene.
+    Die Tabelle **DimSalesTerritory** enthält je eine Zeile für jede Vertriebsregion, einschließlich des **Unternehmenshauptsitzes**. Regionen werden einem Land zugewiesen, und Länder werden Gruppen zugewiesen. Im Lab **Modellieren von Daten in Power BI Desktop** erstellen Sie eine Hierarchie zur Unterstützung der Analyse auf Regions-, Länder- oder Gruppenebene.
 
 23. Wählen Sie im Bereich **Abfragen** die Abfrage für **FactResellerSales** aus.
 
@@ -274,6 +276,7 @@ In dieser Aufgabe zeigen Sie eine Vorschau der Daten für die SQL Server-Abfrage
     ![Bild 63](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image34.png)
 
     Fehlende Werte in der Spalte **TotalProductCost** stellen ein Datenqualitätsproblem dar. Dieses Problem werden Sie im Lab **Laden von Daten in Power BI Desktop** durch die Anwendung von Transformationen behandeln, die fehlende Werte mithilfe der in der zugehörigen Tabelle **DimProduct** gespeicherten Standardproduktkosten ergänzen.
+
 
 ### <a name="task-5-get-data-from-a-csv-file"></a>**Aufgabe 5: Abrufen von Daten aus einer CSV-Datei**
 
@@ -292,9 +295,7 @@ In dieser Aufgabe erstellen Sie eine Abfrage auf Grundlage einer CSV-Datei.
 5. Klicken Sie auf **OK**.
 
     ![Bild 71](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image36.png)
-
-  
-‎ 
+ 
 
 6. Beachten Sie, dass im Bereich **Abfragen** die Abfrage für **ResellerSalesTargets** hinzugefügt wurde.
 

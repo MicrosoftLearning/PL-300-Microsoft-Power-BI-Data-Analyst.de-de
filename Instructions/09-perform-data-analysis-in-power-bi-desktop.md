@@ -1,13 +1,13 @@
 ---
 lab:
   title: Analysieren von Daten in Power BI Desktop
-  module: Module 10 - Perform Advanced Analytics
-ms.openlocfilehash: 083abd0da7c0423a40985602d8db09d752f064cd
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+  module: Module 9 - Identify Patterns and Trends
+ms.openlocfilehash: e58af011b5603e4cd6e5def7c4353156fc67c879
+ms.sourcegitcommit: 6853b027da7f5e739951c3eef54f4cd458854c66
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139839508"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "146274799"
 ---
 # <a name="perform-data-analysis-in-power-bi-desktop"></a>**Analysieren von Daten in Power BI Desktop**
 
@@ -61,7 +61,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei 
 
     ![Bild 7](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image1.png)
 
-1. Navigieren Sie im Browserfenster von Microsoft Edge zu **https://powerbi.com**.
+1. Navigieren Sie im Browserfenster von Microsoft Edge zu **https://powerbi.microsoft.com**.
 
     *Tipp: Sie können auch auf der Favoritenleiste von Microsoft Edge die Option für den Power BI-Dienst verwenden.*
 
@@ -103,7 +103,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein Datas
 
     ![Bild 11](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image6.png)
 
-4. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\09-create-power-bi-dashboard\Solution**.
+4. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\08-create-power-bi-dashboard\Solution**.
 
 5. Wählen Sie die Datei **SalesAnalysis.pbix** aus, und klicken Sie dann auf **Öffnen**.
 
@@ -137,7 +137,7 @@ In dieser Aufgabe erstellen Sie den Bericht **Sales Exploration**.
 
 7. Navigieren Sie im Fenster **Speichern unter** zum Ordner **D:\PL300\MySolution**.
 
-8. Geben Sie im Feld **Dateiname** den Namen **Sales Exploration** ein.
+8. Geben Sie im Feld **Dateiname** den Namen **Sales Exploration** ein, und klicken Sie auf **Speichern**.
 
     ![Abbildung 1](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image11.png)
 
@@ -153,7 +153,7 @@ In dieser Aufgabe erstellen Sie den Bericht **Sales Exploration**.
 
 12. Speichern Sie die Power BI Desktop-Datei.
 
-    *Sie erstellen nun vier Berichtsseiten, und auf jeder Seite arbeiten Sie mit einem anderen Visual, um Daten zu analysieren und zu erkunden.*
+    *Sie erstellen nun zwei Berichtsseiten, und auf jeder Seite arbeiten Sie mit einem anderen Visual, um Daten zu analysieren und zu erkunden.*
 
 ## <a name="exercise-2-create-a-scatter-chart"></a>**Übung 2: Erstellen eines Punktdiagramms**
 
@@ -177,11 +177,13 @@ In dieser Aufgabe erstellen Sie ein Punktdiagramm, das animiert werden kann.
 
     In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Das sieht folgendermaßen aus: **Reseller** **\|** **Business Type**. In diesem Beispiel ist **Handelspartner** der Tabellenname und **Geschäftstyp** der Feldname.
 
-    - Legende: **Reseller \| Business Type**
+    
 
     - X-Achse: **Sales \| Sales** 
 
     - Y-Achse: **Sales \| Profit Margin**
+
+    - Legende: **Reseller \| Business Type**
 
     - Größe: **Sales \| Quantity**
 
@@ -237,9 +239,9 @@ In dieser Aufgabe erstellen Sie eine Vorhersage, um den möglichen zukünftigen 
 
 3. Fügen Sie den Visualbereichen die folgenden Felder hinzu:
 
-    - Achse: **Date \| Date**
+    - x-Achse: **Date \| Date**
 
-    - Werte: **Sales \| Sales** 
+    - y-Achse: **Sales \| Sales** 
 
     ![Bild 46](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image23.png)
 
@@ -263,21 +265,25 @@ In dieser Aufgabe erstellen Sie eine Vorhersage, um den möglichen zukünftigen 
 
 8. Erweitern Sie den Abschnitt **Vorhersage**.
 
-    ![Bild 50](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image27.png)
+
 
     *Wenn der Abschnitt **Vorhersage** nicht verfügbar ist, wurde das Visual wahrscheinlich nicht ordnungsgemäß konfiguriert. Die Vorhersage ist nur verfügbar, wenn zwei Bedingungen erfüllt sind: Die Achse verfügt über ein einzelnes Feld vom Typ „Date“ (Datum), und es gibt nur ein Wertfeld.*
 
-9. Klicken Sie auf **Hinzufügen**.
+9. Legen Sie die Option **Vorhersage** auf **Ein** fest.
 
     ![Bild 51](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image28.png)
 
 10. Konfigurieren Sie die folgenden Vorhersageeigenschaften:
 
+    - Einheit: Months
+
     - Länge prognostizieren: 1 Monat
 
+    - Saisonalität: 365
+    
     - Konfidenzintervall: 80
 
-    - Saisonalität: 365
+
 
 11. Klicken Sie auf **Übernehmen**.
 
@@ -302,7 +308,7 @@ Mit dieser Aufgabe schließen Sie das Lab ab.
 
 2. Speichern Sie die Power BI Desktop-Datei.
 
-3. Klicken Sie zum Veröffentlichen der Datei in Ihrem Arbeitsbereich auf der Registerkarte **Start** des Menübands innerhalb der Gruppe **Freigeben** auf **Veröffentlichen**.
+3. Klicken Sie auf der Registerkarte **Start** des Menübands innerhalb der Gruppe **Freigeben** auf **Veröffentlichen** und dann auf **Auswählen**, um die Datei unter **Mein Arbeitsbereich** zu veröffentlichen.
 
     ![Bild 23](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image46.png)
 

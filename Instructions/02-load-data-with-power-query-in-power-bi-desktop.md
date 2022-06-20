@@ -2,12 +2,12 @@
 lab:
   title: Laden von Daten in Power BI Desktop
   module: Module 3 - Clean, Transform, and Load Data in Power BI
-ms.openlocfilehash: 8a19b8b1b243cc4c04bee3375f161098287dbf9d
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 8e8373127cbc8023c0c299e3b2c75b4a82986308
+ms.sourcegitcommit: d88b7941fe3805f0bc2979ea864c5483ec289c75
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139839530"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "146071873"
 ---
 # <a name="load-data-in-power-bi-desktop"></a>**Laden von Daten in Power BI Desktop**
 
@@ -130,7 +130,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Salesperson**.
 
     *Jetzt werden Sie die Abfragezeilen filtern, um nur die Namen von Mitarbeiter*innen abzurufen, die im Vertrieb arbeiten.*
 
-4. Klicken Sie auf der Registerkarte **Start** des Menübands in der Gruppe **Spalten verwalten** auf den Abwärtspfeil **Spalten auswählen**, und klicken Sie auf **Zur Spalte wechseln**.
+4. Klicken Sie zum Suchen einer bestimmten Spalte auf der Registerkarte **Start** des Menübands auf den Nach-unten-Pfeil der Menüoption **Spalten verwalten** und dann auf den Nach-unten-Pfeil der Menüoption **Spalten auswählen**. Klicken Sie anschließend auf **Zu Spalte wechseln**.
 
     ![Bild 88](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
@@ -156,7 +156,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Salesperson**.
 
     *Jede Transformation, die Sie erstellen, führt zu einer zusätzlichen Schrittlogik. Schritte können auch bearbeitet oder gelöscht werden. Es ist ebenso möglich, einen Schritt auszuwählen und eine Vorschau der Abfrageergebnisse in dieser Phase der Abfragetransformation anzuzeigen.*
 
-10. Klicken Sie auf der Registerkarte **Start** des Menübands in der Gruppe **Spalten verwalten** auf das Symbol **Spalten auswählen**, um Spalten zu entfernen.
+10. Klicken Sie auf der Registerkarte **Start** des Menübands auf die Gruppe **Spalten verwalten** und dann auf das Symbol **Spalten auswählen**, um Spalten zu entfernen.
 
     ![Bild 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
 
@@ -216,7 +216,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Salesperson**.
 
 23. Führen Sie die vorherigen Schritte noch einmal aus, um die Spalte **EmailAddress** in **UPN** umzubenennen.
 
-    *Das Akronym „UPN“ steht für „User Principal Name“, zu Deutsch: „Benutzerprinzipalname“. Die Werte in dieser Spalte werden verwendet, wenn Sie die Sicherheit auf Zeilenebene im Lab **Modellieren von Daten in Power BI Desktop, Teil 2** konfigurieren.*
+    *Das Akronym „UPN“ steht für „User Principal Name“, zu Deutsch: „Benutzerprinzipalname“.*
 
 24. Überprüfen Sie links unten auf der Statusleiste, ob die Abfrage fünf Spalten und 18 Zeilen enthält.
 
@@ -349,7 +349,6 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Reseller**.
     ![Abbildung 2](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image38.png)
 
   
-‎ 
 
 6. Klicken Sie mit der rechten Maustaste auf die Spaltenüberschrift **Business Type**, und wählen Sie dann **Werte ersetzen** aus.
 
@@ -648,7 +647,7 @@ In dieser Aufgabe aktualisieren Sie die Abfrage **Product**, indem Sie sie mit d
 
     ![Bild 5.690](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image70.png)
 
-2. Klicken Sie zum Zusammenführen mit der Abfrage **ColorFormats** auf der Registerkarte **Start** des Menübands in der Gruppe **Kombinieren** auf **Abfragen zusammenführen**.
+2. Klicken Sie zum Zusammenführen mit der Abfrage **ColorFormats** auf der Registerkarte **Start** des Menübands auf den Nach-unten-Pfeil der Menüoption **Kombinieren** und dann auf **Abfragen zusammenführen**.
 
     ![Bild 5.654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
@@ -748,4 +747,4 @@ Mit dieser Aufgabe schließen Sie das Lab ab.
 
 5. Wenn Sie beabsichtigen, das nächste Lab zu starten, lassen Sie Power BI Desktop geöffnet.
 
-    *Sie konfigurieren Datenmodelltabellen und -beziehungen im Lab **Modellieren von Daten in Power BI Desktop, Teil 1**.*
+    *Sie konfigurieren Datenmodelltabellen und -beziehungen im Lab **Modellieren von Daten in Power BI Desktop***.
