@@ -2,12 +2,12 @@
 lab:
   title: Entwerfen eines Berichts in Power BI Desktop, Teil 1
   module: Module 7 - Create Reports
-ms.openlocfilehash: 952409822e622f744edcaef603bea5058670c3e8
-ms.sourcegitcommit: 40a8c8608a0adde23300c2b6833db02193f36dfe
+ms.openlocfilehash: 426892501790aaecbe21ed2e7f9161c4490c9e3b
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "146072494"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "146650215"
 ---
 # <a name="design-a-report-in-power-bi-desktop-part-1"></a>**Entwerfen eines Berichts in Power BI Desktop, Teil 1**
 
@@ -23,7 +23,7 @@ In diesem Lab lernen Sie Folgendes:
 
 ### <a name="lab-story"></a>**Labszenario**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie die ersten zehn Labs in der folgenden Reihenfolge absolvieren:
+Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
