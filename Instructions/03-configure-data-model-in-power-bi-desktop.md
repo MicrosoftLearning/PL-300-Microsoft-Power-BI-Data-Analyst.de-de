@@ -2,12 +2,12 @@
 lab:
   title: Modellieren von Daten in Power BI Desktop
   module: Module 4 - Design a Data Model in Power BI
-ms.openlocfilehash: e6ffd23cf2b7861dad63a522734941b8f914bf88
-ms.sourcegitcommit: 6853b027da7f5e739951c3eef54f4cd458854c66
+ms.openlocfilehash: 1617d6a1a50e37a5dc7d9094eaa86057b2ddeee2
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "146274822"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "147015364"
 ---
 # <a name="model-data-in-power-bi-desktop"></a>**Modellieren von Daten in Power BI Desktop**
 
@@ -26,7 +26,7 @@ In diesem Lab lernen Sie Folgendes:
 
 ### <a name="lab-story"></a>**Labszenario**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie die ersten zehn Labs in der folgenden Reihenfolge absolvieren:
+Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
 
 1. Vorbereiten von Daten in Power BI Desktop
 

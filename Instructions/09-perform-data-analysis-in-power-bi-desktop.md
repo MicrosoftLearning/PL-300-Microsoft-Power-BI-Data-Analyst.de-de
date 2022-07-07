@@ -2,12 +2,12 @@
 lab:
   title: Analysieren von Daten in Power BI Desktop
   module: Module 9 - Identify Patterns and Trends
-ms.openlocfilehash: e58af011b5603e4cd6e5def7c4353156fc67c879
-ms.sourcegitcommit: 6853b027da7f5e739951c3eef54f4cd458854c66
+ms.openlocfilehash: 42ec8ac1a9fd160fe2181ae8d966d85d04b9b82d
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "146274799"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "147015328"
 ---
 # <a name="perform-data-analysis-in-power-bi-desktop"></a>**Analysieren von Daten in Power BI Desktop**
 
@@ -25,7 +25,7 @@ In diesem Lab lernen Sie Folgendes:
 
 ### <a name="lab-story"></a>**Labszenario**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie die ersten zehn Labs in der folgenden Reihenfolge absolvieren:
+Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
 
 1. Vorbereiten von Daten in Power BI Desktop
 

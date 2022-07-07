@@ -2,12 +2,12 @@
 lab:
   title: Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1
   module: Module 5 - Create Model Calculations using DAX in Power BI
-ms.openlocfilehash: 3bbdf3dfb4b302a9b3c28005976ff34764c1c542
-ms.sourcegitcommit: d88b7941fe3805f0bc2979ea864c5483ec289c75
+ms.openlocfilehash: 743fdd6a85236a40008fcdb3b466c61c617a55fb
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "146071708"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "147015337"
 ---
 # <a name="create-dax-calculations-in-power-bi-desktop-part-1"></a>**Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1**
 
@@ -25,7 +25,7 @@ In diesem Lab lernen Sie Folgendes:
 
 ### <a name="lab-story"></a>**Labszenario**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie die ersten zehn Labs in der folgenden Reihenfolge absolvieren:
+Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
