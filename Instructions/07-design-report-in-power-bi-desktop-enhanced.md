@@ -1,14 +1,10 @@
 ---
 lab:
-  title: Entwerfen eines Berichts in Power BI Desktop, Teil 2
+  title: "Entwerfen eines Berichts in Power\_BI Desktop, Teil\_2"
   module: Module 7 - Create Reports
-ms.openlocfilehash: 72d571e81320d4c0311f9e566d1805725439f961
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146650206"
 ---
+
+
 # <a name="design-a-report-in-power-bi-desktop-part-2"></a>**Entwerfen eines Berichts in Power BI Desktop, Teil 2**
 
 **Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
@@ -27,7 +23,7 @@ In diesem Lab lernen Sie Folgendes:
 
 ### <a name="lab-story"></a>**Labszenario**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
@@ -63,7 +59,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei 
 
     ![Bild 12](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image1.png)
 
-1. Navigieren Sie im Browserfenster von Microsoft Edge zu **https://powerbi.microsoft.com**.
+1. Navigieren Sie im Browserfenster von Microsoft Edge zu **https://powerbi.com**.
 
     *Tipp: Sie können auch auf der Favoritenleiste von Microsoft Edge die Option für den Power BI-Dienst verwenden.*
 
@@ -117,7 +113,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Start
 
     ![Bild 6](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image8.png)
 
-8. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter**.
+8. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\08-design-report-in-power-bi-desktop-enhanced\Starter**.
 
 9. Wählen Sie die Datei **Sales Analysis** aus.
 
@@ -179,7 +175,7 @@ Bei dieser Aufgabe synchronisieren Sie die Slicer **Year** und **Region**.
 
 ## <a name="exercise-2-configure-drill-through"></a>**Übung 2: Konfigurieren eines Drillthroughs**
 
-In dieser Übung erstellen Sie eine neue Seite und konfigurieren sie als Drillthroughseite. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
+In this exercise you will create a new page and configure it as a drill through page. When you’ve completed the design, the page will look like the following:
 
 ![Abbildung der neuen Seite, bestehend aus einem Kartenvisual und einem Tabellenvisual](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image17.png)
 
@@ -245,13 +241,13 @@ Bei dieser Aufgabe erstellen Sie eine neue Seite und konfigurieren sie als Drill
 
     - Sales \| Profit Margin
 
-12. Konfigurieren Sie die Formatoptionen für das Visual, und legen Sie im Abschnitt **Werte** die Eigenschaft **Textgröße** auf **20 Pt** fest.
+12. Konfigurieren Sie die Formatoptionen für das Visual, und legen Sie im Abschnitt **Raster** die Eigenschaft **Textgröße** auf **20 Pt** fest.
 
     *Der Entwurf der Drillthroughseite ist nun fast abgeschlossen. In der nächsten Übung reichern Sie die Seite mit bedingter Formatierung an.*
 
 ## <a name="exercise-3-add-conditional-formatting"></a>**Übung 3: Hinzufügen von bedingter Formatierung**
 
-In dieser Übung optimieren Sie die Drillthroughseite, indem Sie eine bedingte Formatierung hinzufügen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
+In this exercise you will enhance the drill through page with conditional formatting. When you’ve completed the design, the page will look like the following:
 
 ![Abbildung einer aktualisierten Seite mit farbigen Werten und Symbolen](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image28.png)
 
@@ -307,11 +303,11 @@ In dieser Aufgabe optimieren Sie die Drillthroughseite, indem Sie bedingte Forma
 
 9. Konfigurieren Sie die bedingte Formatierung der Hintergrundfarbe für das Feld **Farbe**.
 
-10. Wählen Sie im Fenster **Hintergrundfarbe – Farbe** in der Dropdownliste **Formatstil** die Option **Feldwert** aus.
+10. Wählen Sie im Fenster **Hintergrundfarbe – Farbe** in der Dropdownliste **Formatieren nach** die Option **Feldwert** aus.
 
-    
+    ![Bild 113](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image35.png)
 
-11. Wählen Sie in der Dropdownliste **Welches Feld sollten wir als Grundlage nehmen?** die Optionen **Product \| Formatting \| Background Color Format** („Produkt“ > „Formatierung“ > „Format der Hintergrundfarbe“) aus.
+11. Wählen Sie in der Dropdownliste **Basierend auf Feld** die Option **Produkt \| Formatierung \| Background Color Format** (Format der Hintergrundfarbe) aus.
 
     ![Bild 114](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image36.png)
 
@@ -325,7 +321,7 @@ In dieser Aufgabe optimieren Sie die Drillthroughseite, indem Sie bedingte Forma
 
 ## <a name="exercise-4-add-bookmarks-and-buttons"></a>**Übung 4: Hinzufügen von Lesezeichen und Schaltflächen**
 
-In dieser Übung erweitern Sie die Seite **My Performance** (Meine Leistung) mit Schaltflächen, über die Berichtsbenutzer*innen den gewünschten Visualtyp auswählen können. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
+In this exercise you will enhance the <bpt id="p1">**</bpt>My Performance<ept id="p1">**</ept> page with buttons, allowing the report user to select the visual type to display. When you’ve completed the design, the page will look like the following:
 
 ![Abbildung der aktualisierten dritten Seite mit zwei Schaltflächen und jetzt nur noch zwei Visuals](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image38.png)
 
@@ -401,15 +397,15 @@ In dieser Aufgabe fügen Sie zwei Schaltflächen hinzu und weisen ihnen jeweils 
 
 2. Platzieren Sie die Schaltfläche direkt unterhalb des Slicers **Year**.
 
-3. Klicken Sie auf die Schaltfläche, wählen Sie im Bereich **Format button** (Schaltfläche formatieren) die Option **Allgemein** aus, und legen Sie die Eigenschaft **Titel** auf **Ein** fest.
+3. Wählen Sie die Schaltfläche aus, und legen Sie im Bereich **Schaltfläche formatieren** die Eigenschaft **Schaltflächentext** auf **Ein** fest.
 
     ![Bild 126](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image49.png)
 
-4. Erweitern Sie den Abschnitt **Titel**, und geben Sie dann im Feld **Text** **Balkendiagramm** ein.
+4. Erweitern Sie den Abschnitt **Schaltflächentext**, und geben Sie dann im Feld **Schaltflächentext** den Text **Balkendiagramm** ein.
 
 5. Erweitern Sie den Abschnitt **Hintergrund**, und legen Sie dann eine Komplementärfarbe als Hintergrundfarbe fest.
 
-6. Klicken Sie auf die **Schaltfläche**, und legen Sie die Eigenschaft **Aktion** auf **Ein** fest.
+6. Legen Sie die Eigenschaft **Aktion** auf **Ein** fest (am unteren Ende der Liste).
 
     ![Bild 127](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image50.png)
 
@@ -471,7 +467,7 @@ In dieser Übung erkunden Sie den Bericht im Power BI-Dienst.
 
 In dieser Aufgabe erkunden Sie den Bericht im Power BI-Dienst.
 
-1. Klicken Sie im Browserfenster von Microsoft Edge im Power BI-Dienst im **Navigationsbereich** auf **Mein Arbeitsbereich**, und wählen Sie dann den Bericht **Sales Analysis** aus.
+1. Klicken Sie im Browserfenster von Microsoft Edge im Power BI-Dienst im **Navigationsbereich** auf den Bericht **Sales Analysis**.
 
 2. Klicken Sie zum Testen des Drillthroughberichts auf der Seite **Übersicht** im Visual **Quantity by Category** (Menge nach Kategorie) mit der rechten Maustaste auf die Leiste **Clothing** (Bekleidung), und wählen Sie dann die Option **Drillthrough \| Produktdetails** aus.
 

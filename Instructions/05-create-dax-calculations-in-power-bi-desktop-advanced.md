@@ -1,14 +1,10 @@
 ---
 lab:
-  title: Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 2
+  title: "Erstellen von DAX-Berechnungen in Power\_BI Desktop, Teil\_2"
   module: Module 5 - Create Model Calculations using DAX in Power BI
-ms.openlocfilehash: 064f5bb2c313448f7d15b01bd0e69a84aa85811f
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146650197"
 ---
+
+
 # <a name="create-dax-calculations-in-power-bi-desktop-part-2"></a>**Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 2**
 
 **Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
@@ -23,7 +19,7 @@ In diesem Lab lernen Sie Folgendes:
 
 ### <a name="lab-story"></a>**Labszenario**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
@@ -73,7 +69,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
     ![Bild 9](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
 
-1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter**.
+1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Starter**.
 
 1. Wählen Sie die Datei **Sales Analysis** aus.
 
@@ -107,7 +103,7 @@ In dieser Aufgabe erstellen Sie ein Matrixvisual, um das Testen Ihrer neuen Meas
 
     ![Abbildung 1](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image9.png)
 
-2. Fügen Sie auf **Seite 3** ein Matrixvisual hinzu.
+2. Fügen Sie auf **Seite 3**ein Matrixvisual hinzu.
 
     ![Bild 13](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image10.png)
 
@@ -125,11 +121,13 @@ In dieser Aufgabe erstellen Sie ein Matrixvisual, um das Testen Ihrer neuen Meas
 
     *Zur Erinnerung: Die Hierarchie **Regions** hat die Ebenen **Group**, **Country** und **Region**.*
 
-7. Um das Visual zu formatieren, wählen Sie im Bereich **Visualisierungen** den Bereich **Format** aus.
+7. Um das Visual zu formatieren, wählen Sie unter dem Bereich **Visualisierungen** den Bereich **Format** aus.
 
     ![Bild 14](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image12.png)
 
 8. Geben Sie in das Feld **Suchen** den Begriff **Abgestuft** ein.
+
+    ![Bild 15](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image13.png)
 
 9. Legen Sie die Eigenschaft **Abgestuftes Layout** auf **Aus** fest.
 
@@ -149,7 +147,7 @@ In dieser Aufgabe erstellen Sie mehrere Measures mit DAX-Ausdrücken, die den Fi
 
 1. Fügen Sie der Tabelle **Sales** ein Measure basierend auf dem folgenden Ausdruck hinzu:
 
-    *Der Einfachheit halber können Sie alle DAX-Definitionen in diesem Lab aus der Datei **D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** kopieren.*
+    *Der Einfachheit halber können Sie alle DAX-Definitionen in diesem Lab aus der Datei **D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** kopieren.*
 
 
     **DAX**

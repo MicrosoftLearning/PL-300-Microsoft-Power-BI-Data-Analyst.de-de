@@ -1,14 +1,10 @@
 ---
 lab:
-  title: Analysieren von Daten in Power BI Desktop
-  module: Module 9 - Identify Patterns and Trends
-ms.openlocfilehash: 42ec8ac1a9fd160fe2181ae8d966d85d04b9b82d
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "147015328"
+  title: "Analysieren von Daten in Power\_BI Desktop"
+  module: Module 10 - Perform Advanced Analytics
 ---
+
+
 # <a name="perform-data-analysis-in-power-bi-desktop"></a>**Analysieren von Daten in Power BI Desktop**
 
 **Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
@@ -25,7 +21,7 @@ In diesem Lab lernen Sie Folgendes:
 
 ### <a name="lab-story"></a>**Labszenario**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
@@ -61,7 +57,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei 
 
     ![Bild 7](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image1.png)
 
-1. Navigieren Sie im Browserfenster von Microsoft Edge zu **https://powerbi.microsoft.com**.
+1. Navigieren Sie im Browserfenster von Microsoft Edge zu **https://powerbi.com**.
 
     *Tipp: Sie können auch auf der Favoritenleiste von Microsoft Edge die Option für den Power BI-Dienst verwenden.*
 
@@ -103,7 +99,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein Datas
 
     ![Bild 11](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image6.png)
 
-4. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\08-create-power-bi-dashboard\Solution**.
+4. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\09-create-power-bi-dashboard\Solution**.
 
 5. Wählen Sie die Datei **SalesAnalysis.pbix** aus, und klicken Sie dann auf **Öffnen**.
 
@@ -137,7 +133,7 @@ In dieser Aufgabe erstellen Sie den Bericht **Sales Exploration**.
 
 7. Navigieren Sie im Fenster **Speichern unter** zum Ordner **D:\PL300\MySolution**.
 
-8. Geben Sie im Feld **Dateiname** den Namen **Sales Exploration** ein, und klicken Sie auf **Speichern**.
+8. Geben Sie im Feld **Dateiname** den Namen **Sales Exploration** ein.
 
     ![Abbildung 1](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image11.png)
 
@@ -153,7 +149,7 @@ In dieser Aufgabe erstellen Sie den Bericht **Sales Exploration**.
 
 12. Speichern Sie die Power BI Desktop-Datei.
 
-    *Sie erstellen nun zwei Berichtsseiten, und auf jeder Seite arbeiten Sie mit einem anderen Visual, um Daten zu analysieren und zu erkunden.*
+    *Sie erstellen nun vier Berichtsseiten, und auf jeder Seite arbeiten Sie mit einem anderen Visual, um Daten zu analysieren und zu erkunden.*
 
 ## <a name="exercise-2-create-a-scatter-chart"></a>**Übung 2: Erstellen eines Punktdiagramms**
 
@@ -175,15 +171,13 @@ In dieser Aufgabe erstellen Sie ein Punktdiagramm, das animiert werden kann.
 
 3. Fügen Sie den Visualbereichen die folgenden Felder hinzu:
 
-    In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Das sieht folgendermaßen aus: **Reseller** **\|** **Business Type**. In diesem Beispiel ist **Handelspartner** der Tabellenname und **Geschäftstyp** der Feldname.
+    The labs use a shorthand notation to reference a field. It will look like this: <bpt id="p1">**</bpt>Reseller<ept id="p1">**</ept> <bpt id="p2">**</bpt><ph id="ph1">\|</ph><ept id="p2">**</ept> <bpt id="p3">**</bpt>Business Type<ept id="p3">**</ept>. In this example, <bpt id="p1">**</bpt>Reseller<ept id="p1">**</ept> is the table name and <bpt id="p2">**</bpt>Business Type<ept id="p2">**</ept> is the field name.
 
-    
+    - Legende: **Reseller \| Business Type**
 
     - X-Achse: **Sales \| Sales** 
 
     - Y-Achse: **Sales \| Profit Margin**
-
-    - Legende: **Reseller \| Business Type**
 
     - Größe: **Sales \| Quantity**
 
@@ -239,9 +233,9 @@ In dieser Aufgabe erstellen Sie eine Vorhersage, um den möglichen zukünftigen 
 
 3. Fügen Sie den Visualbereichen die folgenden Felder hinzu:
 
-    - x-Achse: **Date \| Date**
+    - Achse: **Date \| Date**
 
-    - y-Achse: **Sales \| Sales** 
+    - Werte: **Sales \| Sales** 
 
     ![Bild 46](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image23.png)
 
@@ -265,25 +259,21 @@ In dieser Aufgabe erstellen Sie eine Vorhersage, um den möglichen zukünftigen 
 
 8. Erweitern Sie den Abschnitt **Vorhersage**.
 
-
+    ![Bild 50](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image27.png)
 
     *Wenn der Abschnitt **Vorhersage** nicht verfügbar ist, wurde das Visual wahrscheinlich nicht ordnungsgemäß konfiguriert. Die Vorhersage ist nur verfügbar, wenn zwei Bedingungen erfüllt sind: Die Achse verfügt über ein einzelnes Feld vom Typ „Date“ (Datum), und es gibt nur ein Wertfeld.*
 
-9. Legen Sie die Option **Vorhersage** auf **Ein** fest.
+9. Klicken Sie auf **Hinzufügen**.
 
     ![Bild 51](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image28.png)
 
 10. Konfigurieren Sie die folgenden Vorhersageeigenschaften:
 
-    - Einheit: Months
-
     - Länge prognostizieren: 1 Monat
 
-    - Saisonalität: 365
-    
     - Konfidenzintervall: 80
 
-
+    - Saisonalität: 365
 
 11. Klicken Sie auf **Übernehmen**.
 
@@ -308,7 +298,7 @@ Mit dieser Aufgabe schließen Sie das Lab ab.
 
 2. Speichern Sie die Power BI Desktop-Datei.
 
-3. Klicken Sie auf der Registerkarte **Start** des Menübands innerhalb der Gruppe **Freigeben** auf **Veröffentlichen** und dann auf **Auswählen**, um die Datei unter **Mein Arbeitsbereich** zu veröffentlichen.
+3. Klicken Sie zum Veröffentlichen der Datei in Ihrem Arbeitsbereich auf der Registerkarte **Start** des Menübands innerhalb der Gruppe **Freigeben** auf **Veröffentlichen**.
 
     ![Bild 23](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image46.png)
 

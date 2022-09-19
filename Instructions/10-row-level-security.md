@@ -1,28 +1,25 @@
 ---
 lab:
   title: Erzwingen von Sicherheit auf Zeilenebene
-  module: Module 12 - Row-Level Security
-ms.openlocfilehash: f47cc7c54428589aaa9d6b37afd9ee4d11c5884e
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146650107"
+  module: Module 13 - Row-Level Security
 ---
+
+
 # <a name="enforce-row-level-security"></a>**Erzwingen von Sicherheit auf Zeilenebene**
 
 **Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
 
-In diesem Lab erzwingen Sie die Sicherheit auf Zeilenebene, um sicherzustellen, dass ein Vertriebsmitarbeiter nur die Vertriebsdaten für die ihm zugewiesenen Regionen analysieren kann.
+In this lab you will create a many-to-many relationship between the <bpt id="p1">**</bpt>Salesperson<ept id="p1">**</ept> table and the <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept> table. You will also enforce row-level security to ensure that a salesperson can only analyze sales data for their assigned region(s).
 
 In diesem Lab lernen Sie Folgendes:
 
+- Wie m:n-Beziehungen konfiguriert werden
 
 - Erzwingen von Sicherheit auf Zeilenebene
 
 ### <a name="lab-story"></a>**Labszenario**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
@@ -72,7 +69,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
     ![Bild 5](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image4.png)
 
-1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\10-row-level-security\Starter**.
+1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\12-row-level-security\Starter**.
 
 1. Wählen Sie die Datei **Sales Analysis** aus.
 
@@ -184,7 +181,7 @@ In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, 
 
     ![Bild 18](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image35.png)
 
-### <a name="task-3-finish-up"></a>**Aufgabe 3: Abschluss**
+### <a name="task-2-finish-up"></a>**Aufgabe 2: Abschluss**
 
 Mit dieser Aufgabe schließen Sie das Lab ab.
 
