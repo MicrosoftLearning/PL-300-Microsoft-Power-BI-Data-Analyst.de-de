@@ -1,19 +1,15 @@
 ---
 lab:
-  title: Entwerfen eines Berichts in Power BI Desktop, Teil 1
+  title: "Entwerfen eines Berichts in Power\_BI Desktop, Teil\_1"
   module: Module 7 - Create Reports
-ms.openlocfilehash: 426892501790aaecbe21ed2e7f9161c4490c9e3b
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146650215"
 ---
+
+
 # <a name="design-a-report-in-power-bi-desktop-part-1"></a>**Entwerfen eines Berichts in Power BI Desktop, Teil 1**
 
 **Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
 
-In diesem Lab erstellen Sie einen dreiseitigen Bericht. Danach veröffentlichen Sie ihn in Power BI, um ihn anschließend zu öffnen und mit ihm zu interagieren.
+In this lab you will create a three-page report. You will then publish it to Power BI, whereupon you will open and interact with the report.
 
 In diesem Lab lernen Sie Folgendes:
 
@@ -23,7 +19,7 @@ In diesem Lab lernen Sie Folgendes:
 
 ### <a name="lab-story"></a>**Labszenario**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
@@ -59,7 +55,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei 
 
     ![Bild 65](Linked_image_Files/07-design-report-in-power-bi-desktop_image1.png)
 
-1. Navigieren Sie im Browserfenster von Microsoft Edge zu **https://powerbi.microsoft.com**.
+1. Navigieren Sie im Browserfenster von Microsoft Edge zu **https://powerbi.com**.
 
     *Tipp: Sie können auch auf der Favoritenleiste von Microsoft Edge die Option für den Power BI-Dienst verwenden.*
 
@@ -92,7 +88,7 @@ In dieser Aufgabe aktivieren Sie Karten- und Flächenkartogrammvisuals in der Um
 
     ![Bild 102](Linked_image_Files/07-design-report-in-power-bi-desktop_image102.png)
 
-1. Scrollen Sie auf der Seite nach unten zu den Integrationseinstellungen. Klicken Sie auf den Pfeil, um die Option für Karten- und Flächenkartogrammvisuals zu erweitern.
+1. Scroll down the page to Integration settings. Click the arrow to expand the Map and filled map visuals option.
 
     ![Bild 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image103.png)
 
@@ -141,7 +137,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Start
 
     ![Bild 30](Linked_image_Files/07-design-report-in-power-bi-desktop_image7.png)
 
-8. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\06-design-report-in-power-bi-desktop\Starter**.
+8. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\07-design-report-in-power-bi-desktop\Starter**.
 
 9. Wählen Sie die Datei **Sales Analysis** aus.
 
@@ -169,7 +165,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Start
 
 ### <a name="task-4-design-page-1"></a>**Aufgabe 4: Entwerfen der ersten Seite**
 
-In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
+In this task you will design the first report page. When you’ve completed the design, the page will look like the following:
 
 ![Abbildung der ersten Seite, bestehend aus einem Logo, zwei Slicern und drei Visuals](Linked_image_Files/07-design-report-in-power-bi-desktop_image12.png)
 
@@ -230,6 +226,21 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
 
     ![Bild 21](Linked_image_Files/07-design-report-in-power-bi-desktop_image22.png)
 
+17. Öffnen Sie zum Formatieren des Datenschnitts unter dem Bereich **Visualisierungen** den Bereich **Format**.
+
+    ![Bild 50](Linked_image_Files/07-design-report-in-power-bi-desktop_image23.png)
+
+18. Erweitern Sie dann die Gruppe **Selection Controls** (Auswahlsteuerelemente).
+
+    ![Bild 23](Linked_image_Files/07-design-report-in-power-bi-desktop_image24.png)
+
+19. Legen Sie **Option „Alles auswählen“ anzeigen** auf **Ein** fest.
+
+    ![Bild 24](Linked_image_Files/07-design-report-in-power-bi-desktop_image25.png)
+
+20. Wie Sie sehen, ist das erste Element im Datenschnitt **Region** jetzt **Alles auswählen**.
+
+    *Wenn diese Option ausgewählt ist, werden entweder alle Elemente ausgewählt, oder die Auswahl aller Elemente wird aufgehoben. Dadurch können Berichtsbenutzer*innen einfacher die passenden Filter festlegen.*
 
 21. Heben Sie die Auswahl des Datenschnitts auf, indem Sie auf einen leeren Bereich der Berichtsseite klicken.
 
@@ -247,13 +258,13 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
 
     - Sales \| Sales
 
-25. Im Feldbereich des Visuals (nicht im Bereich **Felder**; der Feldbereich des Visuals befindet sich unter dem Bereich **Visualisierungen**) sehen Sie, dass die Felder den Bereichen **x-Achse** und **Spalte y-Achse** zugewiesen sind.
+25. Im Feldbereich des Visuals (nicht im Bereich **Felder**; der Feldbereich des Visuals befindet sich unter dem Bereich **Visualisierungen**) sehen Sie, dass die Felder den Bereichen **Gemeinsame Achse** und **Spaltenwerte** zugewiesen sind.
 
     ![Bild 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28.png)
 
     *Wenn Sie Felder in ein Visual ziehen, werden sie den Standardbereichen hinzugefügt. Sie können Felder wie im nächsten Schritt auch direkt in die Bereiche ziehen, um eine höhere Genauigkeit zu erzielen.*
 
-26. Ziehen Sie im Bereich **Felder** das Feld **Sales \| Profit Margin** in den Bereich **Linie y-Achse**.
+26. Ziehen Sie im Bereich **Felder** das Feld **Sales \| Profit Margin** in den Bereich **Zeilenwerte**.
 
     ![Bild 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
 
@@ -261,7 +272,7 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
 
     *Für den letzten Monat des Jahres (Juni 2020) liegen noch keine Verkäufe vor. Monate OHNE Verkaufszahlen werden vom Visual standardmäßig entfernt. Im nächsten Schritt wird das Visual so konfiguriert, dass alle Monate angezeigt werden.*
 
-28. Klicken Sie im Feldbereich des Visuals im Bereich **x-Achse** für das Feld **Month** auf den Pfeil nach unten, und wählen Sie **Elemente ohne Daten anzeigen** aus.
+28. Klicken Sie im Feldbereich des Visuals im Bereich **Gemeinsame Achse** für das Feld **Month** auf den Pfeil nach unten, und wählen Sie **Elemente ohne Daten anzeigen** aus.
 
     ![Bild 52](Linked_image_Files/07-design-report-in-power-bi-desktop_image30.png)
 
@@ -305,7 +316,7 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
 
     ![Bild 3](Linked_image_Files/07-design-report-in-power-bi-desktop_image35.png)
 
-39. Erweitern Sie die **Balken** und dann die Gruppe **Farben**. Legen Sie anschließend die Eigenschaft **Standardfarbe** auf eine geeignete Farbe fest (als Kontrast zum Säulen- bzw. Liniendiagramm).
+39. Erweitern Sie die Gruppe **Datenfarben**, und legen Sie die Eigenschaft **Standardfarbe** auf eine geeignete Farbe fest (als Kontrast zum Säulen-/Liniendiagramm).
 
 40. Legen Sie die Eigenschaft **Datenbeschriftungen** auf **Ein** fest.
 
@@ -317,7 +328,7 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
 
 ### <a name="task-5-design-page-2"></a>**Aufgabe 5: Entwerfen der zweiten Seite**
 
-In dieser Aufgabe wird die zweite Berichtsseite entworfen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
+In diesem Lab erstellen Sie einen dreiseitigen Bericht.
 
 ![Abbildung der zweiten Seite, bestehend aus einem Slicer und einer Matrix](Linked_image_Files/07-design-report-in-power-bi-desktop_image37.png)
 
@@ -332,10 +343,11 @@ In dieser Aufgabe wird die zweite Berichtsseite entworfen. Nach der Fertigstellu
     ![Bild 43](Linked_image_Files/07-design-report-in-power-bi-desktop_image39.png)
 
   
+‎ 
 
 3. Fügen Sie einen auf dem Feld **Region \| Region** basierenden Slicer hinzu.
 
-4. Verwenden Sie den Bereich **Format**, um die Option „Alle auswählen“ (in der Gruppe **Auswahl**) zu aktivieren.
+4. Verwenden Sie den Bereich **Format**, um die Option „Alles auswählen“ zu aktivieren (in der Gruppe **Selection Controls** (Auswahlsteuerelemente)).
 
 5. Ändern Sie die Größe und Position des Slicers so, dass er sich auf der linken Seite der Berichtsseite befindet und etwa die Hälfte der Seitenhöhe einnimmt.
 
@@ -391,7 +403,7 @@ In dieser Aufgabe wird die zweite Berichtsseite entworfen. Nach der Fertigstellu
 
 ### <a name="task-6-design-page-3"></a>**Aufgabe 6: Entwerfen der dritten Seite**
 
-In dieser Aufgabe wird die dritte und letzte Berichtsseite entworfen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
+Danach veröffentlichen Sie ihn in Power BI, um ihn anschließend zu öffnen und mit ihm zu interagieren.
 
 ![Abbildung der dritten Seite, bestehend aus einem Slicer und drei Visuals](Linked_image_Files/07-design-report-in-power-bi-desktop_image47.png)
 
@@ -401,7 +413,7 @@ In dieser Aufgabe wird die dritte und letzte Berichtsseite entworfen. Nach der F
     
     ![Abbildung des Felds „Salesperson“ im Filterbereich](Linked_image_Files/07-design-report-in-power-bi-desktop_image999.png) 
 
-1. Wählen Sie **Michael Blythe** aus. Die Daten auf der Berichtsseite **My Performance** (Meine Leistung) werden jetzt gefiltert, um nur Daten für Michael Blythe anzuzeigen.
+1. Select <bpt id="p1">**</bpt>Michael Blythe<ept id="p1">**</ept>. Data on the <bpt id="p1">**</bpt>My Performance<ept id="p1">**</ept> report page will now be filtered to display data for Michael Blythe only.
 
 1. Fügen Sie einen auf dem Feld **Date \| Year** basierenden Dropdown-Slicer hinzu, und ändern Sie Größe und Position so, dass er sich in der linken oberen Ecke der Seite befindet.
 
@@ -429,7 +441,7 @@ In dieser Aufgabe wird die dritte und letzte Berichtsseite entworfen. Nach der F
 
 1. Formatieren Sie das Visual:
 
-    - Erhöhen Sie in der Gruppe **Beschriftungswert** die Eigenschaft **Textgröße** auf **28 Pt**.
+    - Erhöhen Sie in der Gruppe **Datenbeschriftungen** die Eigenschaft **Textgröße** auf **28 pt**.
 
     - Legen Sie in der Gruppe **Hintergrund** die Option **Farbe** auf ein helles Grau fest.
 

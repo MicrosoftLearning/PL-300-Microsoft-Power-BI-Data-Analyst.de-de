@@ -1,19 +1,14 @@
 ---
 lab:
-  title: Laden von Daten in Power BI Desktop
-  module: Module 3 - Clean, Transform, and Load Data in Power BI
-ms.openlocfilehash: aced37b7bfdd2ccf94a9d3e7bdb8f8ff7013c125
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146650224"
+  title: "Laden von Daten in Power\_BI Desktop"
+  module: 'Module 3 - Clean, Transform, and Load Data in Power BI'
 ---
+
 # <a name="load-data-in-power-bi-desktop"></a>**Laden von Daten in Power BI Desktop**
 
 **Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
 
-In diesem Lab wenden Sie Transformationen auf alle Abfragen an, die Sie im vorherigen Lab erstellt haben. Anschließend wenden Sie die Abfragen jeweils als Tabelle in das Datenmodell laden.
+In this lab you will commence apply transformations to each of the queries created in the previous lab. You will then apply the queries to load each as a table to the data model.
 
 In diesem Lab lernen Sie Folgendes:
 
@@ -23,7 +18,7 @@ In diesem Lab lernen Sie Folgendes:
 
 ### <a name="lab-story"></a>**Labszenario**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
@@ -130,7 +125,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Salesperson**.
 
     *Jetzt werden Sie die Abfragezeilen filtern, um nur die Namen von Mitarbeiter*innen abzurufen, die im Vertrieb arbeiten.*
 
-4. Klicken Sie zum Suchen einer bestimmten Spalte auf der Registerkarte **Start** des Menübands auf den Nach-unten-Pfeil der Menüoption **Spalten verwalten** und dann auf den Nach-unten-Pfeil der Menüoption **Spalten auswählen**. Klicken Sie anschließend auf **Zu Spalte wechseln**.
+4. Klicken Sie auf der Registerkarte **Start** des Menübands in der Gruppe **Spalten verwalten** auf den Abwärtspfeil **Spalten auswählen**, und klicken Sie auf **Zur Spalte wechseln**.
 
     ![Bild 88](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
@@ -156,7 +151,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Salesperson**.
 
     *Jede Transformation, die Sie erstellen, führt zu einer zusätzlichen Schrittlogik. Schritte können auch bearbeitet oder gelöscht werden. Es ist ebenso möglich, einen Schritt auszuwählen und eine Vorschau der Abfrageergebnisse in dieser Phase der Abfragetransformation anzuzeigen.*
 
-10. Klicken Sie auf der Registerkarte **Start** des Menübands auf die Gruppe **Spalten verwalten** und dann auf das Symbol **Spalten auswählen**, um Spalten zu entfernen.
+10. Klicken Sie auf der Registerkarte **Start** des Menübands in der Gruppe **Spalten verwalten** auf das Symbol **Spalten auswählen**, um Spalten zu entfernen.
 
     ![Bild 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
 
@@ -216,7 +211,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Salesperson**.
 
 23. Führen Sie die vorherigen Schritte noch einmal aus, um die Spalte **EmailAddress** in **UPN** umzubenennen.
 
-    *Das Akronym „UPN“ steht für „User Principal Name“, zu Deutsch: „Benutzerprinzipalname“.*
+    *Das Akronym „UPN“ steht für „User Principal Name“, zu Deutsch: „Benutzerprinzipalname“. Die Werte in dieser Spalte werden verwendet, wenn Sie die Sicherheit auf Zeilenebene im Lab **Modellieren von Daten in Power BI Desktop, Teil 2** konfigurieren.*
 
 24. Überprüfen Sie links unten auf der Statusleiste, ob die Abfrage fünf Spalten und 18 Zeilen enthält.
 
@@ -349,6 +344,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Reseller**.
     ![Abbildung 2](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image38.png)
 
   
+‎ 
 
 6. Klicken Sie mit der rechten Maustaste auf die Spaltenüberschrift **Business Type**, und wählen Sie dann **Werte ersetzen** aus.
 
@@ -569,7 +565,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Targets**.
 
 13. Beachten Sie, dass die erste Zeile für das Jahr **2017** und die Monatsnummer **7** ist.
 
-14. Geben Sie in der Spalte **Column1** in der ersten Rasterzelle **7/1/2017** ein, und drücken Sie dann die **EINGABETASTE**.
+14. Geben Sie in der Spalte **Column1** in der ersten Rasterzelle **7/1/2017**ein, und drücken Sie dann die **EINGABETASTE**.
 
     *Die VM verwendet das Gebietsschema für die USA, sodass dieses Datum dem 1. Juli 2017 entspricht.*
 
@@ -647,7 +643,7 @@ In dieser Aufgabe aktualisieren Sie die Abfrage **Product**, indem Sie sie mit d
 
     ![Bild 5.690](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image70.png)
 
-2. Klicken Sie zum Zusammenführen mit der Abfrage **ColorFormats** auf der Registerkarte **Start** des Menübands auf den Nach-unten-Pfeil der Menüoption **Kombinieren** und dann auf **Abfragen zusammenführen**.
+2. Klicken Sie zum Zusammenführen mit der Abfrage **ColorFormats** auf der Registerkarte **Start** des Menübands in der Gruppe **Kombinieren** auf **Abfragen zusammenführen**.
 
     ![Bild 5.654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
@@ -705,7 +701,7 @@ In dieser Aufgabe aktualisieren Sie **ColorFormats**, um das Laden für diese Ab
 
     ![Bild 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
-    Das Deaktivieren des Ladens führt dazu, dass keine entsprechende Tabelle in das Datenmodell geladen wird. Diese Änderung wird vorgenommen, da die Abfrage mit der Abfrage **Product** zusammengeführt wurde, für die das Laden in das Datenmodell aktiviert ist.
+    Disabling the load means it will not load as a table to the data model. This is done because the query was merged with the <bpt id="p1">**</bpt>Product<ept id="p1">**</ept> query, which is enabled to load to the data model.
 
 4. Klicken Sie auf **OK**.
 
@@ -747,4 +743,4 @@ Mit dieser Aufgabe schließen Sie das Lab ab.
 
 5. Wenn Sie beabsichtigen, das nächste Lab zu starten, lassen Sie Power BI Desktop geöffnet.
 
-    *Sie konfigurieren Datenmodelltabellen und -beziehungen im Lab **Modellieren von Daten in Power BI Desktop***.
+    *Sie konfigurieren Datenmodelltabellen und -beziehungen im Lab **Modellieren von Daten in Power BI Desktop, Teil 1**.*
