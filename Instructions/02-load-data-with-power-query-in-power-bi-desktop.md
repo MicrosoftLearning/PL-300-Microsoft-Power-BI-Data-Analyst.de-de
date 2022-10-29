@@ -8,7 +8,7 @@ lab:
 
 **Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
 
-In this lab you will commence apply transformations to each of the queries created in the previous lab. You will then apply the queries to load each as a table to the data model.
+In diesem Lab wenden Sie Transformationen auf alle Abfragen an, die Sie im vorherigen Lab erstellt haben. Anschließend wenden Sie die Abfragen jeweils als Tabelle in das Datenmodell laden.
 
 In diesem Lab lernen Sie Folgendes:
 
@@ -18,7 +18,7 @@ In diesem Lab lernen Sie Folgendes:
 
 ### <a name="lab-story"></a>**Labszenario**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie die ersten zehn Labs in der folgenden Reihenfolge absolvieren:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
@@ -701,7 +701,7 @@ In dieser Aufgabe aktualisieren Sie **ColorFormats**, um das Laden für diese Ab
 
     ![Bild 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
-    Disabling the load means it will not load as a table to the data model. This is done because the query was merged with the <bpt id="p1">**</bpt>Product<ept id="p1">**</ept> query, which is enabled to load to the data model.
+    Das Deaktivieren des Ladens führt dazu, dass keine entsprechende Tabelle in das Datenmodell geladen wird. Diese Änderung wird vorgenommen, da die Abfrage mit der Abfrage **Product** zusammengeführt wurde, für die das Laden in das Datenmodell aktiviert ist.
 
 4. Klicken Sie auf **OK**.
 

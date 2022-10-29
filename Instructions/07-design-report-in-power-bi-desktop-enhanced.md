@@ -23,7 +23,7 @@ In diesem Lab lernen Sie Folgendes:
 
 ### <a name="lab-story"></a>**Labszenario**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie die ersten zehn Labs in der folgenden Reihenfolge absolvieren:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
@@ -175,7 +175,7 @@ Bei dieser Aufgabe synchronisieren Sie die Slicer **Year** und **Region**.
 
 ## <a name="exercise-2-configure-drill-through"></a>**Übung 2: Konfigurieren eines Drillthroughs**
 
-In this exercise you will create a new page and configure it as a drill through page. When you’ve completed the design, the page will look like the following:
+In dieser Übung erstellen Sie eine neue Seite und konfigurieren sie als Drillthroughseite. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
 
 ![Abbildung der neuen Seite, bestehend aus einem Kartenvisual und einem Tabellenvisual](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image17.png)
 
@@ -247,7 +247,7 @@ Bei dieser Aufgabe erstellen Sie eine neue Seite und konfigurieren sie als Drill
 
 ## <a name="exercise-3-add-conditional-formatting"></a>**Übung 3: Hinzufügen von bedingter Formatierung**
 
-In this exercise you will enhance the drill through page with conditional formatting. When you’ve completed the design, the page will look like the following:
+In dieser Übung optimieren Sie die Drillthroughseite, indem Sie eine bedingte Formatierung hinzufügen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
 
 ![Abbildung einer aktualisierten Seite mit farbigen Werten und Symbolen](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image28.png)
 
@@ -321,7 +321,7 @@ In dieser Aufgabe optimieren Sie die Drillthroughseite, indem Sie bedingte Forma
 
 ## <a name="exercise-4-add-bookmarks-and-buttons"></a>**Übung 4: Hinzufügen von Lesezeichen und Schaltflächen**
 
-In this exercise you will enhance the <bpt id="p1">**</bpt>My Performance<ept id="p1">**</ept> page with buttons, allowing the report user to select the visual type to display. When you’ve completed the design, the page will look like the following:
+In dieser Übung erweitern Sie die Seite **My Performance** (Meine Leistung) mit Schaltflächen, über die Berichtsbenutzer*innen den gewünschten Visualtyp auswählen können. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
 
 ![Abbildung der aktualisierten dritten Seite mit zwei Schaltflächen und jetzt nur noch zwei Visuals](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image38.png)
 

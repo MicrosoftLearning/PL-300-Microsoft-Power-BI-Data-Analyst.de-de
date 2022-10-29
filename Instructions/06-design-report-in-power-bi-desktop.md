@@ -9,7 +9,7 @@ lab:
 
 **Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
 
-In this lab you will create a three-page report. You will then publish it to Power BI, whereupon you will open and interact with the report.
+In diesem Lab erstellen Sie einen dreiseitigen Bericht. Danach veröffentlichen Sie ihn in Power BI, um ihn anschließend zu öffnen und mit ihm zu interagieren.
 
 In diesem Lab lernen Sie Folgendes:
 
@@ -19,7 +19,7 @@ In diesem Lab lernen Sie Folgendes:
 
 ### <a name="lab-story"></a>**Labszenario**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie die ersten zehn Labs in der folgenden Reihenfolge absolvieren:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
@@ -88,7 +88,7 @@ In dieser Aufgabe aktivieren Sie Karten- und Flächenkartogrammvisuals in der Um
 
     ![Bild 102](Linked_image_Files/07-design-report-in-power-bi-desktop_image102.png)
 
-1. Scroll down the page to Integration settings. Click the arrow to expand the Map and filled map visuals option.
+1. Scrollen Sie auf der Seite nach unten zu den Integrationseinstellungen. Klicken Sie auf den Pfeil, um die Option für Karten- und Flächenkartogrammvisuals zu erweitern.
 
     ![Bild 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image103.png)
 
@@ -165,7 +165,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Start
 
 ### <a name="task-4-design-page-1"></a>**Aufgabe 4: Entwerfen der ersten Seite**
 
-In this task you will design the first report page. When you’ve completed the design, the page will look like the following:
+In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
 
 ![Abbildung der ersten Seite, bestehend aus einem Logo, zwei Slicern und drei Visuals](Linked_image_Files/07-design-report-in-power-bi-desktop_image12.png)
 
@@ -328,7 +328,7 @@ In this task you will design the first report page. When you’ve completed the 
 
 ### <a name="task-5-design-page-2"></a>**Aufgabe 5: Entwerfen der zweiten Seite**
 
-In diesem Lab erstellen Sie einen dreiseitigen Bericht.
+In dieser Aufgabe wird die zweite Berichtsseite entworfen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
 
 ![Abbildung der zweiten Seite, bestehend aus einem Slicer und einer Matrix](Linked_image_Files/07-design-report-in-power-bi-desktop_image37.png)
 
@@ -403,7 +403,7 @@ In diesem Lab erstellen Sie einen dreiseitigen Bericht.
 
 ### <a name="task-6-design-page-3"></a>**Aufgabe 6: Entwerfen der dritten Seite**
 
-Danach veröffentlichen Sie ihn in Power BI, um ihn anschließend zu öffnen und mit ihm zu interagieren.
+In dieser Aufgabe wird die dritte und letzte Berichtsseite entworfen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
 
 ![Abbildung der dritten Seite, bestehend aus einem Slicer und drei Visuals](Linked_image_Files/07-design-report-in-power-bi-desktop_image47.png)
 
@@ -413,7 +413,7 @@ Danach veröffentlichen Sie ihn in Power BI, um ihn anschließend zu öffnen un
     
     ![Abbildung des Felds „Salesperson“ im Filterbereich](Linked_image_Files/07-design-report-in-power-bi-desktop_image999.png) 
 
-1. Select <bpt id="p1">**</bpt>Michael Blythe<ept id="p1">**</ept>. Data on the <bpt id="p1">**</bpt>My Performance<ept id="p1">**</ept> report page will now be filtered to display data for Michael Blythe only.
+1. Wählen Sie **Michael Blythe** aus. Die Daten auf der Berichtsseite **My Performance** (Meine Leistung) werden jetzt gefiltert, um nur Daten für Michael Blythe anzuzeigen.
 
 1. Fügen Sie einen auf dem Feld **Date \| Year** basierenden Dropdown-Slicer hinzu, und ändern Sie Größe und Position so, dass er sich in der linken oberen Ecke der Seite befindet.
 

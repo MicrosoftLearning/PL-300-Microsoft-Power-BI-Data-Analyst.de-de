@@ -19,7 +19,7 @@ In diesem Lab lernen Sie Folgendes:
 
 ### <a name="lab-story"></a>**Labszenario**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie die ersten zehn Labs in der folgenden Reihenfolge absolvieren:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
@@ -43,7 +43,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ## <a name="exercise-1-create-a-dashboard"></a>**Übung 1: Erstellen eines Dashboards**
 
-In this exercise you will create the <bpt id="p1">**</bpt>Sales Monitoring<ept id="p1">**</ept> dashboard. The completed dashboard will look like the following:
+In dieser Übung erstellen Sie das Dashboard **Sales Monitoring** (Umsatzüberwachung). Das fertige Dashboard sieht wie folgt aus:
 
 ![Abbildung des fertigen Dashboards mit drei Kacheln](Linked_image_Files/09-create-power-bi-dashboard_image1.png)
 
@@ -163,7 +163,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein Datas
 
 ### <a name="task-4-create-a-dashboard"></a>**Aufgabe 4: Erstellen des Dashboards**
 
-In this task you will create the <bpt id="p1">**</bpt>Sales Monitoring<ept id="p1">**</ept> dashboard. You will pin a visual from the report, and add a tile based on an image data URI, and use Q&amp;A to create a tile.
+In dieser Aufgabe erstellen Sie das Dashboard **Sales Monitoring** (Umsatzüberwachung). Sie heften ein Visual aus dem Bericht an, fügen eine Kachel auf der Grundlage eines Bilddaten-URIs hinzu, und verwenden Q&A, um eine Kachel zu erstellen.
 
 1. Öffnen Sie im Browserfenster von Microsoft Edge im Power BI-Dienst den Bericht **Sales Analysis**.
 
@@ -307,7 +307,7 @@ In dieser Aufgabe bearbeiten Sie die Details von zwei Kacheln.
 
 ## <a name="exercise-2-refresh-the-dataset"></a>**Übung 2: Aktualisieren des Datasets**
 
-In this exercise you will first load sales order data for June 2020 into the <bpt id="p1">**</bpt>AdventureWorksDW2020<ept id="p1">**</ept> database. You will then open your Power BI Desktop file, perform a data refresh, and then upload the file to your workspace.
+In dieser Übung laden Sie zuerst Bestelldaten für Juni 2020 in die Datenbank **AdventureWorksDW2020**. Anschließend öffnen Sie die Power BI Desktop-Datei, führen eine Datenaktualisierung aus und laden die Datei dann in Ihren Arbeitsbereich hoch.
 
 ### <a name="task-1-update-the-lab-database"></a>**Aufgabe 1: Aktualisieren der Labdatenbank**
 

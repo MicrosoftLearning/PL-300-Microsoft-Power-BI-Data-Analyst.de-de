@@ -21,7 +21,7 @@ In diesem Lab lernen Sie Folgendes:
 
 ### <a name="lab-story"></a>**Labszenario**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie die ersten zehn Labs in der folgenden Reihenfolge absolvieren:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
@@ -45,7 +45,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ## <a name="exercise-1-create-calculated-tables"></a>**Übung 1: Erstellen berechneter Tabellen**
 
-In this exercise you will create two calculated tables. The first will be the <bpt id="p1">**</bpt>Salesperson<ept id="p1">**</ept> table, to allow a direct relationship between it and the <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept> table. The second will be the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> table.
+In dieser Übung erstellen Sie zwei berechnete Tabellen. Die erste ist die Tabelle **Salesperson**, um eine direkte Beziehung zwischen ihr und der Tabelle **Sales** zu ermöglichen. Die zweite ist die Tabelle **Date**.
 
 ### <a name="task-1-get-started"></a>**Aufgabe 1: Erste Schritte**
 
@@ -202,7 +202,7 @@ In dieser Aufgabe erstellen Sie die Tabelle **Date**.
 
 ### <a name="task-4-create-calculated-columns"></a>**Aufgabe 4:** **Erstellen berechneter Spalten**
 
-In this task you will add additional columns to enable filtering and grouping by different time periods. You will also create a calculated column to control the sort order of other columns.
+In dieser Aufgabe fügen Sie zusätzliche Spalten hinzu, um das Filtern und Gruppieren nach verschiedenen Zeiträumen zu ermöglichen. Sie erstellen auch eine berechnete Spalte, um die Sortierreihenfolge anderer Spalten zu steuern.
 
 *Der Einfachheit halber können Sie alle DAX-Definitionen in diesem Lab aus den Codebeispielen in der Datei **D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** kopieren.*
 
@@ -302,7 +302,7 @@ In this task you will add additional columns to enable filtering and grouping by
 
 ### <a name="task-5-complete-the-date-table"></a>**Aufgabe 5:** **Vervollständigen der Tabelle „Date“**
 
-In this task you will complete the design of the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> table by hiding a column and creating a hierarchy. You will then create relationships to the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Targets<ept id="p2">**</ept> tables.
+In dieser Aufgabe vervollständigen Sie den Entwurf der Tabelle **Date**, indem Sie eine Spalte ausblenden und eine Hierarchie erstellen. Sie erstellen dann Beziehungen zu den Tabellen **Sales** und **Targets**.
 
 1. Wechseln Sie zur Ansicht „Modell“.
 
@@ -363,7 +363,7 @@ In dieser Übung erstellen und formatieren Sie mehrere Measures.
 
 ### <a name="task-1-create-simple-measures"></a>**Aufgabe 1: Erstellen einfacher Measures**
 
-In this task you will create simple measures. Simple measures aggregate values in a single column or count rows of a table.
+In dieser Aufgabe erstellen Sie einfache Measures. Einfache Measures aggregieren Werte in einer einzelnen Spalte oder zählen die Zeilen einer Tabelle.
 
 1. Ziehen Sie in der Berichtsansicht auf **Seite 2** im Bereich **Felder** das Feld **Sales \| Unit Price** in das Matrixvisual.
 
