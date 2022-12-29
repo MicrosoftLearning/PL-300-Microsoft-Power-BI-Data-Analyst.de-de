@@ -1,7 +1,7 @@
 ---
 lab:
   title: Erzwingen von Sicherheit auf Zeilenebene
-  module: Module 13 - Row-Level Security
+  module: 12 - Row-Level Security
 ---
 
 
@@ -9,37 +9,35 @@ lab:
 
 **Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
 
-In diesem Lab erstellen Sie eine m:n-Beziehung zwischen den Tabellen **Salesperson** und **Sales**. Außerdem erzwingen Sie die Sicherheit auf Zeilenebene, um sicherzustellen, dass ein Vertriebsmitarbeiter nur die Vertriebsdaten für die ihm zugewiesenen Regionen analysieren kann.
+In diesem Lab erzwingen Sie die Sicherheit auf Zeilenebene, um sicherzustellen, dass ein Vertriebsmitarbeiter nur die Vertriebsdaten für die ihm zugewiesenen Regionen analysieren kann.
 
 In diesem Lab lernen Sie Folgendes:
-
-- Wie m:n-Beziehungen konfiguriert werden
 
 - Erzwingen von Sicherheit auf Zeilenebene
 
 ### <a name="lab-story"></a>**Labszenario**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie die ersten zehn Labs in der folgenden Reihenfolge absolvieren:
+Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
 2. Laden von Daten in Power BI Desktop
 
-3. Modellieren von Daten in Power BI Desktop
+3. Entwerfen eines Datenmodells in Power BI
 
-5. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1
+4. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1
 
-6. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 2
+5. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 2
 
-7. Entwerfen eines Berichts in Power BI Desktop, Teil 1
+6. Entwerfen eines Berichts in Power BI Desktop, Teil 1
 
-8. Entwerfen eines Berichts in Power BI Desktop, Teil 2
+7. Entwerfen eines Berichts in Power BI Desktop, Teil 2
+
+8. Analysieren von Daten mit KI-Visuals
 
 9. Erstellen eines Power BI-Dashboards
 
-10. Analysieren von Daten in Power BI Desktop
-
-11. **Erzwingen von Sicherheit auf Zeilenebene**
+10. **Erzwingen von Sicherheit auf Zeilenebene**
 
 ## <a name="exercise-1-enforce-row-level-security"></a>**Übung 1: Erzwingen von Sicherheit auf Zeilenebene**
 
@@ -69,7 +67,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
     ![Bild 5](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image4.png)
 
-1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\12-row-level-security\Starter**.
+1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\10-row-level-security\Starter**.
 
 1. Wählen Sie die Datei **Sales Analysis** aus.
 
@@ -181,7 +179,7 @@ In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, 
 
     ![Bild 18](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image35.png)
 
-### <a name="task-2-finish-up"></a>**Aufgabe 2: Abschluss**
+### <a name="task-3-finish-up"></a>**Aufgabe 3: Abschluss**
 
 Mit dieser Aufgabe schließen Sie das Lab ab.
 
