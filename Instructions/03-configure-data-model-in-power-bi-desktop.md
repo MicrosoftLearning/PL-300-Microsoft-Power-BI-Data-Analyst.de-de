@@ -1,11 +1,11 @@
 ---
 lab:
-  title: "Modellieren von Daten in Power\_BI Desktop"
-  module: Module 4 - Design a Data Model in Power BI
+  title: Entwerfen eines Datenmodells in Power BI
+  module: 4 - Design a Data Model in Power BI
 ---
 
 
-# <a name="model-data-in-power-bi-desktop"></a>**Modellieren von Daten in Power BI Desktop**
+# <a name="design-a-data-model-in-power-bi"></a>Entwerfen eines Datenmodells in Power BI
 
 **Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
 
@@ -22,27 +22,27 @@ In diesem Lab lernen Sie Folgendes:
 
 ### <a name="lab-story"></a>**Labszenario**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie die ersten zehn Labs in der folgenden Reihenfolge absolvieren:
+Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
 2. Laden von Daten in Power BI Desktop
 
-3. **Modellieren von Daten in Power BI Desktop**
+3. **Entwerfen eines Datenmodells in Power BI**
 
-5. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1
+4. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1
 
-6. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 2
+5. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 2
 
-7. Entwerfen eines Berichts in Power BI Desktop, Teil 1
+6. Entwerfen eines Berichts in Power BI Desktop, Teil 1
 
-8. Entwerfen eines Berichts in Power BI Desktop, Teil 2
+7. Entwerfen eines Berichts in Power BI Desktop, Teil 2
+
+8. Analysieren von Daten mit KI-Visuals
 
 9. Erstellen eines Power BI-Dashboards
 
-10. Analysieren von Daten in Power BI Desktop
-
-11. Erzwingen von Sicherheit auf Zeilenebene
+10. Erzwingen von Sicherheit auf Zeilenebene
 
 ## <a name="exercise-1-create-model-relationships"></a>**Übung 1: Erstellen von Modellbeziehungen**
 
@@ -158,15 +158,15 @@ In dieser Aufgabe erstellen Sie Modellbeziehungen.
 
 14. Beachten Sie, dass in der Dropdownliste **Kardinalität** die Option **1:n** ausgewählt ist.
 
-    *Die Kardinalität wurde automatisch ermittelt, da Power BI versteht, dass die Spalte **ProductKey** der Tabelle **Product** eindeutige Werte enthält. 1:n-Beziehungen sind die gängigste Kardinalität, und alle Beziehungen, die Sie in diesem Lab erstellen, weisen diesen Typ auf. Im Lab **Modellieren von Daten in Power BI Desktop, Teil 2** arbeiten Sie mit einer m:n-Kardinalität.*
+    *Die Kardinalität wurde automatisch ermittelt, da Power BI versteht, dass die Spalte **ProductKey** der Tabelle **Product** eindeutige Werte enthält. 1:n-Beziehungen sind die gängigste Kardinalität, und alle Beziehungen, die Sie in diesem Lab erstellen, weisen diesen Typ auf.*
 
 15. Beachten Sie, dass in der Dropdownliste **Kreuzfilterrichtung** die Option **Einfach** ausgewählt ist.
 
-    *Die Filterrichtung „Einfach“ bedeutet, dass die Filter von der Seite „1“ zur Seite „n“ weitergegeben werden. In diesem Fall werden die Filter, die auf die Tabelle **Product** angewandt wurden, an die Tabelle **Sales** weitergegeben, aber nicht in die andere Richtung. Im Lab **Modellieren von Daten in Power BI Desktop, Teil 2** arbeiten Sie mit einer bidirektionalen Beziehung.*
+    *Die Filterrichtung „Einfach“ bedeutet, dass die Filter von der Seite „1“ zur Seite „n“ weitergegeben werden. In diesem Fall werden die Filter, die auf die Tabelle **Product** angewandt wurden, an die Tabelle **Sales** weitergegeben, aber nicht in die andere Richtung.*
 
 16. Beachten Sie, dass das Kontrollkästchen **Diese Beziehung aktivieren** aktiviert ist.
 
-    *Aktive Beziehungen geben Filter weiter. Eine Beziehung kann als inaktiv gekennzeichnet werden, damit die Filter nicht weitergegeben werden. Inaktive Beziehungen können vorhanden sein, wenn mehrere Beziehungspfade zwischen Tabellen vorliegen. In diesem Fall können Modellberechnungen spezielle Funktionen nutzen, um sie zu aktivieren. Im Lab **Modellieren von Daten in Power BI Desktop, Teil 2** arbeiten Sie mit einer inaktiven Beziehung.*
+    *Aktive Beziehungen geben Filter weiter. Eine Beziehung kann als inaktiv gekennzeichnet werden, damit die Filter nicht weitergegeben werden. Inaktive Beziehungen können vorhanden sein, wenn mehrere Beziehungspfade zwischen Tabellen vorliegen. In diesem Fall können Modellberechnungen spezielle Funktionen nutzen, um sie zu aktivieren.*
 
 17. Klicken Sie auf **OK**.
 
@@ -206,11 +206,10 @@ In dieser Aufgabe erstellen Sie Modellbeziehungen.
 
     - **Salesperson \| EmployeeKey** mit **Sales \| EmployeeKey**
 
-    *In diesem Lab wird keine Verbindung zwischen den Tabellen **SalespersonRegion** und **Targets** hergestellt. Es besteht eine m:n-Beziehung zwischen „salespeople“ und „regions“. Sie verwenden dieses spezielle Szenario im Lab **Modellieren von Daten in Power BI Desktop, Teil 2**.*
-
 25. Ordnen Sie die Tabellen im Diagramm so an, dass die Tabelle **Sales** in der Mitte des Diagramms positioniert ist und die zugehörigen Tabellen darüber angeordnet sind. Platzieren Sie die getrennten Tabellen an der Seite.
 
     ![Bild 340](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image23.png)
+
 
 26. Speichern Sie die Power BI Desktop-Datei.
 
@@ -310,13 +309,7 @@ In dieser Aufgabe konfigurieren Sie die Tabelle **Reseller**.
 
     ![Bild 353](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image34.png)
 
-3. Kategorisieren Sie die folgenden drei Spalten:
-
-    - **Country-Region** als **Land/Region**
-
-    - **State-Province** als **Bundesland/Kanton**
-
-    - **City** als **Stadt**
+3. Legen Sie die **Datenkategorie** für die Spalten **Country-Region**, **State-Province** und **City** (nicht die Hierarchieebene) auf **Land/Region**, **Bundesland/Kanton** und **Stadt** fest. 
 
 ### <a name="task-4-configure-the-sales-table"></a>**Aufgabe 4: Konfigurieren der Tabelle „Sales“**
 
@@ -332,13 +325,13 @@ In dieser Aufgabe konfigurieren Sie die Tabelle **Sales**.
 
 3. Klicken Sie auf die Spalte **Quantity**.
 
-4. Verschieben Sie im Bereich **Eigenschaften** im Abschnitt **Formatierung** den Schieberegler für die Eigenschaft **Tausendertrennzeichen** auf **Ein**.
+4. Verschieben Sie im Bereich **Eigenschaften** im Abschnitt **Formatierung** den Schieberegler für die Eigenschaft **Tausendertrennzeichen** auf **Ja**.
 
     ![Bild 357](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image36.png)
 
 5. Klicken Sie auf die Spalte **Unit Price**.
 
-6. Verschieben Sie im Bereich **Eigenschaften** im Abschnitt **Formatierung** den Schieberegler für die Eigenschaft **Dezimalstellen** auf **2**.
+6. Legen Sie die Eigenschaft **Dezimalstellen** im Bereich **Eigenschaften** im Abschnitt **Formatierung** auf **2** fest.
 
 7. Klicken Sie in der Gruppe **Erweitert** (möglicherweise müssen Sie dazu nach unten scrollen) in der Dropdownliste **Zusammenfassen nach** auf **Durchschnitt**.
 
@@ -380,13 +373,13 @@ Bei dieser Aufgabe aktualisieren Sie mehrere Spalten mit einer einzelnen Massena
 
     - Targets \| EmployeeID
 
-3. Bewegen Sie im Bereich **Eigenschaften** den Schieberegler für **Ist verborgen** auf **Ein**.
+3. Bewegen Sie im Bereich **Eigenschaften** den Schieberegler für die Eigenschaft **Ist verborgen** auf **Ja**.
 
     ![Bild 355](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image38.png)
 
     *Die Spalten wurden ausgeblendet, da sie entweder von Beziehungen oder in der Sicherheitskonfiguration oder Berechnungslogik auf Zeilenebene verwendet werden.*
 
-    *Sie definieren die Sicherheit auf Zeilenebene im Lab **Modellieren von Daten in Power BI Desktop, Teil 2** mithilfe der Spalte **UPN**. Im Lab **Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1** verwenden Sie **SalesOrderNumber** in einer Berechnung.*
+    *Im Lab **Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1** verwenden Sie **SalesOrderNumber** in einer Berechnung.*
 
 4. Nehmen Sie eine Mehrfachauswahl für die folgenden drei Spalten vor:
 
@@ -455,8 +448,193 @@ In dieser Aufgabe wechseln Sie zur Berichtsansicht und überprüfen die Benutzer
     ![Bild 363](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image45.png)
 
 
+## <a name="exercise-4-create-quick-measures"></a>**Übung 4: Erstellen von Quickmeasures**
 
-### <a name="task-2-finish-up"></a>**Aufgabe 2: Abschluss**
+In dieser Übung erstellen Sie zwei Quickmeasures.
+
+### <a name="task-1-create-quick-measures"></a>**Aufgabe 1: Erstellen von Quickmeasures**
+
+In dieser Aufgabe erstellen Sie zwei Quickmeasures zur Berechnung des Gewinns und der Gewinnspanne.
+
+1. Klicken Sie im Bereich **Felder** mit der rechten Maustaste auf die Tabelle **Sales**, und wählen Sie dann die Option **Neues Quickmeasure** aus.
+
+    ![Bild 366](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image46.png)
+
+2. Wählen Sie im Fenster **Quickmeasures** in der Dropdownliste **Berechnung** innerhalb der Gruppe **Mathematische Operationen** die Option **Subtraktion** aus.
+
+    ![Bild 367](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image47.png)
+
+3. Erweitern Sie im Bereich **Felder** des Fensters **Quickmeasures** die Tabelle **Sales**.
+
+4. Ziehen Sie das Feld **Sales** in das Feld **Basiswert**.
+
+5. Ziehen Sie das Feld **Cost** in das Feld **Wert, der subtrahiert werden soll**.
+
+    ![Bild 368](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image48.png)
+
+6. Klicken Sie auf **OK**.
+
+    ![Bild 369](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image49.png)
+
+    *Quickmeasures erstellen die Berechnungsformel für Sie. Sie können diese schnell für einfache und häufige Berechnungen erstellen. Im Lab **Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1** erstellen Sie Measures ohne dieses Tool.*
+
+7. Beachten Sie das neue Measure im Bereich **Felder** in der Tabelle **Sales**.
+
+    ![Bild 370](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image50.png)
+
+    *Measures werden mit dem Rechnersymbol versehen.*
+
+8. Zum Umbenennen des Measures klicken Sie mit der rechten Maustaste auf dieses und wählen dann **Umbenennen** aus.
+
+    ![Bild 371](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image51.png)
+
+    *Tipp: Zum Umbenennen eines Feldes können Sie auf dieses doppelklicken oder es auswählen und **F2** drücken.*
+
+9. Benennen Sie das Measure in **Profit** um, und drücken Sie dann die **EINGABETASTE**.
+
+10. Fügen Sie in der Tabelle **Sales** ein zweites Quickmeasure basierend auf den folgenden Anforderungen hinzu:
+
+    - Verwenden Sie die mathematische Operation **Division**.
+
+    - Legen Sie als **Numerator** das Feld **Sales \| Profit** fest.
+
+    - Legen Sie als **Denominator** das Feld **Sales \| Sales** fest.
+
+    - Benennen Sie das Measure in **Profit Margin** um.
+
+    ![Bild 372](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image52.png)
+
+    ![Bild 373](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image53.png)
+
+11. Stellen Sie sicher, dass das Measure **Profit Margin** ausgewählt ist, und legen Sie dann im Kontextmenüband **Messtools** das Format **Prozent** mit zwei Dezimalstellen fest.
+
+    ![Bild 374](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image54.png)
+
+12. Wählen Sie das erste Tabellenvisual auf der Berichtsseite aus, um die zwei Measures zu testen.
+
+13. Markieren Sie die zwei Measures im Bereich **Felder**.
+
+    ![Bild 375](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image55.png)
+
+14. Klicken Sie auf die Führungslinie, und ziehen Sie diese, um das Tabellenvisual zu erweitern.
+
+    ![Bild 376](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image56.png)
+
+15. Stellen Sie sicher, dass die Measures sinnvolle Ergebnisse erzeugen, die ordnungsgemäß formatiert sind.
+
+    ![Bild 378](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image57.png)
+
+### <a name="task-2-create-a-many-to-many-relationship"></a>**Aufgabe 2: Erstellen einer m:n-Beziehung**
+
+In dieser Aufgabe erstellen Sie eine m:n-Beziehung zwischen den Tabellen **Salesperson** und **Sales**.
+
+1. Aktivieren Sie in Power BI Desktop in der Berichtsansicht im Bereich **Felder** die folgenden zwei Felder, um ein Tabellenvisual zu erstellen:
+
+    - Salesperson \| Salesperson
+
+    - Sales \| Sales
+
+    *In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Das sieht folgendermaßen aus: **Salesperson \| Salesperson**. In diesem Beispiel ist **Salesperson** der Tabellenname und **Salesperson** der Feldname.*
+
+    ![Abbildung 1](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image9.png)
+
+    *Die Tabelle zeigt die Umsätze der einzelnen Vertriebsmitarbeiter an. Allerdings besteht eine weitere Beziehung zwischen den Vertriebsmitarbeiter*innen und den Umsätzen. Einige Vertriebsmitarbeiter gehören zu einer oder mehreren Vertriebsregionen. Darüber hinaus können den Vertriebsregionen mehrere Vertriebsmitarbeiter zugewiesen sein.*
+
+    *Aus der Leistungsverwaltungsperspektive müssen die Umsätze von Vertriebsmitarbeiter*innen (anhand den ihnen zugewiesenen Regionen) analysiert und mit Verkaufszielen verglichen werden. In der nächsten Übung erstellen Sie Beziehungen, um diese Analyse zu unterstützen.*
+
+2. Beachten Sie, dass Michael Blythe einen Umsatz von fast 9 Millionen Dollar erzielt hat.
+
+3. Wechseln Sie zur Ansicht „Modell“.
+
+    ![Bild 10](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image10.png)
+
+4. Ziehen Sie die Tabelle **SalespersonRegion** zwischen die Tabellen **Region** und **Salesperson**.
+
+5. Erstellen Sie die folgenden zwei Modellbeziehungen per Drag & Drop:
+
+    - **Salesperson \| EmployeeKey** mit **SalespersonRegion \| EmployeeKey**
+
+    - **Region \| SalesTerritoryKey** mit **SalespersonRegion \| SalesTerritoryKey**
+
+    *Die Tabelle **SalespersonRegion** kann als Bridgingtabelle betrachtet werden.*
+
+6. Wechseln Sie zur Berichtsansicht. Sie sollten sehen, dass das Visual nicht aktualisiert und somit die Ergebnisse für Michael Blythe nicht geändert wurden.
+
+7. Wechseln Sie zurück zur Modellansicht, und führen Sie dann die Anweisungen für den Beziehungsfilter (Pfeilspitzen) von der Tabelle **Salesperson**.
+
+    *Beachten Sie, dass die Tabelle **Salesperson** die Tabelle **Sales** filtert. Außerdem filtert sie die Tabelle **SalespersonRegion**, gibt aber keine Filter an die Tabelle **Region** weiter (der Pfeil zeigt in die falsche Richtung).*
+
+    ![Bild 380](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image11.png)
+
+8. Doppelklicken Sie auf die Beziehung, um die Beziehung zwischen den Tabellen **Region** und **SalespersonRegion** zu bearbeiten.
+
+9. Wählen Sie im Fenster **Beziehung bearbeiten** in der Dropdownliste **Kreuzfilterrichtung** die Option **Beide** aus.
+
+10. Aktivieren Sie das Kontrollkästchen **Sicherheitsfilter in beide Richtungen anwenden**.
+
+    ![Bild 381](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image12.png)
+
+11. Klicken Sie auf **OK**.
+
+    ![Bild 335](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image13.png)
+
+12. Beachten Sie, dass die Beziehung über Pfeile in beide Richtungen verfügt.
+
+    ![Bild 382](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image14.png)
+
+13. Wechseln Sie zur Berichtsansicht, und beachten Sie, dass die Umsätze sich noch immer nicht geändert haben.
+
+    *Das Problem besteht nun darin, dass es zwei mögliche Pfade für die Filterweiterleitung zwischen den Tabellen **Salesperson** und **Sales** gibt. Diese Mehrdeutigkeit wird anhand einer Bewertung nach „der geringsten Anzahl an Tabellen“ intern aufgelöst. Sie sollten keine Modelle mit einer solchen Mehrdeutigkeit erstellen. Das Problem wird später in diesem Lab und im Laufe des Labs **Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1** aufgegriffen.*
+
+14. Wechseln Sie zur Ansicht „Modell“.
+
+15. Bearbeiten (doppelklicken) Sie die Beziehung zwischen den Tabellen **Salesperson** und **Sales**, um die Filterweiterleitung über die Bridgingtabelle zu erzwingen.
+
+16. Deaktivieren Sie im Fenster **Beziehung bearbeiten** das Kontrollkästchen **Diese Beziehung aktivieren**.
+
+    ![Bild 383](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image15.png)
+
+17. Klicken Sie auf **OK**.
+
+    ![Bild 5696](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image16.png)
+
+    *Die Filterweitergabe erfolgt nun über den einzigen aktiven Pfad.*
+
+18. Beachten Sie, dass die inaktive Beziehung im Diagramm mit einer gestrichelten Linie dargestellt wird.
+
+    ![Bild 5697](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image17.png)
+
+19. Wechseln Sie zur Berichtsansicht, dort sollten Sie nun sehen, dass der Umsatz von Michael Blythe nun nahezu 22 Millionen Dollar beträgt.
+
+    ![Bild 5698](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image18.png)
+
+20. Beachten Sie, dass die Umsätze aller Vertriebsmitarbeiter*innen die Tabellensumme überschreiten würden, wenn sie summiert werden.
+
+    *Dies kann bei m:n-Beziehungen häufig beobachtet werden, da die regionalen Verkaufsergebnisse mehrmals gezählt werden. Sehen Sie sich den zweiten Vertriebsmitarbeiter, Brian Welcker, in der Liste an. Sein Umsatz entspricht dem Gesamtumsatz. Dabei handelt es sich um das richtige Ergebnis, da er der Vertriebsleiter ist und sein Umsatz sich aus den Umsätzen aller Regionen ergibt.*
+
+    *Zwar funktionieren die m:n-Beziehungen nun, jedoch ist es nicht möglich, den Umsatz von Vertriebsmitarbeiter*innen zu analysieren (da die Beziehung inaktiv ist). Sie können die Beziehung reaktivieren, wenn Sie eine berechnete Tabelle einführen, die die Analyse von Umsätzen in den Vertriebsregionen ermöglicht, die den Vertriebsmitarbeiter*innen (für die Leistungsanalyse) im Lab **Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1** zugewiesen wurden.*
+
+21. Wechseln Sie zur Modellierungsansicht, und wählen Sie im Diagramm die Tabelle **Salesperson** aus.
+
+22. Ersetzen Sie im Bereich **Eigenschaften** den Text im Feld **Name** durch **Salesperson (Performance)**.
+
+    *Die umbenannte Tabelle spiegelt nun ihren Zweck wider: Sie wird dazu verwendet, die Leistung von Vertriebsmitarbeiter*innen anhand ihrer Umsätze in den ihnen zugewiesenen Vertriebsregionen zu dokumentieren und zu analysieren.*
+
+### <a name="task-3-relate-the-targets-table"></a>**Aufgabe 3: Zuordnen der Targets-Tabelle**
+
+Im Rahmen dieser Aufgabe erstellen Sie eine Beziehung zur Tabelle **Targets**.
+
+1. Erstellen Sie eine Beziehung zwischen den Spalten **Salesperson (Performance) \| EmployeeID** und **Targets \| EmployeeID**.
+
+2. Fügen Sie in der Berichtsansicht das Feld **Targets \| Target** zum Tabellenvisual hinzu.
+
+3. Ändern Sie die Größe des Tabellenvisuals, sodass alle Spalten angezeigt werden.
+
+    ![Bild 5699](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image19.png)
+
+    *Zwar können Sie nun Verkäufe und Ziele visualisieren, allerdings sollten Sie aus zwei Gründen vorsichtig vorgehen. Erstens gibt es keinen Filter für einen Zeitraum, weshalb Ziele auch zukünftige Zielwerte einschließen. Zweitens sind Ziele nicht additiv, weshalb die Summe nicht angezeigt werden sollte. Diese können entweder durch das Formatieren des Visuals deaktiviert oder mithilfe von Berechnungslogik entfernt werden. Sie verfolgen den zweiten Ansatz, indem Sie im Lab **Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 2** ein Zielmeasure erstellen, das einen leeren Wert zurückgibt, wenn nach mehreren Vertriebsmitarbeiter*innen gefiltert wird.*
+
+### <a name="task-4-finish-up"></a>**Aufgabe 4: Abschluss**
 
 Mit dieser Aufgabe schließen Sie das Lab ab.
 
@@ -465,5 +643,3 @@ Mit dieser Aufgabe schließen Sie das Lab ab.
 2. Wenn Sie aufgefordert werden, die Abfragen anzuwenden, wählen Sie **Später übernehmen** aus.
 
 3. Wenn Sie beabsichtigen, das nächste Lab zu starten, lassen Sie Power BI Desktop geöffnet.
-
-    *Sie werden das Datenmodell im Lab **Modellieren von Daten in Power BI Desktop, Teil 2** verbessern, indem Sie eine m:n-Beziehung und Sicherheit auf Zeilenebene konfigurieren.*

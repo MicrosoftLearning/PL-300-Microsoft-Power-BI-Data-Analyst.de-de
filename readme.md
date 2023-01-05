@@ -4,7 +4,7 @@ Dieses Repository enthält praktische Übungen für den Microsoft-Kurs [PL-300: 
 
 - **Sind Sie ein MCT?** – Lesen Sie unser [GitHub-Benutzerhandbuch für MCTs](https://microsoftlearning.github.io/MCT-User-Guide/).
 - **Müssen Sie die Lab-Anweisungen manuell erstellen?** – Anweisungen sind im Repository [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) verfügbar
-- **Benötigen Sie eine Auffrischung, in welchen Labs welches Modul verwendet wird?** - Sehen Sie sich die [GitHub-Seite](https://microsoftlearning.github.io/DA-100-Analyzing-Data-with-Power-BI/) an.
+- **Benötigen Sie eine Auffrischung, welche Labs zu welcher Kurspräsentation gehören?** - Sehen Sie sich die [GitHub-Seite](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/) an.
 
 ## <a name="what-are-we-doing"></a>Was tun wir?
 

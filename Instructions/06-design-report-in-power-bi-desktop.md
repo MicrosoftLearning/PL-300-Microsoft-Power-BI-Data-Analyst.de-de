@@ -1,11 +1,11 @@
 ---
 lab:
   title: "Entwerfen eines Berichts in Power\_BI Desktop, Teil\_1"
-  module: Module 7 - Create Reports
+  module: 7 - Create Reports
 ---
 
 
-# <a name="design-a-report-in-power-bi-desktop-part-1"></a>**Entwerfen eines Berichts in Power BI Desktop, Teil 1**
+# <a name="design-a-report-in-power-bi-desktop-part-1"></a>Entwerfen eines Berichts in Power BI Desktop, Teil 1
 
 **Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
 
@@ -19,27 +19,27 @@ In diesem Lab lernen Sie Folgendes:
 
 ### <a name="lab-story"></a>**Labszenario**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie die ersten zehn Labs in der folgenden Reihenfolge absolvieren:
+Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
 2. Laden von Daten in Power BI Desktop
 
-3. Modellieren von Daten in Power BI Desktop
+3. Entwerfen eines Datenmodells in Power BI
 
-5. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1
+4. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1
 
-6. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 2
+5. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 2
 
-7. **Entwerfen eines Berichts in Power BI Desktop, Teil 1**
+6. **Entwerfen eines Berichts in Power BI Desktop, Teil 1**
 
-8. Entwerfen eines Berichts in Power BI Desktop, Teil 2
+7. Entwerfen eines Berichts in Power BI Desktop, Teil 2
+
+8. Analysieren von Daten mit KI-Visuals
 
 9. Erstellen eines Power BI-Dashboards
 
-10. Analysieren von Daten in Power BI Desktop
-
-11. Erzwingen von Sicherheit auf Zeilenebene
+10. Erzwingen von Sicherheit auf Zeilenebene
 
 ## <a name="exercise-1-create-a-report"></a>**Übung 1: Erstellen eines Berichts**
 
@@ -55,19 +55,13 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei 
 
     ![Bild 65](Linked_image_Files/07-design-report-in-power-bi-desktop_image1.png)
 
-1. Navigieren Sie im Browserfenster von Microsoft Edge zu **https://powerbi.com**.
+1. Navigieren Sie im Browserfenster von Microsoft Edge zu **https://powerbi.microsoft.com**.
 
     *Tipp: Sie können auch auf der Favoritenleiste von Microsoft Edge die Option für den Power BI-Dienst verwenden.*
 
 1. Klicken Sie auf **Anmelden** (in der rechten oberen Ecke).
 
     ![Bild 63](Linked_image_Files/07-design-report-in-power-bi-desktop_image2.png)
-
-1. Geben Sie die für Sie bereitgestellten Kontodetails ein (siehe **Ressourcen**).
-
-1. Wenn Sie aufgefordert werden, das Kennwort zu aktualisieren, geben Sie das bereitgestellte Kennwort erneut ein, und geben Sie dann das neue Kennwort zweimal zur Bestätigung ein.
-
-    *Wichtig: Denken Sie daran, sich das neue Kennwort zu notieren.*
 
 1. Schließen Sie den Anmeldevorgang ab.
 
@@ -77,35 +71,36 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei 
 
 ### <a name="task-2-get-started--enable-map-and-filled-map-visuals"></a>**Aufgabe 2: Erste Schritte – Aktivieren von Karten- und Flächenkartogrammvisuals**
 
-In dieser Aufgabe aktivieren Sie Karten- und Flächenkartogrammvisuals in der Umgebung für das Lab, indem Sie die Integrationseinstellungen im Verwaltungsportal von Power BI aktualisieren. 
+In dieser Aufgabe aktivieren Sie Karten- und Flächenkartogrammvisuals in der Umgebung für das Lab, indem Sie die globalen Einstellungen in Power BI Desktop und die Integrationseinstellungen im Verwaltungsportal von Power BI aktualisieren.
 
+1. Navigieren Sie in Power BI Desktop zu **Optionen > Optionen und Einstellungen > Global**, und aktivieren Sie das Kontrollkästchen **Karte und ausgefüllte Kartenvisuals verwenden**.
 
-1. Um das Verwaltungsportal von Power BI zu öffnen, klicken Sie rechts oben im Browser auf das Symbol **Einstellungen**.
+![Picture103b](Linked_image_Files/07-design-report-in-power-bi-desktop_image103b.png)
+
+2. Um das Verwaltungsportal von Power BI zu öffnen, klicken Sie rechts oben im Edge-Browser auf das Symbol **Einstellungen**.
 
     ![Bild 101](Linked_image_Files/07-design-report-in-power-bi-desktop_image101.png)
 
-1. Wählen Sie **Verwaltungsportal** aus.
+3. Wählen Sie **Verwaltungsportal** aus.
 
     ![Bild 102](Linked_image_Files/07-design-report-in-power-bi-desktop_image102.png)
 
-1. Scrollen Sie auf der Seite nach unten zu den Integrationseinstellungen. Klicken Sie auf den Pfeil, um die Option für Karten- und Flächenkartogrammvisuals zu erweitern.
+4. Scrollen Sie auf der Seite nach unten zu den Integrationseinstellungen. Klicken Sie auf den Pfeil, um die Option für Karten- und Flächenkartogrammvisuals zu erweitern.
 
     ![Bild 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image103.png)
 
-1. Legen Sie die Option für Karten- und Flächenkartogrammvisuals auf **Aktiviert** fest.
+5. Legen Sie die Option für Karten- und Flächenkartogrammvisuals auf **Aktiviert** fest.
 
-1. Klicken Sie auf **Übernehmen**, um die Änderungen anzuwenden. 
+6. Klicken Sie auf **Übernehmen**, um die Änderungen anzuwenden. 
 
     ![Bild 104](Linked_image_Files/07-design-report-in-power-bi-desktop_image104.png)
 
-1. Rechts oben im Browser wird eine Meldung mit dem Hinweis angezeigt, dass die Änderungen an den Mandanteneinstellungen innerhalb der nächsten 15 Minuten angewandt werden. 
+7. Rechts oben im Browser wird eine Meldung mit dem Hinweis angezeigt, dass die Änderungen an den Mandanteneinstellungen innerhalb der nächsten 15 Minuten angewandt werden.
 
 
     ![Bild 105](Linked_image_Files/07-design-report-in-power-bi-desktop_image105.png)
 
-
-
-1. Lassen Sie das Browserfenster von Microsoft Edge geöffnet.
+8. Lassen Sie das Browserfenster von Microsoft Edge geöffnet.
 
 ### <a name="task-3-get-started--open-report"></a>**Aufgabe 3: Erste Schritte – Öffnen des Berichts**
 
@@ -137,7 +132,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Start
 
     ![Bild 30](Linked_image_Files/07-design-report-in-power-bi-desktop_image7.png)
 
-8. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\07-design-report-in-power-bi-desktop\Starter**.
+8. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\06-design-report-in-power-bi-desktop\Starter**.
 
 9. Wählen Sie die Datei **Sales Analysis** aus.
 
@@ -226,21 +221,6 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
 
     ![Bild 21](Linked_image_Files/07-design-report-in-power-bi-desktop_image22.png)
 
-17. Öffnen Sie zum Formatieren des Datenschnitts unter dem Bereich **Visualisierungen** den Bereich **Format**.
-
-    ![Bild 50](Linked_image_Files/07-design-report-in-power-bi-desktop_image23.png)
-
-18. Erweitern Sie dann die Gruppe **Selection Controls** (Auswahlsteuerelemente).
-
-    ![Bild 23](Linked_image_Files/07-design-report-in-power-bi-desktop_image24.png)
-
-19. Legen Sie **Option „Alles auswählen“ anzeigen** auf **Ein** fest.
-
-    ![Bild 24](Linked_image_Files/07-design-report-in-power-bi-desktop_image25.png)
-
-20. Wie Sie sehen, ist das erste Element im Datenschnitt **Region** jetzt **Alles auswählen**.
-
-    *Wenn diese Option ausgewählt ist, werden entweder alle Elemente ausgewählt, oder die Auswahl aller Elemente wird aufgehoben. Dadurch können Berichtsbenutzer*innen einfacher die passenden Filter festlegen.*
 
 21. Heben Sie die Auswahl des Datenschnitts auf, indem Sie auf einen leeren Bereich der Berichtsseite klicken.
 
@@ -258,13 +238,13 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
 
     - Sales \| Sales
 
-25. Im Feldbereich des Visuals (nicht im Bereich **Felder**; der Feldbereich des Visuals befindet sich unter dem Bereich **Visualisierungen**) sehen Sie, dass die Felder den Bereichen **Gemeinsame Achse** und **Spaltenwerte** zugewiesen sind.
+25. Im Feldbereich des Visuals (nicht im Bereich **Felder**; der Feldbereich des Visuals befindet sich unter dem Bereich **Visualisierungen**) sehen Sie, dass die Felder den Bereichen **x-Achse** und **Spalte y-Achse** zugewiesen sind.
 
-    ![Bild 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28.png)
+    ![Bild 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28_N.png)
 
     *Wenn Sie Felder in ein Visual ziehen, werden sie den Standardbereichen hinzugefügt. Sie können Felder wie im nächsten Schritt auch direkt in die Bereiche ziehen, um eine höhere Genauigkeit zu erzielen.*
 
-26. Ziehen Sie im Bereich **Felder** das Feld **Sales \| Profit Margin** in den Bereich **Zeilenwerte**.
+26. Ziehen Sie im Bereich **Felder** das Feld **Sales \| Profit Margin** in den Bereich **Linie y-Achse**.
 
     ![Bild 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
 
@@ -272,7 +252,7 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
 
     *Für den letzten Monat des Jahres (Juni 2020) liegen noch keine Verkäufe vor. Monate OHNE Verkaufszahlen werden vom Visual standardmäßig entfernt. Im nächsten Schritt wird das Visual so konfiguriert, dass alle Monate angezeigt werden.*
 
-28. Klicken Sie im Feldbereich des Visuals im Bereich **Gemeinsame Achse** für das Feld **Month** auf den Pfeil nach unten, und wählen Sie **Elemente ohne Daten anzeigen** aus.
+28. Klicken Sie im Feldbereich des Visuals im Bereich **x-Achse** für das Feld **Month** auf den Pfeil nach unten, und wählen Sie **Elemente ohne Daten anzeigen** aus.
 
     ![Bild 52](Linked_image_Files/07-design-report-in-power-bi-desktop_image30.png)
 
@@ -316,7 +296,7 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
 
     ![Bild 3](Linked_image_Files/07-design-report-in-power-bi-desktop_image35.png)
 
-39. Erweitern Sie die Gruppe **Datenfarben**, und legen Sie die Eigenschaft **Standardfarbe** auf eine geeignete Farbe fest (als Kontrast zum Säulen-/Liniendiagramm).
+39. Erweitern Sie die **Balken** und dann die Gruppe **Farben**. Legen Sie anschließend die Eigenschaft **Standardfarbe** auf eine geeignete Farbe fest (als Kontrast zum Säulen- bzw. Liniendiagramm).
 
 40. Legen Sie die Eigenschaft **Datenbeschriftungen** auf **Ein** fest.
 
@@ -343,11 +323,10 @@ In dieser Aufgabe wird die zweite Berichtsseite entworfen. Nach der Fertigstellu
     ![Bild 43](Linked_image_Files/07-design-report-in-power-bi-desktop_image39.png)
 
   
-‎ 
 
 3. Fügen Sie einen auf dem Feld **Region \| Region** basierenden Slicer hinzu.
 
-4. Verwenden Sie den Bereich **Format**, um die Option „Alles auswählen“ zu aktivieren (in der Gruppe **Selection Controls** (Auswahlsteuerelemente)).
+4. Verwenden Sie den Bereich **Format**, um die Option „Alle auswählen“ (in der Gruppe **Auswahl**) zu aktivieren.
 
 5. Ändern Sie die Größe und Position des Slicers so, dass er sich auf der linken Seite der Berichtsseite befindet und etwa die Hälfte der Seitenhöhe einnimmt.
 
@@ -441,7 +420,7 @@ In dieser Aufgabe wird die dritte und letzte Berichtsseite entworfen. Nach der F
 
 1. Formatieren Sie das Visual:
 
-    - Erhöhen Sie in der Gruppe **Datenbeschriftungen** die Eigenschaft **Textgröße** auf **28 pt**.
+    - Erhöhen Sie in der Gruppe **Beschriftungswert** die Eigenschaft **Textgröße** auf **28 Pt**.
 
     - Legen Sie in der Gruppe **Hintergrund** die Option **Farbe** auf ein helles Grau fest.
 
@@ -455,9 +434,9 @@ In dieser Aufgabe wird die dritte und letzte Berichtsseite entworfen. Nach der F
 
 1. Fügen Sie den Visualbereichen die folgenden Felder hinzu:
 
-    - Achse: **Date \| Month**
+    - Y-Achse: **Date \| Month**
 
-    - Wert: **Sales \| Sales** und **Targets \| Target**
+    - X-Achse: **Sales \| Sales** und **Targets \| Target**
 
     ![Bild 80](Linked_image_Files/07-design-report-in-power-bi-desktop_image56.png)
 
@@ -523,7 +502,9 @@ In dieser Aufgabe untersuchen Sie den Bericht, der in Power BI veröffentlicht 
 
 3. Klicken Sie auf den Bericht **Sales Analysis**, um den Bericht zu öffnen.
 
-4. Wählen Sie links im Bereich **Seiten** die Seite **Overview** aus. 
+4. Wählen Sie links im Bereich **Seiten** die Seite **Overview** aus.
+ 
+    ***Hinweis:** Wenn ein Fehler angezeigt wird, dass das Kartenvisual deaktiviert ist, aktualisieren Sie Ihren Browser.*
 
 5. Wählen Sie im Datenschnitt **Regions** (Regionen) mehrere Regionen aus, und halten Sie dabei **STRG** gedrückt.
 
