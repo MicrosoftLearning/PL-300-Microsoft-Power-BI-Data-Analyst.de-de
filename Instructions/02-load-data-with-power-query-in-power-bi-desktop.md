@@ -1,15 +1,10 @@
 ---
 lab:
-  title: Laden von Daten in Power BI Desktop
-  module: Module 3 - Clean, Transform, and Load Data in Power BI
-ms.openlocfilehash: 8a19b8b1b243cc4c04bee3375f161098287dbf9d
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139839530"
+  title: "Laden von Daten in Power\_BI Desktop"
+  module: '3 - Clean, Transform, and Load Data in Power BI'
 ---
-# <a name="load-data-in-power-bi-desktop"></a>**Laden von Daten in Power BI Desktop**
+
+# <a name="load-data-in-power-bi-desktop"></a>Laden von Daten in Power BI Desktop
 
 **Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
 
@@ -21,30 +16,29 @@ In diesem Lab lernen Sie Folgendes:
 
 - Laden von Abfragen in das Datenmodell
 
-### <a name="lab-story"></a>**Labszenario**
+## <a name="lab-story"></a>**Labszenario**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie die ersten zehn Labs in der folgenden Reihenfolge absolvieren:
+Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
 
 1. Vorbereiten von Daten in Power BI Desktop
 
 2. **Laden von Daten in Power BI Desktop**
 
-3. Modellieren von Daten in Power BI Desktop
+3. Entwerfen eines Datenmodells in Power BI
 
+4. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1
 
-5. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1
+5. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 2
 
-6. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 2
+6. Entwerfen eines Berichts in Power BI Desktop, Teil 1
 
-7. Entwerfen eines Berichts in Power BI Desktop, Teil 1
+7. Entwerfen eines Berichts in Power BI Desktop, Teil 2
 
-8. Entwerfen eines Berichts in Power BI Desktop, Teil 2
+8. Analysieren von Daten mit KI-Visuals
 
 9. Erstellen eines Power BI-Dashboards
 
-10. Analysieren von Daten in Power BI Desktop
-
-11. Erzwingen von Sicherheit auf Zeilenebene
+10. Erzwingen von Sicherheit auf Zeilenebene
 
 ## <a name="exercise-1-load-data"></a>**Übung 1: Laden von Daten**
 
@@ -130,7 +124,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Salesperson**.
 
     *Jetzt werden Sie die Abfragezeilen filtern, um nur die Namen von Mitarbeiter*innen abzurufen, die im Vertrieb arbeiten.*
 
-4. Klicken Sie auf der Registerkarte **Start** des Menübands in der Gruppe **Spalten verwalten** auf den Abwärtspfeil **Spalten auswählen**, und klicken Sie auf **Zur Spalte wechseln**.
+4. Klicken Sie zum Suchen einer bestimmten Spalte auf der Registerkarte **Start** des Menübands auf den Nach-unten-Pfeil der Menüoption **Spalten verwalten** und dann auf den Nach-unten-Pfeil der Menüoption **Spalten auswählen**. Klicken Sie anschließend auf **Zu Spalte wechseln**.
 
     ![Bild 88](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
@@ -156,7 +150,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Salesperson**.
 
     *Jede Transformation, die Sie erstellen, führt zu einer zusätzlichen Schrittlogik. Schritte können auch bearbeitet oder gelöscht werden. Es ist ebenso möglich, einen Schritt auszuwählen und eine Vorschau der Abfrageergebnisse in dieser Phase der Abfragetransformation anzuzeigen.*
 
-10. Klicken Sie auf der Registerkarte **Start** des Menübands in der Gruppe **Spalten verwalten** auf das Symbol **Spalten auswählen**, um Spalten zu entfernen.
+10. Klicken Sie auf der Registerkarte **Start** des Menübands auf die Gruppe **Spalten verwalten** und dann auf das Symbol **Spalten auswählen**, um Spalten zu entfernen.
 
     ![Bild 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
 
@@ -216,7 +210,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Salesperson**.
 
 23. Führen Sie die vorherigen Schritte noch einmal aus, um die Spalte **EmailAddress** in **UPN** umzubenennen.
 
-    *Das Akronym „UPN“ steht für „User Principal Name“, zu Deutsch: „Benutzerprinzipalname“. Die Werte in dieser Spalte werden verwendet, wenn Sie die Sicherheit auf Zeilenebene im Lab **Modellieren von Daten in Power BI Desktop, Teil 2** konfigurieren.*
+    *Das Akronym „UPN“ steht für „User Principal Name“, zu Deutsch: „Benutzerprinzipalname“.*
 
 24. Überprüfen Sie links unten auf der Statusleiste, ob die Abfrage fünf Spalten und 18 Zeilen enthält.
 
@@ -349,7 +343,6 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Reseller**.
     ![Abbildung 2](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image38.png)
 
   
-‎ 
 
 6. Klicken Sie mit der rechten Maustaste auf die Spaltenüberschrift **Business Type**, und wählen Sie dann **Werte ersetzen** aus.
 
@@ -391,11 +384,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Region**.
 
 2. Benennen Sie die Abfrage in **Region** um.
 
-3. Wenden Sie einen Filter auf die Spalte **SalesTerritoryAlternateKey** an, um den Wert 0 (null) zu entfernen.
-
-    ![Bild 5.660](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image44.png)
-
-4. Entfernen Sie mit Ausnahme der folgenden alle Spalten:
+3. Entfernen Sie mit Ausnahme der folgenden alle Spalten:
 
     - SalesTerritoryKey
 
@@ -405,7 +394,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Region**.
 
     - SalesTerritoryGroup
 
-5. Benennen Sie die folgenden drei Spalten um:
+4. Benennen Sie die folgenden drei Spalten um:
 
     - **SalesTerritoryRegion** in **Region**
 
@@ -413,7 +402,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Region**.
 
     - **SalesTerritoryGroup** in **Group**
 
-6. Überprüfen Sie auf der Statusleiste, ob die Abfrage vier Spalten und zehn Zeilen enthält.
+5. Überprüfen Sie auf der Statusleiste, ob die Abfrage vier Spalten und zehn Zeilen enthält.
 
     ![Bild 5.661](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image45.png)
 
@@ -465,28 +454,26 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Sales**.
 
 7. Geben Sie im Feld **Benutzerdefinierte Spaltenformel** den folgenden Ausdruck ein (nach dem Gleichheitszeichen):
 
-8. Der Einfachheit halber können Sie den Ausdruck aus der Datei **D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** kopieren.
-
-
-   **Power Query**
-   ```
+   `
    if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]
-   ```
-
+   `
 
 *Mit diesem Ausdruck wird getestet, ob der Wert für **TotalProductCost** fehlt. Wenn dies der Fall ist, wird durch Multiplizieren des Werts für **OrderQuantity** mit dem für **StandardCost** ein Wert erzeugt. Andernfalls wird der vorhandene Wert für **TotalProductCost** verwendet.*
 
-9. Klicken Sie auf **OK**.
+Der Einfachheit halber können Sie den Ausdruck aus der Datei **D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** kopieren.
+
+8. Klicken Sie auf **OK**.
 
     ![Bild 5.666](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image49.png)
 
-10. Entfernen Sie die beiden folgenden Spalten:
+
+9. Entfernen Sie die beiden folgenden Spalten:
 
     - TotalProductCost
 
     - StandardCost
 
-11. Benennen Sie die folgenden drei Spalten um:
+10. Benennen Sie die folgenden drei Spalten um:
 
     - **OrderQuantity** in **Quantity**
 
@@ -494,13 +481,13 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Sales**.
 
     - **SalesAmount** in **Sales**
 
-12. Klicken Sie zum Ändern des Datentyps in der Überschrift der Spalte **Quantity** links neben dem Spaltennamen auf das **1.2**-Symbol, und wählen Sie **Ganze Zahl** aus.
+11. Klicken Sie zum Ändern des Datentyps in der Überschrift der Spalte **Quantity** links neben dem Spaltennamen auf das **1.2**-Symbol, und wählen Sie **Ganze Zahl** aus.
 
     ![Bild 5.667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
 
     *Es ist wichtig, den richtigen Datentyp zu konfigurieren. Wenn die Spalte einen numerischen Wert enthält, ist es auch wichtig, den richtigen Typ auszuwählen, wenn Sie planen, mit dem Wert mathematische Berechnungen durchzuführen.*
 
-13. Ändern Sie bei den folgenden drei Spalten den Datentyp in **Feste Dezimalzahl**.
+12. Ändern Sie bei den folgenden drei Spalten den Datentyp in **Feste Dezimalzahl**.
 
     - Unit Price
 
@@ -512,7 +499,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Sales**.
 
     *Beim Datentyp „Feste Dezimalzahl“ werden die Werte mit vollständiger Genauigkeit gespeichert, weshalb für solche Dezimalzahlen mehr Speicherplatz erforderlich ist. Es ist wichtig, diesen Datentyp für Geldbeträge oder Raten (z. B. Wechselkurse) zu verwenden.*
 
-14. Überprüfen Sie in der Statusleiste, ob die Abfrage 10 Spalten und 999 Zeilen enthält.
+13. Überprüfen Sie in der Statusleiste, ob die Abfrage 10 Spalten und 999 Zeilen enthält.
 
     ![Bild 5.669](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image52.png)
 
@@ -570,7 +557,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Targets**.
 
 13. Beachten Sie, dass die erste Zeile für das Jahr **2017** und die Monatsnummer **7** ist.
 
-14. Geben Sie in der Spalte **Column1** in der ersten Rasterzelle **7/1/2017** ein, und drücken Sie dann die **EINGABETASTE**.
+14. Geben Sie in der Spalte **Column1** in der ersten Rasterzelle **07/01/2017**ein, und drücken Sie dann die **EINGABETASTE**.
 
     *Die VM verwendet das Gebietsschema für die USA, sodass dieses Datum dem 1. Juli 2017 entspricht.*
 
@@ -648,7 +635,7 @@ In dieser Aufgabe aktualisieren Sie die Abfrage **Product**, indem Sie sie mit d
 
     ![Bild 5.690](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image70.png)
 
-2. Klicken Sie zum Zusammenführen mit der Abfrage **ColorFormats** auf der Registerkarte **Start** des Menübands in der Gruppe **Kombinieren** auf **Abfragen zusammenführen**.
+2. Klicken Sie zum Zusammenführen mit der Abfrage **ColorFormats** auf der Registerkarte **Start** des Menübands auf den Nach-unten-Pfeil der Menüoption **Kombinieren** und dann auf **Abfragen zusammenführen**.
 
     ![Bild 5.654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
@@ -748,4 +735,4 @@ Mit dieser Aufgabe schließen Sie das Lab ab.
 
 5. Wenn Sie beabsichtigen, das nächste Lab zu starten, lassen Sie Power BI Desktop geöffnet.
 
-    *Sie konfigurieren Datenmodelltabellen und -beziehungen im Lab **Modellieren von Daten in Power BI Desktop, Teil 1**.*
+    *Sie konfigurieren Datenmodelltabellen und -beziehungen im Lab **Modellieren von Daten in Power BI Desktop***.
