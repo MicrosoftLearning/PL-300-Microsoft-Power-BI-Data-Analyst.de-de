@@ -4,346 +4,215 @@ lab:
   module: 2 - Get Data in Power BI
 ---
 
-# <a name="prepare-data-in-power-bi-desktop"></a>Vorbereiten von Daten in Power BI Desktop
+# Vorbereiten von Daten in Power BI Desktop
 
-**Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
-
-In diesem Lab befassen Sie sich mit der Entwicklung einer Power BI Desktop-Lösung für das Unternehmen „Adventure Works“. Dazu gehört das Herstellen einer Verbindung mit Quelldaten, das Anzeigen einer Vorschau der Daten und die Verwendung von Datenvorschaumethoden zum Verständnis der Merkmale und Qualität der Quelldaten.
-
-In diesem Lab lernen Sie Folgendes:
-
-- Öffnen von Power BI Desktop
-
-- Festlegen von Power BI Desktop-Optionen
-
-- Herstellen einer Verbindung mit Quelldaten
-
-- Anzeigen einer Vorschau von Quelldaten
-
-- Verwenden von Datenvorschaumethoden zum Verständnis der Daten
-
-## <a name="lab-story"></a>**Labszenario**
+**Die geschätzte Dauer dieses Labs beträgt 30 Minuten.**
 
 Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
 
 1. **Vorbereiten von Daten in Power BI Desktop**
+1. Laden von Daten in Power BI Desktop
+1. Entwerfen eines Datenmodells in Power BI
+1. Erstellen von DAX-Berechnungen in Power BI Desktop
+1. Erstellen erweiterter DAX-Berechnungen in Power BI Desktop
+1. Entwerfen eines Berichts in Power BI Desktop
+1. Verbessern eines Berichts in Power BI Desktop
+1. Analysieren von Daten in Power BI
+1. Erstellen eines Power BI-Dashboards
+1. Erzwingen von Sicherheit auf Zeilenebene
 
-2. Laden von Daten in Power BI Desktop
+## **Labszenario**
 
-3. Entwerfen eines Datenmodells in Power BI
+In diesem Lab erfahren Sie mehr über die Anwendung Power BI Desktop, wie Sie eine Verbindung mit Daten herstellen und wie Sie Datenvorschautechniken verwenden, um die Eigenschaften und die Qualität der Quelldaten zu verstehen. Sie Lernziele sind:
 
-4. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1
+- Öffnen von Power BI Desktop
+- Herstellen einer Verbindung mit Quelldaten
+- Anzeigen einer Vorschau von Quelldaten
+- Verwenden von Datenprofiltools
 
-5. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 2
-
-6. Entwerfen eines Berichts in Power BI Desktop, Teil 1
-
-7. Entwerfen eines Berichts in Power BI Desktop, Teil 2
-
-8. Analysieren von Daten mit KI-Visuals
-
-9. Erstellen eines Power BI-Dashboards
-
-10. Erzwingen von Sicherheit auf Zeilenebene
-
-## <a name="exercise-1-prepare-data"></a>**Übung 1: Vorbereiten von Daten**
+## **Übung 1: Vorbereiten von Daten**
 
 In dieser Übung erstellen Sie acht Power BI Desktop-Abfragen. Sechs dieser Abfragen beziehen ihre Daten von SQL Server, während die restlichen zwei ihre Daten aus CSV-Dateien beziehen.
 
-### <a name="task-1-save-the-power-bi-desktop-file"></a>**Aufgabe 1: Speichern der Power BI Desktop-Datei**
+### **Aufgabe 1: Erste Schritte mit Power BI Desktop**
 
-In dieser Aufgabe speichern Sie zunächst die Power BI Desktop-Datei.
+In dieser Aufgabe öffnen Sie zunächst eine Power BI-Starterdatei (PBIX). Die Starterdatei enthält keine Daten, wurde jedoch speziell für die Durchführung des Labs konfiguriert. Die folgenden Einstellungen auf Berichtsebene wurden in der Startdatei deaktiviert:
 
-1. Klicken Sie zum Öffnen von Power BI Desktop auf der Taskleiste auf die Verknüpfung „Microsoft Power BI Desktop“.
+- Datenladevorgang > Beim ersten Laden Beziehungen aus Datenquellen importieren
+- Datenladevorgang > Neue Beziehungen nach dem Laden der Daten automatisch erkennen
 
-    ![Abbildung 2](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image1.png)
+*Hinweis: Obwohl diese beiden Optionen bei der Entwicklung eines Datenmodells hilfreich sein können, haben Sie sie zuvor deaktiviert, um die Labumgebung zu unterstützen. Wenn Sie Beziehungen im Lab **Laden von Daten in Power BI Desktop** erstellen, erfahren Sie, warum Sie die einzelnen Elemente hinzufügen.*
 
-1. Um das Fenster „Erste Schritte“ zu schließen, klicken Sie rechts oben im Fenster auf das **X**.
+<br/>
 
-    ![Bild 3](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image2.png)
+1. Öffnen Sie Power BI Desktop.
 
-1. Um die Datei zu speichern, klicken Sie auf die Registerkarte **Datei** des Menübands, um die Backstage-Ansicht zu öffnen.
+    ![Power BI Desktop-Symbol](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-1. Wählen Sie **Speichern** aus.
+    *Tipp: Standardmäßig wird das Dialogfeld „Erste Schritte“ vor Power BI Desktop geöffnet. Sie können sich anmelden und dann das Popup schließen.*
 
-    ![Bild 4](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image3.png)
+1. Um die Power BI Desktop-Startdatei zu öffnen, wählen Sie **Datei > Bericht öffnen > Berichte durchsuchen** aus.
 
-1. Navigieren Sie im Fenster **Speichern unter** zum Ordner **D:\PL300\MySolution**.
+1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\01-prepare-data-with-power-query-in-power-bi-desktop\Starter**.
 
-1. Geben Sie im Feld **Dateiname** den Namen **Sales Analysis** ein.
+1. Wählen Sie die Datei **Sales Analysis** aus.
 
-    ![Bild 14](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image4.png)
+1. Speichern Sie eine Kopie der Datei mit **Speichern unter** im Ordner **D:\PL300\MySolution**.
 
-1. Klicken Sie auf **Speichern**.
+### **Aufgabe 2: Abrufen von Daten von SQL Server**
 
-    ![Bild 17](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image5.png)
+In dieser Aufgabe erfahren Sie, wie Sie eine Verbindung mit einer SQL Server-Datenbank herstellen und Tabellen importieren, mit denen Abfragen in Power Query erstellt werden.
 
-    Tipp: Sie können die Datei speichern, indem Sie links oben auf das Symbol **Speichern** klicken.
+1. Wählen Sie auf der Registerkarte **Start** des Menübands in der Gruppe **Daten** die Option **SQL Server** aus.
 
-    ![Bild 18](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image6.png)
+     ![Symbol „SQL Server Daten abrufen“](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image11.png)
 
-### <a name="task-2-set-power-bi-desktop-options"></a>**Aufgabe 2: Festlegen von Power BI Desktop-Optionen**
+1. Geben Sie im Fenster **SQL Server-Datenbank** in das Feld **Server** die Zeichenfolge **localhost** ein und wählen Sie **OK** aus.
+    
+    *Hinweis: In diesem Lab stellen Sie mithilfe von **localhost** eine Verbindung mit der SQL Server-Datenbank her, da Gatewaydatenquellen **localhost** nicht auflösen können. Dies wird nicht als Vorgehensweise beim Erstellen eigener Lösungen empfohlen.*
 
-In dieser Aufgabe legen Sie Optionen für Power BI Desktop fest.
+1. Wenn Sie zur Eingabe von Anmeldeinformationen aufgefordert werden, klicken Sie im Fenster **SQL Server-Datenbank** auf **Aktuelle Anmeldeinformationen verwenden** und wählen sie **Verbinden** aus.
 
-1. Klicken Sie in Power BI Desktop im Menüband auf die Registerkarte **Datei**, um die Backstage-Ansicht zu öffnen.
+1. Erweitern Sie im Fenster **Navigator** auf der linken Seite die Datenbank **AdventureWorksDW2020**.
+    
+    *Hinweis: Die **AdventureWorksDW2020**-Datenbank basiert auf der **AdventureWorksDW2017**-Beispieldatenbank. Sie wurde geändert, um die Lernziele der Kurslabs zu unterstützen.*
 
-1. Klicken Sie links auf **Optionen und Einstellungen**, und wählen Sie dann **Optionen** aus.
+1. Klicken auf die Tabelle **DimEmployee** ohne Aktivierung des entsprechenden Kontrollkästchens
 
-    ![Abbildung 1](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image7.png)
+     ![AdventureWorksDW2020-Datenbank mit DimEmployee-Angabe](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image18.png)
 
-1. Klicken Sie links im Fenster **Optionen** in der Gruppe **Aktuelle Datei** auf **Daten laden**.
+1. Im rechten Bereich wird eine Vorschau der Tabellendaten angezeigt. Diesen Vorschaudaten können Sie die Spalten und eine Auswahl von Zeilen entnehmen.
 
-    ![Bild 5](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image8.png)
-
-    Die Einstellungen für **Daten laden** der aktuellen Datei erlauben das Festlegen von Optionen, die die Standardverhaltensweisen bei der Modellierung bestimmen.
-
-1. Deaktivieren Sie in der Gruppe **Beziehungen** die zwei bereits aktivierten Optionen.
-
-    ![Bild 7](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image9.png)
-
-    Die Aktivierung dieser beiden Optionen kann bei der Entwicklung eines Datenmodells zwar praktisch sein, jedoch haben Sie sie zur Unterstützung des Labs deaktiviert. Wenn Sie Beziehungen im Lab **Laden von Daten in Power BI Desktop** erstellen, erfahren Sie, warum Sie die einzelnen Beziehungen hinzufügen.
-
-1. Klicken Sie auf **OK**.
-
-    ![Bild 9](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image10.png)
-
-1. Speichern Sie die Power BI Desktop-Datei.
-
-### <a name="task-3-get-data-from-sql-server"></a>**Aufgabe 3: Abrufen von Daten von SQL Server**
-
-In dieser Aufgabe erstellen Sie Abfragen basierend auf SQL Server-Tabellen.
-
-1. Klicken Sie auf der Registerkarte **Start** des Menübands in der Gruppe **Daten** auf **SQL Server**.
-
-    ![Bild 19](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image11.png)
-
-2. Geben Sie im Fenster **SQL Server-Datenbank** in das Feld **Server** die Zeichenfolge **localhost** ein.
-
-    ![Bild 21](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image12.png)
-
-    Im Rahmen dieses Labs stellen Sie mit **localhost** eine Verbindung mit der SQL Server-Datenbank her. Von dieser Methode wird jedoch abgeraten, wenn Sie eigene Lösungen erstellen. Das liegt daran, dass Gatewaydatenquellen **localhost** nicht auflösen können.
-
-3. Klicken Sie auf **OK**.
-
-    ![Bild 22](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image13.png)
-
-4. Wenn Sie zur Eingabe von Anmeldeinformationen aufgefordert werden, klicken Sie im Fenster **SQL Server-Datenbank** auf **Aktuelle Anmeldeinformationen verwenden**. Klicken Sie anschließend auf **Verbinden**.
-
-4. Erweitern Sie im Fenster **Navigator** auf der linken Seite die Datenbank **AdventureWorksDW2020**.
-
-    Die Datenbank **AdventureWorksDW2020** basiert auf der Beispieldatenbank **AdventureWorksDW2017**. Sie wurde für die Zwecke der Lernziele der Kurslabs angepasst.
-
-    ![Bild 28](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image17.png)
-
-5. Wählen Sie die Tabelle **DimEmployee** aus, aber aktivieren Sie nicht das entsprechende Kontrollkästchen.
-
-    ![Bild 29](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image18.png)
-
-6. Im rechten Bereich wird eine Vorschau der Tabellendaten angezeigt.
-
-    Diesen Vorschaudaten können Sie die Spalten und eine Auswahl von Zeilen entnehmen.
-
-7. Aktivieren Sie für das Erstellen von Abfragen die Kontrollkästchen neben den folgenden sechs Tabellen:
+1. Aktivieren Sie für das Erstellen von Abfragen die Kontrollkästchen neben den folgenden sechs Tabellen:
 
     - DimEmployee
-
     - DimEmployeeSalesTerritory
-
     - DimProduct
-
     - DimReseller
-
     - DimSalesTerritory
-
     - FactResellerSales
 
-8. Klicken Sie auf **Daten transformieren**, um Transformationen auf die Daten in den ausgewählten Tabellen anzuwenden.
+1. Führen Sie diese Aufgabe aus, indem Sie auf **Daten transformieren** klicken, wodurch Power Query-Editor geöffnet wird.
+    1. *Dieses Lab dient nur zum Herstellen einer Verbindung mit den Daten und zum Profilieren der Daten, aber nicht zum **Transformieren von Daten**.*
 
-    In diesem Lab transformieren Sie die Daten nicht. Die Ziele dieses Labs sind die Untersuchung von und die Profilerstellung für die Daten im Fenster **Power Query-Editor**.
+### **Aufgabe 3: Vorschau der Daten in Power Query-Editor**
 
-    ![Bild 30](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image19.png)
+Diese Aufgabe führt den Power Query-Editor ein und ermöglicht es Ihnen, die Daten zu überprüfen und ein Profil zu erstellen. Auf diese Weise können Sie bestimmen, wie die Daten später bereinigt und transformiert werden.
 
-### <a name="task-4-preview-sql-server-queries"></a>**Aufgabe 4: Anzeigen einer Vorschau für SQL Server-Abfragen**
+1. Sehen Sie sich im Fenster **Power Query-Editor** links den Bereich **Abfragen** an. Der Bereich **Abfragen** enthält je eine Abfrage für jede ausgewählte Tabelle.
 
-In dieser Aufgabe zeigen Sie eine Vorschau der Daten für die SQL Server-Abfragen an. Zunächst erfahren Sie relevante Informationen über die Daten. Außerdem verwenden Sie die Tools „Spaltenqualität“, „Spaltenverteilung“ und „Spaltenprofil“, um die Daten zu verstehen und die Datenqualität zu bewerten.
+     ![Liste der geladenen Abfragen](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image20.png)
 
-1. Sehen Sie sich im Fenster **Power Query-Editor** links den Bereich **Abfragen** an.
+1. Wählen Sie die erste Abfrage aus: **DimEmployee**.
 
-    ![Bild 31](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image20.png)
+    *Die Tabelle **DimEmployee** in der SQL Server-Datenbank speichert eine Zeile für jeden Mitarbeiter. Eine Teilmenge der Zeilen aus dieser Tabelle stellt die Vertriebsmitarbeiter dar, die für das von Ihnen zu entwickelnde Modell relevant sind.*
 
-    Der Bereich **Abfragen** enthält je eine Abfrage für jede ausgewählte Tabelle.
+1. Sehen Sie sich unten links in der Statusleiste die Tabellenstatistik an. Die Tabelle besteht aus 33 Spalten und 296 Zeilen.
 
-2. Wählen Sie die erste Abfrage aus: **DimEmployee**.
+     ![Anzahl von 33 Spalten, 296 Zeilen](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image22.png)
 
-    ![Bild 33](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image21.png)
+1. Scrollen Sie im Bereich „Datenvorschau“ horizontal, um alle Spalten zu überprüfen. Beachten Sie, dass die letzten fünf Spalten Verknüpfungen mit **Tabellen** oder **Werten** enthalten.
+    
+    *Diese fünf Spalten stellen Beziehungen zu anderen Tabellen in der Datenbank dar. Mit ihnen können Sie Tabellen miteinander verknüpfen. Tabellen werden im Lab **Laden von Daten in Power BI Desktop** verknüpft.*
 
-    In der Tabelle **DimEmployee** in der SQL Server-Datenbank ist eine Zeile für jeden Mitarbeiter und jede Mitarbeiterin gespeichert. Eine Teilmenge der Zeilen aus dieser Tabelle bezieht sich auf die Vertriebsmitarbeiter*innen. Dies ist relevant für das Modell, das Sie entwickeln werden.
+1. Aktivieren Sie zum Überprüfen der Spaltenqualität auf der Registerkarte **Ansicht** des Menübands in der Gruppe **Datenvorschau** das Kontrollkästchen **Spaltenqualität**. Über die Funktion „Spaltenqualität“ können Sie den Prozentsatz von gültigen, fehlerhaften und leeren Spaltenwerten ganz einfach ermitteln.
 
-3. Beachten Sie links unten auf der Statusleiste die Tabellenstatistik. Die Tabelle besteht aus 33 Spalten und 296 Zeilen.
+     ![Auswahl der Spaltenqualität im Menüband](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image23.png)
 
-    ![Bild 36](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image22.png)
+1. Beachten Sie, dass die Spalte **Position** 94 % leere Zeilen (NULL) enthält.
 
-4. Scrollen Sie im Bereich „Datenvorschau“ horizontal, um alle Spalten zu überprüfen.
+     ![Spaltenqualität mit 94 % leeren Zeilen](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image24.png)
 
-5. Beachten Sie, dass die letzten fünf Spalten Verknüpfungen mit **Tabellen** oder **Werten** enthalten.
+1. Aktivieren Sie zum Überprüfen der Spaltenverteilung auf der Registerkarte **Ansicht** des Menübands in der Gruppe **Datenvorschau** die Option **Spaltenverteilung**.
 
-    Diese fünf Spalten stellen Beziehungen zu anderen Tabellen in der Datenbank dar. Sie können zum Verknüpfen von Tabellen verwendet werden. Das Verknüpfen von Tabellen ist Thema das Labs **Laden von Daten in Power BI Desktop**.
+1. Sehen Sie sich wieder die Spalte **Position** an. Wie Sie sehen, enthält diese vier verschiedene Werte und einen eindeutigen Wert.
 
-6. Aktivieren Sie zum Überprüfen der Spaltenqualität auf der Registerkarte **Ansicht** des Menübands in der Gruppe **Datenvorschau** das Kontrollkästchen **Spaltenqualität**.
+1. Überprüfen Sie die Spaltenverteilung für die Spalte **EmployeeKey**. Diese enthält 296 unterschiedliche („distinct“) Werte und 296 eindeutige („unique“) Werte.
+    
+    *Wenn die Anzahl der unterschiedlichen und eindeutigen Werte identisch ist, bedeutet dies, dass die Spalte eindeutige Werte enthält. Beim Modellieren ist es wichtig, dass einige Modelltabellen eindeutige Spalten aufweisen. Mit diesen eindeutigen Spalten können 1:n-Beziehungen erstellt werden, was im Lab **Modelldaten in Power BI Desktop** erfolgt.*
 
-    ![Bild 35](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image23.png)
+     ![Spaltenverteilung mit 296 unterschiedlichen und 296 eindeutigen Werten](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
 
-    Über die Funktion „Spaltenqualität“ können Sie den Prozentsatz von gültigen, fehlerhaften und leeren Spaltenwerten ganz einfach ermitteln.
+1. Wählen Sie im Bereich **Abfragen** die Abfrage **DimEmployeeSalesTerritory** aus.
+    
+    *In der Tabelle **DimEmployeeSalesTerritory** wird eine Zeile für jeden Mitarbeiter und die von ihnen verwalteten Vertriebsgebietsregionen gespeichert. Die Tabelle unterstützt das Verknüpfen vieler Regionen mit einem einzelnen Mitarbeiter. Einige Mitarbeiter verwalten eine, zwei oder möglicherweise mehr Regionen. Wenn Sie diese Daten modellieren, müssen Sie eine m:n-Beziehung definieren.*
 
-7. Wie Sie sehen, sind in der Spalte **Position** (sechstletzte Spalte) 94 % der Zeilen leer (NULL).
+1. Wählen Sie im Bereich **Abfragen** die Abfrage für **DimProduct** aus. Die Tabelle **DimProduct** enthält je eine Zeile für jedes vom Unternehmen verkaufte Produkt.
 
-    ![Bild 38](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image24.png)
+1. Scrollen Sie horizontal, um die letzten Spalten anzuzeigen. Sehen Sie sich die Spalte **DimProductSubcategory** an.
+    
+    *Wenn Sie dieser Abfrage im Lab **Laden von Daten in Power BI Desktop** Transformationen hinzufügen, können Sie mithilfe der Spalte **DimProductSubcategory** Tabellen verknüpfen.*
 
-8. Aktivieren Sie zum Überprüfen der Spaltenverteilung auf der Registerkarte **Ansicht** des Menübands in der Gruppe **Datenvorschau** die Option **Spaltenverteilung**.
+1. Wählen Sie im Bereich **Abfragen** die Abfrage für **DimReseller** aus.
+    
+    *Die Tabelle **DimReseller** enthält eine Zeile pro Wiederverkäufer. Wiederverkäufer verkaufen oder verteilen die Adventure Works-Produkte oder fügen ihnen einen Mehrwert hinzu.*
 
-    ![Bild 40](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image25.png)
+1. Aktivieren Sie auf der Registerkarte **Ansicht** des Menübands in der Gruppe **Datenvorschau** die Option **Spaltenprofil**, um Spaltenwerte anzuzeigen.
 
-9. Sehen Sie sich wieder die Spalte **Position** an. Wie Sie sehen, enthält diese vier verschiedene Werte und einen eindeutigen Wert.
+1. Wählen Sie die Spaltenüberschrift **BusinessType** aus, und beachten Sie den neuen Bereich unter dem Datenvorschaubereich.
 
-10. Überprüfen Sie die Spaltenverteilung für die (erste) Spalte **EmployeeKey**. Diese enthält 296 verschiedene Werte und 296 eindeutige Werte.
+1. Überprüfen Sie die Spaltenstatistiken und die Werteverteilung im Bereich „Datenvorschau“.
+    
+    *Wie Sie sehen, liegt ein Datenqualitätsproblem vor: Es gibt zwei Bezeichnungen für „Warehouse“ (**Warehouse** und das falsch geschriebene **Ware House**).*
 
-    ![Bild 43](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
+     ![Wertverteilung für die Spalte „BusinessType“](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image31.png)
 
-    Wenn die Anzahl von verschiedenen und eindeutigen Werten übereinstimmt, enthält die Spalte nur eindeutige Werte. Beim Modellieren ist wichtig, dass einige Modelltabellen eindeutige Spalten enthalten. Sie können diese eindeutigen Spalten zum Erstellen von 1:n-Beziehungen verwenden. Dies werden Sie im Lab **Modellieren von Daten in Power BI Desktop** ausführen.
+1. Zeigen Sie mit dem Mauszeiger auf den Balken für **Ware House**. Wie Sie sehen, gibt es fünf Zeilen mit diesem Wert.
+    
+    *Sie wenden im Lab **Laden von Daten in Power BI Desktop** eine Transformation an, um diese fünf Zeilen neu zu bezeichnen.*
 
-11. Wählen Sie im Bereich **Abfragen** die Abfrage **DimEmployeeSalesTerritory** aus.
+1. Wählen Sie im Bereich **Abfragen** die Abfrage für **DimSalesTerritory** aus.  
+    
+    *Die Tabelle **DimSalesTerritory** enthält eine Zeile pro Vertriebsregion, einschließlich **Corporate HQ** (Hauptsitz). Regionen werden einem Land und Länder werden Gruppen zugewiesen. Im Lab **Modelldaten in Power BI Desktop** erstellen Sie eine Hierarchie zur Unterstützung der Analyse auf Regions-, Länder- oder Gruppenebene.*
 
-    ![Bild 44](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image27.png)
+1. Wählen Sie im Bereich **Abfragen** die Abfrage für **FactResellerSales** aus.
+    
+    *Die Tabelle **FactResellerSales** enthält je eine Zeile für jede Auftragsposition. Ein Verkaufsauftrag enthält eine oder mehrere solcher Positionen.*
 
-    Die Tabelle **DimEmployeeSalesTerritory** enthält je eine Zeile für jeden Mitarbeiter und die von diesem verwalteten Regionen des Vertriebsgebiets. Sie unterstützt das Zuordnen von vielen Regionen zu einem einzelnen Mitarbeiter. Einige Mitarbeiter verwalten eine, zwei oder möglicherweise sogar mehr Regionen. Wenn Sie diese Daten modellieren, müssen Sie eine m:n-Beziehung definieren.
+1. Überprüfen Sie die Spaltenqualität für die Spalte **TotalProductCost**. Wie Sie sehen, sind 8 % der Zeilen leer.
+    
+    *Die fehlenden Werte in der Spalte **TotalProductCost** sind ein Datenqualitätsproblem. Um dieses Problem zu behandeln, wenden Sie im Lab **Laden von Daten in Power BI Desktop** Transformationen an, um die fehlenden Werte mithilfe der in der zugehörigen Tabelle **DimProduct** gespeicherten Standardproduktkosten zu ergänzen.*
 
-12. Wählen Sie im Bereich **Abfragen** die Abfrage für **DimProduct** aus.
+### **Aufgabe 4: Abrufen von Daten aus einer CSV-Datei**
 
-    ![Bild 46](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image28.png)
+In dieser Aufgabe erstellen Sie eine neue Abfrage basierend auf CSV-Dateien.
 
-    Die Tabelle **DimProduct** enthält je eine Zeile für jedes vom Unternehmen verkaufte Produkt.
+1. Wählen Sie zum Hinzufügen einer neuen Abfrage im Fenster **Power Query-Editor** auf der Registerkarte **Start** des Menübands in der Gruppe **Neue Abfrage** den Pfeil nach unten bei **Neue Quelle** und dann **Text/CSV** aus.
 
-13. Scrollen Sie horizontal, um die letzten Spalten anzuzeigen.
+1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Resources**, und wählen Sie die Datei **ResellerSalesTargets.csv** aus. Klicken Sie auf **Öffnen**.
 
-14. Sehen Sie sich die Spalte **DimProductSubcategory** an.
+1. Sehen Sie sich die Vorschaudaten im Fenster **ResellerSalesTargets.csv** an. Klicken Sie auf **OK**.
 
-    Wenn Sie dieser Abfrage im Lab **Laden von Daten in Power BI Desktop** Transformationen hinzufügen, verwenden Sie die Spalte **DimProductSubcategory** zum Verknüpfen der Tabellen.
+1. Beachten Sie, dass im Bereich **Abfragen** die Abfrage für **ResellerSalesTargets** hinzugefügt wurde.
+    
+    *Die CSV-Datei **ResellerSalesTargets** enthält eine Zeile pro Vertriebsmitarbeiter und Jahr. In jeder Zeile werden 12 monatliche Umsatzziele (ausgedrückt in Tausend) aufgezeichnet. Das Geschäftsjahr für die Firma Adventure Works beginnt am 1. Juli.*
 
-15. Wählen Sie im Bereich **Abfragen** die Abfrage für **DimReseller** aus.
+1. Beachten Sie auch, dass keine der Spalten leere Werte enthält.  Wenn kein monatliches Verkaufsziel vorhanden ist, wird stattdessen ein Bindestrich eingetragen.
 
-    ![Bild 49](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image29.png)
+1. Überprüfen Sie die Symbole in den einzelnen Spaltenüberschriften links neben dem Spaltennamen. Die Symbole stehen für den Datentyp der jeweiligen Spalte. **123** steht für ganze Zahlen und **ABC** für Text.
 
-    Die Tabelle **DimReseller** enthält je eine Zeile für jeden Handelspartner. Handelspartner verkaufen oder vertreiben die Produkte von Adventure Works oder steigern deren Wert.
+     ![Bild 74](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image38.png)
 
-16. Aktivieren Sie auf der Registerkarte **Ansicht** des Menübands in der Gruppe **Datenvorschau** die Option **Spaltenprofil**, um Spaltenwerte anzuzeigen.
+1. Wiederholen Sie die Schritte zum Erstellen einer Abfrage auf Grundlage der Datei **D:\PL300\Resources\ColorFormats.csv**.
+    
+    *Die CSV-Datei **ColorFormats** enthält eine Zeile pro Produktfarbe. Jede Zeile zeichnet die HEX-Codes auf, um Hintergrund- und Schriftfarben zu formatieren.*
 
-    ![Bild 41](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image30.png)
+*Sie sollten jetzt über zwei neue Abfragen verfügen: **ResellerSalesTargets** und **ColorFormats**.*
 
-17. Wählen Sie die Spaltenüberschrift **BusinessType** aus.
+ ![Abfrageliste](Linked_image_Files/01-all-queries-loaded.png)
 
-18. Beachten Sie den neuen Bereich unterhalb des Bereichs „Datenvorschau“.
-
-19. Überprüfen Sie die Spaltenstatistiken und die Werteverteilung im Bereich „Datenvorschau“.
-
-20. Wie Sie sehen, liegt ein Datenqualitätsproblem vor: Es gibt zwei Bezeichnungen für „Warehouse“ (**Warehouse** und das falsch geschriebene **Ware House**).
-
-    ![Bild 51](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image31.png)
-
-21. Zeigen Sie mit dem Mauszeiger auf den Balken für **Ware House**. Wie Sie sehen, gibt es fünf Zeilen mit diesem Wert.
-
-    Sie wenden im Lab **Laden von Daten in Power BI Desktop** eine Transformation an, um diese fünf Zeilen neu zu bezeichnen.
-
-22. Wählen Sie im Bereich **Abfragen** die Abfrage für **DimSalesTerritory** aus.
-
-    ![Bild 52](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image32.png)
-
-    Die Tabelle **DimSalesTerritory** enthält je eine Zeile für jede Vertriebsregion, einschließlich des **Unternehmenshauptsitzes**. Regionen werden einem Land zugewiesen, und Länder werden Gruppen zugewiesen. Im Lab **Modellieren von Daten in Power BI Desktop** erstellen Sie eine Hierarchie zur Unterstützung der Analyse auf Regions-, Länder- oder Gruppenebene.
-
-23. Wählen Sie im Bereich **Abfragen** die Abfrage für **FactResellerSales** aus.
-
-    ![Bild 54](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image33.png)
-
-    Die Tabelle **FactResellerSales** enthält je eine Zeile für jede Auftragsposition. Ein Verkaufsauftrag enthält eine oder mehrere solcher Positionen.
-
-24. Überprüfen Sie die Spaltenqualität für die Spalte **TotalProductCost**. Wie Sie sehen, sind 8 % der Zeilen leer.
-
-    ![Bild 63](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image34.png)
-
-    Fehlende Werte in der Spalte **TotalProductCost** stellen ein Datenqualitätsproblem dar. Dieses Problem werden Sie im Lab **Laden von Daten in Power BI Desktop** durch die Anwendung von Transformationen behandeln, die fehlende Werte mithilfe der in der zugehörigen Tabelle **DimProduct** gespeicherten Standardproduktkosten ergänzen.
-
-
-### <a name="task-5-get-data-from-a-csv-file"></a>**Aufgabe 5: Abrufen von Daten aus einer CSV-Datei**
-
-In dieser Aufgabe erstellen Sie eine Abfrage auf Grundlage einer CSV-Datei.
-
-1. Klicken Sie zum Hinzufügen einer neuen Abfrage im Fenster **Power Query-Editor** auf der Registerkarte **Start** des Menübands in der Gruppe **Neue Abfrage** auf den Pfeil nach unten bei **Neue Quelle**, und wählen Sie dann **Text/CSV** aus.
-
-    ![Bild 70](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image35.png)
-
-2. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Resources**, und wählen Sie die Datei **ResellerSalesTargets.csv** aus.
-
-3. Klicken Sie auf **Öffnen**.
-
-4. Sehen Sie sich die Vorschaudaten im Fenster **ResellerSalesTargets.csv** an.
-
-5. Klicken Sie auf **OK**.
-
-    ![Bild 71](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image36.png)
- 
-
-6. Beachten Sie, dass im Bereich **Abfragen** die Abfrage für **ResellerSalesTargets** hinzugefügt wurde.
-
-    ![Bild 72](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image37.png)
-
-    Die CSV-Datei **ResellerSalesTargets** enthält je eine Zeile pro Vertriebsmitarbeiter für jedes Jahr. Jede Zeile enthält 12 monatliche Verkaufsziele (mit je tausend Verkäufen als Einheit). Beachten Sie, dass das Geschäftsjahr von Adventure Works am 1. Juli beginnt.
-
-7. Beachten Sie auch, dass keine der Spalten leere Werte enthält.
-
-    Wenn kein monatliches Verkaufsziel vorhanden ist, wird stattdessen ein Bindestrich eingetragen.
-
-8. Überprüfen Sie die Symbole in den einzelnen Spaltenüberschriften links neben dem Spaltennamen.
-
-    ![Bild 74](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image38.png)
-
-    Die Symbole stehen für den Datentyp der jeweiligen Spalte. **123** steht für ganze Zahlen und **ABC** für Text.
-
-    Im Lab **Laden von Daten in Power BI Desktop** wenden Sie viele Transformationen an, um das Ergebnis von nur drei Spalten unterschiedlich zu formatieren: **Date**, **EmployeeKey** und **TargetAmount**.
-
-### <a name="task-6-get-additional-data-from-a-csv-file"></a>**Aufgabe 6: Abrufen zusätzlicher Daten aus einer CSV-Datei**
-
-In dieser Aufgabe erstellen Sie eine weitere Abfrage auf Grundlage einer anderen CSV-Datei.
-
-1. Erstellen Sie anhand der Schritte in der vorherigen Aufgabe eine auf der Datei **D:\PL300\Resources\ColorFormats.csv** basierende Abfrage.
-
-    ![Bild 75](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image39.png)
-
-    Die CSV-Datei **ColorFormats** enthält je eine Zeile für jede Produktfarbe. Die einzelnen Zeilen enthalten jeweils die hexadezimalen Codes zum Formatieren von Hintergrund- und Schriftfarben. Im Lab **Laden von Daten in Power BI Desktop** integrieren Sie diese Daten mit den Daten der Abfrage **DimProduct**.
-
-### <a name="task-7-finish-up"></a>**Aufgabe 7: Abschluss**
+### **Aufgabe 5: Abschluss**
 
 Mit dieser Aufgabe schließen Sie das Lab ab.
 
 1. Deaktivieren Sie auf der Registerkarte **Ansicht** des Menübands in der Gruppe **Datenvorschau** die folgenden drei Datenvorschauoptionen, die Sie zuvor in diesem Lab aktiviert haben:
 
     - Spaltenqualität
-
     - Spaltenverteilung
-
     - Spaltenprofil
 
-    ![Bild 76](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image40.png)
+     ![Bild 76](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image40.png)
 
-2. Wählen Sie im Fenster **Power Query-Editor** in der Backstage-Ansicht **Datei** die Option **Speichern** aus, um die Power BI Desktop-Datei zu speichern.
-
-    ![Bild 77](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image41.png)
-
-3. Wenn Sie zum Anwenden der Abfragen aufgefordert werden, klicken Sie auf **Später übernehmen**.
-
-    ![Bild 86](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image42.png)
-
-    Durch das Anwenden der Abfragen werden deren Daten in das Datenmodell geladen. An diesem Punkt sind Sie allerdings noch nicht, da erst noch viele Transformationen angewendet werden müssen.
-
-4. Wenn Sie beabsichtigen, das nächste Lab zu starten, lassen Sie Power BI Desktop geöffnet.
-
-    Im Lab **Laden von Daten in Power BI Desktop** wenden Sie verschiedene Transformationen auf die Abfragen an und verwenden die Abfragen dann, um sie in das Datenmodell zu laden.
+1. **Speichern** Sie die Power BI Desktop-Datei. Wenn Sie aufgefordert werden, die ausstehenden Änderungen zu übernehmen, wählen Sie **Später übernehmen** aus.
+    
+    *Tipp: Durch das Anwenden der Abfragen werden ihre Daten in das Datenmodell geladen. Sie sind hierzu noch nicht bereit, da es noch viele Transformationen gibt, die zuerst übernommen werden müssen.*

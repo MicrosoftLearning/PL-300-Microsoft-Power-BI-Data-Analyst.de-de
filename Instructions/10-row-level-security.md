@@ -5,7 +5,7 @@ lab:
 ---
 
 
-# <a name="enforce-row-level-security"></a>**Erzwingen von Sicherheit auf Zeilenebene**
+# **Erzwingen von Sicherheit auf Zeilenebene**
 
 **Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
 
@@ -15,172 +15,118 @@ In diesem Lab lernen Sie Folgendes:
 
 - Erzwingen von Sicherheit auf Zeilenebene
 
-### <a name="lab-story"></a>**Labszenario**
+### **Labszenario**
 
 Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
 
 1. Vorbereiten von Daten in Power BI Desktop
+1. Laden von Daten in Power BI Desktop
+1. Entwerfen eines Datenmodells in Power BI
+1. Erstellen von DAX-Berechnungen in Power BI Desktop
+1. Erstellen erweiterter DAX-Berechnungen in Power BI Desktop
+1. Entwerfen eines Berichts in Power BI Desktop
+1. Verbessern eines Berichts in Power BI Desktop
+1. Analysieren von Daten in Power BI Desktop
+1. Erstellen eines Power BI-Dashboards
+1. **Erzwingen von Sicherheit auf Zeilenebene**
 
-2. Laden von Daten in Power BI Desktop
+## **Übung 1: Erzwingen von Sicherheit auf Zeilenebene**
 
-3. Entwerfen eines Datenmodells in Power BI
+In dieser Übung erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, dass Vertriebsmitarbeiter nur Umsätze in den zugewiesenen Regionen anzeigen können.
 
-4. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 1
-
-5. Erstellen von DAX-Berechnungen in Power BI Desktop, Teil 2
-
-6. Entwerfen eines Berichts in Power BI Desktop, Teil 1
-
-7. Entwerfen eines Berichts in Power BI Desktop, Teil 2
-
-8. Analysieren von Daten mit KI-Visuals
-
-9. Erstellen eines Power BI-Dashboards
-
-10. **Erzwingen von Sicherheit auf Zeilenebene**
-
-## <a name="exercise-1-enforce-row-level-security"></a>**Übung 1: Erzwingen von Sicherheit auf Zeilenebene**
-
-In dieser Übung erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, dass Vertriebsmitarbeiter*innen nur Umsätze in den zugewiesenen Regionen anzeigen können.
-
-### <a name="task-1-get-started"></a>**Aufgabe 1: Erste Schritte**
+### **Aufgabe 1: Erste Schritte**
 
 In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
 *Wichtig: Wenn Sie nach einem vorherigen Lab fortfahren (und dieses Lab erfolgreich abgeschlossen haben), überspringen Sie diese Aufgabe und fahren mit der nächsten fort.*
 
-1. Klicken Sie zum Öffnen von Power BI Desktop auf der Taskleiste auf die Verknüpfung „Microsoft Power BI Desktop“.
+1. Öffnen Sie Power BI Desktop.
 
-    ![Bild 8](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image1.png)
+    ![Power BI Desktop-Symbol](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-1. Um das Fenster „Erste Schritte“ zu schließen, klicken Sie links oben im Fenster auf das **X**.
+    *Tipp: Standardmäßig wird das Dialogfeld „Erste Schritte“ vor Power BI Desktop geöffnet. Sie können sich mit **Anmelden** anmelden und das Popup dann schließen.*
 
-    ![Bild 7](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image2.png)
+1. Um die Power BI Desktop-Startdatei zu öffnen, wählen Sie **Datei > Bericht öffnen > Berichte durchsuchen** aus.
 
-1. Um die Startdatei für Power BI Desktop zu öffnen, klicken Sie auf die Registerkarte **Datei** des Menübands, um die Backstage-Ansicht zu öffnen.
-
-1. Wählen Sie **Bericht öffnen** aus.
-
-    ![Bild 6](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image3.png)
-
-1. Klicken Sie auf **Berichte durchsuchen**.
-
-    ![Bild 5](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image4.png)
-
-1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\10-row-level-security\Starter**.
-
-1. Wählen Sie die Datei **Sales Analysis** aus.
-
-1. Klicken Sie auf **Öffnen**.
-
-    ![Bild 4](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image5.png)
+1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\10-row-level-security\Starter**, und öffnen Sie die Datei **Verkaufsanalyse**.
 
 1. Schließen Sie alle Informationsfenster, die möglicherweise geöffnet werden.
 
-1. Um eine Kopie der Datei zu erstellen, klicken Sie auf die Registerkarte **Datei** des Menübands, um die Backstage-Ansicht zu öffnen.
+1. Beachten Sie die gelbe Warnmeldung unterhalb des Menübands. *In dieser Meldung werden Sie darauf hingewiesen, dass die Abfragen nicht als Modelltabellen geladen wurden. Sie wenden die Abfragen später in diesem Lab an.*
+    
+    *Klicken Sie rechts auf der gelben Warnmeldung auf das **X**, um die Warnmeldung zu verwerfen.*
 
-1. Wählen Sie **Speichern unter** aus.
+1. Um eine Kopie der Datei zu erstellen, wechseln Sie zu **Datei > Speichern unter**, und speichern Sie sie im Ordner **D:\PL300\MySolution**.
 
-    ![Bild 3](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image6.png)
+1. Wenn Sie aufgefordert werden, Änderungen zu übernehmen, klicken Sie auf **Später übernehmen**.
 
-1. Wenn Sie aufgefordert werden, die Abfragen anzuwenden, klicken Sie auf **Anwenden**.
+### **Aufgabe 2: Erzwingen von Sicherheit auf Zeilenebene**
 
-    ![Bild 15](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image7.png)
-
-1. Navigieren Sie im Fenster **Speichern unter** zum Ordner **D:\PL300\MySolution**.
-
-1. Klicken Sie auf **Speichern**.
-
-    ![Abbildung 2](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image8.png)
-
-### <a name="task-2-enforce-row-level-security"></a>**Aufgabe 2: Erzwingen von Sicherheit auf Zeilenebene**
-
-In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, dass Vertriebsmitarbeiter*innen nur Umsätze in den zugewiesenen Regionen anzeigen können.
+In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, dass Vertriebsmitarbeiter nur Umsätze in den zugewiesenen Regionen anzeigen können.
 
 1. Wechseln Sie zur Ansicht „Daten“.
 
-    ![Bild 5.701](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image20.png)
+   ![Bild 5.701](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image20.png)
 
-2. Wählen Sie im Bereich **Felder** die Tabelle **Salesperson (Performance)** aus.
+1. Wählen Sie im Bereich **Felder** die Tabelle **Salesperson (Performance)** aus.
 
-3. Wenn Sie die Daten überprüfen, werden Sie bemerken, dass Michael Blythe (EmployeeKey 281) den UPN-Wert **michael-blythe@adventureworks.com** hat.
 
-    *Denken Sie daran, dass Michael Blythe drei Vertriebsregionen zugewiesen ist: „US Northeast“, „US Central“ und „US Southeast“.*
+1. Wenn Sie die Daten überprüfen, werden Sie bemerken, dass Michael Blythe (EmployeeKey 281) den UPN-Wert **michael-blythe@adventureworks.com** hat.
+    
+    *Sie werden sich erinnern, dass Michael Blythe drei Vertriebsregionen zugewiesen ist: „USA, Nordosten“, „USA, Mitte“ und „USA, Südosten“.*
 
-4. Wechseln Sie zur Ansicht „Bericht“.
-
-5. Klicken Sie auf der Registerkarte **Modellierung** des Menübands in der Gruppe **Sicherheit** auf **Rollen verwalten**.
+1. Wählen Sie auf der Registerkarte **Modellierung** des Menübands in der Gruppe **Sicherheit** die Option **Rollen verwalten** aus.
 
     ![Bild 5.700](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image21.png)
 
-6. Klicken Sie im Fenster **Rollen verwalten** auf **Erstellen**.
+1. Wählen Sie im Fenster **Rollen verwalten** die Option **Erstellen** aus.
 
-    ![Bild 5.702](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image22.png)
+1. Ersetzen Sie im Feld den ausgewählten Text durch den Namen der Rolle: Geben Sie **Salespeople** ein, und drücken Sie dann die **EINGABETASTE**.
 
-7. Ersetzen Sie im Feld den ausgewählten Text durch den Namen der Rolle: Geben Sie **Salespeople** ein, und drücken Sie dann die **EINGABETASTE**.
+   ![Bild 5.703](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image23.png)
 
-    ![Bild 5.703](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image23.png)
+1. Wenn Sie der Tabelle **Salesperson (Performance)** einen Filter zuweisen möchten, klicken Sie auf das Symbol mit den Auslassungspunkten (...), und wählen Sie **Filter hinzufügen \| [UPN]** aus.
 
-8. Wenn Sie der Tabelle **Salesperson (Performance)** einen Filter zuweisen möchten, klicken Sie auf das Symbol mit den Auslassungspunkten (...) und wählen dann **Filter hinzufügen \| [UPN]** aus.
+   ![Bild 5.704](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image24.png)
 
-    ![Bild 5.704](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image24.png)
-
-9. Ändern Sie im Feld **Tabellenfilter-DAX-Ausdruck** den Ausdruck, indem Sie **Value** durch **USERPRINCIPALNAME()** ersetzen.
-
-    ![Bild 11](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
-
+1. Ändern Sie im Feld **Tabellenfilter-DAX-Ausdruck** den Ausdruck, indem Sie **Value** durch **USERPRINCIPALNAME()** ersetzen, und klicken Sie auf **Speichern**.
+    
     *USERPRINCIPALNAME() ist eine DAX-Funktion (Data Analysis Expressions), die den Namen des authentifizierten Benutzers zurückgibt. Dies bedeutet, dass die Tabelle **Salesperson (Performance)** nach dem Benutzerprinzipalnamen (User Principal Name, UPN) des Benutzers gefiltert wird, der das Modell abfragt.*
 
-10. Klicken Sie auf **Speichern**.
+   ![Bild 11](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
 
-    ![Bild 5.706](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image26.png)
+1. Zum Testen der Sicherheitsrolle wählen Sie auf der Registerkarte **Modellierung** des Menübands in der Gruppe **Sicherheit** die Option **Anzeigen als** aus.
 
-11. Zum Testen der Sicherheitsrolle klicken Sie auf der Registerkarte **Modellierung** des Menübands in der Gruppe **Sicherheit** auf **Anzeigen als**.
+   ![Bild 5.708](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
 
-    ![Bild 5.708](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
+1. Aktivieren Sie im Fenster **Als Rollen anzeigen** das Element **Anderer Benutzer**, und geben Sie dann in das entsprechende Feld Folgendes ein: **michael-blythe@adventureworks.com**
 
-12. Aktivieren Sie im Fenster **Als Rollen anzeigen** das Element **Anderer Benutzer**, und geben Sie dann in das entsprechende Feld Folgendes ein: **michael-blythe@adventureworks.com**
-
-13. Wählen Sie die Rolle **Salespeople** aus.
-
-    ![Bild 5.709](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image28.png)
-
+1. Aktivieren Sie die Rolle **Salespeople**, und klicken Sie auf **OK**.
+    
     *Diese Konfiguration führt dazu, dass die Rolle **Salespeople** verwendet und die Identität des Benutzers mit dem Namen „Michael Blythe“ angenommen wird.*
 
-14. Klicken Sie auf **OK**.
+   ![Bild 5.709](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image28.png)
 
-    ![Bild 5.710](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image29.png)
+1. Beachten Sie das gelbe Banner oberhalb der Berichtsseite, das den Testsicherheitskontext angibt.
 
-15. Beachten Sie das gelbe Banner oberhalb der Berichtsseite, das den Testsicherheitskontext angibt.
+   ![Bild 13](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image30.png)
 
-    ![Bild 13](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image30.png)
+1. Beachten Sie, dass im Tabellenvisual nur der Vertriebsmitarbeiter **Michael Blythe** aufgeführt ist.
 
-16. Beachten Sie, dass im Tabellenvisual nur der Vertriebsmitarbeiter **Michael Blythe** aufgeführt ist.
+   ![Bild 5.713](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image31.png)
 
-    ![Bild 5.713](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image31.png)
+1. Wählen Sie zum Beenden des Tests auf der rechten Seite des gelben Banners **Anzeige beenden** aus.
 
-17. Klicken Sie zum Beenden des Tests auf der rechten Seite des gelben Banners auf **Anzeige beenden**.
+   ![Bild 5.712](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image32.png)
 
-    ![Bild 5.712](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image32.png)
+1. Wählen Sie zum Löschen der Rolle **Salespeople** auf der Registerkarte **Modellierung** des Menübands in der Gruppe **Sicherheit** die Option **Rollen verwalten** aus.
 
-    *Wenn die Power BI Desktop-Datei im Power BI-Dienst veröffentlicht wird, müssen Sie noch eine Aufgabe nach der Veröffentlichung durchführen, um der Rolle **Salespeople** Sicherheitsprinzipale zuzuordnen. Das erledigen Sie in diesem Lab nicht.*
+   ![Bild 16](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image33.png)
 
-18. Klicken Sie zum Löschen der Rolle auf der Registerkarte **Modellierung** des Menübands in der Gruppe **Sicherheit** auf **Rollen verwalten**.
+1. Wählen Sie im Fenster **Rollen verwalten** die Option **Löschen** aus. Wenn Sie aufgefordert werden, den Löschvorgang zu bestätigen, wählen Sie **Ja, Löschen** aus.
 
-    ![Bild 16](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image33.png)
+   ![Bild 17](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image34.png)
 
-19. Klicken Sie im Fenster **Rollen verwalten** auf **Löschen**.
+1. Wählen Sie **Speichern** aus, und speichern Sie dann die Power BI Desktop-Datei, um das Lab zu beenden.
 
-    ![Bild 17](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image34.png)
-
-20. Wenn Sie aufgefordert werden, den Löschvorgang zu bestätigen, klicken Sie auf **Ja, löschen**.
-
-21. Klicken Sie auf **Speichern**.
-
-    ![Bild 18](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image35.png)
-
-### <a name="task-3-finish-up"></a>**Aufgabe 3: Abschluss**
-
-Mit dieser Aufgabe schließen Sie das Lab ab.
-
-1. Speichern Sie die Power BI Desktop-Datei.
+*Hinweis: Wenn die Power BI Desktop-Datei im Power BI-Dienst veröffentlicht wird, müssen Sie noch eine Aufgabe nach der Veröffentlichung durchführen, um der Rolle **Salespeople** Sicherheitsprinzipale zuzuordnen. Das erledigen Sie in diesem Lab nicht.*
