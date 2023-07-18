@@ -1,13 +1,13 @@
 ---
 lab:
   title: Entwerfen eines Datenmodells in Power BI
-  module: 4 - Design a Data Model in Power BI
+  module: Design a Data Model in Power BI
 ---
 
 
 # Entwerfen eines Datenmodells in Power BI
 
-**Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
+## **Labszenario**
 
 In diesem Lab beginnen Sie mit der Entwicklung des Datenmodells. Dies umfasst das Erstellen von Beziehungen zwischen Tabellen und das anschließende Konfigurieren von Tabellen- und Spalteneigenschaften, um die Benutzerfreundlichkeit und Nutzbarkeit des Datenmodells zu verbessern. Außerdem erstellen Sie Hierarchien und Quickmeasures.
 
@@ -17,26 +17,9 @@ In diesem Lab lernen Sie Folgendes:
 - Konfigurieren von Tabellen- und Spalteneigenschaften
 - Erstellen von Hierarchien
 
-### **Labszenario**
+**Dieses Lab sollte ungefähr 45 Minuten in Anspruch nehmen.**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
-
-1. Vorbereiten von Daten in Power BI Desktop
-1. Laden von Daten in Power BI Desktop
-1. **Entwerfen eines Datenmodells in Power BI**
-1. Erstellen von DAX-Berechnungen in Power BI Desktop
-1. Erstellen erweiterter DAX-Berechnungen in Power BI Desktop
-1. Entwerfen eines Berichts in Power BI Desktop
-1. Verbessern eines Berichts in Power BI Desktop
-1. Analysieren von Daten in Power BI
-1. Erstellen eines Power BI-Dashboards
-1. Erzwingen von Sicherheit auf Zeilenebene
-
-## **Übung 1: Erstellen von Modellbeziehungen**
-
-In dieser Übung erstellen Sie Modellbeziehungen.
-
-### **Aufgabe 1: Erste Schritte**
+## **Erste Schritte**
 
 In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
@@ -54,7 +37,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
 1. Wechseln Sie zu **Datei > Speichern unter**, und speichern Sie die Datei im Ordner **D:\PL300\MySolution**.
 
-### **Aufgabe 2: Erstellen von Modellbeziehungen**
+## **Erstellen von Modellbeziehungen**
 
 In dieser Aufgabe erstellen Sie Modellbeziehungen. Die Datei wurde so konfiguriert, dass Beziehungen zwischen Tabellen in den vorherigen Labs nicht identifiziert werden. Dies ist nicht die Standardeinstellung, wird jedoch empfohlen, um zu verhindern, dass für die Erstellung der richtigen Beziehungen für Ihr Modell zusätzliche Arbeit erforderlich wird.
 
@@ -72,14 +55,14 @@ In dieser Aufgabe erstellen Sie Modellbeziehungen. Die Datei wurde so konfigurie
 
      ![Bild 327](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image10.png)
 
-1. Klicken Sie im Bereich **Felder** mit der rechten Maustaste auf einen leeren Bereich, und wählen Sie dann **Alle erweitern** aus.
+1. Klicken Sie im Bereich **Daten** mit der rechten Maustaste auf einen leeren Bereich, und wählen Sie dann **Alle erweitern** aus.
 
-1. Aktivieren Sie zum Erstellen eines Tabellenvisuals im Bereich **Felder** innerhalb der Tabelle **Product** das Feld **Category**.
+1. Aktivieren Sie zum Erstellen eines Tabellenvisuals im Bereich **Daten** innerhalb der Tabelle **Product** das Feld **Category**.
 
-1. Aktivieren Sie im Bereich **Felder** das Feld **Sales \| Sales**, um eine weitere Spalte zur Tabelle hinzuzufügen.
+1. Aktivieren Sie im Bereich **Daten** das Feld **Sales \| Sales**, um eine weitere Spalte zur Tabelle hinzuzufügen.
 
 1. Beachten Sie, dass das Tabellenvisual vier Produktkategorien aufführt und dass der Umsatzwert für alle Kategorien sowie für den Gesamtwert gleich ist.
-    
+
     *Das Problem besteht darin, dass die Tabelle auf Feldern aus anderen Tabellen basiert. Es wird erwartet, dass jede Produktkategorie den Umsatz für die Kategorie anzeigt. Allerdings wird die Tabelle **Sales** nicht gefiltert, da zwischen diesen Tabellen keine Modellbeziehung besteht. Im Folgenden fügen Sie eine Beziehung hinzu, um Filter zwischen den Tabellen weiterzugeben.*
 
      ![Bild 330](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image13.png)
@@ -101,19 +84,19 @@ In dieser Aufgabe erstellen Sie Modellbeziehungen. Die Datei wurde so konfigurie
      ![Bild 334](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image17.png)
 
 1. Beachten Sie, dass die **ProductKey**-Spalten in beiden Tabellen ausgewählt wurden.
-    
+
     *Die Spalten wurden ausgewählt, da sie denselben Namen und Datentyp aufweisen. Möglicherweise müssen Sie übereinstimmende Spalten mit unterschiedlichen Namen in realen Daten finden.*
 
 1. Beachten Sie, dass in der Dropdownliste **Kardinalität** die Option **1:n** ausgewählt ist.
-    
+
     *Die Kardinalität wurde automatisch ermittelt, da Power BI versteht, dass die Spalte **ProductKey** der Tabelle **Product** eindeutige Werte enthält. 1:n-Beziehungen sind die gängigste Kardinalität, und alle Beziehungen, die Sie in diesem Lab erstellen, weisen diesen Typ auf.*
 
 1. Beachten Sie, dass in der Dropdownliste **Kreuzfilterrichtung** die Option **Einfach** ausgewählt ist.
-    
+
     *Die Filterrichtung „Einfach“ bedeutet, dass die Filter von der Seite „1“ zur Seite „n“ weitergegeben werden. In diesem Fall werden die Filter, die auf die Tabelle **Product** angewandt wurden, an die Tabelle **Sales** weitergegeben, aber nicht in die andere Richtung.*
 
 1. Beachten Sie, dass das Kontrollkästchen **Diese Beziehung aktivieren** aktiviert ist.
-    
+
     *Aktive Beziehungen geben Filter weiter. Eine Beziehung kann als inaktiv gekennzeichnet werden, damit die Filter nicht weitergegeben werden. Inaktive Beziehungen können vorhanden sein, wenn mehrere Beziehungspfade zwischen Tabellen vorliegen. In diesem Fall können Modellberechnungen spezielle Funktionen nutzen, um sie zu aktivieren.*
 
 1. Wählen Sie **OK** aus, überprüfen Sie, ob die neue Beziehung im Fenster **Beziehungen verwalten** aufgelistet wird, und wählen Sie dann **Schließen** aus.
@@ -129,7 +112,7 @@ In dieser Aufgabe erstellen Sie Modellbeziehungen. Die Datei wurde so konfigurie
      Es gibt eine einfachere Methode zum Erstellen einer Beziehung. Im Modelldiagramm können Sie Spalten per Drag & Drop gruppieren, um eine neue Beziehung zu erstellen.
 
 1. Zum Erstellen einer neuen Beziehung auf andere Weise über die Tabelle **Reseller** ziehen Sie die Spalte **ResellerKey** auf die Spalte **ResellerKey** der Tabelle **Sales**.
-    
+
     *Tipp: Manchmal ist es nicht möglich, eine Spalte zu bewegen. Tritt eine solche Situation auf, wählen Sie zunächst eine andere Spalte und dann wieder die Spalte aus, die Sie bewegen möchten, und versuchen Sie es noch mal. Vergewissern Sie sich, dass die neue Beziehung im Diagramm hinzugefügt wurde.*
 
      ![Ziehen Sie ResellerKey aus der Reseller-Tabelle auf Sales | ResellerKey.](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image22.png)
@@ -144,28 +127,28 @@ In dieser Aufgabe erstellen Sie Modellbeziehungen. Die Datei wurde so konfigurie
      ![Sternschemaentwurf in der Modellansicht](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image23.png)
 
 1. Beachten Sie, dass das visuelle Tabellenelement in der Berichtsansicht aktualisiert wurde und dass verschiedene Werte für alle Produktkategorien angezeigt werden.
-    
+
     *Die Filter, die auf die Tabelle **Product** angewandt werden, werden nun an die Tabelle **Sales** weitergegeben.*
 
      ![Aktualisierte Kategorie- und Verkaufszahlen mit neuen Beziehungen.](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image20.png)
 
 1. Speichern Sie die Power BI Desktop-Datei.
 
-## **Übung 2: Konfigurieren von Tabellen**
+## **Konfigurieren der Tabellen**
 
 In dieser Übung konfigurieren Sie die einzelnen Tabellen, indem Sie Hierarchien erstellen und Spalten ausblenden, formatieren und kategorisieren.
 
-### **Aufgabe 1: Konfigurieren der Tabelle „Product“**
+## **Konfigurieren der Tabelle „Product“**
 
 In dieser Aufgabe konfigurieren Sie die Tabelle **Product**.
 
-1. Erweitern Sie in der Modellansicht im Bereich **Felder** bei Bedarf die Tabelle **Product**, um alle Felder anzuzeigen.
+1. Erweitern Sie in der Modellansicht im Bereich **Daten** bei Bedarf die Tabelle **Product**, um alle Felder anzuzeigen.
 
-1. Klicken Sie zum Erstellen einer Hierarchie im Bereich **Felder** mit der rechten Maustaste auf die Spalte **Category**, und klicken Sie dann auf **Hierarchie erstellen**.
+1. Klicken Sie zum Erstellen einer Hierarchie im Bereich **Daten** mit der rechten Maustaste auf die Spalte **Category**, und klicken Sie dann auf **Hierarchie erstellen**.
 
      ![Dialogfeld „Hierarchie erstellen“.](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image24.png)
 
-1. Ersetzen Sie im Bereich **Eigenschaften** (links neben dem Bereich **Felder**) im Feld **Name** den Text durch **Products**.
+1. Ersetzen Sie im Bereich **Eigenschaften** (links neben dem Bereich **Daten**) im Feld **Name** den Text durch **Products**.
 
 1. Scrollen Sie zum Hinzufügen einer zweiten Hierarchieebene im Bereich **Eigenschaften** in der Dropdownliste **Hierarchie** nach unten, und wählen Sie **Subcategory** aus (Sie müssen eventuell im Bereich nach unten scrollen).
 
@@ -177,7 +160,7 @@ In dieser Aufgabe konfigurieren Sie die Tabelle **Product**.
 
     *Tipp: Vergessen Sie nicht, auf **Ebenenänderungen anwenden** zu klicken. Es ist ein häufiger Fehler, diesen Schritt zu übersehen.*
 
-1. Sehen Sie sich im Bereich **Felder** die Hierarchie **Products** an.
+1. Sehen Sie sich im Bereich **Daten** die Hierarchie **Products** an.
 
      ![Bild 347](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image27.png)
 
@@ -185,7 +168,7 @@ In dieser Aufgabe konfigurieren Sie die Tabelle **Product**.
 
      ![Bild 346](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image28.png)
 
-1. Wenn Sie die Spalten in einem Anzeigeordner organisieren möchten, klicken Sie im Bereich **Felder** zunächst auf die Spalte **Background Color Format**.
+1. Wenn Sie die Spalten in einem Anzeigeordner organisieren möchten, klicken Sie im Bereich **Daten** zunächst auf die Spalte **Background Color Format**.
 
 1. Wählen Sie die Spalte **Font Color Format** aus, während Sie **STRG** gedrückt halten.
 
@@ -193,13 +176,13 @@ In dieser Aufgabe konfigurieren Sie die Tabelle **Product**.
 
      ![Bild 348](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image29.png)
 
-1. Beachten Sie, dass sich die beiden Spalten im Bereich **Felder** nun in einem Ordner befinden.
+1. Beachten Sie, dass sich die beiden Spalten im Bereich **Daten** nun in einem Ordner befinden.
     
-    *Anzeigeordner bieten eine sehr gute Möglichkeit, Tabellen zu bereinigen, insbesondere diejenigen, die viele Felder enthalten. Sie dienen nur zur logischen Präsentation.*
+   *Anzeigeordner bieten eine sehr gute Möglichkeit, Tabellen zu bereinigen, insbesondere diejenigen, die viele Felder enthalten. Sie dienen nur zur logischen Präsentation.*
 
      ![Bild 349](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image30.png)
 
-### **Aufgabe 2: Konfigurieren der Tabelle „Region“**
+## **Konfigurieren der Tabelle „Region“**
 
 In dieser Aufgabe konfigurieren Sie die Tabelle **Region**.
 
@@ -214,12 +197,12 @@ In dieser Aufgabe konfigurieren Sie die Tabelle **Region**.
 1. Wählen Sie die Spalte **Country** aus (nicht die Hierarchieebene **Country**).
 
 1. Erweitern Sie im Bereich **Eigenschaften** den Abschnitt **Erweitert** (unten im Bereich), und wählen Sie dann in der Dropdownliste **Datenkategorie** die Option **Land/Region** aus.
-    
+
     *Eine Datenkategorisierung kann Hinweise für den Berichts-Designer geben. In diesem Fall gibt das Kategorisieren der Spalte als Land oder Region genauere Informationen beim Rendern einer Kartenvisualisierung durch Power BI.*
 
      ![Bild 352](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image32.png)
 
-### **Aufgabe 3: Konfigurieren der Tabelle „Reseller“**
+## **Konfigurieren der Tabelle „Reseller“**
 
 In dieser Aufgabe konfigurieren Sie die Tabelle **Reseller**.
 
@@ -237,15 +220,15 @@ In dieser Aufgabe konfigurieren Sie die Tabelle **Reseller**.
 
 1. Legen Sie die **Datenkategorie** für die Spalten **Country-Region**, **State-Province** und **City** (nicht die Hierarchieebene) auf **Land/Region**, **Bundesland/Kanton** und **Stadt** fest.
 
-### **Aufgabe 4: Konfigurieren der Tabelle „Sales“**
+## **Konfigurieren der Tabelle „Sales“**
 
 In dieser Aufgabe konfigurieren Sie die Tabelle **Sales**.
 
 1. Klicken Sie in der Tabelle **Sales** auf die Spalte **Cost**.
 
 1. Geben Sie im Bereich **Eigenschaften** in das Feld **Beschreibung** Folgendes ein: *Basierend auf Standardkosten*.
-    
-    *Beschreibungen können auf Tabellen, Spalten, Hierarchien oder Measures angewandt werden. Im Bereich **Felder** wird Beschreibungstext als QuickInfo angezeigt, wenn der Berichtersteller den Cursor über ein Feld bewegt.*
+
+    *Beschreibungen können auf Tabellen, Spalten, Hierarchien oder Measures angewandt werden. Im Bereich **Daten** wird Beschreibungstext als QuickInfo angezeigt, wenn der Berichtersteller den Cursor über ein Feld bewegt.*
 
 1. Klicken Sie auf die Spalte **Quantity**.
 
@@ -256,14 +239,14 @@ In dieser Aufgabe konfigurieren Sie die Tabelle **Sales**.
 1. Legen Sie die Eigenschaft **Dezimalstellen** im Bereich **Eigenschaften** im Abschnitt **Formatierung** auf **2** fest.
 
 1. Klicken Sie in der Gruppe **Erweitert** (möglicherweise müssen Sie dazu nach unten scrollen) in der Dropdownliste **Zusammenfassen nach** auf **Durchschnitt**.
-    
+
     *Standardmäßig werden numerische Spalten zusammengefasst, indem Werte summiert werden. Dieses Standardverhalten ist jedoch nicht für Spalten wie **Unit Price** geeignet, in denen eine Rate dargestellt wird. Das Festlegen der Standardzusammenfassung auf einen Durchschnitt erzeugt ein aussagekräftiges Ergebnis.*
 
-### **Aufgabe 5: Massenaktualisieren von Eigenschaften**
+## **Massenaktualisierung von Eigenschaften**
 
 Bei dieser Aufgabe aktualisieren Sie mehrere Spalten mit einer einzelnen Massenaktualisierung. Sie verwenden diesen Ansatz, um Spalten auszublenden und Spaltenwerte zu formatieren.
 
-1. Wählen Sie im Bereich **Felder** die Spalte **Product \| ProductKey** aus.
+1. Wählen Sie im Bereich **Daten** die Spalte **Product \| ProductKey** aus.
 
 1. Wählen Sie die folgenden 13 Spalten aus, die sich über mehrere Tabellen erstrecken, und halten Sie dabei **STRG** gedrückt:
 
@@ -282,7 +265,7 @@ Bei dieser Aufgabe aktualisieren Sie mehrere Spalten mit einer einzelnen Massena
      - Targets \| EmployeeID
 
 1. Bewegen Sie im Bereich **Eigenschaften** den Schieberegler für die Eigenschaft **Ist verborgen** auf **Ja**.
-    
+
     *Die Spalten wurden ausgeblendet, da sie entweder von Beziehungen oder in der Sicherheitskonfiguration oder Berechnungslogik auf Zeilenebene verwendet werden.*
 
     *Im Lab **Erstellen von DAX-Berechnungen in Power BI Desktop** verwenden Sie **SalesOrderNumber** in einer Berechnung.*
@@ -295,17 +278,17 @@ Bei dieser Aufgabe aktualisieren Sie mehrere Spalten mit einer einzelnen Massena
 
 1. Verschieben Sie im Bereich **Eigenschaften** im Abschnitt **Formatierung** den Schieberegler für die Eigenschaft **Dezimalstellen** auf **0** (null).
 
-## **Übung 3: Überprüfen der Benutzeroberfläche des Modells**
+## **Überprüfen der Benutzeroberfläche des Modells**
 
 In dieser Übung wechseln Sie zur Berichtsansicht und überprüfen die Benutzeroberfläche des Modells.
 
-### **Aufgabe 1: Überprüfen der Benutzeroberfläche des Modells**
+## **Überprüfen der Benutzeroberfläche des Modells**
 
 In dieser Aufgabe wechseln Sie zur Berichtsansicht und überprüfen die Benutzeroberfläche des Modells.
 
 1. Wechseln Sie zur Ansicht „Bericht“.
 
-1. Sehen Sie sich im Bereich **Felder** Folgendes an:
+1. Sehen Sie sich im Bereich **Daten** Folgendes an:
 
      - Spalten, Hierarchien und die zugehörigen Ebenen sind Felder, die zum Konfigurieren von Berichtsvisuals verwendet werden können.
      - Nur Felder, die für die Berichterstellung relevant sind, werden angezeigt.
@@ -315,7 +298,7 @@ In dieser Aufgabe wechseln Sie zur Berichtsansicht und überprüfen die Benutzer
      - Wenn der Cursor über das Feld **Sales \| Cost** bewegt wird, wird eine QuickInfo angezeigt.
 
 1. Erweitern Sie das Feld **Sales \| OrderDate**. Daraufhin wird eine Datumshierarchie angezeigt.
-    
+
     *Das Feld **Targets \| TargetMonth** bietet eine ähnliche Hierarchie. Diese Hierarchien wurden nicht von Ihnen erstellt. Sie wurden automatisch erstellt. Es gibt jedoch ein Problem. Das Finanzjahr von Adventure Works beginnt am 1. Juli jedes Jahres. Diese automatisch erstellten Datumshierarchien beginnen jedoch am 1. Januar jedes Jahres.*
 
      ![Bild 359](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image40.png)
@@ -327,21 +310,21 @@ In dieser Aufgabe wechseln Sie zur Berichtsansicht und überprüfen die Benutzer
 
      ![Bild 362](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image43.png)
 
-1. Beachten Sie, dass die Datumshierarchien im Bereich **Felder** nicht mehr verfügbar sind.
+1. Beachten Sie, dass die Datumshierarchien im Bereich **Daten** nicht mehr verfügbar sind.
 
      ![Bild 363](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image45.png)
 
-## **Übung 4: Erstellen von Quickmeasures**
+## **Erstellen von Quickmeasures**
 
 In dieser Übung erstellen Sie zwei Quickmeasures.
 
-### **Aufgabe 1: Erstellen von Quickmeasures**
+## **Erstellen von Quickmeasures**
 
 In dieser Aufgabe erstellen Sie zwei Quickmeasures zur Berechnung des Gewinns und der Gewinnspanne.
 
 *Mit Quickmeasures wird die Berechnungsformel für Sie erstellt. Sie können sie schnell für einfache und häufige Berechnungen erstellen. Im Lab **Erstellen von DAX-Berechnungen in Power BI Desktop** erstellen Sie Measures ohne dieses Tool.*
 
-1. Klicken Sie im Bereich **Felder** mit der rechten Maustaste auf die Tabelle **Sales**, und wählen Sie dann die Option **Neues Quickmeasure** aus.
+1. Klicken Sie im Bereich **Daten** mit der rechten Maustaste auf die Tabelle **Sales**, und wählen Sie dann die Option **Neues Quickmeasure** aus.
 
      ![Bild 366](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image46.png)
 
@@ -349,7 +332,7 @@ In dieser Aufgabe erstellen Sie zwei Quickmeasures zur Berechnung des Gewinns un
 
      ![Bild 367](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image47.png)
 
-1. Erweitern Sie im Bereich **Felder** des Fensters **Quickmeasures** die Tabelle **Sales**.
+1. Erweitern Sie im Bereich **Daten** des Fensters **Quickmeasures** die Tabelle **Sales**.
 
 1. Ziehen Sie das Feld **Sales** in das Feld **Basiswert**.
 
@@ -357,13 +340,13 @@ In dieser Aufgabe erstellen Sie zwei Quickmeasures zur Berechnung des Gewinns un
 
      ![Bild 368](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image48.png)
 
-1. Beachten Sie das neue Measure im Bereich **Felder** in der Tabelle **Sales**.
+1. Beachten Sie das neue Measure im Bereich **Daten** in der Tabelle **Sales**.
     1. *Measures verwenden das Rechnersymbol.*
 
      ![Bild 370](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image50.png)
 
 1. Um das Measure umzubenennen, klicken Sie mit der rechten Maustaste darauf, wählen Sie **Umbenennen** aus und benennen Se es dann in **Profit** um.
-    
+
     *Tipp: Zum Umbenennen eines Feldes können Sie auf dieses doppelklicken oder es auswählen und **F2** drücken.*
 
 1. Fügen Sie in der Tabelle **Sales** ein zweites Quickmeasure basierend auf den folgenden Anforderungen hinzu:
@@ -379,7 +362,7 @@ In dieser Aufgabe erstellen Sie zwei Quickmeasures zur Berechnung des Gewinns un
 
 1. Wählen Sie das erste **visuelle Tabellenelement** auf der Berichtsseite aus, um die beiden Measures zu testen.
 
-1. Markieren Sie die zwei Measures im Bereich **Felder**.
+1. Markieren Sie die zwei Measures im Bereich **Daten**.
 
      ![Bild 375](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image55.png)
 
@@ -391,13 +374,13 @@ In dieser Aufgabe erstellen Sie zwei Quickmeasures zur Berechnung des Gewinns un
 
      ![Bild 378](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image57.png)
 
-### **Aufgabe 2: Erstellen einer m:n-Beziehung**
+## **Erstellen einer m:n-Beziehung**
 
 In dieser Aufgabe erstellen Sie eine m:n-Beziehung zwischen den Tabellen **Salesperson** und **Sales**.
 
  *In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Das sieht folgendermaßen aus: **Salesperson \| Salesperson**. In diesem Beispiel ist **Salesperson** der Tabellenname und **Salesperson** der Feldname.*
 
-1. Aktivieren Sie in Power BI Desktop in der Berichtsansicht im Bereich **Felder** die folgenden beiden Felder, um ein **visuelles Tabellenelement** zu erstellen.
+1. Aktivieren Sie in Power BI Desktop in der Berichtsansicht im Bereich **Daten** die folgenden zwei Felder, um ein **Tabellenvisual** zu erstellen.
 
      - Salesperson \| Salesperson
      - Sales \| Sales
@@ -421,8 +404,8 @@ In dieser Aufgabe erstellen Sie eine m:n-Beziehung zwischen den Tabellen **Sales
 
 1. Wechseln Sie zur Berichtsansicht. Sie sollten sehen, dass das visuelle Element nicht aktualisiert wurde, d. h. die Ergebnisse für Michael Blythe wurden nicht geändert.
 
-1. Wechseln Sie zurück zur Modellansicht, und führen Sie dann die Anweisungen für den Beziehungsfilter (Pfeilspitzen) von der Tabelle **Salesperson**. 
-    
+1. Wechseln Sie zurück zur Modellansicht, und führen Sie dann die Anweisungen für den Beziehungsfilter (Pfeilspitzen) von der Tabelle **Salesperson**.
+
     *Beachten Sie, dass die Tabelle **Salesperson** die Tabelle **Sales** filtert. Außerdem filtert sie die Tabelle **SalespersonRegion**, gibt aber keine Filter an die Tabelle **Region** weiter (der Pfeil zeigt in die falsche Richtung).*
 
      ![Bild 380](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image11.png)
@@ -440,13 +423,13 @@ In dieser Aufgabe erstellen Sie eine m:n-Beziehung zwischen den Tabellen **Sales
      ![Bild 382](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image14.png)
 
 1. Wechseln Sie zur Berichtsansicht, und beachten Sie, dass die Umsätze sich noch immer nicht geändert haben.
-    
+
     *Das Problem besteht nun darin, dass es zwei mögliche Pfade für die Filterweiterleitung zwischen den Tabellen **Salesperson** und **Sales** gibt. Diese Mehrdeutigkeit wird anhand einer Bewertung nach der „geringsten Anzahl an Tabellen“ intern aufgelöst. Sie sollten keine Modelle mit einer solchen Mehrdeutigkeit erstellen. Das Problem wird später in diesem Lab und im Laufe des Labs **Erstellen von DAX-Berechnungen in Power BI Desktop** aufgegriffen.*
 
 1. Wechseln Sie zur Modellansicht, um die Filterweitergabe über die Bridgingtabelle zu erzwingen. Bearbeiten Sie (per Doppelklick) die Beziehung zwischen den Tabellen **Salesperson** und **Sales**.
 
 1. Deaktivieren Sie im Fenster **Beziehung bearbeiten** das Kontrollkästchen **Diese Beziehung aktivieren** und wählen Sie **OK** aus.
-    
+
     *Die Filterweitergabe erfolgt nun über den einzigen aktiven Pfad.*
 
 1. Beachten Sie, dass die inaktive Beziehung im Diagramm mit einer gestrichelten Linie dargestellt wird.
@@ -469,7 +452,7 @@ In dieser Aufgabe erstellen Sie eine m:n-Beziehung zwischen den Tabellen **Sales
 
 *Die umbenannte Tabelle spiegelt nun ihren Zweck wider: Sie wird dazu verwendet, die Leistung von Vertriebsmitarbeiter*innen anhand ihrer Umsätze in den ihnen zugewiesenen Vertriebsregionen zu dokumentieren und zu analysieren.*
 
-### **Aufgabe 3: Zuordnen der Targets-Tabelle**
+## **Zuordnen der Targets-Tabelle**
 
 Im Rahmen dieser Aufgabe erstellen Sie eine Beziehung zur **Targets**-Tabelle.
 
@@ -483,7 +466,7 @@ Im Rahmen dieser Aufgabe erstellen Sie eine Beziehung zur **Targets**-Tabelle.
 
  *Zwar können Sie nun Verkäufe und Ziele visualisieren, aber Sie sollten aus zwei Gründen vorsichtig vorgehen. Erstens gibt es keinen Filter für einen Zeitraum, weshalb Ziele auch zukünftige Zielwerte einschließen. Zweitens sind Ziele nicht additiv, weshalb die Summe nicht angezeigt werden sollte. Diese können entweder durch das Formatieren des visuellen Elements deaktiviert oder mithilfe von Berechnungslogik entfernt werden. Sie verfolgen den zweiten Ansatz, indem Sie im Lab **Erstellen von erweiterten DAX-Berechnungen in Power BI Desktop** ein Zielmeasure erstellen, das einen leeren Wert zurückgibt, wenn nach mehreren Vertriebsmitarbeitern gefiltert wird.*
 
-### **Aufgabe 4: Abschluss**
+### **Abschluss**
 
 Mit dieser Aufgabe schließen Sie das Lab ab.
 

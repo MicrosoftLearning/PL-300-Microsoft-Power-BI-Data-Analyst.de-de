@@ -1,40 +1,24 @@
 ---
 lab:
   title: Erzwingen von Sicherheit auf Zeilenebene
-  module: 12 - Row-Level Security
+  module: Enforce Row-Level Security
 ---
 
 
 # **Erzwingen von Sicherheit auf Zeilenebene**
 
-**Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
+## **Labszenario**
 
 In diesem Lab erzwingen Sie die Sicherheit auf Zeilenebene, um sicherzustellen, dass ein Vertriebsmitarbeiter nur die Vertriebsdaten für die ihm zugewiesenen Regionen analysieren kann.
 
 In diesem Lab lernen Sie Folgendes:
 
 - Erzwingen von Sicherheit auf Zeilenebene
+- Auswahl zwischen dynamischen und statischen Methoden
 
-### **Labszenario**
+**Dieses Lab sollte ungefähr 45 Minuten in Anspruch nehmen.**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
-
-1. Vorbereiten von Daten in Power BI Desktop
-1. Laden von Daten in Power BI Desktop
-1. Entwerfen eines Datenmodells in Power BI
-1. Erstellen von DAX-Berechnungen in Power BI Desktop
-1. Erstellen erweiterter DAX-Berechnungen in Power BI Desktop
-1. Entwerfen eines Berichts in Power BI Desktop
-1. Verbessern eines Berichts in Power BI Desktop
-1. Analysieren von Daten in Power BI Desktop
-1. Erstellen eines Power BI-Dashboards
-1. **Erzwingen von Sicherheit auf Zeilenebene**
-
-## **Übung 1: Erzwingen von Sicherheit auf Zeilenebene**
-
-In dieser Übung erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, dass Vertriebsmitarbeiter nur Umsätze in den zugewiesenen Regionen anzeigen können.
-
-### **Aufgabe 1: Erste Schritte**
+## **Erste Schritte**
 
 In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
@@ -60,7 +44,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
 1. Wenn Sie aufgefordert werden, Änderungen zu übernehmen, klicken Sie auf **Später übernehmen**.
 
-### **Aufgabe 2: Erzwingen von Sicherheit auf Zeilenebene**
+## **Erzwingen von Sicherheit auf Zeilenebene**
 
 In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, dass Vertriebsmitarbeiter nur Umsätze in den zugewiesenen Regionen anzeigen können.
 
@@ -68,7 +52,7 @@ In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, 
 
    ![Bild 5.701](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image20.png)
 
-1. Wählen Sie im Bereich **Felder** die Tabelle **Salesperson (Performance)** aus.
+1. Wählen Sie im Bereich **Daten** die Tabelle **Salesperson (Performance)** aus.
 
 
 1. Wenn Sie die Daten überprüfen, werden Sie bemerken, dass Michael Blythe (EmployeeKey 281) den UPN-Wert **michael-blythe@adventureworks.com** hat.
@@ -126,6 +110,10 @@ In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, 
 1. Wählen Sie im Fenster **Rollen verwalten** die Option **Löschen** aus. Wenn Sie aufgefordert werden, den Löschvorgang zu bestätigen, wählen Sie **Ja, Löschen** aus.
 
    ![Bild 17](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image34.png)
+
+### **Abschluss**
+
+Mit dieser Aufgabe schließen Sie das Lab ab.
 
 1. Wählen Sie **Speichern** aus, und speichern Sie dann die Power BI Desktop-Datei, um das Lab zu beenden.
 
