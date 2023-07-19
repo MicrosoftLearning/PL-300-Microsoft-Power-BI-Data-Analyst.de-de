@@ -1,13 +1,13 @@
 ---
 lab:
   title: Entwerfen eines Berichts in Power BI Desktop
-  module: 7 - Create Reports
+  module: Create Reports in Power BI Desktop
 ---
 
 
 # Entwerfen eines Berichts in Power BI Desktop
 
-**Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
+## **Labszenario**
 
 In diesem Lab erstellen Sie einen dreiseitigen Bericht. Danach veröffentlichen Sie ihn in Power BI, um ihn anschließend zu öffnen und mit ihm zu interagieren.
 
@@ -16,26 +16,9 @@ In diesem Lab lernen Sie Folgendes:
 - Entwerfen eines Berichts
 - Konfigurieren von Feldern und Formatierungseigenschaften für Visuals
 
-### **Labszenario**
+**Dieses Lab sollte ungefähr 45 Minuten in Anspruch nehmen.**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
-
-1. Vorbereiten von Daten in Power BI Desktop
-1. Laden von Daten in Power BI Desktop
-1. Entwerfen eines Datenmodells in Power BI
-1. Erstellen von DAX-Berechnungen in Power BI Desktop
-1. Erstellen erweiterter DAX-Berechnungen in Power BI Desktop
-1. **Entwerfen eines Berichts in Power BI Desktop**
-1. Verbessern eines Berichts in Power BI Desktop
-1. Analysieren von Daten in Power BI
-1. Erstellen eines Power BI-Dashboards
-1. Erzwingen von Sicherheit auf Zeilenebene
-
-## **Übung 1: Erstellen eines Berichts**
-
-In dieser Übung erstellen Sie einen dreiseitigen Bericht mit dem Namen **Umsatzbericht**.
-
-### **Aufgabe 1: Erste Schritte – Öffnen des Berichts**
+## **Erstellen eines Berichts**
 
 In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Starterbericht öffnen.
 
@@ -45,7 +28,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Start
 
 1. Erstellen Sie eine Kopie der Datei, indem Sie zu **Datei** > **Speichern unter** wechseln, und speichern Sie die Kopie im Ordner **D:\PL300\MySolution**.
 
-### **Aufgabe 2: Entwerfen von Seite 1**
+## **Entwerfen der ersten Seite**
 
 In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
 
@@ -71,7 +54,7 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
 
      ![Bild 49](Linked_image_Files/07-design-report-in-power-bi-desktop_image18.png)
 
-1. Ziehen Sie im Bereich **Felder** das Feld **Datum \| Jahr** (nicht die Ebene **Jahr** der Hierarchie) in den Datenschnitt **Feld** im Bereich „Visualisierungen“.
+1. Ziehen Sie im Bereich **Daten** das Feld **Datum \| Jahr** (nicht die Ebene **Jahr** der Hierarchie) in den Datenschnitt **Feld** im Bereich „Visualisierungen“.
     
     *In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Das sieht folgendermaßen aus: **Date \| Year**. In diesem Beispiel ist **Date** der Tabellenname und **Year** der Feldname.*
 
@@ -111,13 +94,13 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
      - Date \| Month
      - Sales \| Sales
 
-1. Im Feldbereich des Visuals (nicht im Bereich **Felder**; der Feldbereich des Visuals befindet sich unter dem Bereich **Visualisierungen**) sehen Sie, dass die Felder den Bereichen **x-Achse** und **Spalte y-Achse** zugewiesen sind.
+1. Im Feldbereich des Visuals (unter dem Bereich **Visualisierungen**) sehen Sie, dass die Felder den Bereichen **x-Achse** und **Spalte y-Achse** zugewiesen sind.
     
     *Wenn Sie Felder in ein visuelles Element ziehen, werden sie den Standardbereichen hinzugefügt. Sie können Felder wie im nächsten Schritt auch direkt in die Bereiche ziehen, um eine höhere Genauigkeit zu erzielen.*
 
      ![Bild 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28_N.png)
 
-1. Ziehen Sie im Bereich **Felder** das Feld **Sales \| Profit Margin** in den Bereich **Linie y-Achse**.
+1. Ziehen Sie im Bereich **Daten** das Feld **Sales \| Profit Margin** in den Bereich **Linie y-Achse**.
 
      ![Bild 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
 
@@ -176,7 +159,7 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
 
 *Damit ist der Entwurf der ersten Seite fertig.*
 
-### **Aufgabe 3: Entwerfen von Seite 2**
+## **Entwerfen der zweiten Seite**
 
 In dieser Aufgabe wird die zweite Berichtsseite entworfen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
 
@@ -216,7 +199,7 @@ In dieser Aufgabe wird die zweite Berichtsseite entworfen. Nach der Fertigstellu
 
      ![Bild 57](Linked_image_Files/07-design-report-in-power-bi-desktop_image44.png)
 
-1. Ziehen Sie das Feld **Product \| Category** aus dem Bereich **Felder** in den Bereich **Filter für diese Seite**.
+1. Ziehen Sie das Feld **Product \| Category** aus dem Bereich **Daten** in den Bereich **Filter für diese Seite**.
     
     *Mit Feldern, die dem Bereich **Filter** hinzugefügt werden, kann das gleiche Ergebnis erzielt werden wie mit einem Slicer. Ein Unterschied besteht darin, dass sie keinen Platz auf der Berichtsseite beanspruchen. Ein weiterer Unterschied besteht darin, dass sie für erweiterte Filteranforderungen konfiguriert werden können.*
 
@@ -234,7 +217,7 @@ In dieser Aufgabe wird die zweite Berichtsseite entworfen. Nach der Fertigstellu
 
  *Damit ist der Entwurf der zweiten Seite fertig.*
 
-### **Aufgabe 4: Entwerfen von Seite 3**
+## **Entwerfen der dritten Seite**
 
 In dieser Aufgabe wird die dritte und letzte Berichtsseite entworfen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
 
@@ -304,11 +287,7 @@ In dieser Aufgabe wird die dritte und letzte Berichtsseite entworfen. Nach der F
 
  *Damit ist der Entwurf der dritten und letzten Seite fertig.*
 
-## **Übung 2: Erkunden des Berichts**
-
-In dieser Übung veröffentlichen Sie den Bericht im Power BI-Dienst und erkunden den schreibgeschützten Consumerbericht.
-
-### **Aufgabe 1: Veröffentlichen des Berichts**
+## **Veröffentlichen des Berichts**
 
 In dieser Aufgabe veröffentlichen Sie den Bericht im Power BI-Dienst.
 
@@ -327,7 +306,7 @@ In dieser Aufgabe veröffentlichen Sie den Bericht im Power BI-Dienst.
 1. Wählen Sie **Auswählen** aus, um den Bericht zu veröffentlichen. Dies kann einige Zeit dauern. 
 1. Wenn die Veröffentlichung erfolgreich war, klicken Sie auf **OK**.
 
-### **Aufgabe 2: Erkunden des Berichts**
+## **Erkunden des Berichts**
 
 In dieser Aufgabe erkunden Sie den Bericht, der in Power BI veröffentlicht wurde.
 
@@ -410,7 +389,7 @@ In dieser Aufgabe erkunden Sie den Bericht, der in Power BI veröffentlicht wur
 
      ![Bild 91](Linked_image_Files/07-design-report-in-power-bi-desktop_image71.png)
 
-### **Aufgabe 3: Abschluss**
+### **Abschluss**
 
 Mit dieser Aufgabe schließen Sie das Lab ab.
 
