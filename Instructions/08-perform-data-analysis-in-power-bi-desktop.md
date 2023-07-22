@@ -1,13 +1,13 @@
 ---
 lab:
-  title: "Analysieren von Daten in Power\_BI"
-  module: 8 - Perform Data Analysis in Power BI
+  title: Durchführen von erweiterten Analysen in Power BI
+  module: Perform Data Analysis in Power BI
 ---
 
 
 # **Analysieren von Daten in Power BI**
 
-**Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
+## **Labszenario**
 
 In diesem Lab erstellen Sie den Bericht **Sales Exploration**.
 
@@ -16,26 +16,9 @@ In diesem Lab lernen Sie Folgendes:
 - Erstellen von animierten Punktdiagrammen
 - Verwenden eines Visuals zum Vorhersagen von Werten
 
-### **Labszenario**
+**Dieses Lab sollte ungefähr 30 Minuten in Anspruch nehmen.**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
-
-1. Vorbereiten von Daten in Power BI Desktop
-1. Laden von Daten in Power BI Desktop
-1. Modellieren von Daten in Power BI Desktop
-1. Erstellen von DAX-Berechnungen in Power BI Desktop
-1. Erstellen erweiterter DAX-Berechnungen in Power BI Desktop
-1. Entwerfen eines Berichts in Power BI Desktop
-1. Verbessern eines Berichts in Power BI Desktop
-1. **Analysieren von Daten in Power BI**
-1. Erstellen eines Power BI-Dashboards
-1. Erzwingen von Sicherheit auf Zeilenebene
-
-## **Übung 1: Erstellen des Berichts**
-
-In dieser Übung erstellen Sie den Bericht **Umsatzuntersuchung**.
-
-### **Aufgabe 1: Erste Schritte – Anmelden**
+## **Erste Schritte: Anmelden**
 
 In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei Power BI anmelden.
 
@@ -55,7 +38,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei 
 
      ![Bild 22](Linked_image_Files/07-my-workspace-new.png)
 
-### **Aufgabe 2: Erste Schritte – Erstellen eines Datasets**
+## **Erste Schritte: Erstellen eines Datasets**
 
 In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein Dataset erstellen. *Wenn Sie das Dataset bereits veröffentlicht haben, fahren Sie mit der nächsten Aufgabe fort.*
 
@@ -71,7 +54,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein Datas
 
 *Mit dieser Methode erstellen Sie einen Bericht und ein Dataset. In dieser Übung wird das Dataset nur zum Erstellen eines neuen Berichts verwendet. Dieser Prozess kann auch mit einem vorhandenen Dataset aus einem anderen Bericht durchgeführt werden, anstatt ein neues hochzuladen. Wenn Sie den Bericht nicht verwenden, empfiehlt es sich außerdem, die nicht benötigte Datei zu löschen.*
 
-### **Aufgabe 3: Erstellen des Berichts**
+## **Erstellen des Berichts**
 
 In dieser Aufgabe erstellen Sie eine Liveverbindung mit dem Power BI-Dataset, das in der letzten Aufgabe erstellt wurde, und erstellen dann einen neuen Bericht zur **Umsatzuntersuchung**.
 
@@ -91,11 +74,7 @@ In dieser Aufgabe erstellen Sie eine Liveverbindung mit dem Power BI-Dataset, da
 
 *Sie erstellen nun zwei Berichtsseiten, und auf jeder Seite arbeiten Sie mit einem anderen Visual, um Daten zu analysieren und zu erkunden.*
 
-## **Übung 2: Erstellen eines Punktdiagramms**
-
-In dieser Übung erstellen Sie ein Punktdiagramm, das animiert werden kann.
-
-### **Aufgabe 1: Erstellen eines animierten Punktdiagramms**
+## **Erstellen eines animierten Punktdiagramms**
 
 In dieser Aufgabe erstellen Sie ein Punktdiagramm, das animiert werden kann.
 
@@ -141,11 +120,8 @@ In dieser Aufgabe erstellen Sie ein Punktdiagramm, das animiert werden kann.
 
 1. Speichern Sie die Power BI Desktop-Datei.
 
-## **Übung 3: Erstellen einer Vorhersage**
 
-In dieser Übung erstellen Sie eine Vorhersage, um den möglichen zukünftigen Umsatz zu ermitteln.
-
-### **Aufgabe 1: Erstellen einer Vorhersage**
+## **Erstellen einer Vorhersage**
 
 In dieser Aufgabe erstellen Sie eine Vorhersage, um den möglichen zukünftigen Umsatz zu ermitteln.
 
@@ -197,7 +173,7 @@ In dieser Aufgabe erstellen Sie eine Vorhersage, um den möglichen zukünftigen 
 
 1. Filtern Sie im Bereich **Filter** nun nach **Clothing** (Kleidung). Sie sehen, dass das Ergebnis sich verändert.
 
-### **Aufgabe 2: Abschluss**
+### **Fertigstellen**
 
 In dieser Aufgabe schließen Sie das Lab in Power BI Desktop ab.
 
@@ -209,4 +185,4 @@ In dieser Aufgabe schließen Sie das Lab in Power BI Desktop ab.
 
     ![Bild 23](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image46.png)
 
-1.  Schließen Sie Power BI Desktop.
+1. Schließen Sie Power BI Desktop.

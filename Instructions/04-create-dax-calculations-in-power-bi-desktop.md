@@ -1,44 +1,27 @@
 ---
 lab:
   title: Erstellen von DAX-Berechnungen in Power BI Desktop
-  module: 5 - Create Model Calculations using DAX in Power BI
+  module: Create Model Calculations using DAX in Power BI
 ---
 
 
 # Erstellen von DAX-Berechnungen in Power BI Desktop
 
-**Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
+## **Labszenario**
 
 In diesem Lab erstellen Sie mithilfe von Data Analysis Expressions (DAX) berechnete Tabellen, berechnete Spalten und einfache Measures.
 
 In diesem Lab lernen Sie Folgendes:
 
- - Erstellen berechneter Tabellen
- - Erstellen berechneter Spalten
- - Erstellen von Measures
+- Erstellen berechneter Tabellen
+- Erstellen berechneter Spalten
+- Erstellen von Measures
 
-### **Labszenario**
+**Dieses Lab sollte ungefähr 45 Minuten in Anspruch nehmen.**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
-
-1. Vorbereiten von Daten in Power BI Desktop
-1. Laden von Daten in Power BI Desktop
-1. Entwerfen eines Datenmodells in Power BI
-1. **Erstellen von DAX-Berechnungen in Power BI Desktop**
-1. Erstellen erweiterter DAX-Berechnungen in Power BI Desktop
-1. Entwerfen eines Berichts in Power BI Desktop
-1. Verbessern eines Berichts in Power BI Desktop
-1. Analysieren von Daten in Power BI
-1. Erstellen eines Power BI-Dashboards
-1. Erzwingen von Sicherheit auf Zeilenebene
-
-## **Übung 1: Erstellen berechneter Tabellen**
+## **Erstellen berechneter Tabellen**
 
 In dieser Übung erstellen Sie zwei berechnete Tabellen. Die erste ist die Tabelle **Salesperson**, um eine direkte Beziehung zwischen ihr und der Tabelle **Sales** zu ermöglichen. Die zweite ist die Tabelle **Date**.
-
-### **Aufgabe 1: Erste Schritte**
-
-In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
 *Wichtig: Wenn Sie nach einem vorherigen Lab fortfahren (und dieses Lab erfolgreich abgeschlossen haben), überspringen Sie diese Aufgabe und fahren mit der nächsten fort.*
 
@@ -54,17 +37,17 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
 1. Schließen Sie alle Informationsfenster, die möglicherweise geöffnet werden.
 
-1. Beachten Sie die gelbe Warnmeldung unterhalb des Menübands. 
+1. Beachten Sie die gelbe Warnmeldung unterhalb des Menübands.
 
     *In dieser Meldung werden Sie darauf hingewiesen, dass die Abfragen nicht als Modelltabellen geladen wurden. Sie wenden die Abfragen später in diesem Lab an.*
-    
+
     *Klicken Sie rechts auf der gelben Warnmeldung auf das **X**, um die Warnmeldung zu verwerfen.*
 
 1. Um eine Kopie der Datei zu erstellen, wechseln Sie zu **Datei > Speichern unter**, und speichern Sie sie im Ordner **D:\PL300\MySolution**.
 
 1. Wenn Sie aufgefordert werden, Änderungen zu übernehmen, klicken Sie auf **Später übernehmen**.
 
-### **Aufgabe 2: Erstellen der Tabelle „Salesperson“**
+## **Erstellen der Tabelle „Salesperson“**
 
 In dieser Aufgabe erstellen Sie die berechnete Tabelle **Salesperson** (direkte Beziehung zu **Sales**).
 
@@ -77,7 +60,7 @@ Die Bearbeitungsleiste unterstützt das Eingeben einer gültigen DAX-Formel. Sie
      ![Abbildung 1](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image9.png)
 
 2. Geben Sie in die Bearbeitungsleiste (die beim Erstellen oder Bearbeiten von Berechnungen direkt unterhalb des Menübands geöffnet wird) **SalesPerson =** ein. Drücken Sie **UMSCHALT+EINGABE**, geben Sie **'SalesPerson (Performance)'** ein, und drücken Sie dann die **EINGABETASTE**.
-    
+
     *Der Einfachheit halber können Sie alle DAX-Definitionen in diesem Lab aus den Codebeispielen in der Datei **D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** kopieren.*
 
      ![Bild 4](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image10.png)
@@ -86,7 +69,7 @@ Die Bearbeitungsleiste unterstützt das Eingeben einer gültigen DAX-Formel. Sie
 
      *Tipp: Es wird empfohlen, „Leerraum“ (d. h. Zeilenschaltungen und Tabulatoren) einzugeben, um Formeln in einem intuitiven und einfach lesbaren Format zu gestalten, insbesondere bei langen und komplexen Formeln. Um eine Zeilenschaltung einzugeben, drücken Sie **Umschalt+Eingabetaste**. „Leerraum“ ist optional.*
 
-1. Beachten Sie im Bereich **Felder**, dass das Tabellensymbol einen Blauton hat (zur Kennzeichnung einer berechneten Tabelle).
+1. Beachten Sie im Bereich **Daten**, dass das Tabellensymbol einen Blauton hat (zur Kennzeichnung einer berechneten Tabelle).
 
     ![Bild 10](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image11.png)
 
@@ -110,13 +93,13 @@ Die Bearbeitungsleiste unterstützt das Eingeben einer gültigen DAX-Formel. Sie
 
 1. Geben Sie im Bereich **Eigenschaften** in das Feld **Beschreibung** Folgendes ein: **Salesperson related to Sales**
     
-    *Denken Sie daran, dass die Beschreibungen als QuickInfo im Bereich **Felder** angezeigt werden, wenn Benutzer*innen den Cursor über eine Tabelle oder ein Feld bewegen.*
+    *Denken Sie daran, dass die Beschreibungen als QuickInfo im Bereich **Daten** angezeigt werden, wenn Benutzer*innen den Cursor über eine Tabelle oder ein Feld bewegen.*
 
 1. Legen Sie für die Tabelle **Salesperson (Performance)** die Beschreibung wie folgt fest: **Salesperson related to region(s)**
 
 *Das Datenmodell bietet zwei Alternativen bei der Analyse von Vertriebsmitarbeiter*innen. Die Tabelle **Salesperson** ermöglicht die Analyse der von einem Vertriebsmitarbeiter erzielten Umsätze, während die Tabelle **Salesperson (Performance)** die Analyse der Umsätze ermöglicht, die in den dem Vertriebsmitarbeiter zugewiesenen Vertriebsregionen erzielt wurden.*
 
-### **Aufgabe 3: Erstellen der Tabelle „Date“**
+## **Erstellen der Tabelle „Date“**
 
 In dieser Aufgabe erstellen Sie die Tabelle **Date**.
 
@@ -135,7 +118,7 @@ In dieser Aufgabe erstellen Sie die Tabelle **Date**.
 
     ![Bild 6](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image16.png)
 
-    
+
     *Die CALENDARAUTO()-Funktion gibt eine Tabelle mit einer einzigen Spalte mit Datumswerten zurück. Es werden automatisch alle Datumsspalten des Datenmodells durchsucht, um die im Datenmodell gespeicherten frühesten und spätesten Datumswerte zu ermitteln. Anschließend wird für jedes Datum innerhalb dieses Bereichs eine Zeile angelegt, wobei der Bereich in beide Richtungen erweitert wird, um sicherzustellen, dass Daten für vollständige Jahre gespeichert werden.*
 
     *Diese Funktion kann ein einzelnes optionales Argument verwenden, das die Zahl des letzten Monats eines Jahres ist. Falls weggelassen, ist der Wert 12, was bedeutet, dass Dezember der letzte Monat des Jahres ist. In diesem Fall wird „6“ eingegeben, was bedeutet, dass Juni der letzte Monat des Geschäftsjahres ist.*
@@ -150,7 +133,7 @@ In dieser Aufgabe erstellen Sie die Tabelle **Date**.
 
     ![Bild 9](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image18.png)
 
-### **Aufgabe 4:** **Erstellen berechneter Spalten**
+## **Erstellen berechneter Spalten**
 
 In dieser Aufgabe fügen Sie weitere Spalten hinzu, um das Filtern und Gruppieren nach verschiedenen Zeiträumen zu aktivieren. Sie erstellen auch eine berechnete Spalte, um die Sortierreihenfolge anderer Spalten zu steuern.
 
@@ -199,7 +182,7 @@ In dieser Aufgabe fügen Sie weitere Spalten hinzu, um das Filtern und Gruppiere
 
     ![Bild 51](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image23.png)
 
-1. Ziehen Sie im Bereich **Felder** aus der Tabelle **Date** das Feld **Year** in den Bereich **Zeilen**.
+1. Ziehen Sie im Bereich **Daten** aus der Tabelle **Date** das Feld **Year** in den Bereich **Zeilen**.
 
     ![Bild 17](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image24.png)
 
@@ -237,7 +220,7 @@ In dieser Aufgabe fügen Sie weitere Spalten hinzu, um das Filtern und Gruppiere
 
     ![Bild 21](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image28.png)
 
-1. Wechseln Sie zurück zur Berichtsansicht. Stellen Sie sicher, dass im Bereich **Felder** das Feld **Month** ausgewählt ist (falls ausgewählt, hat es einen dunkelgrauen Hintergrund).
+1. Wechseln Sie zurück zur Berichtsansicht. Stellen Sie sicher, dass im Bereich **Daten** das Feld **Month** ausgewählt ist (falls ausgewählt, hat es einen dunkelgrauen Hintergrund).
 
 1. Klicken Sie auf dem kontextbezogenen Menüband **Spaltentools** innerhalb der Gruppe **Sortieren** auf **Nach Spalte sortieren**, und wählen Sie dann **MonthKey** aus.
 
@@ -247,18 +230,20 @@ In dieser Aufgabe fügen Sie weitere Spalten hinzu, um das Filtern und Gruppiere
 
     ![Bild 23](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image30.png)
 
-### **Aufgabe 5:** **Vervollständigen der Tabelle „Date“**
+## **Vervollständigen der Tabelle „Date“**
 
 In dieser Aufgabe vervollständigen Sie den Entwurf der Tabelle **Date**, indem Sie eine Spalte ausblenden und eine Hierarchie erstellen. Sie erstellen dann Beziehungen zu den Tabellen **Sales** und **Targets**.
 
 1. Wechseln Sie zur Ansicht „Modell“. Blenden Sie in der Tabelle **Date** die Spalte **MonthKey** aus (legen Sie **Ausgeblendet** auf **Ja** fest).
 
-1. Wählen Sie im Bereich **Felder** rechts die Tabelle **Date** aus, klicken Sie mit der rechten Maustaste auf die Spalte **Year**, und wählen Sie **Hierarchie erstellen** aus. 
 
-1. Benennen Sie die neu erstellte Hierarchie mit **Fiscal**, indem Sie mit der rechten Maustaste darauf klicken und **Umbenennen** auswählen. 
+1. Wählen Sie im Bereich **Daten** rechts die Tabelle **Date** aus, klicken Sie mit der rechten Maustaste auf die Spalte **Year**, und wählen Sie **Hierarchie erstellen** aus. 
 
-1. Fügen Sie der Hierarchie „Fiscal“ die folgenden beiden verbleibenden Felder hinzu, indem Sie sie im Bereich „Felder“ auswählen, mit der rechten Maustaste darauf klicken und **Zu Hierarchie hinzufügen** -> **Fiscal** auswählen.
-    
+1. Benennen Sie die neu erstellte Hierarchie mit **Fiscal**, indem Sie mit der rechten Maustaste darauf klicken und **Umbenennen** auswählen.
+
+
+1. Fügen Sie der Hierarchie „Fiscal“ die folgenden beiden verbleibenden Felder hinzu, indem Sie sie im Bereich **Daten** auswählen, mit der rechten Maustaste darauf klicken und **Zu Hierarchie hinzufügen** -> **Fiscal** auswählen.
+
     - Quarter
     - Month
 
@@ -274,11 +259,11 @@ In dieser Aufgabe vervollständigen Sie den Entwurf der Tabelle **Date**, indem 
     - Sales \| OrderDate
     - Targets \| TargetMonth
 
-### **Aufgabe 6: Markieren der Tabelle „Date“**
+## **Markieren der „Date“-Tabelle**
 
 In dieser Aufgabe markieren Sie die Tabelle **Date** als Datumstabelle.
 
-1. Wechseln Sie zur Ansicht „Bericht“. Wählen Sie im Bereich **Felder** die Tabelle **Date** und nicht das Feld **Date** aus.
+1. Wechseln Sie zur Ansicht „Bericht“. Wählen Sie im Bereich **Daten** die Tabelle **Date** und nicht das Feld **Date** aus.
 
 1. Klicken Sie auf dem kontextbezogenen Menüband **Tabellentools** innerhalb der Gruppe **Kalender** auf **Als Datumstabelle markieren**, und wählen Sie dann **Als Datumstabelle markieren** aus.
 
@@ -294,15 +279,11 @@ In dieser Aufgabe markieren Sie die Tabelle **Date** als Datumstabelle.
 
     *Dieser Entwurfsansatz ist für eine Datumstabelle geeignet, wenn in Ihrer Datenquelle keine Datumstabelle vorhanden ist. Wenn Sie ein Data Warehouse verwenden, wäre es angebracht, Datumsdaten aus dessen Datendimensionstabelle zu laden, anstatt die Datumslogik in Ihrem Datenmodell neu zu definieren.*
 
-## **Übung 2: Erstellen von Measures**
-
-In dieser Übung erstellen und formatieren Sie mehrere Measures.
-
-### **Aufgabe 1: Erstellen einfacher Measures**
+## **Erstellen einfacher Measures**
 
 In dieser Aufgabe erstellen Sie einfache Measures. Einfache Measures aggregieren Werte in einer einzelnen Spalte oder zählen die Zeilen einer Tabelle.
 
-1. Ziehen Sie in der Berichtsansicht auf **Seite 2** im Bereich **Felder** das Feld **Sales \| Unit Price** in das Matrixvisual.
+1. Ziehen Sie in der Berichtsansicht auf **Seite 2** im Bereich **Daten** das Feld **Sales \| Unit Price** in das Matrixvisual.
 
     *In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Das sieht folgendermaßen aus: **Sales \| Unit Price**. In diesem Beispiel ist **Sales** der Tabellenname und **Unit Price** der Feldname.*
 
@@ -320,7 +301,7 @@ In dieser Aufgabe erstellen Sie einfache Measures. Einfache Measures aggregieren
 
     *Sichtbare numerische Spalten ermöglichen Berichtsautoren, zur Zeit der Berichtsgestaltung zu entscheiden, wie eine Spalte summiert wird (oder nicht). Dies kann zu einer ungeeigneten Berichterstellung führen. Einige Datenmodellierer überlassen Dinge jedoch nicht gerne dem Zufall und entscheiden sich dafür, diese Spalten auszublenden und stattdessen eine durch Measures definierte Aggregationslogik verfügbar zu machen. Dies ist der Ansatz, den Sie nun in diesem Lab verfolgen.*
 
-1. Um ein Measure zu erstellen, klicken Sie im Bereich **Felder** mit der rechten Maustaste auf die Tabelle **Sales**, und wählen Sie dann **Neues Measure** aus.
+1. Um ein Measure zu erstellen, klicken Sie im Bereich **Daten** mit der rechten Maustaste auf die Tabelle **Sales**, und wählen Sie dann **Neues Measure** aus.
 
 1. Fügen Sie in der Bearbeitungsleiste die folgende Measuredefinition hinzu:
 
@@ -395,7 +376,7 @@ In dieser Aufgabe erstellen Sie einfache Measures. Einfache Measures aggregieren
 
     ![Bild 39](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image43.png)
 
-### **Aufgabe 2: Erstellen zusätzlicher Measures**
+## **Erstellen zusätzlicher Measures**
 
 In dieser Aufgabe erstellen Sie weitere Measures, die komplexere Formeln verwenden.
 
@@ -408,7 +389,7 @@ In dieser Aufgabe erstellen Sie weitere Measures, die komplexere Formeln verwend
 
 1. Benennen Sie die Spalte **Targets \| Target** in **Targets \| TargetAmount** um.
 
-    *Tipp: Es gibt mehrere Möglichkeiten, die Spalte in der Ansicht „Bericht“ umzubenennen: Im Bereich **Felder** können Sie mit der rechten Maustaste auf die Spalte klicken und dann **Umbenennen** auswählen. Alternativ können Sie auf die Spalte doppelklicken oder **F2** drücken.*
+    *Tipp: Es gibt mehrere Möglichkeiten, die Spalte in der Ansicht „Bericht“ umzubenennen: Im Bereich **Daten** können Sie mit der rechten Maustaste auf die Spalte klicken und dann **Umbenennen** auswählen. Alternativ können Sie auf die Spalte doppelklicken oder **F2** drücken.*
 
     *Sie sind im Begriff, ein Measure namens **Target** zu erstellen. In einer Tabelle ist es nicht möglich, dass eine Spalte und ein Measure denselben Namen haben.*
 
@@ -437,7 +418,7 @@ In dieser Aufgabe erstellen Sie weitere Measures, die komplexere Formeln verwend
 
 1. Blenden Sie die Spalte **TargetAmount** aus.
 
-    *Tipp: Im Bereich **Felder** können Sie mit der rechten Maustaste auf die Spalte klicken und dann **Ausblenden** auswählen.*
+    *Tipp: Im Bereich **Daten** können Sie mit der rechten Maustaste auf die Spalte klicken und dann **Ausblenden** auswählen.*
 
 1. Fügen Sie das Measure **Target** dem Tabellenvisual hinzu.
 
@@ -462,7 +443,7 @@ In dieser Aufgabe erstellen Sie weitere Measures, die komplexere Formeln verwend
 
     *Auch wenn es den Anschein hat, dass nicht alle Vertriebsmitarbeiter die Zielvorgaben erfüllen, denken Sie daran, dass das visuelle Tabellenelement noch nicht nach einem bestimmten Zeitraum gefiltert wurde. Sie erstellen Umsatzleistungsberichte, die nach einem von Benutzer ausgewählten Zeitraum im Lab **Entwerfen eines Berichts in Power BI Desktop** filtern.*
 
-1. Klappen Sie rechts oben im Bereich **Felder** den Bereich zu, und klappen Sie ihn dann auf.
+1. Klappen Sie rechts oben im Bereich **Daten** den Bereich zu, und klappen Sie ihn dann auf.
 
     *Durch das Zuklappen und erneute Öffnen des Bereichs wird der Inhalt zurückgesetzt.*
 
@@ -472,9 +453,7 @@ In dieser Aufgabe erstellen Sie weitere Measures, die komplexere Formeln verwend
 
     *Tabellen, die nur sichtbare Measures enthalten, werden automatisch am Anfang der Liste angezeigt.*
 
-### **Aufgabe 3: Abschluss**
-
-Mit dieser Aufgabe schließen Sie das Lab ab.
+### **Fertigstellen**
 
 Speichern Sie die Power BI Desktop-Datei.
 

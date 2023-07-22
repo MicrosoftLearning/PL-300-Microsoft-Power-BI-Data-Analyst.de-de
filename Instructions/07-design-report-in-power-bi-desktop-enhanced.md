@@ -1,13 +1,13 @@
 ---
 lab:
   title: "Verbessern eines Berichts in Power\_BI Desktop"
-  module: 7 - Create Reports
+  module: Create Reports in Power BI desktop
 ---
 
 
 # Verbessern eines Berichts in Power BI Desktop
 
-**Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
+## **Labszenario**
 
 In diesem Lab optimieren Sie die Verkaufsanalyse **Sales Analysis** mit erweiterten Entwurfsfunktionen.
 
@@ -18,26 +18,9 @@ In diesem Lab lernen Sie Folgendes:
 - Anwenden von bedingter Formatierung
 - Erstellen und Verwenden von Lesezeichen
 
-### **Labszenario**
+**Dieses Lab sollte ungefähr 45 Minuten in Anspruch nehmen.**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
-
-1. Vorbereiten von Daten in Power BI Desktop
-1. Laden von Daten in Power BI Desktop
-1. Entwerfen eines Datenmodells in Power BI
-1. Erstellen von DAX-Berechnungen in Power BI Desktop
-1. Erstellen erweiterter DAX-Berechnungen in Power BI Desktop
-1. Entwerfen eines Berichts in Power BI Desktop
-1. **Verbessern eines Berichts in Power BI Desktop**
-1. Analysieren von Daten in Power BI
-1. Erstellen eines Power BI-Dashboards
-1. Erzwingen von Sicherheit auf Zeilenebene
-
-## **Übung 1: Konfigurieren von Synchronisierungsslicern**
-
-In dieser Übung synchronisieren Sie die Datenschnitte der Berichtsseite.
-
-### Aufgabe 1: Erste Schritte – Anmelden
+## **Erste Schritte: Anmelden**
 
 In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei Power BI anmelden.
 
@@ -57,7 +40,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei 
 
      ![Bild 22](Linked_image_Files/07-my-workspace-new.png)
 
-### Aufgabe 2: Erste Schritte – Öffnen des Berichts
+## **Erste Schritte: Öffnen des Berichts**
 
 In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Starterbericht öffnen.
 
@@ -75,7 +58,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Start
 
 1. Schließen Sie alle Informationsfenster, die möglicherweise geöffnet werden.
 
-1. Beachten Sie die gelbe Warnmeldung unterhalb des Menübands. 
+1. Beachten Sie die gelbe Warnmeldung unterhalb des Menübands.
 
     *In dieser Meldung werden Sie darauf hingewiesen, dass die Abfragen nicht als Modelltabellen geladen wurden. Sie wenden die Abfragen später in diesem Lab an.*
 
@@ -85,14 +68,14 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Start
 
 1. Wenn Sie aufgefordert werden, Änderungen zu übernehmen, klicken Sie auf **Später übernehmen**.
 
-### **Aufgabe 3: Synchronisieren von Slicern**
+## **Synchronisieren von Slicers**
 
 In dieser Aufgabe synchronisieren Sie die Datenschnitte **Jahr** und **Region** und setzen die Entwicklung des Berichts fort, der im Lab **Entwerfen eines Berichts in Power BI Desktop** erstellt wurde.
 
 1. Legen Sie In Power BI Desktop auf der Seite **Übersicht** den Slicer **Year** auf **FY2018** fest.
 
 1. Wechseln Sie zur Seite **My Performance** (Meine Leistung). Sie sehen, dass der Slicer **Year** einen anderen Wert aufweist.
-    
+
     *Wenn Datenschnitte nicht synchronisiert werden, kann dies zur fehlerhaften Darstellung von Daten und zu Frustration bei den Benutzern des Berichts führen. Synchronisieren Sie nun die Datenschnitte im Bericht.*
 
 1. Kehren Sie zur Seite **Übersicht** zurück, und wählen Sie dann den Slicer **Year** aus.
@@ -115,24 +98,24 @@ In dieser Aufgabe synchronisieren Sie die Datenschnitte **Jahr** und **Region** 
 
 1. Wählen Sie zum Schließen der Seite **Slicer synchronisieren** das **X**oben rechts im Bereich aus.
 
-## **Übung 2: Konfigurieren eines Drillthroughs**
+## **Konfigurieren eines Drillthroughs**
 
 In dieser Übung erstellen Sie eine neue Seite und konfigurieren sie als Drillthroughseite. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
 
 ![Abbildung der neuen Seite, bestehend aus einem Kartenvisual und einem Tabellenvisual](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image17.png)
 
-### **Aufgabe 1: Erstellen einer Drillthroughseite**
+## **Erstellen einer Drillthroughseite**
 
 Bei dieser Aufgabe erstellen Sie eine neue Seite und konfigurieren sie als Drillthroughseite.
 
 1. Fügen Sie eine neue Berichtsseite mit dem Namen **Produktdetails** hinzu.
 
 1. Klicken Sie mit der rechten Maustaste auf die Seitenregisterkarte **Produktdetails**, und wählen Sie dann die Option **Seite ausblenden** aus.
-    
+
     *Berichtsbenutzer*innen können nicht direkt zur Drillthroughseite navigieren. Sie müssen über Visuals auf anderen Seiten darauf zugreifen. In der abschließenden Übung dieses Labs wird beschrieben, wie Sie den Drillthrough zur Seite durchführen.*
 
 1. Fügen Sie unterhalb des Bereichs **Visualisierungen** im Abschnitt **Drillthrough** im Feld **Drillthroughfelder hier hinzufügen** das Feld **Product \| Category** hinzu.
-    
+
     *In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Das sieht folgendermaßen aus: **Product \| Category**. In diesem Beispiel ist **Product** der Tabellenname und **Category** der Feldname.*
 
      ![Bild 96](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image20.png)
@@ -142,7 +125,7 @@ Bei dieser Aufgabe erstellen Sie eine neue Seite und konfigurieren sie als Drill
      ![Bild 99](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image21.png)
 
 1. Beachten Sie oben links auf der Berichtsseite die Pfeilschaltfläche.
-    
+
     *Es wird automatisch eine Pfeilschaltfläche hinzugefügt, wenn dem Drillthroughbereich ein Feld hinzugefügt wird. Sie ermöglicht es Berichtsbenutzern, zurück zu der Seite zu wechseln, auf der sie den Drillthrough gestartet haben.*
 
 1. Fügen Sie der Seite das Visual **Karte** hinzu. Ändern Sie dann die Größe und Position so, dass es rechts von der Schaltfläche angeordnet ist und die restliche Breite der Seite ausfüllt.
@@ -179,13 +162,13 @@ Bei dieser Aufgabe erstellen Sie eine neue Seite und konfigurieren sie als Drill
 
 *Der Entwurf der Drillthroughseite ist nun fast abgeschlossen. In der nächsten Übung reichern Sie die Seite mit bedingter Formatierung an.*
 
-## **Übung 3: Hinzufügen von bedingter Formatierung**
+## **Hinzufügen von bedingter Formatierung**
 
 In dieser Übung erweitern Sie die Drillthroughseite, indem Sie eine bedingte Formatierung hinzufügen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
 
 ![Abbildung einer aktualisierten Seite mit farbigen Werten und Symbolen](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image28.png)
 
-### **Aufgabe 1: Hinzufügen von bedingter Formatierung**
+## **Hinzufügen von bedingter Formatierung**
 
 Bei dieser Aufgabe erweitern Sie die Drillthroughseite, indem Sie eine bedingte Formatierung hinzufügen.
 
@@ -209,7 +192,7 @@ Bei dieser Aufgabe erweitern Sie die Drillthroughseite, indem Sie eine bedingte 
     - Wählen Sie für das sechste Steuerelement **Zahl** aus.
 
 1. Konfigurieren Sie die zweite Regel (grüner Kreis) wie folgt und wählen Sie dann **OK** aus:
-    
+
     *Die Regeln können wie folgt interpretiert werden: Anzeige eines roten Karos, wenn der Wert für die Rendite kleiner als „0“ ist, und Anzeige des grünen Kreises, wenn der Wert größer oder gleich null ist.*
 
      - Geben Sie im zweiten Steuerelement **0** ein.
@@ -235,13 +218,13 @@ Bei dieser Aufgabe erweitern Sie die Drillthroughseite, indem Sie eine bedingte 
 
 *Sie erinnern sich vielleicht daran, dass die Hintergrundfarben aus der Datei **ColorFormats.csv** im Lab **Vorbereiten von Daten in Power BI Desktop** stammen und dann mit der Abfrage **Product** auf der Registerkarte **Daten in Power BI Desktop laden** integriert wurden.*
 
-## **Übung 4: Hinzufügen von Lesezeichen und Schaltflächen**
+## **Hinzufügen von Lesezeichen und Schaltflächen**
 
 In dieser Übung erweitern Sie die Seite **My Performance** (Meine Leistung) durch Schaltflächen, damit Berichtsbenutzer den gewünschten Typ des visuellen Elements auswählen können. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
 
 ![Abbildung der aktualisierten dritten Seite mit zwei Schaltflächen und jetzt nur noch zwei Visuals](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image38.png)
 
-### **Aufgabe 1: Hinzufügen von Lesezeichen**
+## **Hinzufügen von Lesezeichen**
 
 Bei dieser Aufgabe fügen Sie zwei Lesezeichen hinzu, und zwar jeweils eins für die Anzeige der visuellen Elemente für den monatlichen Umsatz bzw. das Umsatzziel.
 
@@ -256,7 +239,7 @@ Bei dieser Aufgabe fügen Sie zwei Lesezeichen hinzu, und zwar jeweils eins für
      ![Bild 120](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image41.png)
 
 1. Wählen Sie im Bereich **Lesezeichen** **Hinzufügen** aus.
-    
+
     *Doppelklicken Sie auf das Lesezeichen, um es umzubenennen.*
 
      ![Bild 121](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image42.png)
@@ -270,11 +253,11 @@ Bei dieser Aufgabe fügen Sie zwei Lesezeichen hinzu, und zwar jeweils eins für
      ![Bild 16](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image43.png)
 
 1. Zum Aktualisieren des Lesezeichens klicken Sie erneut auf die Auslassungspunkte und wählen dann **Aktualisieren** aus.
-     
+
      *In den folgenden Schritten erstellen und konfigurieren Sie ein zweites Lesezeichen, um das zweite Visual anzuzeigen.*
 
 1. Schalten Sie im Bereich **Auswahl** die Sichtbarkeit der beiden Elemente unter **Sales and Target by Month** (Umsatz und Ziel nach Monat) um.
-     
+
      *Anders ausgedrückt: Blenden Sie das angezeigte Visual aus und das ausgeblendete Visual ein.*
 
      ![Bild 122](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image45.png)
@@ -288,7 +271,7 @@ Bei dieser Aufgabe fügen Sie zwei Lesezeichen hinzu, und zwar jeweils eins für
 1. Zeigen Sie im Bereich **Auswahl** einfach das ausgeblendete Visual an, um beide Visuals einzublenden.
 
 1. Ändern Sie die Größe und Position beider Visuals so, dass sie die Seite unterhalb des Visuals mit mehreren Karten ausfüllen und einander vollständig überlappen.
-    
+
     *Wählen Sie das verdeckte visuelle Element im Bereich **Auswahl** aus.*
 
     ![Bild 124](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image47.png)
@@ -297,7 +280,7 @@ Bei dieser Aufgabe fügen Sie zwei Lesezeichen hinzu, und zwar jeweils eins für
 
 *In der nächsten Entwurfsphase werden der Seite zwei Schaltflächen hinzugefügt, damit Berichtsbenutzer die Lesezeichen auswählen können.*
 
-### **Aufgabe 2: Hinzufügen von Schaltflächen**
+## **Hinzufügen von Schaltflächen**
 
 Bei dieser Aufgabe fügen Sie zwei Schaltflächen hinzu und weisen ihnen jeweils Lesezeichenaktionen zu.
 
@@ -334,7 +317,7 @@ Bei dieser Aufgabe fügen Sie zwei Schaltflächen hinzu und weisen ihnen jeweils
 
 *Der Entwurf des Sales Analysis-Berichts ist nun fertig gestellt.*
 
-### **Aufgabe 3: Veröffentlichen des Berichts**
+## **Veröffentlichen des Berichts**
 
 In dieser Aufgabe wird der Bericht veröffentlicht.
 
@@ -345,7 +328,7 @@ In dieser Aufgabe wird der Bericht veröffentlicht.
 1. Wählen Sie im Slicer **Region** die Option **Alles auswählen** aus.
 
 1. Speichern Sie die Power BI Desktop-Datei.
-    
+
     *Die Datei muss vor dem Veröffentlichen im Power BI-Dienst immer gespeichert werden.*
 
 1. Klicken Sie auf der Registerkarte **Start** des Menübands innerhalb der Gruppe **Freigeben** auf **Veröffentlichen**.
@@ -362,11 +345,7 @@ In dieser Aufgabe wird der Bericht veröffentlicht.
 
 *In der nächsten Übung untersuchen Sie den Bericht im Power BI-Dienst.*
 
-## **Übung 5: Erkunden des Berichts**
-
-In dieser Übung erkunden Sie den Bericht im Power BI-Dienst.
-
-### **Aufgabe 1: Untersuchen des Berichts**
+## **Erkunden des Berichts**
 
 In dieser Aufgabe untersuchen Sie den Bericht im Power BI-Dienst.
 
@@ -381,13 +360,13 @@ In dieser Aufgabe untersuchen Sie den Bericht im Power BI-Dienst.
 1. Klicken Sie links oben auf die Pfeilschaltfläche, um zur Ausgangsseite zurückzukehren.
 
 1. Wählen Sie die Seite **My Performance** (Meine Leistung) aus.
-    
+
     *Wählen Sie die einzelnen Schaltflächen aus. Sie sehen, dass jeweils ein anderes Visual angezeigt wird.*
 
-### **Aufgabe 2: Abschluss**
+### **Abschluss**
 
 Mit dieser Aufgabe schließen Sie das Lab ab.
 
 Klicken Sie auf dem Banner auf der Fensterwebseite auf **Mein Arbeitsbereich**, um zurück zu Ihrem Arbeitsbereich zu navigieren.
 
- ![Bild 23](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image56.png)
+![Bild 23](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image56.png)

@@ -1,43 +1,24 @@
 ---
 lab:
   title: "Erstellen eines Power\_BI-Dashboards"
-  module: 11 - Create Dashboards
+  module: Create Dashboards
 ---
 
 
 # **Erstellen eines Power BI-Dashboards**
 
-**Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
+## **Labszenario**
 
-In diesem Lab erstellen Sie das Dashboard **Sales Monitoring** (Umsatzüberwachung).
+In diesem Lab erstellen Sie das Dashboard **Sales Monitoring** im Power BI-Dienst mithilfe eines vorhandenen Berichts.
 
 In diesem Lab lernen Sie Folgendes:
 
 - Anheften von Visuals an ein Dashboard
 - Verwenden von Q&A zum Erstellen von Dashboardkacheln
 
-### **Labszenario**
+**Dieses Lab sollte ungefähr 45 Minuten in Anspruch nehmen.**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
-
-1. Vorbereiten von Daten in Power BI Desktop
-1. Laden von Daten in Power BI Desktop
-1. Modellieren von Daten in Power BI Desktop
-1. Erstellen von DAX-Berechnungen in Power BI Desktop
-1. Erstellen erweiterter DAX-Berechnungen in Power BI Desktop
-1. Entwerfen eines Berichts in Power BI Desktop
-1. Verbessern eines Berichts in Power BI Desktop
-1. Analysieren von Daten in Power BI Desktop
-1. **Erstellen eines Power BI-Dashboards**
-1. Erzwingen von Sicherheit auf Zeilenebene
-
-## **Übung 1: Erstellen eines Dashboards**
-
-In dieser Übung erstellen Sie das Dashboard **Sales Monitoring** (Umsatzüberwachung). Das fertige Dashboard sieht wie folgt aus:
-
-![Abbildung des fertigen Dashboards mit drei Kacheln](Linked_image_Files/09-create-power-bi-dashboard_image1.png)
-
-### **Aufgabe 1: Erste Schritte – Anmelden**
+## **Erste Schritte: Anmelden**
 
 In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei Power BI anmelden.
 
@@ -57,7 +38,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei 
 
      ![Bild 22](Linked_image_Files/07-my-workspace-new.png)
 
-### **Aufgabe 2: Erste Schritte – Öffnen des Berichts**
+## **Erste Schritte: Öffnen des Berichts**
 
 In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Starterbericht öffnen.
 
@@ -83,7 +64,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Start
 
 1. Wenn Sie aufgefordert werden, Änderungen zu übernehmen, klicken Sie auf **Später übernehmen**.
 
-### **Aufgabe 3: Erste Schritte – Veröffentlichen des Berichts**
+## **Erste Schritte: Veröffentlichen des Berichts**
 
 In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein Dataset erstellen. *Wenn Sie das Dataset bereits veröffentlicht haben, fahren Sie mit der nächsten Aufgabe fort.*
 
@@ -97,7 +78,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein Datas
 
 *Wenn Sie zum Ersetzen des Datasets aufgefordert werden, wählen Sie **Ersetzen** aus.*
 
-### **Aufgabe 4: Erstellen des Dashboards**
+## **Erstellen eines Dashboards**
 
 In dieser Aufgabe erstellen Sie das Dashboard **Sales Monitoring**. Sie heften ein Visual aus dem Bericht an, fügen eine Kachel auf der Grundlage eines Imagedaten-URIs hinzu, und verwenden Q&A, um eine Kachel zu erstellen.
 
@@ -173,7 +154,7 @@ In dieser Aufgabe erstellen Sie das Dashboard **Sales Monitoring**. Sie heften e
 
     ![Bild 52](Linked_image_Files/09-create-power-bi-dashboard_image35.png)
 
-### **Aufgabe 5: Bearbeiten von Kacheldetails**
+## **Bearbeiten von Kacheldetails**
 
 In dieser Aufgabe bearbeiten Sie die Details von zwei Kacheln.
 
@@ -197,11 +178,11 @@ In dieser Aufgabe bearbeiten Sie die Details von zwei Kacheln.
 
 *In der nächsten Übung aktualisieren Sie das Dataset. Abhängig von Ihren Daten und Berichten können Sie jederzeit eine Adhoc-Datenaktualisierung durchführen oder einen Zeitplan festlegen. Geplante Aktualisierungen erfordern jedoch Gateways, die wir für dieses Lab nicht konfigurieren können. Von Power BI Desktop aus führen Sie also eine manuelle Datenaktualisierung durch und laden die Datei dann in Ihren Arbeitsbereich hoch.*
 
-## **Übung 2: Aktualisieren des Datasets**
+## **Aktualisieren des Datasets**
 
 In dieser Übung laden Sie zuerst Bestelldaten für Juni 2020 in die Datenbank **AdventureWorksDW2020**. Anschließend öffnen Sie die Power BI Desktop-Datei, führen eine Datenaktualisierung aus und laden die Datei in Ihren Arbeitsbereich hoch.
 
-### **Aufgabe 1: Aktualisieren der Labdatenbank**
+## **Aktualisieren der Lab-Datenbank**
 
 In dieser Aufgabe führen Sie ein PowerShell-Skript aus, um Daten in der Datenbank **AdventureWorksDW2020** zu aktualisieren.
 
@@ -215,11 +196,11 @@ In dieser Aufgabe führen Sie ein PowerShell-Skript aus, um Daten in der Datenba
 
 *Die Datenbank **AdventureWorksDW2020** enthält nun Bestellungen vom Juni 2020.*
 
-### **Aufgabe 2: Aktualisieren der Power BI Desktop-Datei**
+## **Aktualisieren der Power BI Desktop-Datei**
 
 In dieser Aufgabe öffnen Sie die Power BI Desktop-Datei **Verkaufsanalyse**, führen eine Datenaktualisierung aus und laden die Datei anschließend in den Arbeitsbereich **Verkaufsanalyse** hoch.
 
-1. Klicken Sie in der Power BI Desktop-Datei im Bereich **Felder** mit der rechten Maustaste auf die Tabelle **Sales**, und wählen Sie dann **Daten aktualisieren** aus.
+1. Klicken Sie in der Power BI Desktop-Datei im Bereich **Daten** mit der rechten Maustaste auf die Tabelle **Sales** und dann auf **Daten aktualisieren**.
 
     ![Bild 55](Linked_image_Files/09-create-power-bi-dashboard_image47.png)
 
@@ -235,11 +216,7 @@ In dieser Aufgabe öffnen Sie die Power BI Desktop-Datei **Verkaufsanalyse**, f�
 
 *Das Dataset im Power BI-Dienst enthält jetzt Umsatzdaten vom Juni 2020.*
 
-## **Übung 3: Überprüfen des Dashboards**
-
-In dieser Übung überprüfen Sie das Dashboard, um aktualisierte Umsatzdaten anzuzeigen.
-
-### **Aufgabe 1: Überprüfen des Dashboards**
+### **Überprüfen des Dashboards**
 
 Bei dieser Aufgabe überprüfen Sie das Dashboard, um aktualisierte Umsatzdaten anzuzeigen.
 
@@ -252,3 +229,9 @@ Bei dieser Aufgabe überprüfen Sie das Dashboard, um aktualisierte Umsatzdaten 
     *Wenn die Daten für Juni 2020 nicht angezeigt werden, müssen Sie möglicherweise **F5** drücken, um den Browser zu aktualisieren.*
 
     ![Bild 33](Linked_image_Files/09-create-power-bi-dashboard_image50.png)
+
+### **Abschluss**
+
+Mit dieser Aufgabe schließen Sie das Lab ab.
+
+1. Speichern Sie den Bericht, und schließen Sie Ihren Browser.

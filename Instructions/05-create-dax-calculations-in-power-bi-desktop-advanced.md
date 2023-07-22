@@ -1,44 +1,24 @@
 ---
 lab:
   title: Erstellen erweiterter DAX-Berechnungen in Power BI Desktop
-  module: 5 - Create Model Calculations using DAX in Power BI
+  module: Create Model Calculations using DAX in Power BI
 ---
 
 
 # Erstellen erweiterter DAX-Berechnungen in Power BI Desktop
 
-**Die geschätzte Dauer dieses Labs beträgt 45 Minuten.**
+## **Labszenario**
 
 In diesem Lab erstellen Sie Measures mit DAX-Ausdrücken, die eine Änderung des Filterkontexts vorsehen.
 
 In diesem Lab lernen Sie Folgendes:
 
 - Ändern von Filtern mit der Funktion CALCULATE()
-
 - Verwenden von Zeitintelligenzfunktionen
 
-### **Labszenario**
+**Dieses Lab sollte ungefähr 45 Minuten in Anspruch nehmen.**
 
-Dieses Lab ist eines von vielen in einer Reihe von Labs, die als fortlaufendes Szenario von der Datenvorbereitung bis zur Veröffentlichung als Berichte und Dashboards entworfen wurde. Sie können die Labs in beliebiger Reihenfolge abschließen. Wenn Sie jedoch beabsichtigen, mehrere Labs durchzuarbeiten, sollten Sie sie in der folgenden Reihenfolge absolvieren:
-
-1. Vorbereiten von Daten in Power BI Desktop
-1. Laden von Daten in Power BI Desktop
-1. Entwerfen eines Datenmodells in Power BI
-1. Erstellen von DAX-Berechnungen in Power BI Desktop
-1. **Erstellen erweiterter DAX-Berechnungen in Power BI Desktop**
-1. Entwerfen eines Berichts in Power BI Desktop
-1. Verbessern eines Berichts in Power BI Desktop
-1. Analysieren von Daten in Power BI
-1. Erstellen eines Power BI-Dashboards
-1. Erzwingen von Sicherheit auf Zeilenebene
-
-## **Übung 1: Arbeiten mit Filterkontext**
-
-In dieser Übung erstellen Sie Measures mit DAX-Ausdrücken, die eine Änderung des Filterkontexts vorsehen.
-
-### **Aufgabe 1: Erste Schritte**
-
-In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
+## **Arbeiten mit Filterkontext**
 
 *Wichtig: Wenn Sie nach einem vorherigen Lab fortfahren (und dieses Lab erfolgreich abgeschlossen haben), überspringen Sie diese Aufgabe und fahren mit der nächsten fort.*
 
@@ -62,7 +42,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
 1. Um eine Kopie der Datei zu erstellen, wechseln Sie zu **Datei > Speichern unter**, und speichern Sie sie im Ordner **D:\PL300\MySolution**.
 
-### **Aufgabe 2: Erstellen eines Matrixvisuals**
+## **Erstellen eines Matrixvisuals**
 
 In dieser Aufgabe erstellen Sie ein visuelles Matrixelement, um das Testen Ihrer neuen Measures zu unterstützen.
 
@@ -74,7 +54,7 @@ In dieser Aufgabe erstellen Sie ein visuelles Matrixelement, um das Testen Ihrer
 
 1. Ändern Sie die Größe des Matrixvisuals so, dass es die gesamte Seite einnimmt.
 
-1. Um die Felder des Matrixvisuals zu konfigurieren, ziehen Sie die Hierarchie **Region \| Regions** aus dem Bereich **Felder** in das Visual.
+1. Um die Felder des Matrixvisuals zu konfigurieren, ziehen Sie die Hierarchie **Region \| Regions** aus dem Bereich **Daten**, und legen Sie sie innerhalb des Visuals ab.
     
     *In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld oder eine Hierarchie zu verweisen. Das sieht folgendermaßen aus: **Region \| Regions**. In diesem Beispiel ist **Region** der Tabellenname und **Regions** der Hierarchiename.*
 
@@ -104,7 +84,7 @@ In dieser Aufgabe erstellen Sie ein visuelles Matrixelement, um das Testen Ihrer
 
     *In dieser Übung erstellen Sie mehrere Measures, und testen sie dann, indem Sie sie zum Matrixvisual hinzufügen.*
 
-### **Aufgabe 3: Ändern des Filterkontexts**
+## **Ändern des Filterkontexts**
 
 In dieser Aufgabe erstellen Sie mehrere Measures mit DAX-Ausdrücken, die den Filterkontext mithilfe der Funktion CALCULATE() ändern.
 
@@ -137,7 +117,7 @@ In dieser Aufgabe erstellen Sie mehrere Measures mit DAX-Ausdrücken, die den Fi
 
     *Das neue Measure muss erst noch ein nützliches Ergebnis liefern. Wenn der Umsatz für eine Gruppe, ein Land oder eine Region durch diesen Wert geteilt wird, ergibt sich ein nützliches Verhältnis, das als „Prozent des Gesamtergebnisses“ bezeichnet wird.*
 
-1. Stellen Sie sicher, dass im Bereich **Felder** das Measure **Sales All Region** ausgewählt ist (wenn es ausgewählt ist, weist es einen dunkelgrauen Hintergrund auf). Ersetzen Sie anschließend auf der Bearbeitungsleiste den Namen des Measures und die Formel durch folgende Formel:
+1. Stellen Sie sicher, dass im Bereich **Daten** das Measure **Sales All Region** ausgewählt ist (wenn es ausgewählt ist, weist es einen dunkelgrauen Hintergrund auf). Ersetzen Sie anschließend auf der Bearbeitungsleiste den Namen des Measures und die Formel durch folgende Formel:
 
     *Tipp: Um die vorhandene Formel zu ersetzen, kopieren Sie zuerst den Ausschnitt. Klicken Sie dann auf die Bearbeitungsleiste, und drücken Sie **Strg+A**, um den gesamten Text auszuwählen. Drücken Sie dann **Strg+V**, um den Ausschnitt einzufügen und den markierten Text zu überschreiben. Drücken Sie anschließend die **Eingabetaste**.*
 
@@ -283,11 +263,11 @@ In dieser Aufgabe erstellen Sie mehrere Measures mit DAX-Ausdrücken, die den Fi
 
 *Die der Tabelle **Sales** hinzugefügten Measures haben den Filterkontext so geändert, dass eine hierarchische Navigation ermöglicht wird. Beachten Sie, dass das Muster zur Berechnung einer Zwischensumme das Entfernen einiger Spalten aus dem Filterkontext erfordert. Um eine Gesamtsumme zu erhalten, müssen alle Spalten entfernt werden.*
 
-## **Übung 2: Arbeiten mit Zeitintelligenz**
+## **Arbeiten mit Zeitintelligenz**
 
 In dieser Übung erstellen Sie ein Measure für den Umsatz seit Jahresbeginn (Year-to-Date, YTD) und eines für das Umsatzwachstum von Jahr zu Jahr (Year-over-Year, YoY).
 
-### **Aufgabe 1: Erstellen eines YTD-Measures**
+## **Erstellen eines YTD-Measures**
 
 In dieser Aufgabe erstellen Sie ein YTD-Measure für den Umsatz.
 
@@ -319,7 +299,7 @@ In dieser Aufgabe erstellen Sie ein YTD-Measure für den Umsatz.
 
     *In DAX sind viele Zeitintelligenzfunktionen verfügbar, um gängige Zeitfilteränderungen zu unterstützen.*
 
-### **Aufgabe 2: Erstellen eines YoY-Measures des Umsatzwachstums**
+## **Erstellen eines YoY-Measures des Umsatzwachstums**
 
 In dieser Aufgabe erstellen Sie ein YoY-Measure des Umsatzwachstums.
 
@@ -398,7 +378,7 @@ In dieser Aufgabe erstellen Sie ein YoY-Measure des Umsatzwachstums.
 
     ![Bild 63](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image24.png)
 
-### **Aufgabe 3: Abschluss**
+### **Abschluss**
 
 Mit dieser Aufgabe schließen Sie das Lab ab.
 
