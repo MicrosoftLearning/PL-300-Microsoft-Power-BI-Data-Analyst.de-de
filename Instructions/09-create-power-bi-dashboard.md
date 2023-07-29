@@ -16,7 +16,7 @@ In diesem Lab lernen Sie Folgendes:
 - Anheften von Visuals an ein Dashboard
 - Verwenden von Q&A zum Erstellen von Dashboardkacheln
 
-**Dieses Lab sollte ungefähr 45 Minuten in Anspruch nehmen.**
+**Dieses Lab sollte ungefähr 30 Minuten in Anspruch nehmen.**
 
 ## **Erste Schritte: Anmelden**
 

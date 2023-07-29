@@ -1,6 +1,6 @@
 ---
 lab:
-  title: Durchführen von erweiterten Analysen in Power BI
+  title: Ausführen von erweiterten Analysen mit KI-Visuals
   module: Perform Data Analysis in Power BI
 ---
 

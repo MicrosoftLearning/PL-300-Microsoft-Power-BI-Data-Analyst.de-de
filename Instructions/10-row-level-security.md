@@ -16,7 +16,7 @@ In diesem Lab lernen Sie Folgendes:
 - Erzwingen von Sicherheit auf Zeilenebene
 - Auswahl zwischen dynamischen und statischen Methoden
 
-**Dieses Lab sollte ungefähr 45 Minuten in Anspruch nehmen.**
+**Dieses Lab sollte ungefähr 20 Minuten in Anspruch nehmen.**
 
 ## **Erste Schritte**
 
