@@ -1,74 +1,69 @@
----
-demo:
-  "\_\_ title": 'Clean, transform, and load data in Power BI'
-  "\_\_ module": 'Clean, transform, and load data in Power BI'
----
-# Bereinigen, Transformieren und Laden von Daten in Power BI
+# Clean, transform, and load data in Power BI
 
-## Anwenden von Abfragetransformationen
+## Apply query transformations
 
-1. Wenden Sie zunächst Transformationen auf die Abfrage Product an.
+1. First, apply transformations to the Product query.
 
-1. Entfernen Sie die Spalten RetailPrice, Photo und Sales.
+1. Remove the RetailPrice, Photo, and Sales columns.
 
-1. Ändern Sie den Datentyp der Spalte Channels in Ganze Zahl.
+1. Change the data type of the Channels column to Whole Number.
 
-1. Benennen Sie die folgenden Spalten um:
+1. Rename the following columns:
 
-    - ProductSKU in SKU
+    - ProductSKU to SKU
 
-    - ProductName in Product
+    - ProductName to Product
 
-    - ProductCategory in Category
+    - ProductCategory to Category
 
-    - ItemGroup in Item Group
+    - ItemGroup to Item Group
 
-    - KitType in Kit Type
+    - KitType to Kit Type
 
-1. Wenden Sie im Anschluss Transformationen auf die Abfrage Sales an.
+1. Second, apply transformations to the Sales query.
 
-1. Entfernen Sie alle Spalten mit Ausnahme der folgenden:
+1. Remove all columns, except:
 
     - OrderDate
 
     - ProductID
 
-    - Quantity (Menge)
+    - Quantity
 
-    - UnitPrice (Stückpreis)
+    - UnitPrice
 
-1. Ändern Sie den Datentyp der Spalte UnitPrice in Feste Dezimalzahl.
+1. Change the data type of the UnitPrice column to Fixed Decimal Number.
 
-1. Benennen Sie die Spalte UnitPrice in Unit Price um.
+1. Rename the UnitPrice column to Unit Price.
 
-1. Wählen Sie die Spalten Quantity und Unit Price aus, und fügen Sie dann basierend auf ihrer Multiplikation eine neue Spalte hinzu.
+1. Multi-select the Quantity and Unit Price columns, and then add a new column based on their multiplication.
 
-1. Benennen Sie die neue Spalte in Sales um.
+1. Rename the new column as Sales.
 
-## Integrieren von Abfragen
+## Integrate queries
 
-1. Erstellen Sie mithilfe des Excel-Connectors eine neue Abfrage, und stellen Sie dabei eine Verbindung mit der Datei D:\PL300\Demo\Data\ProductCost.xlsx her.
+1. Create a new query using the Excel connector, connecting to the D:\PL300\Demo\Data\ProductCost.xlsx file.
 
-1. Entfernen Sie die Spalte Product.
+1. Remove the Product column.
 
-1. Ändern Sie den Datentyp der Spalte ProductCost in Feste Dezimalzahl.
+1. Change the data type of the ProductCost column to Fixed Decimal Number.
 
-1. Wählen Sie die Abfrage Product aus, und führen Sie sie anschließend mit der Abfrage ProductCost zusammen. Verknüpfen Sie dabei die SKU-Spalten.
+1. Select the Product query, and then merge with the ProductCost query, relating the SKU columns.
 
-1. Legen Sie im Fenster Datenschutzebenen die Datenschutzebene für D:\ auf Organisation fest.
+1. In the Privacy Levels window, set the privacy level for the D:\ to Organizational.
 
-1. Erweitern Sie die Spalte ProductCost, um die Spalte ProductCost (aus der Abfrage ProductCost) hinzuzufügen.
+1. Expand the ProductCost column to include the ProductCost column (from the ProductCost query).
 
-1. Benennen Sie die neue Spalte in Cost um.
+1. Rename the new column as Cost.
 
-## Deaktivieren und Laden von Abfragen in das Datenmodell
+## Disable and load queries to the data model
 
-1. Deaktivieren Sie im Bereich Abfragen die Abfrage ProductCost.
+1. In the Queries pane, disable the ProductCost query.
 
-1. Klicken Sie auf der Registerkarte Start des Menübands auf das Symbol Close & Apply (Schließen und übernehmen).
+1. On the Home ribbon tab, click the Close & Apply icon.
 
-1. Weisen Sie in Power BI Desktop auf die zwei Tabellen im Bereich Daten hin.
+1. In Power BI Desktop, point out the two tables in the Data pane.
 
-1. Speichern Sie die Power BI Desktop-Datei.
+1. Save the Power BI Desktop file.
 
-1. Lassen Sie die Power BI Desktop-Datei für die nächste Demo geöffnet.
+1. Leave the Power BI Desktop file open for the next demo.
