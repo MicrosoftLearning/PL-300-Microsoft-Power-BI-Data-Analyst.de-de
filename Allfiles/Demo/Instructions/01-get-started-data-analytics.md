@@ -1,25 +1,30 @@
-# Get started with Microsoft data analytics
+---
+demo:
+  "\_\_ title": Get started with Microsoft data analytics
+  "\_\_ module": Get started with Microsoft data analytics
+---
+# Erste Schritte mit der Microsoft-Datenanalyse
 
-## Explore the dashboard
+## Untersuchen des Dashboards
 
-1. Show the Sales Monitoring dashboard, and explain how it can be used to get at-a-glance facts.
+1. Zeigen Sie das Dashboard Sales Monitoring(Umsatzüberwachung) an, und erklären Sie, wie es verwendet werden kann, um auf einen Blick Fakten zu erhalten.
 
-1. Click either tile to click through to the Sales Analysis report.
+1. Klicken Sie auf eine Kachel, um zum Bericht Verkaufsanalyse zu gelangen.
 
-## Explore the report
+## Erkunden des Berichts
 
-1. Interact with various slicers and visuals across the pages.
+1. Interagieren Sie mit verschiedenen Slicers und Visuals auf den Seiten.
 
-1. Edit the report, and then expand all fields in the Data pane.
+1. Bearbeiten Sie den Bericht und erweitern Sie dann alle Felder im Bereich Daten.
 
-## Describe the solution that will be developed during the course
+## Beschreiben Sie die Lösung, die im Laufe des Kurses entwickelt wird.
 
-1. Explain that the data model is based on a SQL Server database and an Excel workbook, which helps to determine cost of goods sold.
+1. Erklären Sie, dass das Datenmodell auf einer SQL Server-Datenbank und einer Excel-Arbeitsmappe basiert und Sie bei der Ermittlung der Umsatzkosten unterstützt.
 
-1. Explain that a gateway will be set up to keep data current.
+1. Erläutern Sie, dass ein Gateway eingerichtet wird, damit die Daten auf dem neuesten Stand bleiben.
 
-1. Explain that it will be shared with a recipient, and that recipients will only be allowed to see a subset of data being only the product categories they manage.
+1. Erklären Sie, dass das Datenmodell an Empfänger weitergegeben wird und dass die Empfänger nur eine Teilmenge der Daten anzeigen können, und zwar nur die von ihnen verwalteten Produktkategorien.
 
-1. Return to the Power BI service home page, and collapse the workspace.
+1. Kehren Sie zurück zur Startseite des Power BI-Diensts, und reduzieren Sie den Arbeitsbereich.
 
-> **Note**: You will not use this pre-developed solution again.
+> **Hinweis**: Sie werden diese vorgefertigte Lösung nicht mehr verwenden.

@@ -1,51 +1,57 @@
-# Create and manage workspaces
+---
+demo:
+  "\_\_ title": Create and manage workspaces in Power BI
+  "\_\_ module": Deploy and manage Power BI service items
+---
 
-## Share a dashboard
+# Erstellen und Verwalten von Arbeitsbereichen
 
-1. Open another Microsoft Edge window, in a new InPrivate window.
+## Freigeben eines Dashboards
 
-1. Sign in to the Power BI service, and accept the Power BI Pro trial license if not already done.
+1. Öffnen Sie ein weiteres Microsoft Edge-Fenster in einem neuen InPrivate-Fenster.
 
-## Open the shared dashboard
+1. Melden Sie sich beim Power BI-Dienst an, und akzeptieren Sie die Power BI Pro-Testlizenz, falls noch nicht geschehen.
 
-1. Switch to the **instructor** Power BI service window.
+## Öffnen des freigegebenen Dashboards
 
-1. Open the **Sales Monitoring** dashboard.
+1. Wechseln Sie zum Power BI- Dienstfenster **Kursleiter**.
 
-1. On the menu, select Share.
+1. Öffnen Sie das Dashboard **Sales Monitoring** (Umsatzüberwachung).
 
-1. Share the dashboard to the recipient account.
+1. Wählen Sie im Menü „Freigeben“ aus.
 
-1. Switch to the **recipient** Power BI service window.
+1. Geben Sie das Dashboard für das Empfängerkonto frei.
 
-1. Open **Shared with Me** and open the Sales Monitoring dashboard.
+1. Wechseln Sie zum Power BI-Fenster **Empfänger**.
 
-1. Point out that the dashboard is read-only.
+1. Öffnen Sie **Für mich freigegeben** und anschließend das Dashboard Sales Monitoring (Umsatzüberwachung).
 
-## Create an app
+1. Weisen Sie darauf hin, dass das Dashboard schreibgeschützt ist.
 
-1. Switch to the **instructor** Power BI service window.
+## Erstellen einer App
 
-1. In the Navigation pane, select the workspace name.
+1. Wechseln Sie zum Power BI- Dienstfenster **Kursleiter**.
 
-1. At the top-right, select **Create App**.
+1. Wählen Sie im Bereich Navigation den Arbeitsbereichsnamen aus.
 
-1. In the Setup section, enter description text and optionally choose a theme color.
+1. Wählen Sie oben rechts **App erstellen** aus.
 
-1. In the Navigation section, optionally sequence the report before the dashboard.
+1. Geben Sie im Abschnitt Setup eine Beschreibung ein, und wählen Sie optional eine Designfarbe aus.
 
-1. In the Permissions section, grant access to the recipient account.
+1. Im Abschnitt Navigation können Sie den Bericht vor dem Dashboard anordnen.
 
-1. Publish the app.
+1. Gewähren Sie im Abschnitt Berechtigungen Zugriff auf das Empfängerkonto.
 
-## Get and open the app
+1. Veröffentlichen Sie die App.
 
-1. Switch to the **recipient** Power BI service window.
+## Abrufen und Öffnen der App
 
-1. Open Apps, and then get the app you just published.
+1. Wechseln Sie zum Power BI-Fenster **Empfänger**.
 
-1. Once added, open the app.
+1. Öffnen Sie Apps, und rufen Sie die gerade veröffentlichte App ab.
 
-1. Navigate between the report pages and the dashboard.
+1. Öffnen Sie die App nach dem Hinzufügen.
 
-1. Leave the app open. It will be used in the row-level security demo later.
+1. Navigieren Sie zwischen den Berichtsseiten und dem Dashboard.
+
+1. Lassen Sie die App geöffnet. Sie wird später in der Demo Sicherheit auf Zeilenebene verwendet.

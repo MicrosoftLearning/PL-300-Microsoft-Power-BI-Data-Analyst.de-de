@@ -1,47 +1,52 @@
-# Create reports
+---
+demo:
+  "\_\_ title": Create reports in Power BI
+  "\_\_ module": Create reports in Power BI
+---
+# Erstellen von Berichten
 
-## Create a single-page report
+## Erstellen eines einseitigen Berichts
 
-1. Remove the matrix visual that was used to test and validate the model calculations.
+1. Entfernen Sie das Matrixvisual, das zum Testen und Überprüfen der Modellberechnungen verwendet wurde.
 
-1. Rename the report page as Sales Summary.
+1. Benennen Sie die Berichtsseite in Sales Summary um.
 
-## Add a slicer
+## Hinzufügen eines Datenschnitts
 
-1. Add a slicer for the Date table Year column and position it at the top-left of the report page.
+1. Fügen Sie einen Slicer für die Spalte Year der Tabelle Date hinzu, und platzieren Sie ihn oben links auf der Berichtsseite.
 
-1. Use the formatting options to configure the slicer for single selection.
+1. Verwenden Sie die Formatierungsoptionen, um den Slicer für die Einfachauswahl zu konfigurieren.
 
-## Add various visuals
+## Hinzufügen verschiedener Visuals
 
-1. Add a line and stacked column chart to the page, and configure it as follows:
+1. Fügen Sie ein Liniendiagramm und ein gestapeltes Säulendiagramm zur Seite hinzu, und konfigurieren Sie sie wie folgt:
 
-    - Shared axis: Date | Month
+    - Gemeinsame Achse: Date | Month (Datum | Monat)
 
-    - Columns values: Sales | Sales
+    - Spaltenwerte: Sales | Sales (Umsatz | Umsatz)
 
-    - Line values: Sales | Profit Margin
+    - Zeilenwerte: Sales | Profit Margin (Umsatz | Gewinnspanne)
 
-1. Use the slicer to filter the page by CY2019, and then CY2020.
+1. Filtern Sie die Seite mithilfe des Slicers nach CY2019 und anschließend nach CY2020.
 
-1. In the line and stacked column chart, point out that there is no sales column for December 2020.
+1. Weisen Sie für das Liniendiagramm und das gestapelte Säulendiagramm darauf hin, dass für Dezember 2020 keine Spalte vom Typ „Sales“ vorhanden ist.
 
-1. Configure the shared axis to “show items with no data”.
+1. Konfigurieren Sie die gemeinsame Achse, um Elemente ohne Daten anzuzeigen.
 
-1. Point out that December 2020 is added to the axis, but there is no column of data.
+1. Weisen Sie darauf hin, dass Dezember 2020 zur Achse hinzugefügt wird, aber keine Spalte mit Daten vorhanden ist.
 
-1. Explain that sales data for December 2020 has not happened yet. *You will run a script in a later demo to load December 2020 sales.*
+1. Erklären Sie, dass die Verkaufsdaten für Dezember 2020 noch nicht vorliegen. *Sie führen in einer späteren Demo ein Skript aus, um die Verkaufsdaten für Dezember 2020 zu laden.*
 
-1. Add a funnel chart, and configure it as follows:
+1. Fügen Sie ein Trichterdiagramm hinzu, und konfigurieren Sie es wie folgt:
 
-    - Group: Product | Category
+    - Gruppe: Product | Category (Produkt | Kategorie)
 
-    - Values: Sales | Profit Margin
+    - Werte: Sales | Profit Margin (Umsatz | Gewinnspanne)
 
-1. Use the formatting options to select a contrasting data color.
+1. Verwenden Sie die Formatierungsoptionen, um eine kontrastreiche Farbe für die Daten auszuwählen.
 
-1. Add a Q&A visual, and enter the following question: Total sales by product demographic
+1. Fügen Sie ein Visual für Fragen und Antworten hinzu, und geben Sie die folgenden Fragen ein: Total sales by product demographic (Gesamtumsatz nach Produktzielgruppe)
 
-1. Save the Power BI Desktop file.
+1. Speichern Sie die Power BI Desktop-Datei.
 
-1. Leave the Power BI Desktop file open for a later demo.
+1. Lassen Sie die Power BI Desktop-Datei für eine spätere Demo geöffnet.
