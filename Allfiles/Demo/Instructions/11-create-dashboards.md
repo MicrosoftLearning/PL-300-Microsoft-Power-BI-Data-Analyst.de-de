@@ -1,36 +1,31 @@
----
-demo:
-  "\_\_ title": Create dashboards in the Power BI service
-  "\_\_ module": Deploy and manage Power BI service items
----
-# Erstellen von Dashboards im Power BI-Dienst
+# Create dashboards in the Power BI service
 
-## Erstellen eines Dashboards
+## Create a dashboard
 
-1. Erstellen Sie zunächst im Power BI-Dienst einen neuen Arbeitsbereich.
+1. First, in the Power BI service, create a new workspace.
 
-1. Wählen Sie das Bild `D:\PL300\Demo\Resources\Icon-Airplane.jpg` für das Arbeitsbereichssymbol aus.
+1. Select the `D:\PL300\Demo\Resources\Icon-Airplane.jpg` image for workspace icon.
 
-1. Veröffentlichen Sie in Power BI Desktop den Bericht **Verkaufsanalyse** im neuen Arbeitsbereich.
+1. In Power BI Desktop, publish the **Sales Analysis** report to the new workspace.
 
-1. Kehren Sie nach dem Veröffentlichen zum Power BI-Dienst zurück.
+1. Once published, return to the Power BI service.
 
-1. Öffnen Sie den Bericht **Verkaufsanalyse**, und vergewissern Sie sich, dass der Slicer Year auf **CY2020** festgelegt ist.
+1. Open the **Sales Analysis** report, and then ensure the Year slicer is set to **CY2020**.
 
-## Anheften von Berichtsvisuals
+## Pin report visuals
 
-1. Heften Sie das Liniendiagramm und das gestapelte Säulendiagramm an, um ein neues Dashboard namens **Sales Monitoring** (Umsatzüberwachung) zu erstellen.
+1. Pin the line and stacked column chart to create a new dashboard named **Sales Monitoring**.
 
-1. Heften Sie das Trichterdiagramm an das neue Dashboard an.
+1. Pin the funnel chart to the new dashboard.
 
-1. Öffnen Sie das Dashboard **Sales Monitoring** (Umsatzüberwachung).
+1. Open the **Sales Monitoring** dashboard.
 
-1. Bearbeiten Sie die Details der Kachel **Gewinnspanne** und ändern Sie den Untertiteltext so, dass er das Jahr (**CY2020**) einschließt.
+1. Edit the details of the **Profit Margin** tile and change the subtitle text to include the year (**CY2020**).
 
-## Hinzufügen einer Kachel für Fragen und Antworten (Q&A)
+## Add Q&A tile
 
-1. Verwenden Sie „Q&A“ auf dem Dashboard, um die folgende Frage zu stellen: **Total sales in CY2020** (Gesamtumsatz in CY2020)
+1. Use Q&A on the dashboard to ask the following question: **Total sales in CY2020**
 
-1. Heften Sie die Antwort an das Dashboard an.
+1. Pin the response to the dashboard.
 
-1. Zeigen Sie, wie die Größe und die Position der Kacheln geändert wird.
+1. Show how to resize and reposition the tiles.

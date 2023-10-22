@@ -1,81 +1,75 @@
----
-demo:
-  "\_\_ title": (Optional) Optimize model performance in Power BI
-  "\_\_ module": Optimize model performance in Power BI
----
+# (Optional) Optimize model performance
 
-# (Optional) Optimieren der Modellleistung
+## Review a DirectQuery model design
 
-## Überprüfen eines DirectQuery-Modellentwurfs
+> **Note**: This demo uses a different Power BI Desktop file.
 
-> **Hinweis**: In dieser Demo wird eine andere Power BI Desktop-Datei verwendet.
+1. Open the D:\PL300\Demo\Resources\AW Sales Analysis.pbix file.
 
-1. Öffnen Sie die Datei D:\PL300\Demo\Resources\AW Sales Analysis.pbix.
+1. If prompted to connect to the data source, click Connect.
 
-1. Wenn Sie zum Herstellen einer Verbindung mit der Datenquelle aufgefordert werden, klicken Sie auf Verbinden.
+1. At the bottom-right corner, point out that the data model comprises DirectQuery tables.
 
-1. Weisen Sie darauf hin, dass das Datenmodell in der unteren rechten Ecke DirectQuery-Tabellen umfasst.
+1. Save the Power BI Desktop file to the D:\PL300\Demo\MySolution folder.
 
-1. Speichern Sie die Power BI Desktop-Datei im Ordner D:\PL300\Demo\MySolution.
+1. In Model view, introduce the model design, which includes two related tables.
 
-1. Stellen Sie in der Modellansicht den Modellentwurf vor, der zwei verknüpfte Tabellen enthält.
+1. In Report view, interact with the report by selecting different items in the Fiscal Year slicer.
 
-1. Interagieren Sie in der Berichtsansicht mit dem Bericht, indem Sie im Slicer Fiscal Year verschiedene Elemente auswählen.
+1. Drill through on any month column to reveal order details.
 
-1. Führen Sie einen Drillthrough für eine beliebige Monatsspalte aus, um Auftragsdetails anzuzeigen.
+1. Return to the Sales Summary page.
 
-1. Kehren Sie zur Seite Sales Summary (Verkaufszusammenfassung) zurück.
+## Review query performance
 
-## Überprüfen der Abfrageleistung
+1. On the View ribbon tab, show the Performance Analyzer pane.
 
-1. Zeigen Sie auf der Registerkarte Ansicht des Menübands den Bereich Leistungsanalyse an.
+1. Refresh the visuals, and then expand the slicer and Sales by Month visual.
 
-1. Aktualisieren Sie die Visuals und erweitern Sie dann den Slicer und das Visual „Umsatz nach Monat“.
+1. Point out that they used DirectQuery mode (data was requested from the data source).
 
-1. Weisen Sie darauf hin, dass sie den DirectQuery-Modus verwendet haben (die Daten wurden von der Datenquelle angefordert).
+## Configure Dual storage tables
 
-## Konfigurieren von Speichertabellen vom Typ „Dual“
+1. In Model view, select the Date table, and then select the storage mode to Dual.
 
-1. Wählen Sie in der Modellansicht die Tabelle Date aus, und legen Sie dann den Speichermodus auf Dual fest.
+1. When the data has imported, switch to Report view, and then in the Performance Analyzer pane, refresh the visuals.
 
-1. Wenn die Daten importiert wurden, wechseln Sie zur Berichtsansicht, und aktualisieren Sie dann im Bereich Leistungsanalyse die Visuals.
+1. Point out that the Date table is now queried from the model cache.
 
-1. Weisen Sie darauf hin, dass die Tabelle Date nun vom Modellcache abgefragt wird.
+## Create aggregations
 
-## Erstellen von Aggregationen
+1. Open the Power Query Editor window, and in the Queries pane, duplicate the Reseller Sales query.
 
-1. Öffnen Sie das Power Query-Editor-Fenster, und duplizieren Sie im Bereich Abfragen die Abfrage Reseller Sales.
+1. Rename the new query Reseller Sales Agg.
 
-1. Benennen Sie die neue Abfrage in Reseller Sales Agg um.
+1. Apply a group by transformation, as follows:
 
-1. Wenden Sie wie folgt eine Gruppe nach Transformation an:
+    - Group by OrderDate.
 
-    - Gruppieren Sie nach OrderDate.
+    - New column: Sales, which is the sum of the SalesAmount column.
 
-    - Neue Spalte: Sales. Dies ist die Summe der Spalte SalesAmount.
+1. Close and apply the queries.
 
-1. Schließen Sie die Abfragen, und wenden Sie sie an.
+1. In Model view, set the storage mode for the Reseller Sales Agg table to Import.
 
-1. Legen Sie in der Modellansicht den Speichermodus für die Tabelle Reseller Sales Agg auf Importieren fest.
+1. Create a relationship from the Date table Date column to the Reseller Sales Agg table OrderDate column—ensure that the column cardinality is set to one-to-many, with the Date table on the one-side.
 
-1. Erstellen Sie eine Beziehung zwischen der Spalte Date der Tabelle Date und der Spalte OrderDate der Tabelle Reseller Sales Agg. Stellen Sie sicher, dass für die Spalte eine 1:n-Beziehung festgelegt wird und die Tabelle Date dabei für die 1 steht.
+1. Manage aggregations on the Reseller Sales Agg table:
 
-1. Verwalten Sie Aggregationen für die Tabelle Reseller Sales Agg:
+    - OrderDate: Group by the Reseller Sales table OrderDate column.
 
-    - OrderDate: Gruppieren Sie nach der Spalte OrderDate der Tabelle Reseller Sales.
+    - Sales: Sum the Reseller Sales table SalesAmount column.
 
-    - Sales: Bilden Sie die Summe für die Spalte SalesAmount der Tabelle Reseller Sales.
+1. Point out that the aggregation table is now hidden.
 
-1. Weisen Sie darauf hin, dass die Aggregationstabelle nun ausgeblendet ist.
+1. Switch to Report view, and in the Performance Analyzer pane, and then refresh the visuals.
 
-1. Wechseln Sie zur Berichtsansicht, und aktualisieren Sie dann im Bereich Leistungsanalyse die Visuals.
+1. Point out that the Sales by Month table is now queried from the model cache.
 
-1. Weisen Sie darauf hin, dass die Tabelle Sales by Month nun vom Modellcache abgefragt wird.
+1. Drill through from any month, and point out that the details in the table are requested as DirectQuery from the data source.
 
-1. Führen Sie einen Drillthrough für einen beliebigen Monat aus, und weisen Sie darauf hin, dass die Details in der Tabelle per DirectQuery von der Datenquelle abgefragt werden.
+1. Save the Power BI Desktop file.
 
-1. Speichern Sie die Power BI Desktop-Datei.
+1. Close Power BI Desktop.
 
-1. Schließen Sie Power BI Desktop.
-
-> **Hinweis**: Sie werden diese Power BI Desktop-Lösung nicht mehr verwenden.
+> **Note**: You will not use this Power BI Desktop solution again.

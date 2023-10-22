@@ -1,44 +1,39 @@
----
-demo:
-  "\_\_ title": Perform data analysis in Power BI
-  "\_\_ module": Perform data analysis in Power BI
----
-# Durchführen einer Datenanalyse
+# Perform data analysis
 
-## Gruppe hinzufügen
+## Add a group
 
-1. Fügen Sie dem Bericht eine neue Seite namens **Kategorieanalyse** hinzu.
+1. Add another new page to the report named **Category Analysis**.
 
-1. Kopieren Sie den **Slicer „Jahr“** von der Seite **Profitanalyse** auf die neue Seite und synchronisieren Sie ihn.
+1. Copy, paste, and then sync the **Year slicer** from the **Profit Analysis** page to the new page.
 
-1. Fügen Sie basierend auf der Spalte **Category** der Tabelle **Product** eine neue Gruppe hinzu.
+1. Add a new group based on the **Product** table **Category** column.
 
-1. Erstellen Sie basierend auf dem Wert Trainer eine neue Gruppe.
+1. Create a group based on the Trainer value.
 
-1. Aktivieren Sie das Kontrollkästchen **Andere Gruppe einschließen**.
+1. Select the **Include Other Group** checkbox.
 
-1. Fügen Sie ein Matrixvisual hinzu, und passen Sie Größe und Position so an, dass es die Seite ausfüllt.
+1. Add a matrix visual, and position and size it so it fills the page.
 
-1. Konfigurieren Sie das Matrixvisual wie folgt:
+1. Configure the matrix visual as follows:
 
-    - Zeilen: Product | Category (groups) (Produkt | Kategorie [Gruppen]) und Product | Product (Produkt | Produkt)
+    - Rows: Product | Category (groups) and Product | Product
 
-    - Werte: Quantity, Sales, Profit und Profit Margin aus der Tabelle Sales
+    - Values: Quantity, Sales, Profit, and Profit Margin from the Sales table
 
-1. Erweitern Sie die beiden Kategorien.
+1. Expand both categories.
 
-## Anwenden von bedingter Formatierung
+## Apply conditional formatting
 
-1. Wenden Sie im Matrixvisual die bedingte Formatierung der Hintergrundfarbe auf das Feld **Profit Margin** an.
+1. In the matrix visual, apply background color conditional formatting to the **Profit Margin** field.
 
-1. Wählen Sie Rot als Farbe für das Minimum und Grün als Farbe für das Maximum aus.
+1. Select red for the minimum color, and green for the maximum color.
 
-1. Weisen Sie auf die verschiedenen Farben hin, die verwendet werden, um niedrige bis hohe Gewinnspannen zu verdeutlichen.
+1. Point out the range of colors used to convey low-to-high profit margin values.
 
-1. Speichern Sie die Power BI Desktop-Datei.
+1. Save the Power BI Desktop file.
 
-1. Veröffentlichen Sie den Bericht im neueren Arbeitsbereich, und überschreiben Sie dabei bei entsprechender Aufforderung den anderen Arbeitsbereich.
+1. Publish the report to the newer workspace, overwriting when prompted.
 
-1. Öffnen Sie im Power BI-Dienst den Bericht **Sales Analysis**, und sehen Sie sich die einzelnen Berichtsseiten an.
+1. In the Power BI service, open the **Sales Analysis** report, and interact with each of the report pages.
 
-1. Lassen Sie die Power BI Desktop-Datei geöffnet.
+1. Leave the Power BI Desktop file open.

@@ -1,84 +1,79 @@
----
-demo:
-  "\_\_ title": Create measures using DAX in Power BI
-  "\_\_ module": Create measures using DAX in Power BI
----
-# Erstellen von Measures in Power BI mithilfe von DAX
+# Create measures using dax in Power BI
 
-> **Tipp**: Alle Berechnungen können aus der Datei D:\PL300\Demo\Resources\Snippets-Demo-05.txt kopiert werden.
+> **Tip**: All calculations can be copied from the D:\PL300\Demo\Resources\Snippets-Demo-05.txt file.
 
-## Erstellen einer berechneten Tabelle
+## Create a calculated table
 
-1. Erstellen Sie mithilfe des folgenden Ausdrucks eine berechnete Tabelle:
+1. Create a calculated table by using the following expression:
 
 ```dax
 Date = CALENDARAUTO()
 ```
 
-1. Wechseln Sie zur Datenansicht, und sehen sie sich die Tabelle an, die eine einzelne Datumsspalte umfasst.
+1. Switch to Data view, and review the table, which comprises a single date column.
 
-Erstellen berechneter Spalten
+Create calculated columns
 
-1. Fügen Sie der Tabelle Date eine berechnete Spalte hinzu:
+1. Add a calculated column to the Date table:
 
 ```dax
 Year = "CY" & YEAR('Date'[Date])
 ```
 
-1. Fügen Sie der Tabelle Date eine weitere berechnete Spalte hinzu:
+1. Add an additional calculated column to the Date table:
 
 ```dax
 Month = FORMAT('Date'[Date], "YYYY-MM")
 ```
 
-1. Erstellen Sie in der Modellansicht eine Beziehung, indem Sie die Spalte Date der Tabelle Date auf die Spalte OrderDate der Tabelle Sales ziehen.
+1. In Model view, create a relationship by dragging the Date table Date column to the Sales table OrderDate column.
 
-1. Blenden Sie die Spalte OrderDate der Tabelle Sales aus.
+1. Hide the Sales table OrderDate column.
 
-1. Erstellen Sie in der Tabelle Date die Hierarchie Calendar mit den Ebenen Year und Month.
+1. In the Date table, create the Calendar hierarchy, with Year and Month levels.
 
-1. Markieren Sie in der Berichtsansicht die Tabelle Date über die Spalte Date als Datumstabelle.
+1. In Report view, mark the Date table as a date table using the Date column.
 
-1. Entfernen Sie im Matrixvisual die Hierarchie Products, und ersetzen Sie sie durch die Hierarchie Calendar.
+1. In the matrix visual, remove the Products hierarchy, and then replace it with the Calendar hierarchy.
 
-1. Fügen Sie der Tabelle Sales eine berechnete Spalte hinzu:
+1. Add a calculated column to the Sales table:
 
 ```dax
 Cost = 'Sales'[Quantity] * RELATED('Product'[Cost])
 ```
 
-1. Legen Sie das Format der Spalte Cost auf zwei Dezimalstellen fest.
+1. Format the Cost column to two decimal places.
 
-## Erstellen eines Quickmeasures
+## Create a Quick Measure
 
-1. Fügen Sie der Tabelle Sales ein Quickmeasure hinzu. Ziehen Sie dabei die Spalte Cost von der Spalte Profit ab.
+1. Add a quick measure to the Sales table, subtracting the Cost column from Profit column.
 
-1. Benennen Sie das Measure in Profit um.
+1. Rename the measure as Profit.
 
-1. Erklären Sie, dass das Measure keine Daten im Modell speichert.
+1. Explain that the measure does not store data in the model.
 
-Erstellen eines regulären Measures.
+Create regular measures
 
-1. Fügen Sie der Tabelle Sales ein Measure hinzu:
+1. Add a measure to the Sales table:
 
 ```dax
 Profit Margin = DIVIDE([Profit], SUM('Sales'[Sales]))
 ```
 
-1. Formatieren Sie die Spalte Profit Margin als Prozentsatz.
+1. Format the Profit Margin column as a percentage.
 
-1. Fügen Sie der Tabelle Sales ein weiteres Measure hinzu:
+1. Add another measure to the Sales table:
 
 ```dax
 Sales YTD = TOTALYTD(SUM('Sales'[Sales]), 'Date'[Date])
 ```
 
-1. Legen Sie das Format der Spalte Sales YTD auf zwei Dezimalstellen fest.
+1. Format the Sales YTD column to two decimal places.
 
-## Überprüfen der Berechnungen mit dem Matrixvisual
+## Validate the calculations with the matrix visual
 
-1. Fügen Sie dem Matrixvisual die Felder Cost, Profit, Profit Margin und Sales YTD hinzu.
+1. Add the Cost, Profit, Profit Margin, and Sales YTD fields to the matrix visual.
 
-1. Speichern Sie die Power BI Desktop-Datei.
+1. Save the Power BI Desktop file.
 
-1. Lassen Sie die Power BI Desktop-Datei für eine spätere Demo geöffnet.
+1. Leave the Power BI Desktop file open for a later demo.
