@@ -1,56 +1,51 @@
----
-demo:
-  "\_\_ title": Manage files and datasets in Power BI
-  "\_\_ module": Deploy and manage Power BI service items
----
-# Verwalten von Dateien und Datasets in Power BI
+# Manage files and datasets in Power BI
 
-## Vorbereiten auf die Gatewaydatenaktualisierung
+## Prepare for gateway data refresh
 
-> **Beachten Sie**, dass die folgenden Schritte nicht nötig sind, wenn Sie das Datengateway im persönlichen Modus verwenden. Sie können direkt mit dem nächsten Ziel (Einrichten des Gateways) fortfahren.
+> **Note** the following steps are not needed when using the data gateway in personal mode. You can proceed directly to the next objective (setup the gateway).
 
-1. Öffnen Sie in Power BI Desktop das Power Query-Editor-Fenster, und wählen Sie die Abfrage **ProductCost** aus.
+1. In Power BI Desktop, open the Power Query Editor window, and select the **ProductCost** query.
 
-1. Bearbeiten Sie den Schritt „Quelle“ und ändern Sie dann wie folgt den Dateipfad, um die Dateifreigabe zu verwenden:
+1. Edit the Source step, and then modify the file path to use the file share, as follows:
 
     `\\DATA-AI\Data\ProductCost.xlsx`
 
-1. Schließen Sie das Fenster des Power Query-Editors, und übernehmen Sie die Änderungen
+1. Close and apply the Power Query Editor window.
 
-1. Speichern Sie die Power BI Desktop-Datei.
+1. Save the Power BI Desktop file.
 
-1. Veröffentlichen Sie die Power BI Desktop-Datei im Arbeitsbereich, und überschreiben Sie dabei das Dataset und den Bericht im Dienst.
+1. Publish the Power BI Desktop file to the workspace, overwriting the dataset and report in the service.
 
-## Einrichten des Gateways (persönlicher Modus)
+## Setup the gateway (personal mode)
 
-1. Laden Sie im Power BI-Dienst für den Kursleiter die Seite mit den Dataseteinstellungen neu (F5).
+1. In the Power BI service for the instructor, reload (F5) the dataset settings page.
 
-1. Erweitern Sie den Abschnitt Gatewayverbindung, und weisen Sie darauf hin, dass kein Gateway installiert ist.
+1. Expand the Gateway Connection section and point out that no gateway is installed.
 
-1. Wählen Sie in der Dropdownliste für den Download (oben rechts) die Option Datengateway aus.
+1. Use the download dropdown list (located at the top-right), and select Data Gateway.
 
-1. Laden Sie auf der neuen Webseite das Gateway im persönlichen Modus herunter.
+1. In the new web page, download the personal mode gateway.
 
-1. Öffnen Sie nach dem Herunterladen die heruntergeladene Datei.
+1. Once downloaded, open the downloaded file.
 
-1. Schließen Sie das Gatewaysetup unter Verwendung der Anmeldeinformationen des Kursleiterkontos ab.
+1. Complete the gateway setup by using the credentials of the instructor account.
 
-1. Kehren Sie nach dem Setup zur Seite mit den Dataseteinstellungen zurück, und laden Sie sie neu.
+1. Once setup, return to and reload the dataset settings page.
 
-1. Weisen Sie das persönliche Gateway zu, und bearbeiten Sie die Anmeldeinformationen für die beiden Datenquellen.
+1. Assign the personal gateway, and the edit the credentials for the two data sources.
 
-1. Legen Sie für beide Datenquellen die Authentifizierungsmethode auf **WindowsWithoutImpersonation** und die Datenschutzebene auf **Organisation** fest.
+1. For both data sources, set the authentication method to **WindowsWithoutImpersonation**, and set the privacy level to **Organizational**.
 
-1. Erweitern Sie optional den Abschnitt **Geplante Aktualisierung**, und zeigen Sie, wie eine Zeitplanserie konfiguriert wird.
+1. Optionally, expand the **Scheduled Refresh** section, and show how to configure a recurring schedule.
 
-## Aktualisieren des Datasets
+## Refresh the dataset
 
-1. Öffnen Sie vor dem Aktualisieren des Datasets das Dashboard **Sales Monitoring** (Umsatzüberwachung).
+1. Before refreshing the dataset, open the **Sales Monitoring** dashboard.
 
-1. Bearbeiten Sie die Details für die Kachel Sales, Profit Margin (Umsatz, Gewinnspanne), um den letzten Aktualisierungszeitpunkt anzuzeigen.
+1. Edit the details of the Sales, Profit Margin tile to display the last refresh time.
 
-1. Klicken Sie mit der rechten Maustaste auf die Datei `D:\PL300\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1` und führen Sie sie dann mit PowerShell aus. *Dieses Skript lädt die Umsätze vom Dezember 2020 in die Datenbank.*
+1. Right-click the `D:\PL300\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1` file, and then run with PowerShell. *This script will load December 2020 sales data into the database.*
 
-1. Aktualisieren Sie im Power BI-Dienst für den*die Kursleiter*in im Bereich Navigation das Dataset **Sales Analysis** (Verkaufsanalyse).
+1. In the Power BI service for the instructor, from the Navigation pane, refresh the **Sales Analysis** dataset.
 
-1. Weisen Sie nach Abschluss der Aktualisierung darauf hin, dass die Dashboardkachel mit der Spalte für **Dezember 2020** angezeigt wird und dass die Aktualisierungszeit **JETZT** ist.
+1. When the refresh completes, point out how the dashboard tile **December 2020** column appears, and that the refresh time is **NOW**.
