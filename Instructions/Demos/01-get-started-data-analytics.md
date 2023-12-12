@@ -1,8 +1,9 @@
 ---
-lab:
-  "\_\_ title": Get started with Microsoft data analytics
-  "\_\_ module": Get started with Microsoft data analytics
+demo:
+  title: Erste Schritte mit der Microsoft-Datenanalyse
+  module: Get started with Microsoft data analytics
 ---
+
 # Erste Schritte mit der Microsoft-Datenanalyse
 
 ## Untersuchen des Dashboards
@@ -15,7 +16,7 @@ lab:
 
 1. Interagieren Sie mit verschiedenen Slicers und Visuals auf den Seiten.
 
-1. Bearbeiten Sie den Bericht und erweitern Sie dann alle Felder im Bereich Daten.
+1. Bearbeiten Sie den Bericht, und erweitern Sie dann alle Felder im Bereich „Daten“.
 
 ## Beschreiben Sie die Lösung, die im Laufe des Kurses entwickelt wird.
 
@@ -27,4 +28,4 @@ lab:
 
 1. Kehren Sie zurück zur Startseite des Power BI-Diensts, und reduzieren Sie den Arbeitsbereich.
 
-> **Hinweis**: Sie werden diese vorgefertigte Lösung nicht mehr verwenden.
+> **Hinweis**: Sie werden diese vorab entwickelte Lösung nicht erneut verwenden.

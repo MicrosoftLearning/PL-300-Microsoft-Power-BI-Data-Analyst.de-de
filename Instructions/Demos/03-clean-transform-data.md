@@ -1,8 +1,9 @@
 ---
-lab:
-  "\_\_ title": 'Clean, transform, and load data in Power BI'
-  "\_\_ module": 'Clean, transform, and load data in Power BI'
+demo:
+  title: 'Bereinigen, Transformieren und Laden von Daten in Power BI'
+  module: 'Clean, transform, and load data in Power BI'
 ---
+
 # Bereinigen, Transformieren und Laden von Daten in Power BI
 
 ## Anwenden von Abfragetransformationen
@@ -55,7 +56,7 @@ lab:
 
 1. Wählen Sie die Abfrage Product aus, und führen Sie sie anschließend mit der Abfrage ProductCost zusammen. Verknüpfen Sie dabei die SKU-Spalten.
 
-1. Legen Sie im Fenster Datenschutzebenen die Datenschutzebene für D:\ auf Organisation fest.
+1. Legen Sie im Fenster „Datenschutzebenen“ die Datenschutzebene für D:\ auf „Organisation“ fest.
 
 1. Erweitern Sie die Spalte ProductCost, um die Spalte ProductCost (aus der Abfrage ProductCost) hinzuzufügen.
 
@@ -65,9 +66,9 @@ lab:
 
 1. Deaktivieren Sie im Bereich Abfragen die Abfrage ProductCost.
 
-1. Klicken Sie auf der Registerkarte Start des Menübands auf das Symbol Close & Apply (Schließen und übernehmen).
+1. Klicken Sie auf der Registerkarte „Start“ des Menübands auf das Symbol „Close & Apply“ (Schließen und übernehmen).
 
-1. Weisen Sie in Power BI Desktop auf die zwei Tabellen im Bereich Daten hin.
+1. Weisen Sie in Power BI Desktop auf die zwei Tabellen im Bereich „Daten“ hin.
 
 1. Speichern Sie die Power BI Desktop-Datei.
 

@@ -1,21 +1,21 @@
 ---
-lab:
-  "\_\_ title": Perform data analysis in Power BI
-  "\_\_ module": Perform data analysis in Power BI
+demo:
+  title: "Analysieren von Daten in Power\_BI"
+  module: Perform data analysis in Power BI
 ---
 # Durchführen einer Datenanalyse
 
-## Gruppe hinzufügen
+## Eine Gruppe hinzufügen
 
 1. Fügen Sie dem Bericht eine neue Seite namens **Kategorieanalyse** hinzu.
 
-1. Kopieren Sie den **Slicer „Jahr“** von der Seite **Profitanalyse** auf die neue Seite und synchronisieren Sie ihn.
+1. Kopieren Sie den Slicer **Year** von der Seite **Profit Analysis** auf die neue Seite, und synchronisieren Sie ihn.
 
 1. Fügen Sie basierend auf der Spalte **Category** der Tabelle **Product** eine neue Gruppe hinzu.
 
 1. Erstellen Sie basierend auf dem Wert Trainer eine neue Gruppe.
 
-1. Aktivieren Sie das Kontrollkästchen **Andere Gruppe einschließen**.
+1. Aktivieren Sie das Kontrollkästchen **Include Other Group** (Andere Gruppe einschließen).
 
 1. Fügen Sie ein Matrixvisual hinzu, und passen Sie Größe und Position so an, dass es die Seite ausfüllt.
 

@@ -1,7 +1,7 @@
 ---
-lab:
-  "\_\_ title": Manage files and datasets in Power BI
-  "\_\_ module": Deploy and manage Power BI service items
+demo:
+  title: "Verwalten von Dateien und Datasets in Power\_BI"
+  module: Deploy and manage Power BI service items
 ---
 # Verwalten von Dateien und Datasets in Power BI
 
@@ -11,7 +11,7 @@ lab:
 
 1. Öffnen Sie in Power BI Desktop das Power Query-Editor-Fenster, und wählen Sie die Abfrage **ProductCost** aus.
 
-1. Bearbeiten Sie den Schritt „Quelle“ und ändern Sie dann wie folgt den Dateipfad, um die Dateifreigabe zu verwenden:
+1. Bearbeiten Sie den Schritt „Quelle“, und ändern Sie dann wie folgt den Dateipfad, um die Dateifreigabe zu verwenden:
 
     `\\DATA-AI\Data\ProductCost.xlsx`
 
@@ -25,7 +25,7 @@ lab:
 
 1. Laden Sie im Power BI-Dienst für den Kursleiter die Seite mit den Dataseteinstellungen neu (F5).
 
-1. Erweitern Sie den Abschnitt Gatewayverbindung, und weisen Sie darauf hin, dass kein Gateway installiert ist.
+1. Erweitern Sie den Abschnitt „Gatewayverbindung“, und weisen Sie darauf hin, dass kein Gateway installiert ist.
 
 1. Wählen Sie in der Dropdownliste für den Download (oben rechts) die Option Datengateway aus.
 
@@ -47,10 +47,10 @@ lab:
 
 1. Öffnen Sie vor dem Aktualisieren des Datasets das Dashboard **Sales Monitoring** (Umsatzüberwachung).
 
-1. Bearbeiten Sie die Details für die Kachel Sales, Profit Margin (Umsatz, Gewinnspanne), um den letzten Aktualisierungszeitpunkt anzuzeigen.
+1. Bearbeiten Sie die Details für die Kachel „Sales, Profit Margin“ (Umsatz, Rendite), um den letzten Aktualisierungszeitpunkt anzuzeigen.
 
-1. Klicken Sie mit der rechten Maustaste auf die Datei `D:\PL300\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1` und führen Sie sie dann mit PowerShell aus. *Dieses Skript lädt die Umsätze vom Dezember 2020 in die Datenbank.*
+1. Klicken Sie mit der rechten Maustaste auf die `D:\PL300\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1`-Datei, und führen Sie sie dann mit PowerShell aus. *Dieses Skript lädt die Verkaufsdaten vom Dezember 2020 in die Datenbank.*
 
-1. Aktualisieren Sie im Power BI-Dienst für den*die Kursleiter*in im Bereich Navigation das Dataset **Sales Analysis** (Verkaufsanalyse).
+1. Aktualisieren Sie im Power BI-Dienst für den*die Kursleiter*in im Navigationsbereich das Dataset **Sales Analysis** (Verkaufsanalyse).
 
-1. Weisen Sie nach Abschluss der Aktualisierung darauf hin, dass die Dashboardkachel mit der Spalte für **Dezember 2020** angezeigt wird und dass die Aktualisierungszeit **JETZT** ist.
+1. Weisen Sie nach Abschluss der Aktualisierung darauf hin, dass die Dashboardkachel mit der Spalte für **Dezember 2020** angezeigt wird und dass die Aktualisierungszeit **JETZT** ist.

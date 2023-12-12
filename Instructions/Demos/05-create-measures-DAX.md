@@ -1,11 +1,11 @@
 ---
-lab:
-  "\_\_ title": Create measures using DAX in Power BI
-  "\_\_ module": Create measures using DAX in Power BI
+demo:
+  title: "Erstellen von Measures in Power\_BI mithilfe von DAX"
+  module: Create measures using DAX in Power BI
 ---
-# Erstellen von Measures in Power BI mithilfe von DAX
+# Erstellen von Measures in Power BI mithilfe von DAX
 
-> **Tipp**: Alle Berechnungen können aus der Datei D:\PL300\Demo\Resources\Snippets-Demo-05.txt kopiert werden.
+> **Tipp**: Alle Berechnungen können aus der Datei „D:\PL300\Demo\Resources\Snippets-Demo-05.txt“ kopiert werden.
 
 ## Erstellen einer berechneten Tabelle
 
@@ -17,7 +17,7 @@ Date = CALENDARAUTO()
 
 1. Wechseln Sie zur Datenansicht, und sehen sie sich die Tabelle an, die eine einzelne Datumsspalte umfasst.
 
-Erstellen berechneter Spalten
+Erstellen von berechneten Spalten
 
 1. Fügen Sie der Tabelle Date eine berechnete Spalte hinzu:
 
