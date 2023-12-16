@@ -1,7 +1,7 @@
 ---
-lab:
-  "\_\_ title": (Optional) Optimize model performance in Power BI
-  "\_\_ module": Optimize model performance in Power BI
+demo:
+  title: "(Optional) Optimieren eines Modells für bessere Ergebnisse in Power\_BI"
+  module: Optimize model performance in Power BI
 ---
 
 # (Optional) Optimieren der Modellleistung
@@ -30,9 +30,9 @@ lab:
 
 1. Zeigen Sie auf der Registerkarte Ansicht des Menübands den Bereich Leistungsanalyse an.
 
-1. Aktualisieren Sie die Visuals und erweitern Sie dann den Slicer und das Visual „Umsatz nach Monat“.
+1. Aktualisieren Sie die visuellen Elemente, und erweitern Sie dann das visuelle Element „Datenschnitt“ und „Umsatz nach Monat“.
 
-1. Weisen Sie darauf hin, dass sie den DirectQuery-Modus verwendet haben (die Daten wurden von der Datenquelle angefordert).
+1. Weisen Sie darauf hin, dass sie den DirectQuery-Modus verwendet haben (Daten wurden von der Datenquelle angefordert).
 
 ## Konfigurieren von Speichertabellen vom Typ „Dual“
 
@@ -78,4 +78,4 @@ lab:
 
 1. Schließen Sie Power BI Desktop.
 
-> **Hinweis**: Sie werden diese Power BI Desktop-Lösung nicht mehr verwenden.
+> **Hinweis**: Sie werden diese Power BI Desktop-Lösung nicht erneut verwenden.

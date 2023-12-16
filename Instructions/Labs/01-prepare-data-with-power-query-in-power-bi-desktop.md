@@ -24,7 +24,7 @@ In dieser Aufgabe öffnen Sie zunächst eine Power BI-Starterdatei (PBIX). Die S
 - Datenladevorgang > Beim ersten Laden Beziehungen aus Datenquellen importieren
 - Datenladevorgang > Neue Beziehungen nach dem Laden der Daten automatisch erkennen
 
-*Hinweis: Obwohl diese beiden Optionen bei der Entwicklung eines Datenmodells hilfreich sein können, haben Sie sie zuvor deaktiviert, um die Labumgebung zu unterstützen. Wenn Sie Beziehungen im Lab **Laden von Daten in Power BI Desktop** erstellen, erfahren Sie, warum Sie die einzelnen Elemente hinzufügen.*
+*Hinweis: Obwohl diese beiden Optionen bei der Entwicklung eines Datenmodells hilfreich sein können, haben Sie sie zuvor deaktiviert, um die Labumgebung zu unterstützen. Wenn Sie Beziehungen im Lab **Laden von transformierten Daten in Power BI Desktop** erstellen, erfahren Sie, warum Sie die einzelnen Elemente hinzufügen.*
 
 1. Öffnen Sie Power BI Desktop.
 
@@ -39,6 +39,7 @@ In dieser Aufgabe öffnen Sie zunächst eine Power BI-Starterdatei (PBIX). Die S
 1. Wählen Sie die Datei **Sales Analysis** aus.
 
 1. Speichern Sie eine Kopie der Datei mit **Speichern unter** im Ordner **D:\PL300\MySolution**.
+
 
 ## **Abrufen von Daten aus SQL Server**
 
@@ -73,8 +74,10 @@ In dieser Aufgabe erfahren Sie, wie Sie eine Verbindung mit einer SQL Server-Dat
     - DimSalesTerritory
     - FactResellerSales
 
-1. Führen Sie diese Aufgabe aus, indem Sie auf **Daten transformieren** klicken, wodurch Power Query-Editor geöffnet wird.
+1. Führen Sie diese Aufgabe aus, indem Sie **Daten transformieren** auswählen, wodurch Power Query-Editor geöffnet wird.
+    
     1. *Dieses Lab dient nur zum Herstellen einer Verbindung mit den Daten und zum Profilieren der Daten, aber nicht zum **Transformieren von Daten**.*
+
 
 ## **Vorschau der Daten in Power Query-Editor**
 
@@ -94,7 +97,7 @@ Diese Aufgabe führt den Power Query-Editor ein und ermöglicht es Ihnen, die Da
 
 1. Scrollen Sie im Bereich „Datenvorschau“ horizontal, um alle Spalten zu überprüfen. Beachten Sie, dass die letzten fünf Spalten Verknüpfungen mit **Tabellen** oder **Werten** enthalten.
 
-    *Diese fünf Spalten stellen Beziehungen zu anderen Tabellen in der Datenbank dar. Mit ihnen können Sie Tabellen miteinander verknüpfen. Tabellen werden im Lab **Laden von Daten in Power BI Desktop** verknüpft.*
+    *Diese fünf Spalten stellen Beziehungen zu anderen Tabellen in der Datenbank dar. Mit ihnen können Sie Tabellen miteinander verknüpfen. Tabellen werden im Lab **Laden von transformierten Daten in Power BI Desktop** verknüpft.*
 
 1. Aktivieren Sie zum Überprüfen der Spaltenqualität auf der Registerkarte **Ansicht** des Menübands in der Gruppe **Datenvorschau** das Kontrollkästchen **Spaltenqualität**. Über die Funktion „Spaltenqualität“ können Sie den Prozentsatz von gültigen, fehlerhaften und leeren Spaltenwerten ganz einfach ermitteln.
 
@@ -122,7 +125,7 @@ Diese Aufgabe führt den Power Query-Editor ein und ermöglicht es Ihnen, die Da
 
 1. Scrollen Sie horizontal, um die letzten Spalten anzuzeigen. Sehen Sie sich die Spalte **DimProductSubcategory** an.
 
-    *Wenn Sie dieser Abfrage im Lab **Laden von Daten in Power BI Desktop** Transformationen hinzufügen, können Sie mithilfe der Spalte **DimProductSubcategory** Tabellen verknüpfen.*
+    *Wenn Sie dieser Abfrage im Lab **Laden von transformierten Daten in Power BI Desktop** Transformationen hinzufügen, können Sie mithilfe der Spalte **DimProductSubcategory** Tabellen verknüpfen.*
 
 1. Wählen Sie im Bereich **Abfragen** die Abfrage für **DimReseller** aus.
 
@@ -140,7 +143,7 @@ Diese Aufgabe führt den Power Query-Editor ein und ermöglicht es Ihnen, die Da
 
 1. Zeigen Sie mit dem Mauszeiger auf den Balken für **Ware House**. Wie Sie sehen, gibt es fünf Zeilen mit diesem Wert.
 
-    *Sie wenden im Lab **Laden von Daten in Power BI Desktop** eine Transformation an, um diese fünf Zeilen neu zu bezeichnen.*
+    *Sie wenden im Lab **Laden von transformierten Daten in Power BI Desktop** eine Transformation an, um diese fünf Zeilen neu zu bezeichnen.*
 
 1. Wählen Sie im Bereich **Abfragen** die Abfrage für **DimSalesTerritory** aus.  
 
@@ -152,7 +155,8 @@ Diese Aufgabe führt den Power Query-Editor ein und ermöglicht es Ihnen, die Da
 
 1. Überprüfen Sie die Spaltenqualität für die Spalte **TotalProductCost**. Wie Sie sehen, sind 8 % der Zeilen leer.
 
-    *Die fehlenden Werte in der Spalte **TotalProductCost** sind ein Datenqualitätsproblem. Um dieses Problem zu behandeln, wenden Sie im Lab **Laden von Daten in Power BI Desktop** Transformationen an, um die fehlenden Werte mithilfe der in der zugehörigen Tabelle **DimProduct** gespeicherten Standardproduktkosten zu ergänzen.*
+    *Die fehlenden Werte in der Spalte **TotalProductCost** sind ein Datenqualitätsproblem. Um dieses Problem zu behandeln, wenden Sie im Lab **Laden von transformierten Daten in Power BI Desktop** Transformationen an, um die fehlenden Werte mithilfe der in der zugehörigen Tabelle **DimProduct** gespeicherten Standardproduktkosten zu ergänzen.*
+
 
 ## **Abrufen von Daten aus einer CSV-Datei**
 
@@ -181,6 +185,7 @@ In dieser Aufgabe erstellen Sie eine neue Abfrage basierend auf CSV-Dateien.
 *Sie sollten jetzt über zwei neue Abfragen verfügen: **ResellerSalesTargets** und **ColorFormats**.*
 
  ![Abfrageliste](Linked_image_Files/01-all-queries-loaded.png)
+
 
 ### **Abschluss**
 

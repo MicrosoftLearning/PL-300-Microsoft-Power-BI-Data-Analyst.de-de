@@ -1,8 +1,9 @@
 ---
-lab:
-  "\_\_ title": Get data in Power BI
-  "\_\_ module": Get data in Power BI
+demo:
+  title: Abrufen von Daten in Power BI
+  module: Get data in Power BI
 ---
+
 # Abrufen von Daten in Power BI
 
 ## Beginnen mit der Entwicklung eines Power BI-Berichts
@@ -39,7 +40,7 @@ lab:
 
 1. Aktivieren Sie Spaltenverteilung, und weisen Sie auf Spalten wie ProductID (eindeutige Werte) und ProductCategory (mehrere doppelte Werte) hin.
 
-1. Aktivieren Sie Spaltenprofil, und wählen Sie dann die Spalte ProductCategory aus.
+1. Aktivieren Sie „Spaltenprofil“, und wählen Sie dann die Spalte „ProductCategory“ aus.
 
 1. Heben Sie die Spaltenstatistik und -verteilung hervor.
 

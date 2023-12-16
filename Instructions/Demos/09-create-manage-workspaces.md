@@ -1,7 +1,7 @@
 ---
 demo:
-  "\_\_ title": Create and manage workspaces in Power BI
-  "\_\_ module": Deploy and manage Power BI service items
+  title: Erstellen und Verwalten von Arbeitsbereichen in Power BI
+  module: Deploy and manage Power BI service items
 ---
 
 # Erstellen und Verwalten von Arbeitsbereichen
@@ -24,11 +24,11 @@ demo:
 
 1. Wechseln Sie zum Power BI-Fenster **Empfänger**.
 
-1. Öffnen Sie **Für mich freigegeben** und anschließend das Dashboard Sales Monitoring (Umsatzüberwachung).
+1. Öffnen Sie **Für mich freigegeben** und anschließend das Dashboard „Sales Monitoring“ (Umsatzüberwachung).
 
 1. Weisen Sie darauf hin, dass das Dashboard schreibgeschützt ist.
 
-## Erstellen einer App
+## Eine App erstellen
 
 1. Wechseln Sie zum Power BI- Dienstfenster **Kursleiter**.
 

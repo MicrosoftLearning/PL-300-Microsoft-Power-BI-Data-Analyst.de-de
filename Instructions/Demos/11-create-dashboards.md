@@ -1,21 +1,21 @@
 ---
-lab:
-  "\_\_ title": Create dashboards in the Power BI service
-  "\_\_ module": Deploy and manage Power BI service items
+demo:
+  title: "Erstellen von Dashboards im Power\_BI-Dienst"
+  module: Deploy and manage Power BI service items
 ---
 # Erstellen von Dashboards im Power BI-Dienst
 
 ## Erstellen eines Dashboards
 
-1. Erstellen Sie zunächst im Power BI-Dienst einen neuen Arbeitsbereich.
+1. Erstellen Sie zunächst im Power BI-Dienst einen neuen Arbeitsbereich.
 
-1. Wählen Sie das Bild `D:\PL300\Demo\Resources\Icon-Airplane.jpg` für das Arbeitsbereichssymbol aus.
+1. Wählen Sie das `D:\PL300\Demo\Resources\Icon-Airplane.jpg`-Symbol für den Arbeitsbereich aus.
 
 1. Veröffentlichen Sie in Power BI Desktop den Bericht **Verkaufsanalyse** im neuen Arbeitsbereich.
 
 1. Kehren Sie nach dem Veröffentlichen zum Power BI-Dienst zurück.
 
-1. Öffnen Sie den Bericht **Verkaufsanalyse**, und vergewissern Sie sich, dass der Slicer Year auf **CY2020** festgelegt ist.
+1. Öffnen Sie den Bericht **Verkaufsanalyse**, und vergewissern Sie sich, dass der Slicer „Year“ auf **CY2020** festgelegt ist.
 
 ## Anheften von Berichtsvisuals
 
@@ -25,7 +25,7 @@ lab:
 
 1. Öffnen Sie das Dashboard **Sales Monitoring** (Umsatzüberwachung).
 
-1. Bearbeiten Sie die Details der Kachel **Gewinnspanne** und ändern Sie den Untertiteltext so, dass er das Jahr (**CY2020**) einschließt.
+1. Bearbeiten Sie die Details der Kachel **Profit Margin** (Rendite), und ändern Sie den Untertiteltext, um das Jahr (**CY2020**) einzuschließen.
 
 ## Hinzufügen einer Kachel für Fragen und Antworten (Q&A)
 

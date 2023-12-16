@@ -1,13 +1,13 @@
 ---
-lab:
-  "\_\_ title": Design a data model in Power BI
-  "\_\_ module": Design a data model in Power BI
+demo:
+  title: Entwerfen eines Datenmodells in Power BI
+  module: Design a data model in Power BI
 ---
 # Entwerfen eines Datenmodells in Power BI
 
 ## Überprüfen des Modells
 
-1. Erweitern Sie im Bereich Daten alle Tabellen, um alle Felder anzuzeigen.
+1. Erweitern Sie im Bereich „Daten“ alle Tabellen, um alle Felder anzuzeigen.
 
 1. Weisen Sie in der Tabelle Sales auf die Hierarchie OrderDate hin, die automatisch erstellt wurde.
 
@@ -17,7 +17,7 @@ lab:
 
 1. Erklären Sie, wie Filter von der Tabelle Product an die Tabelle Sales weitergegeben werden.
 
-## Erstellen einer Hierarchie
+## Hierarchie erstellen
 
 1. Erstellen Sie basierend auf der Spalte Category der Tabelle Product eine Hierarchie.
 
@@ -43,7 +43,7 @@ lab:
 
 1. Weisen Sie darauf hin, dass die Werte für Unit Price die Summe der Preise sind, was nicht korrekt ist.
 
-1. Wählen Sie im Bereich Daten das Feld Stückpreis aus, und konfigurieren Sie die Summe des Felds so, dass der Durchschnitt verwendet wird.
+1. Wählen Sie im Bereich „Daten“ das Feld „Einzelpreis“ aus, und konfigurieren Sie seine Summe so, dass der Durchschnitt verwendet wird.
 
 1. Entfernen Sie die Spalte Sum of Unit Price aus dem Matrixvisual, und fügen Sie dann erneut das Feld Unit Price hinzu.
 
