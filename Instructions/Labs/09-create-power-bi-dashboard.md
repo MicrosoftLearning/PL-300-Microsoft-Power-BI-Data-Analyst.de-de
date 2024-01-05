@@ -38,33 +38,9 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei 
 
      ![Bild 22](Linked_image_Files/07-my-workspace-new.png)
 
-## **Erste Schritte: Öffnen des Berichts**
-
-In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Starterbericht öffnen.
-
-*Wichtig: Wenn Sie nach einem vorherigen Lab fortfahren (und dieses Lab erfolgreich abgeschlossen haben), überspringen Sie diese Aufgabe und fahren mit der nächsten fort.*
-
-1. Öffnen Sie Power BI Desktop.
-    
-    *Standardmäßig wird das Dialogfeld „Erste Schritte“ vor Power BI Desktop geöffnet. Melden Sie sich an und schließen Sie dann das Popup.*
-
-    ![Power BI Desktop-Symbol](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
-
-1. Um die Power BI Desktop-Startdatei zu öffnen, wählen Sie **Datei > Bericht öffnen > Berichte durchsuchen** aus.
-
-1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\09-create-power-bi-dashboard\Starter**, und öffnen Sie die Datei **Verkaufsanalyse**.
-
-1. Schließen Sie alle Informationsfenster, die möglicherweise geöffnet werden.
-
-1. Beachten Sie die gelbe Warnmeldung unterhalb des Menübands. *In dieser Meldung werden Sie darauf hingewiesen, dass die Abfragen nicht als Modelltabellen geladen wurden. Sie wenden die Abfragen später in diesem Lab an.*
-    
-    *Klicken Sie rechts auf der gelben Warnmeldung auf das **X**, um die Warnmeldung zu verwerfen.*
-
-1. Wenn Sie aufgefordert werden, Änderungen zu übernehmen, klicken Sie auf **Später übernehmen**.
-
 ## **Erste Schritte: Veröffentlichen des Berichts**
 
-In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein Dataset erstellen. *Wenn Sie das Dataset bereits veröffentlicht haben, fahren Sie mit der nächsten Aufgabe fort.*
+In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein semantisches Modell erstellen. *Wenn Sie das semantische Modell bereits veröffentlicht haben, fahren Sie mit der nächsten Aufgabe fort.*
 
 1. Navigieren Sie im Browserfenster von Microsoft Edge im Power BI-Dienst zu **Mein Arbeitsbereich**.
 
@@ -74,7 +50,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein Datas
 
 1. Wählen Sie die Datei **SalesAnalysis.pbix** und dann **Öffnen** aus.
 
-*Wenn Sie zum Ersetzen des Datasets aufgefordert werden, wählen Sie **Ersetzen** aus.*
+*Wenn Sie zum Ersetzen des semantischen Modells aufgefordert werden, wählen Sie **Ersetzen** aus.*
 
 ## **Erstellen eines Dashboards**
 
@@ -174,9 +150,9 @@ In dieser Aufgabe bearbeiten Sie die Details von zwei Kacheln.
 
 1. Die Kachel gibt jetzt den Zeitpunkt der letzten Aktualisierung an (bei der Aktualisierung des Datenmodells in Power BI Desktop).
 
-*In der nächsten Übung aktualisieren Sie das Dataset. Abhängig von Ihren Daten und Berichten können Sie jederzeit eine Adhoc-Datenaktualisierung durchführen oder einen Zeitplan festlegen. Geplante Aktualisierungen erfordern jedoch Gateways, die wir für dieses Lab nicht konfigurieren können. Von Power BI Desktop aus führen Sie also eine manuelle Datenaktualisierung durch und laden die Datei dann in Ihren Arbeitsbereich hoch.*
+*In der nächsten Übung aktualisieren Sie das semantische Modell. Abhängig von Ihren Daten und Berichten können Sie jederzeit eine Ad-hoc-Datenaktualisierung durchführen oder einen Zeitplan festlegen. Geplante Aktualisierungen erfordern jedoch Gateways, die wir für dieses Lab nicht konfigurieren können. Von Power BI Desktop aus führen Sie also eine manuelle Datenaktualisierung durch und laden die Datei dann in Ihren Arbeitsbereich hoch.*
 
-## **Aktualisieren des Datasets**
+## **Aktualisieren des semantischen Modells**
 
 In dieser Übung laden Sie zuerst Bestelldaten für Juni 2020 in die Datenbank **AdventureWorksDW2020**. Anschließend öffnen Sie die Power BI Desktop-Datei, führen eine Datenaktualisierung aus und laden die Datei in Ihren Arbeitsbereich hoch.
 
@@ -208,11 +184,11 @@ In dieser Aufgabe öffnen Sie die Power BI Desktop-Datei **Verkaufsanalyse**, f�
 
     ![Bild 59](Linked_image_Files/09-create-power-bi-dashboard_image48.png)
 
-1. Wenn Sie zum Ersetzen des Datasets aufgefordert werden, klicken Sie auf **Ersetzen**.
+1. Wenn Sie zum Ersetzen des semantischen Modells aufgefordert werden, wählen Sie **Ersetzen** aus.
 
 1. Schließen Sie Power BI Desktop.
 
-*Das Dataset im Power BI-Dienst enthält jetzt Umsatzdaten vom Juni 2020.*
+*Das semantische Modell im Power BI-Dienst enthält jetzt Umsatzdaten vom Juni 2020.*
 
 ### **Überprüfen des Dashboards**
 

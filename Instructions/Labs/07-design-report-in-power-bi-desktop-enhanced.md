@@ -338,7 +338,7 @@ In dieser Aufgabe wird der Bericht veröffentlicht.
 1. Beachten Sie, dass im Fenster **In Power BI veröffentlichen** die Option **Mein Arbeitsbereich** ausgewählt ist.
 
 1. Wählen Sie **Auswählen** aus, um den Bericht zu veröffentlichen.
-    1. Wenn Sie zum Ersetzen des Datasets aufgefordert werden, wählen Sie **Ersetzen** aus.
+    1. Wenn Sie zum Ersetzen des semantischen Modells aufgefordert werden, wählen Sie **Ersetzen** aus.
     1. Wenn die Veröffentlichung erfolgreich war, klicken Sie auf **OK**.
 
 1. Schließen Sie Power BI Desktop.

@@ -316,10 +316,10 @@ In dieser Aufgabe erkunden Sie den Bericht, der in Power BI veröffentlicht wur
 
     ![Bild 93](Linked_image_Files/06-my-workspace-new.png)
 
-1. Überprüfen Sie den Inhalt des Arbeitsbereichs. Beachten Sie die Navigationsoptionen „Alle“, „Inhalt“ und „Datasets + Dataflows“.
-    1. *Es gibt vier Arten von Elementen in einem Arbeitsbereich, und wir befassen uns mit den Elementen **Berichte** und **Datasets**.*
-    1. *Möglicherweise müssen Sie Ihren Microsoft Edge-Browser aktualisieren, wenn das Dataset nicht angezeigt wird.*
-    1. *Wenn Sie die Power BI Desktop-Datei veröffentlicht haben, wurde das Datenmodell als Dataset veröffentlicht.*
+1. Überprüfen Sie den Inhalt des Arbeitsbereichs. Beachten Sie die Navigationsoptionen „Alle“, „Inhalt“ und „Semantische Modelle + Dataflows“.
+    1. *Es gibt vier Arten von Elementen in einem Arbeitsbereich, und wir befassen uns mit **Berichten** und **semantischen Modellen**.*
+    1. *Möglicherweise müssen Sie Ihren Microsoft Edge-Browser aktualisieren, wenn das semantische Modell nicht angezeigt wird.*
+    1. *Wenn Sie die Power BI Desktop-Datei veröffentlicht haben, wurde das Datenmodell als semantisches Modell veröffentlicht.*
 
 1. Klicken Sie auf den Bericht **Verkaufsanalyse**, um den Bericht zu erkunden.
 

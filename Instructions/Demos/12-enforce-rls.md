@@ -56,13 +56,13 @@ demo:
 
 1. Speichern Sie die Power BI Desktop-Datei.
 
-1. Veröffentlichen Sie die Power BI Desktop-Datei im Arbeitsbereich, und überschreiben Sie dabei das Dataset und den Bericht im Dienst.
+1. Veröffentlichen Sie die Power BI Desktop-Datei im Arbeitsbereich, und überschreiben Sie dabei das semantische Modell und den Bericht im Dienst.
 
 1. Schließen Sie Power BI Desktop.
 
-## Konfigurieren der Datasetsicherheit
+## Konfigurieren der Sicherheit des semantischen Modells
 
-1. Öffnen Sie im Power BI-Dienst für den*die Kursleiter*in im Navigationsbereich die Sicherheitsseite für das Dataset **Sales Analysis** (Verkaufsanalyse).
+1. Öffnen Sie im Power BI-Dienst für den*die Kursleiter*in im Navigationsbereich die Sicherheitsseite für das semantische Modell **Verkaufsanalyse**.
 
 1. Geben Sie im Abschnitt **Mitglieder** das Empfängerkonto (für Ty Johnston) ein.
 
