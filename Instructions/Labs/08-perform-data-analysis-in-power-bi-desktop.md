@@ -38,9 +38,9 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei 
 
      ![Bild 22](Linked_image_Files/07-my-workspace-new.png)
 
-## **Erste Schritte: Erstellen eines Datasets**
+## **Erste Schritte – Erstellen eines semantischen Modells**
 
-In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein Dataset erstellen. *Wenn Sie das Dataset bereits veröffentlicht haben, fahren Sie mit der nächsten Aufgabe fort.*
+In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein semantisches Modell erstellen. *Wenn Sie das semantische Modell bereits veröffentlicht haben, fahren Sie mit der nächsten Aufgabe fort.*
 
 1. Navigieren Sie im Browserfenster von Microsoft Edge im Power BI-Dienst zu **Mein Arbeitsbereich**.
 
@@ -50,13 +50,13 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein Datas
 
 1. Wählen Sie die Datei **SalesAnalysis.pbix** und dann **Öffnen** aus.
 
-    *Wenn Sie zum Ersetzen des Datasets aufgefordert werden, wählen Sie **Ersetzen** aus.*
+    *Wenn Sie zum Ersetzen des semantischen Modells aufgefordert werden, wählen Sie **Ersetzen** aus.*
 
-*Mit dieser Methode erstellen Sie einen Bericht und ein Dataset. In dieser Übung wird das Dataset nur zum Erstellen eines neuen Berichts verwendet. Dieser Prozess kann auch mit einem vorhandenen Dataset aus einem anderen Bericht durchgeführt werden, anstatt ein neues hochzuladen. Wenn Sie den Bericht nicht verwenden, empfiehlt es sich außerdem, die nicht benötigte Datei zu löschen.*
+*Mit dieser Methode erstellen Sie einen Bericht und ein semantisches Modell. In dieser Übung wird das semantische Modell nur zum Erstellen eines neuen Berichts verwendet. Dieser Prozess kann auch mit einem vorhandenen semantischen Modell aus einem anderen Bericht durchgeführt werden, anstatt ein neues hochzuladen. Wenn Sie den Bericht nicht verwenden, empfiehlt es sich außerdem, die nicht benötigte Datei zu löschen.*
 
 ## **Erstellen des Berichts**
 
-In dieser Aufgabe erstellen Sie eine Liveverbindung mit dem Power BI-Dataset, das in der letzten Aufgabe erstellt wurde, und erstellen dann einen neuen Bericht zur **Umsatzuntersuchung**.
+In dieser Aufgabe erstellen Sie eine Liveverbindung mit dem semantischen Power BI-Modell, das in der letzten Aufgabe erstellt wurde, und erstellen dann einen neuen Bericht zur **Umsatzuntersuchung**.
 
 1. Öffnen Sie Power BI Desktop.
 
@@ -66,9 +66,9 @@ In dieser Aufgabe erstellen Sie eine Liveverbindung mit dem Power BI-Dataset, da
 
     *Tipp: Standardmäßig wird das Dialogfeld „Erste Schritte“ vor Power BI Desktop geöffnet. Sie können sich anmelden und dann das Popup schließen.*
 
-1. Wählen Sie im Menüband „Start“ die Option **Daten abrufen > Power BI-Datasets** aus.
+1. Wählen Sie im Menüband die Option **Daten abrufen > semantische Power BI-Modelle**.
 
-1. Wählen Sie im Fenster **Datenhub** das Dataset **Verkaufsanalyse** in **Mein Arbeitsbereich** aus, und klicken Sie dann auf **Verbinden**, oder doppelklicken Sie darauf, um das Dataset zu laden.
+1. Wählen Sie im Fenster **Datenhub** das semantische Modell **Verkaufsanalyse** in **Mein Arbeitsbereich** aus, und klicken Sie dann auf **Verbinden**, oder doppelklicken Sie darauf, um das semantische Modell zu laden.
 
 1. Navigieren Sie zu **Datei > Speichern** und speichern Sie den Dateinamen als **Umsatzuntersuchung** im Ordner **D:\PL300\MySolution**.
 
