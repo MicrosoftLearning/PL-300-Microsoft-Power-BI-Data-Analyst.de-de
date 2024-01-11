@@ -1,7 +1,7 @@
 ---
-demo:
-  title: "Erstellen von Dashboards im Power\_BI-Dienst"
-  module: Deploy and manage Power BI service items
+lab:
+  "\_\_ title": Create dashboards in the Power BI service
+  "\_\_ module": Deploy and manage Power BI service items
 ---
 # Erstellen von Dashboards im Power BI-Dienst
 

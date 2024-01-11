@@ -1,9 +1,8 @@
 ---
-demo:
-  title: 'Bereinigen, Transformieren und Laden von Daten in Power BI'
-  module: 'Clean, transform, and load data in Power BI'
+lab:
+  "\_\_ title": 'Clean, transform, and load data in Power BI'
+  "\_\_ module": 'Clean, transform, and load data in Power BI'
 ---
-
 # Bereinigen, Transformieren und Laden von Daten in Power BI
 
 ## Anwenden von Abfragetransformationen

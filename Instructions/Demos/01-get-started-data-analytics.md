@@ -1,9 +1,8 @@
 ---
-demo:
-  title: Erste Schritte mit der Microsoft-Datenanalyse
-  module: Get started with Microsoft data analytics
+lab:
+  "\_\_ title": Get started with Microsoft data analytics
+  "\_\_ module": Get started with Microsoft data analytics
 ---
-
 # Erste Schritte mit der Microsoft-Datenanalyse
 
 ## Untersuchen des Dashboards
