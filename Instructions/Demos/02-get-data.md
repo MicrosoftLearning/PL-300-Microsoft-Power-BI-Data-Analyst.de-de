@@ -1,9 +1,8 @@
 ---
-demo:
-  title: Abrufen von Daten in Power BI
-  module: Get data in Power BI
+lab:
+  "\_\_ title": Get data in Power BI
+  "\_\_ module": Get data in Power BI
 ---
-
 # Abrufen von Daten in Power BI
 
 ## Beginnen mit der Entwicklung eines Power BI-Berichts
