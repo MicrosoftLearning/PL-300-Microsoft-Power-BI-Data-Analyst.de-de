@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: Erzwingen von Sicherheit auf Zeilenebene
   module: Enforce Row-Level Security
 ---
@@ -32,15 +33,15 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
 1. Um die Power BI Desktop-Startdatei zu öffnen, wählen Sie **Datei > Bericht öffnen > Berichte durchsuchen** aus.
 
-1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\10-row-level-security\Starter**, und öffnen Sie die Datei **Verkaufsanalyse**.
+1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\Allfiles\Labs\10-row-level-security\Starter**, und öffnen Sie die Datei **Sales Analysis**.
 
 1. Schließen Sie alle Informationsfenster, die möglicherweise geöffnet werden.
 
-1. Beachten Sie die gelbe Warnmeldung unterhalb des Menübands. *In dieser Meldung werden Sie darauf hingewiesen, dass die Abfragen nicht als Modelltabellen geladen wurden. Sie wenden die Abfragen später in diesem Lab an.*
+1. Beachten Sie die Warnmeldung unterhalb des Menübands. *In dieser Meldung werden Sie darauf hingewiesen, dass die Abfragen nicht als Modelltabellen geladen wurden. Sie wenden die Abfragen später in diesem Lab an.*
     
-    *Klicken Sie rechts auf der gelben Warnmeldung auf das **X**, um die Warnmeldung zu verwerfen.*
+    *Wählen Sie rechts auf der Warnmeldung das **X** aus, um die Warnmeldung zu schließen.*
 
-1. Um eine Kopie der Datei zu erstellen, wechseln Sie zu **Datei > Speichern unter**, und speichern Sie sie im Ordner **D:\PL300\MySolution**.
+1. Um eine Kopie der Datei zu erstellen, wechseln Sie zu **Datei > Speichern unter**, und speichern Sie sie im Ordner **D:\Allfiles\MySolution**.
 
 1. Wenn Sie aufgefordert werden, Änderungen zu übernehmen, klicken Sie auf **Später übernehmen**.
 

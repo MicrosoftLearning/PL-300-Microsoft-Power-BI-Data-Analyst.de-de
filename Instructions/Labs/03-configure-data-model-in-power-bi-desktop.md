@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: Entwerfen eines Datenmodells in Power BI
   module: Design a Data Model in Power BI
 ---
@@ -31,11 +32,11 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
 1. Um die Power BI Desktop-Startdatei zu öffnen, wählen Sie **Datei > Bericht öffnen > Berichte durchsuchen** aus.
 
-1. Navigieren Sie zum Ordner **D:\PL300\Labs\03-configure-data-model-in-power-bi-desktop\Starter** und wählen Sie **Verkaufsanalyse** aus.
+1. Navigieren Sie zum Ordner **D:\Allfiles\Labs\03-configure-data-model-in-power-bi-desktop\Starter**, und wählen Sie **Sales Analysis** aus.
 
 1. Schließen Sie alle Informationsfenster, die möglicherweise geöffnet werden.
 
-1. Wechseln Sie zu **Datei > Speichern unter**, und speichern Sie die Datei im Ordner **D:\PL300\MySolution**.
+1. Wechseln Sie zu **Datei > Speichern unter**, und speichern Sie die Datei im Ordner **D:\Allfiles\MySolution**.
 
 ## **Erstellen von Modellbeziehungen**
 
@@ -336,7 +337,7 @@ In dieser Aufgabe erstellen Sie zwei Quickmeasures zur Berechnung des Gewinns un
 
 1. Ziehen Sie das Feld **Sales** in das Feld **Basiswert**.
 
-1. Ziehen Sie das Feld **Cost** in das Feld **Wert, der subtrahiert werden soll**.
+1. Ziehen Sie das Feld **Cost** in das Feld **Wert, der subtrahiert werden soll**, und wählen Sie dann **Hinzufügen** aus.  
 
      ![Bild 368](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image48.png)
 

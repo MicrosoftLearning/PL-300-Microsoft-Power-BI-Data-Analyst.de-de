@@ -1,7 +1,8 @@
 ---
-lab:
-  "\_\_ title": (Optional) Optimize model performance in Power BI
-  "\_\_ module": Optimize model performance in Power BI
+demo:
+  course: PL-300
+  title: "(Optional) Optimieren eines Modells für bessere Ergebnisse in Power\_BI"
+  module: Optimize model performance in Power BI
 ---
 
 # (Optional) Optimieren der Modellleistung
@@ -10,13 +11,13 @@ lab:
 
 > **Hinweis**: In dieser Demo wird eine andere Power BI Desktop-Datei verwendet.
 
-1. Öffnen Sie die Datei D:\PL300\Demo\Resources\AW Sales Analysis.pbix.
+1. Öffnen Sie die Datei „D:\Allfiles\Demo\Resources\AW Sales Analysis.pbix“.
 
 1. Wenn Sie zum Herstellen einer Verbindung mit der Datenquelle aufgefordert werden, klicken Sie auf Verbinden.
 
 1. Weisen Sie darauf hin, dass das Datenmodell in der unteren rechten Ecke DirectQuery-Tabellen umfasst.
 
-1. Speichern Sie die Power BI Desktop-Datei im Ordner D:\PL300\Demo\MySolution.
+1. Speichern Sie die Power BI Desktop-Datei im Ordner „D:\Allfiles\Demo\MySolution“.
 
 1. Stellen Sie in der Modellansicht den Modellentwurf vor, der zwei verknüpfte Tabellen enthält.
 

@@ -1,15 +1,17 @@
 ---
-lab:
-  "\_\_ title": Get data in Power BI
-  "\_\_ module": Get data in Power BI
+demo:
+  course: 'PL-300, DP-605'
+  title: Abrufen von Daten in Power BI
+  module: Get data in Power BI
 ---
+
 # Abrufen von Daten in Power BI
 
 ## Beginnen mit der Entwicklung eines Power BI-Berichts
 
 1. Öffnen Sie Power BI Desktop, und schließen Sie die Seite „Erste Schritte“.
 
-1. Speichern Sie die Datei im Ordner D:\PL300\Demo unter Verkaufsanalyse.
+1. Speichern Sie die Datei im Ordner „D:\Allfiles\Demo“ als „Sales Analysis“.
 
 ## Herstellen einer Verbindung mit einer SQL Server-Datenbank
 
