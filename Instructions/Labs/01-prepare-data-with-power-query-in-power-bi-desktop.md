@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: Abrufen von Daten in Power BI Desktop
   module: Get Data in Power BI
 ---
@@ -34,11 +35,11 @@ In dieser Aufgabe öffnen Sie zunächst eine Power BI-Starterdatei (PBIX). Die S
 
 1. Um die Power BI Desktop-Startdatei zu öffnen, wählen Sie **Datei > Bericht öffnen > Berichte durchsuchen** aus.
 
-1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\01-prepare-data-with-power-query-in-power-bi-desktop\Starter**.
+1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\Allfiles\Labs\01-prepare-data-with-power-query-in-power-bi-desktop\Starter**.
 
 1. Wählen Sie die Datei **Sales Analysis** aus.
 
-1. Speichern Sie eine Kopie der Datei mit **Speichern unter** im Ordner **D:\PL300\MySolution**.
+1. Speichern Sie eine Kopie der Datei mit **Speichern unter** im Ordner **D:\Allfiles\MySolution**.
 
 
 ## **Abrufen von Daten aus SQL Server**
@@ -164,7 +165,7 @@ In dieser Aufgabe erstellen Sie eine neue Abfrage basierend auf CSV-Dateien.
 
 1. Wählen Sie zum Hinzufügen einer neuen Abfrage im Fenster **Power Query-Editor** auf der Registerkarte **Start** des Menübands in der Gruppe **Neue Abfrage** den Pfeil nach unten bei **Neue Quelle** und dann **Text/CSV** aus.
 
-1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Resources**, und wählen Sie die Datei **ResellerSalesTargets.csv** aus. Klicken Sie auf **Öffnen**.
+1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\Allfiles\Resources**, und wählen Sie die Datei **ResellerSalesTargets.csv** aus. Klicken Sie auf **Öffnen**.
 
 1. Sehen Sie sich die Vorschaudaten im Fenster **ResellerSalesTargets.csv** an. Klicken Sie auf **OK**.
 
@@ -178,7 +179,7 @@ In dieser Aufgabe erstellen Sie eine neue Abfrage basierend auf CSV-Dateien.
 
      ![Bild 74](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image38.png)
 
-1. Wiederholen Sie die Schritte zum Erstellen einer Abfrage auf Grundlage der Datei **D:\PL300\Resources\ColorFormats.csv**.
+1. Wiederholen Sie die Schritte zum Erstellen einer Abfrage auf Grundlage der Datei **D:\Allfiles\Resources\ColorFormats.csv**.
 
     *Die CSV-Datei **ColorFormats** enthält eine Zeile pro Produktfarbe. Jede Zeile zeichnet die HEX-Codes auf, um Hintergrund- und Schriftfarben zu formatieren.*
 

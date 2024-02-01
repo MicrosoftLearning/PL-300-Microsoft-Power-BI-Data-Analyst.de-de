@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: Einrichten einer eigenen Umgebung
   module: Set up your own environment
 ---
@@ -9,7 +10,7 @@ lab:
 Idealerweise sollten Sie diese Labs in einer gehosteten Labumgebung absolvieren. Wenn Sie sie auf Ihrem eigenen Computer durchführen möchten, können Sie dazu die folgende Software installieren.
 
 - Alle Setup- und Ressourcendateien können [von GitHub heruntergeladen](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/AllfilesDownload.zip) werden.
-  - Extrahieren Sie den Ordner „AllFiles“ in D:/, und benennen Sie ihn in „PL300“ um.
+  - Extrahieren Sie den Ordner „AllFiles“ in D:/, und benennen Sie ihn in „D:\Allfiles\' um.
 
 ***Möglicherweise werde unerwartete Dialogfelder angezeigt oder unerwartetes Verhalten tritt auf, wenn Sie Ihre eigene Umgebung verwenden. Aufgrund der Vielzahl möglicher lokaler Konfigurationen kann sich das Kursteam um Probleme, die in Ihrer eigenen Umgebung auftreten können, nicht kümmern.***
 

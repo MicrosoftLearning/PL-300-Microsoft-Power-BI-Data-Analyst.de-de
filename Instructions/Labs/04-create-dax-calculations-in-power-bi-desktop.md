@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: Erstellen von DAX-Berechnungen in Power BI Desktop
   module: Create Model Calculations using DAX in Power BI
 ---
@@ -33,17 +34,17 @@ In dieser Übung erstellen Sie zwei berechnete Tabellen. Die erste ist die Tabel
 
 1. Um die Power BI Desktop-Startdatei zu öffnen, wählen Sie **Datei > Bericht öffnen > Berichte durchsuchen** aus.
 
-1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter**, und öffnen Sie die Datei **Verkaufsanalyse**.
+1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter**, und öffnen Sie die Datei **Verkaufsanalyse**.
 
 1. Schließen Sie alle Informationsfenster, die möglicherweise geöffnet werden.
 
-1. Beachten Sie die gelbe Warnmeldung unterhalb des Menübands.
+1. Beachten Sie die Warnmeldung unterhalb des Menübands.
 
     *In dieser Meldung werden Sie darauf hingewiesen, dass die Abfragen nicht als Modelltabellen geladen wurden. Sie wenden die Abfragen später in diesem Lab an.*
 
-    *Klicken Sie rechts auf der gelben Warnmeldung auf das **X**, um die Warnmeldung zu verwerfen.*
+    *Klicken Sie rechts auf der Warnmeldung auf das **X**, um die Warnmeldung zu verwerfen.*
 
-1. Um eine Kopie der Datei zu erstellen, wechseln Sie zu **Datei > Speichern unter**, und speichern Sie sie im Ordner **D:\PL300\MySolution**.
+1. Um eine Kopie der Datei zu erstellen, wechseln Sie zu **Datei > Speichern unter**, und speichern Sie sie im Ordner **D:\Allfiles\MySolution**.
 
 1. Wenn Sie aufgefordert werden, Änderungen zu übernehmen, klicken Sie auf **Später übernehmen**.
 
@@ -61,7 +62,7 @@ Die Bearbeitungsleiste unterstützt das Eingeben einer gültigen DAX-Formel. Sie
 
 2. Geben Sie in die Bearbeitungsleiste (die beim Erstellen oder Bearbeiten von Berechnungen direkt unterhalb des Menübands geöffnet wird) **SalesPerson =** ein. Drücken Sie **UMSCHALT+EINGABE**, geben Sie **'SalesPerson (Performance)'** ein, und drücken Sie dann die **EINGABETASTE**.
 
-    *Der Einfachheit halber können Sie alle DAX-Definitionen in diesem Lab aus den Codebeispielen in der Datei **D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** kopieren.*
+    *Der Einfachheit halber können Sie alle DAX-Definitionen in diesem Lab aus den Codebeispielen in der Datei **D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** kopieren.*
 
      ![Bild 4](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image10.png)
 
@@ -137,7 +138,7 @@ In dieser Aufgabe erstellen Sie die Tabelle **Date**.
 
 In dieser Aufgabe fügen Sie weitere Spalten hinzu, um das Filtern und Gruppieren nach verschiedenen Zeiträumen zu aktivieren. Sie erstellen auch eine berechnete Spalte, um die Sortierreihenfolge anderer Spalten zu steuern.
 
-*Der Einfachheit halber können Sie alle DAX-Definitionen in diesem Lab aus den Codebeispielen in der Datei **D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** kopieren.*
+*Der Einfachheit halber können Sie alle DAX-Definitionen in diesem Lab aus den Codebeispielen in der Datei **D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt** kopieren.*
 
 1. Klicken Sie auf dem kontextbezogenen Menüband **Tabellentools** in der Gruppe **Berechnungen** auf **Neue Spalte**.
 

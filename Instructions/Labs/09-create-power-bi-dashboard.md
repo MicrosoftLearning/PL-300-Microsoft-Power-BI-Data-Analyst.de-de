@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: "Erstellen eines Power\_BI-Dashboards"
   module: Create Dashboards
 ---
@@ -46,7 +47,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein seman
 
 1. Wählen Sie **Hochladen > Durchsuchen** aus.
 
-1. Navigieren Sie zum Ordner **D:\PL300\Labs\09-create-power-bi-Dashboard\Starter**.
+1. Navigieren Sie zum Ordner **D:\Allfiles\Labs\09-create-power-bi-dashboard\Starter**.
 
 1. Wählen Sie die Datei **SalesAnalysis.pbix** und dann **Öffnen** aus.
 
@@ -116,7 +117,7 @@ In dieser Aufgabe erstellen Sie das Dashboard **Sales Monitoring**. Sie heften e
 
 1. Klicken Sie im Bereich **Kachel hinzufügen** rechts auf die Kachel **Image** und dann auf **Weiter**.
 
-1. Geben Sie im Bereich **Bildkachel hinzufügen** im Feld **URL** die vollständige URL aus der Datei **D:\PL300\Resources\AdventureWorksLogo_DataURL.txt** ein, und klicken Sie dann auf **Übernehmen**.
+1. Geben Sie im Bereich **Bildkachel hinzufügen** im Feld **URL** die vollständige URL aus der Datei **D:\Allfiles\Resources\AdventureWorksLogo_DataURL.txt** ein und klicken Sie dann auf **Übernehmen**.
     
     *Sie können ein Bild mithilfe der zugehörigen URL einbetten oder eine Daten-URL verwenden, die Inhalte inline einbettet.*
 
@@ -160,7 +161,7 @@ In dieser Übung laden Sie zuerst Bestelldaten für Juni 2020 in die Datenbank 
 
 In dieser Aufgabe führen Sie ein PowerShell-Skript aus, um Daten in der Datenbank **AdventureWorksDW2020** zu aktualisieren.
 
-1. Klicken Sie im Datei-Explorer im Ordner **D:\PL300\Setup** mit der rechten Maustaste auf die Datei **UpdateDatabase-2-AddSales.ps1**, und wählen Sie dann **Mit PowerShell ausführen** aus.
+1. Klicken Sie im Datei-Explorer im Ordner **D:\Allfiles\Setup** mit der rechten Maustaste auf die Datei **UpdateDatabase-2-AddSales.ps1** und wählen Sie dann **Mit PowerShell ausführen** aus.
 
     ![Bild 28](Linked_image_Files/09-create-power-bi-dashboard_image46.png)
 
