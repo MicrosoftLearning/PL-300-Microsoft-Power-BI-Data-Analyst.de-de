@@ -1,7 +1,8 @@
 ---
-lab:
-  "\_\_ title": Create and manage workspaces in Power BI
-  "\_\_ module": Deploy and manage Power BI service items
+demo:
+  course: 'PL-300, DP-605'
+  title: Erstellen und Verwalten von Arbeitsbereichen in Power BI
+  module: Deploy and manage Power BI service items
 ---
 
 # Erstellen und Verwalten von Arbeitsbereichen
@@ -28,7 +29,7 @@ lab:
 
 1. Weisen Sie darauf hin, dass das Dashboard schreibgeschützt ist.
 
-## Eine App erstellen
+## Erstellen einer App
 
 1. Wechseln Sie zum Power BI- Dienstfenster **Kursleiter**.
 

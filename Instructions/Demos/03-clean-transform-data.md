@@ -1,8 +1,10 @@
 ---
-lab:
-  "\_\_ title": 'Clean, transform, and load data in Power BI'
-  "\_\_ module": 'Clean, transform, and load data in Power BI'
+demo:
+  course: 'PL-300, DP-605'
+  title: 'Bereinigen, Transformieren und Laden von Daten in Power BI'
+  module: 'Clean, transform, and load data in Power BI'
 ---
+
 # Bereinigen, Transformieren und Laden von Daten in Power BI
 
 ## Anwenden von Abfragetransformationen
@@ -47,7 +49,7 @@ lab:
 
 ## Integrieren von Abfragen
 
-1. Erstellen Sie mithilfe des Excel-Connectors eine neue Abfrage, und stellen Sie dabei eine Verbindung mit der Datei D:\PL300\Demo\Data\ProductCost.xlsx her.
+1. Erstellen Sie mithilfe des Excel-Connectors eine neue Abfrage, und stellen Sie dabei eine Verbindung mit der Datei „D:\Allfiles\Demo\Data\ProductCost.xlsx“ her.
 
 1. Entfernen Sie die Spalte Product.
 
