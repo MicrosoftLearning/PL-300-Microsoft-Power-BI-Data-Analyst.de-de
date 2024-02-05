@@ -20,7 +20,7 @@ In diesem Lab erfahren Sie mehr über die Anwendung Power BI Desktop, wie Sie ei
 
 ## **Erste Schritte mit Power BI Desktop**
 
-In dieser Aufgabe öffnen Sie zunächst eine Power BI-Starterdatei (PBIX). Die Starterdatei enthält keine Daten, wurde jedoch speziell für die Durchführung des Labs konfiguriert. Die folgenden Einstellungen auf Berichtsebene wurden in der Startdatei deaktiviert:
+ In dieser Aufgabe öffnen Sie zunächst eine Power BI-Starterdatei (PBIX). Die Starterdatei enthält keine Daten, wurde jedoch speziell für die Durchführung des Labs konfiguriert. Die folgenden Einstellungen auf Berichtsebene wurden in der Startdatei deaktiviert:
 
 - Datenladevorgang > Beim ersten Laden Beziehungen aus Datenquellen importieren
 - Datenladevorgang > Neue Beziehungen nach dem Laden der Daten automatisch erkennen
@@ -41,7 +41,6 @@ In dieser Aufgabe öffnen Sie zunächst eine Power BI-Starterdatei (PBIX). Die S
 
 1. Speichern Sie eine Kopie der Datei mit **Speichern unter** im Ordner **D:\Allfiles\MySolution**.
 
-
 ## **Abrufen von Daten aus SQL Server**
 
 In dieser Aufgabe erfahren Sie, wie Sie eine Verbindung mit einer SQL Server-Datenbank herstellen und Tabellen importieren, mit denen Abfragen in Power Query erstellt werden.
@@ -50,23 +49,23 @@ In dieser Aufgabe erfahren Sie, wie Sie eine Verbindung mit einer SQL Server-Dat
 
      ![Symbol „SQL Server Daten abrufen“](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image11.png)
 
-1. Geben Sie im Fenster **SQL Server-Datenbank** in das Feld **Server** die Zeichenfolge **localhost** ein und wählen Sie **OK** aus.
+1. Geben Sie im Fenster **SQL Server-Datenbank** im Feld **Server** den Text **localhost** ein. Lassen Sie **Datenbank** leer, und wählen Sie dann **OK** aus.
 
     *Hinweis: In diesem Lab stellen Sie mithilfe von **localhost** eine Verbindung mit der SQL Server-Datenbank her, da Gatewaydatenquellen **localhost** nicht auflösen können. Dies wird nicht als Vorgehensweise beim Erstellen eigener Lösungen empfohlen.*
 
 1. Wenn Sie zur Eingabe von Anmeldeinformationen aufgefordert werden, klicken Sie im Fenster **SQL Server-Datenbank** auf **Aktuelle Anmeldeinformationen verwenden** und wählen sie **Verbinden** aus.
 
-1. Erweitern Sie im Fenster **Navigator** auf der linken Seite die Datenbank **AdventureWorksDW2020**.
+1. Erweitern Sie im Bereich **Navigator** die Datenbank **AdventureWorksDW2020**.
 
     *Hinweis: Die **AdventureWorksDW2020**-Datenbank basiert auf der **AdventureWorksDW2017**-Beispieldatenbank. Sie wurde geändert, um die Lernziele der Kurslabs zu unterstützen.*
 
-1. Klicken auf die Tabelle **DimEmployee** ohne Aktivierung des entsprechenden Kontrollkästchens
+1. Wählen Sie die Tabelle **DimEmployee** aus, und betrachten Sie die Vorschau der Tabellendaten.
 
      ![AdventureWorksDW2020-Datenbank mit DimEmployee-Angabe](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image18.png)
 
-1. Im rechten Bereich wird eine Vorschau der Tabellendaten angezeigt. Diesen Vorschaudaten können Sie die Spalten und eine Auswahl von Zeilen entnehmen.
+    *Hinweis: Diesen Vorschaudaten können Sie die Spalten und eine Auswahl von Zeilen entnehmen.*
 
-1. Aktivieren Sie für das Erstellen von Abfragen die Kontrollkästchen neben den folgenden sechs Tabellen:
+1. Um die Tabellendaten zu importieren, **aktivieren Sie das Kontrollkästchen** neben den folgenden sechs Tabellen:
 
     - DimEmployee
     - DimEmployeeSalesTerritory
@@ -76,13 +75,12 @@ In dieser Aufgabe erfahren Sie, wie Sie eine Verbindung mit einer SQL Server-Dat
     - FactResellerSales
 
 1. Führen Sie diese Aufgabe aus, indem Sie **Daten transformieren** auswählen, wodurch Power Query-Editor geöffnet wird.
-    
-    1. *Dieses Lab dient nur zum Herstellen einer Verbindung mit den Daten und zum Profilieren der Daten, aber nicht zum **Transformieren von Daten**.*
 
+Sie haben nun Daten in Power BI importiert, und der Power Query-Editor ist für die nächste Aufgabe geöffnet.
 
 ## **Vorschau der Daten in Power Query-Editor**
 
-Diese Aufgabe führt den Power Query-Editor ein und ermöglicht es Ihnen, die Daten zu überprüfen und ein Profil zu erstellen. Auf diese Weise können Sie bestimmen, wie die Daten später bereinigt und transformiert werden.
+Diese Aufgabe führt den Power Query-Editor ein und ermöglicht es Ihnen, die Daten zu überprüfen und ein Profil zu erstellen. Auf diese Weise können Sie bestimmen, wie die Daten später bereinigt und transformiert werden. Außerdem überprüfen Sie sowohl Dimensionstabellen mit dem Präfix „Dim“ als auch Faktentabellen mit dem Präfix „Fakt“.
 
 1. Sehen Sie sich im Fenster **Power Query-Editor** links den Bereich **Abfragen** an. Der Bereich **Abfragen** enthält je eine Abfrage für jede ausgewählte Tabelle.
 
@@ -118,15 +116,9 @@ Diese Aufgabe führt den Power Query-Editor ein und ermöglicht es Ihnen, die Da
 
      ![Spaltenverteilung mit 296 unterschiedlichen und 296 eindeutigen Werten](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
 
-1. Wählen Sie im Bereich **Abfragen** die Abfrage **DimEmployeeSalesTerritory** aus.
+1. Wählen Sie im Bereich **Abfragen** die Abfrage für **DimProduct** aus.
 
-    *In der Tabelle **DimEmployeeSalesTerritory** wird eine Zeile für jeden Mitarbeiter und die von ihnen verwalteten Vertriebsgebietsregionen gespeichert. Die Tabelle unterstützt das Verknüpfen vieler Regionen mit einem einzelnen Mitarbeiter. Einige Mitarbeiter verwalten eine, zwei oder möglicherweise mehr Regionen. Wenn Sie diese Daten modellieren, müssen Sie eine m:n-Beziehung definieren.*
-
-1. Wählen Sie im Bereich **Abfragen** die Abfrage für **DimProduct** aus. Die Tabelle **DimProduct** enthält je eine Zeile für jedes vom Unternehmen verkaufte Produkt.
-
-1. Scrollen Sie horizontal, um die letzten Spalten anzuzeigen. Sehen Sie sich die Spalte **DimProductSubcategory** an.
-
-    *Wenn Sie dieser Abfrage im Lab **Laden von transformierten Daten in Power BI Desktop** Transformationen hinzufügen, können Sie mithilfe der Spalte **DimProductSubcategory** Tabellen verknüpfen.*
+    *Die Tabelle **DimProduct** enthält je eine Zeile für jedes vom Unternehmen verkaufte Produkt.*
 
 1. Wählen Sie im Bereich **Abfragen** die Abfrage für **DimReseller** aus.
 
@@ -158,7 +150,6 @@ Diese Aufgabe führt den Power Query-Editor ein und ermöglicht es Ihnen, die Da
 
     *Die fehlenden Werte in der Spalte **TotalProductCost** sind ein Datenqualitätsproblem. Um dieses Problem zu behandeln, wenden Sie im Lab **Laden von transformierten Daten in Power BI Desktop** Transformationen an, um die fehlenden Werte mithilfe der in der zugehörigen Tabelle **DimProduct** gespeicherten Standardproduktkosten zu ergänzen.*
 
-
 ## **Abrufen von Daten aus einer CSV-Datei**
 
 In dieser Aufgabe erstellen Sie eine neue Abfrage basierend auf CSV-Dateien.
@@ -186,7 +177,6 @@ In dieser Aufgabe erstellen Sie eine neue Abfrage basierend auf CSV-Dateien.
 *Sie sollten jetzt über zwei neue Abfragen verfügen: **ResellerSalesTargets** und **ColorFormats**.*
 
  ![Abfrageliste](Linked_image_Files/01-all-queries-loaded.png)
-
 
 ### **Abschluss**
 
