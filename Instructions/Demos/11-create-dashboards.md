@@ -1,7 +1,8 @@
 ---
-lab:
-  "\_\_ title": Create dashboards in the Power BI service
-  "\_\_ module": Deploy and manage Power BI service items
+demo:
+  course: PL-300
+  title: "Erstellen von Dashboards im Power\_BI-Dienst"
+  module: Deploy and manage Power BI service items
 ---
 # Erstellen von Dashboards im Power BI-Dienst
 
@@ -9,7 +10,7 @@ lab:
 
 1. Erstellen Sie zunächst im Power BI-Dienst einen neuen Arbeitsbereich.
 
-1. Wählen Sie das `D:\PL300\Demo\Resources\Icon-Airplane.jpg`-Symbol für den Arbeitsbereich aus.
+1. Wählen Sie das `D:\Allfiles\Demo\Resources\Icon-Airplane.jpg`-Symbol für den Arbeitsbereich aus.
 
 1. Veröffentlichen Sie in Power BI Desktop den Bericht **Verkaufsanalyse** im neuen Arbeitsbereich.
 

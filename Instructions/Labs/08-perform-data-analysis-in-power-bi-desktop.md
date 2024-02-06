@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: Ausführen von erweiterten Analysen mit KI-Visuals
   module: Perform Data Analysis in Power BI
 ---
@@ -46,7 +47,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein seman
 
 1. Wählen Sie **Hochladen > Durchsuchen** aus.
 
-1. Navigieren Sie zum Ordner **D:\PL300\Labs\08-perform-data-analysis-in-power-bi-desktop\Starter**.
+1. Navigieren Sie zum Ordner **D:\Allfiles\Labs\08-perform-data-analysis-in-power-bi-desktop\Starter**.
 
 1. Wählen Sie die Datei **SalesAnalysis.pbix** und dann **Öffnen** aus.
 
@@ -70,7 +71,7 @@ In dieser Aufgabe erstellen Sie eine Liveverbindung mit dem semantischen Power B
 
 1. Wählen Sie im Fenster **Datenhub** das semantische Modell **Verkaufsanalyse** in **Mein Arbeitsbereich** aus, und klicken Sie dann auf **Verbinden**, oder doppelklicken Sie darauf, um das semantische Modell zu laden.
 
-1. Navigieren Sie zu **Datei > Speichern** und speichern Sie den Dateinamen als **Umsatzuntersuchung** im Ordner **D:\PL300\MySolution**.
+1. Navigieren Sie zu **Datei > Speichern** und speichern Sie den Dateinamen als **Umsatzuntersuchung** im Ordner **D:\Allfiles\MySolution**.
 
 *Sie erstellen nun zwei Berichtsseiten, und auf jeder Seite arbeiten Sie mit einem anderen Visual, um Daten zu analysieren und zu erkunden.*
 
