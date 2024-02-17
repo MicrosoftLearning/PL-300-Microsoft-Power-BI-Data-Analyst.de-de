@@ -275,8 +275,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Sales**.
 
 1. Geben Sie im Feld **Benutzerdefinierte Spaltenformel** den folgenden Ausdruck ein (nach dem Gleichheitszeichen), und speichern Sie dann die neue Spalte:
 
-        `
-    if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]  `
+   ` if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost] `
 
     *Sie können den Ausdruck aus der Datei **D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** kopieren.*
 
