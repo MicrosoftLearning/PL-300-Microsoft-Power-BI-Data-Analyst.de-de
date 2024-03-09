@@ -42,7 +42,7 @@ In dieser Übung erstellen Sie zwei berechnete Tabellen. Die erste ist die Tabel
 
     *In dieser Meldung werden Sie darauf hingewiesen, dass die Abfragen nicht als Modelltabellen geladen wurden. Sie wenden die Abfragen später in diesem Lab an.*
 
-    *Klicken Sie rechts auf der Warnmeldung auf das **X**, um die Warnmeldung zu verwerfen.*
+    *Wählen Sie rechts auf der Warnmeldung das **X** aus, um die Warnmeldung zu schließen.*
 
 1. Um eine Kopie der Datei zu erstellen, wechseln Sie zu **Datei > Speichern unter**, und speichern Sie sie im Ordner **D:\Allfiles\MySolution**.
 
