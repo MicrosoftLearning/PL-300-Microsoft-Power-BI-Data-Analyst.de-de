@@ -27,11 +27,11 @@ In diesem Lab lernen Sie Folgendes:
 
     ![Power BI Desktop-Symbol](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    *Tipp: Standardmäßig wird das Dialogfeld „Erste Schritte“ vor Power BI Desktop geöffnet. Sie können sich anmelden und dann das Popup schließen.*
-
-1. Um die Power BI Desktop-Startdatei zu öffnen, wählen Sie **Datei > Bericht öffnen > Berichte durchsuchen** aus.
+1. Um die Power BI Desktop-Starterdatei zu öffnen, wählen Sie **Öffnen > Dieses Gerät durchsuchen**.
 
 1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\Allfiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter**, und öffnen Sie die Datei **Verkaufsanalyse**.
+
+   *Hinweis: An dieser Stelle werden Sie von Power BI aufgefordert, sich anzumelden, falls Sie das noch nicht getan haben. Sie können sich entweder anmelden oder **Abbrechen** wählen und das Lab fortsetzen.*
 
 1. Schließen Sie alle Informationsfenster, die möglicherweise geöffnet werden.
 
@@ -42,6 +42,8 @@ In diesem Lab lernen Sie Folgendes:
     *Wählen Sie rechts auf der Warnmeldung das **X** aus, um die Warnmeldung zu schließen.*
 
 1. Um eine Kopie der Datei zu erstellen, wechseln Sie zu **Datei > Speichern unter**, und speichern Sie sie im Ordner **D:\Allfiles\MySolution**.
+
+1. Wenn Sie aufgefordert werden, Änderungen zu übernehmen, klicken Sie auf **Später übernehmen**.
 
 ## **Erstellen eines Matrixvisuals**
 

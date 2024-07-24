@@ -28,11 +28,11 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
     ![Power BI Desktop-Symbol](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    *Tipp: Standardmäßig wird das Dialogfeld „Erste Schritte“ vor Power BI Desktop geöffnet. Sie können sich anmelden und dann das Popup schließen.*
-
-1. Um die Power BI Desktop-Startdatei zu öffnen, wählen Sie **Datei > Bericht öffnen > Berichte durchsuchen** aus.
+1. Um die Power BI Desktop-Starterdatei zu öffnen, wählen Sie **Öffnen > Dieses Gerät durchsuchen**.
 
 1. Navigieren Sie zum Ordner **D:\Allfiles\Labs\03-configure-data-model-in-power-bi-desktop\Starter**, und wählen Sie **Sales Analysis** aus.
+
+   *Hinweis: An dieser Stelle werden Sie von Power BI aufgefordert, sich anzumelden, falls Sie das noch nicht getan haben. Sie können sich entweder anmelden oder **Abbrechen** wählen und das Lab fortsetzen.*
 
 1. Schließen Sie alle Informationsfenster, die möglicherweise geöffnet werden.
 
@@ -76,7 +76,7 @@ In dieser Aufgabe erstellen Sie Modellbeziehungen. Die Datei wurde so konfigurie
 
 1. Wählen Sie **Neu** aus, um eine Beziehung zu erstellen.
 
-1. Wählen Sie im Fenster **Beziehung erstellen** in der ersten Dropdownliste die Tabelle **Product** aus.
+1. Wählen Sie im Fenster **Neue Beziehung** in der ersten Dropdown-Liste die Tabelle **Produkt** aus.
 
      ![Bild 333](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image16.png)
 
@@ -247,7 +247,7 @@ In dieser Aufgabe konfigurieren Sie die Tabelle **Sales**.
 
 Bei dieser Aufgabe aktualisieren Sie mehrere Spalten mit einer einzelnen Massenaktualisierung. Sie verwenden diesen Ansatz, um Spalten auszublenden und Spaltenwerte zu formatieren.
 
-1. Wählen Sie im Bereich **Daten** die Spalte **Product \| ProductKey** aus.
+1. Wählen Sie im Bereich **Modellansicht** > **Daten** die Spalte **Produkt \|ProductKey** aus.
 
 1. Wählen Sie die folgenden 13 Spalten aus, die sich über mehrere Tabellen erstrecken, und halten Sie dabei **STRG** gedrückt:
 
@@ -378,8 +378,6 @@ In dieser Aufgabe erstellen Sie zwei Quickmeasures zur Berechnung des Gewinns un
 ## **Erstellen einer m:n-Beziehung**
 
 In dieser Aufgabe erstellen Sie eine m:n-Beziehung zwischen den Tabellen **Salesperson** und **Sales**.
-
- *In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Das sieht folgendermaßen aus: **Salesperson \| Salesperson**. In diesem Beispiel ist **Salesperson** der Tabellenname und **Salesperson** der Feldname.*
 
 1. Aktivieren Sie in Power BI Desktop in der Berichtsansicht im Bereich **Daten** die folgenden zwei Felder, um ein **Tabellenvisual** zu erstellen.
 

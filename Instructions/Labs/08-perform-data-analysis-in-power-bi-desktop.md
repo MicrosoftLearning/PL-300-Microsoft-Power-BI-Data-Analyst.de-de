@@ -65,11 +65,11 @@ In dieser Aufgabe erstellen Sie eine Liveverbindung mit dem semantischen Power B
 
     *Wichtig: Wenn Power BI Desktop bereits (aus einem früheren Lab) geöffnet ist, schließen Sie diese Instanz.*
 
-    *Tipp: Standardmäßig wird das Dialogfeld „Erste Schritte“ vor Power BI Desktop geöffnet. Sie können sich anmelden und dann das Popup schließen.*
+1. Einen neuen Bericht erstellen
 
-1. Wählen Sie im Menüband die Option **Daten abrufen > semantische Power BI-Modelle**.
+1. Wählen Sie im Menüband die Option **OneLake-Datenhub > semantische Power BI-Modelle**.
 
-1. Wählen Sie im Fenster **Datenhub** das semantische Modell **Verkaufsanalyse** in **Mein Arbeitsbereich** aus, und klicken Sie dann auf **Verbinden**, oder doppelklicken Sie darauf, um das semantische Modell zu laden.
+1. Wählen Sie im Fenster **OneLake-Datenhub** das semantische Modell **Verkaufsanalyse** unter **Mein Arbeitsbereich** aus, und klicken Sie dann auf **Verbinden**, oder doppelklicken Sie darauf, um das semantische Modell zu laden.
 
 1. Navigieren Sie zu **Datei > Speichern** und speichern Sie den Dateinamen als **Umsatzuntersuchung** im Ordner **D:\Allfiles\MySolution**.
 

@@ -23,9 +23,11 @@ In diesem Lab lernen Sie Folgendes:
 
 In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Starterbericht öffnen.
 
-1. Navigieren Sie in Power BI Desktop zu **Datei** > **Bericht öffnen** > **Berichte durchsuchen**.
+1. Navigieren Sie in Power BI Desktop zu **Öffnen > Dieses Gerät durchsuchen**.
 
 1. Öffnen Sie die Datei **Sales Analysis** im Ordner **D:\Allfiles\Labs\06-design-report-in-power-bi-desktop\Starter**.
+
+   *Hinweis: An dieser Stelle werden Sie von Power BI aufgefordert, sich anzumelden, falls Sie das noch nicht getan haben. Sie können sich entweder anmelden oder **Abbrechen** wählen und das Lab fortsetzen.*
 
 1. Erstellen Sie eine Kopie der Datei, indem Sie zu **Datei** > **Speichern unter** wechseln, und speichern Sie die Kopie im Ordner **D:\Allfiles\MySolution**.
 
@@ -172,7 +174,7 @@ In dieser Aufgabe wird die zweite Berichtsseite entworfen. Nach der Fertigstellu
 
 1. Fügen Sie einen auf dem Feld **Region \| Region** basierenden Slicer hinzu.
 
-1. Verwenden Sie den Bereich **Format**, um die Option „Alle auswählen“ (in der Gruppe **Auswahl**) zu aktivieren.
+1. Verwenden Sie den Bereich **Format**, um die Option „Alles auswählen“ zu aktivieren (in der Gruppe **Slicer-Einstellungen > Auswahl**).
 
 1. Ändern Sie die Größe und Position des Slicers so, dass er sich auf der linken Seite der Berichtsseite befindet und etwa die Hälfte der Seitenhöhe einnimmt.
 
@@ -190,9 +192,9 @@ In dieser Aufgabe wird die zweite Berichtsseite entworfen. Nach der Fertigstellu
 
      - „Orders“ (Bestellungen) (aus dem Ordner **Counts** (Anzahl))
      - „Sales“ (Umsatz)
-     - „Cost“ (Kosten)
-     - „Profit“ (Gewinn)
-     - Profit Margin
+     - Kosten
+     - Gewinn (aus dem Ordner **Preise**)
+     - Gewinnspanne (aus dem Ordner **Preise**)
 
      ![Bild 55](Linked_image_Files/07-design-report-in-power-bi-desktop_image43.png)
 
@@ -315,9 +317,9 @@ In dieser Aufgabe erkunden Sie den Bericht, der in Power BI veröffentlicht wur
 
 1. Erweitern Sie im Browserfenster von Microsoft Edge im Power BI-Dienst im Bereich **Navigation** (auf der linken Seite, möglicherweise ist der Bereich zugeklappt) die Option **Mein Arbeitsbereich**.
 
-    ![Bild 93](Linked_image_Files/06-my-workspace-new.png)
+    ![Screenshot 2024-04-18 101424](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/346415bc-e559-4559-84b5-ef3a1f808461)
 
-1. Überprüfen Sie den Inhalt des Arbeitsbereichs. Beachten Sie die Navigationsoptionen „Alle“, „Inhalt“ und „Semantische Modelle + Dataflows“.
+1. Überprüfen Sie den Inhalt des Arbeitsbereichs.
     1. *Es gibt vier Arten von Elementen in einem Arbeitsbereich, und wir befassen uns mit **Berichten** und **semantischen Modellen**.*
     1. *Möglicherweise müssen Sie Ihren Microsoft Edge-Browser aktualisieren, wenn das semantische Modell nicht angezeigt wird.*
     1. *Wenn Sie die Power BI Desktop-Datei veröffentlicht haben, wurde das Datenmodell als semantisches Modell veröffentlicht.*
