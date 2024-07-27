@@ -26,13 +26,13 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
 1. Öffnen Sie Power BI Desktop.
 
-    *Tipp: Standardmäßig wird das Dialogfeld „Erste Schritte“ vor Power BI Desktop geöffnet. Sie können sich anmelden und dann das Popup schließen.*
-
     ![Power BI Desktop-Symbol](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-1. Um die Power BI Desktop-Startdatei zu öffnen, wählen Sie **Datei > Bericht öffnen > Berichte durchsuchen** aus.
+1. Um die Power BI Desktop-Starterdatei zu öffnen, wählen Sie **Öffnen > Dieses Gerät durchsuchen**.
 
 1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Starter**, und öffnen Sie die Datei **Sales Analysis**.
+
+   *Hinweis: An dieser Stelle werden Sie von Power BI aufgefordert, sich anzumelden, falls Sie das noch nicht getan haben. Sie können sich entweder anmelden oder **Abbrechen** wählen und das Lab fortsetzen.*
 
 1. Schließen Sie alle Informationsfenster, die möglicherweise geöffnet werden.
 

@@ -87,7 +87,7 @@ In dieser Aufgabe erstellen Sie das Dashboard **Sales Monitoring**. Sie heften e
 
     ![Bild 7](Linked_image_Files/09-create-power-bi-dashboard_image23.png)
 
-1. Klicken Sie auf eine der vorgeschlagenen Fragen, die unterhalb des Q&A-Felds in blauen Feldern angegeben sind, und überprüfen Sie die Antwort.
+1. Klicken Sie auf eine der vorgeschlagenen Fragen, die unterhalb des Q&A-Felds angegeben sind, und überprüfen Sie die Antwort.
 
 1. Entfernen Sie den gesamten Text aus dem Q&A-Feld, und geben Sie Folgendes ein: **Sales YTD**
 
@@ -121,7 +121,7 @@ In dieser Aufgabe erstellen Sie das Dashboard **Sales Monitoring**. Sie heften e
     
     *Sie können ein Bild mithilfe der zugehörigen URL einbetten oder eine Daten-URL verwenden, die Inhalte inline einbettet.*
 
-1. Um die Größe der Logokachel zu ändern, ziehen Sie die untere rechte Ecke. Ändern Sie die Größe der Kachel so, dass Sie eine Einheit breit und zwei Einheiten hoch ist.
+1. Um die Größe der Logokachel zu ändern, ziehen Sie die untere rechte Ecke. Ändern Sie die Größe der Kachel so, dass sie eine Einheit breit und eine Einheit hoch ist.
     
     *Kachelgrößen sind auf eine rechteckige Form beschränkt.*
 

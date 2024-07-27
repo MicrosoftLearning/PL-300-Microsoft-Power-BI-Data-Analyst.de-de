@@ -29,11 +29,11 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
     ![Power BI Desktop-Symbol](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    *Tipp: Standardmäßig wird das Dialogfeld „Erste Schritte“ vor Power BI Desktop geöffnet. Sie können sich mit **Anmelden** anmelden und das Popup dann schließen.*
-
-1. Um die Power BI Desktop-Startdatei zu öffnen, wählen Sie **Datei > Bericht öffnen > Berichte durchsuchen** aus.
+1. Um die Power BI Desktop-Starterdatei zu öffnen, wählen Sie **Öffnen > Dieses Gerät durchsuchen**.
 
 1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\Allfiles\Labs\10-row-level-security\Starter**, und öffnen Sie die Datei **Sales Analysis**.
+
+   *Hinweis: An dieser Stelle werden Sie von Power BI aufgefordert, sich anzumelden, falls Sie das noch nicht getan haben. Sie können sich entweder anmelden oder **Abbrechen** wählen und das Lab fortsetzen.*
 
 1. Schließen Sie alle Informationsfenster, die möglicherweise geöffnet werden.
 
@@ -49,7 +49,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
 
 In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, dass Vertriebsmitarbeiter nur Umsätze in den zugewiesenen Regionen anzeigen können.
 
-1. Wechseln Sie zur Ansicht „Daten“.
+1. Wechseln Sie zur Tabellenansicht.
 
    ![Bild 5.701](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image20.png)
 
@@ -60,27 +60,35 @@ In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, 
     
     *Sie werden sich erinnern, dass Michael Blythe drei Vertriebsregionen zugewiesen ist: „USA, Nordosten“, „USA, Mitte“ und „USA, Südosten“.*
 
-1. Wählen Sie auf der Registerkarte **Modellierung** des Menübands in der Gruppe **Sicherheit** die Option **Rollen verwalten** aus.
+1. Wählen Sie auf der Registerkarte des Menübands **Startseite** innerhalb der Gruppe **Sicherheit** die Option **Rollen verwalten**.
 
     ![Bild 5.700](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image21.png)
 
-1. Wählen Sie im Fenster **Rollen verwalten** die Option **Erstellen** aus.
+1. Wählen Sie im Fenster **Sicherheitsrollen verwalten** im Abschnitt **Rollen** die Option **Neu**.
 
 1. Ersetzen Sie im Feld den ausgewählten Text durch den Namen der Rolle: Geben Sie **Salespeople** ein, und drücken Sie dann die **EINGABETASTE**.
 
    ![Bild 5.703](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image23.png)
 
-1. Wenn Sie der Tabelle **Salesperson (Performance)** einen Filter zuweisen möchten, klicken Sie auf das Symbol mit den Auslassungspunkten (...), und wählen Sie **Filter hinzufügen \| [UPN]** aus.
+1. Um einen Filter zuzuweisen, markieren Sie die Tabelle **Salesperson (Performance)** und wählen dann **Zum DAX-Editor wechseln** im Abschnitt **Daten filtern**.
 
-   ![Bild 5.704](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image24.png)
+   ![Screenshot 2024-04-18 144345](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/1308d47f-2cca-4f88-9237-b02b66b4cf1e)
 
-1. Ändern Sie im Feld **Tabellenfilter-DAX-Ausdruck** den Ausdruck, indem Sie **Value** durch **USERPRINCIPALNAME()** ersetzen, und klicken Sie auf **Speichern**.
+1. Geben Sie im DAX-Editorfeld den folgenden Ausdruck ein:
+
+    **DAX**
+
+    ```
+    [UPN] = USERPRINCIPALNAME()
+    ```
     
     *USERPRINCIPALNAME() ist eine DAX-Funktion (Data Analysis Expressions), die den Namen des authentifizierten Benutzers zurückgibt. Dies bedeutet, dass die Tabelle **Salesperson (Performance)** nach dem Benutzerprinzipalnamen (User Principal Name, UPN) des Benutzers gefiltert wird, der das Modell abfragt.*
 
    ![Bild 11](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
 
-1. Zum Testen der Sicherheitsrolle wählen Sie auf der Registerkarte **Modellierung** des Menübands in der Gruppe **Sicherheit** die Option **Anzeigen als** aus.
+1. Wählen Sie **Speichern** und **Schließen** aus.
+
+1. Um die Sicherheitsrolle zu testen, wählen Sie auf der Registerkarte des Menübands **Startseite** in der Gruppe **Sicherheit** die Option **Anzeigen als**.
 
    ![Bild 5.708](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
 
@@ -104,13 +112,13 @@ In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, 
 
    ![Bild 5.712](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image32.png)
 
-1. Wählen Sie zum Löschen der Rolle **Salespeople** auf der Registerkarte **Modellierung** des Menübands in der Gruppe **Sicherheit** die Option **Rollen verwalten** aus.
+1. Um die Rolle **Salespeople** zu löschen, wählen Sie auf der Registerkarte des Menübands **Startseite** in der Gruppe **Sicherheit** die Option **Rollen verwalten**.
 
-   ![Bild 16](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image33.png)
+   ![Abbildung 16](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image33.png)
 
-1. Wählen Sie im Fenster **Rollen verwalten** die Option **Löschen** aus. Wenn Sie aufgefordert werden, den Löschvorgang zu bestätigen, wählen Sie **Ja, Löschen** aus.
+1. Wählen Sie im Fenster **Sicherheitsrollen verwalten** die Auslassungspunkte (...) bei der Rolle **Salespeople** und wählen Sie **Löschen**. Wenn Sie aufgefordert werden, den Löschvorgang zu bestätigen, wählen Sie **Ja, Löschen** aus.
 
-   ![Bild 17](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image34.png)
+   ![Screenshot 2024-04-18 145556](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/deeb4eac-b639-433d-a9d4-29c8e127008e)
 
 ### **Abschluss**
 

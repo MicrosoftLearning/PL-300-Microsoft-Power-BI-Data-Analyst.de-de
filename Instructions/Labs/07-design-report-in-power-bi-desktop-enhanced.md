@@ -51,11 +51,11 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Start
 
     ![Power BI Desktop-Symbol](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    *Tipp: Standardmäßig wird das Dialogfeld „Erste Schritte“ vor Power BI Desktop geöffnet. Sie können sich anmelden und dann das Popup schließen.*
-
-1. Um die Power BI Desktop-Startdatei zu öffnen, wählen Sie **Datei > Bericht öffnen > Berichte durchsuchen** aus.
+1. Um die Power BI Desktop-Starterdatei zu öffnen, wählen Sie **Öffnen > Dieses Gerät durchsuchen**.
 
 1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\Allfiles\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter**, und öffnen Sie die Datei **Verkaufsanalyse**.
+
+   *Hinweis: An dieser Stelle werden Sie von Power BI aufgefordert, sich anzumelden, falls Sie das noch nicht getan haben. Sie können sich entweder anmelden oder **Abbrechen** wählen und das Lab fortsetzen.*
 
 1. Schließen Sie alle Informationsfenster, die möglicherweise geöffnet werden.
 
@@ -97,7 +97,7 @@ In dieser Aufgabe synchronisieren Sie die Datenschnitte **Jahr** und **Region** 
 
 1. Testen Sie die Synchronisierungsslicer, indem Sie verschiedene Filteroptionen auswählen und dann überprüfen, ob mit den synchronisierten Slicern nach der gleichen Auswahl gefiltert wird.
 
-1. Wählen Sie zum Schließen der Seite **Slicer synchronisieren** das **X**oben rechts im Bereich aus.
+1. Um die Seite **Sync Slicer** zu schließen, wählen Sie die Option **Sync Slicer** auf der Registerkarte des Menübands **Ansicht**.
 
 ## **Konfigurieren eines Drillthroughs**
 
@@ -194,7 +194,7 @@ Bei dieser Aufgabe erweitern Sie die Drillthroughseite, indem Sie eine bedingte 
 
 1. Konfigurieren Sie die zweite Regel (grüner Kreis) wie folgt und wählen Sie dann **OK** aus:
 
-    *Die Regeln können wie folgt interpretiert werden: Anzeige eines roten Karos, wenn der Wert für die Rendite kleiner als „0“ ist, und Anzeige des grünen Kreises, wenn der Wert größer oder gleich null ist.*
+    *Die Regeln können wie folgt interpretiert werden: Anzeige eines roten Karos, wenn der Wert für die Rendite kleiner als 0 ist, und Anzeige des grünen Kreises, wenn der Wert größer oder gleich 0 ist.*
 
      - Geben Sie im zweiten Steuerelement **0** ein.
      - Wählen Sie für das dritte Steuerelement **Zahl** aus.
