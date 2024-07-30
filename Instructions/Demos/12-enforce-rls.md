@@ -1,6 +1,5 @@
 ---
 demo:
-  course: PL-300
   title: "Erzwingen der Sicherheit auf Zeilenebene in Power\_BI"
   module: Deploy and manage Power BI service items
 ---
