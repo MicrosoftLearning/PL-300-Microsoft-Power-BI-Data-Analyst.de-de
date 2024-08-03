@@ -1,14 +1,12 @@
 ---
 lab:
-  course: PL-300
   title: Erzwingen von Sicherheit auf Zeilenebene
   module: Enforce Row-Level Security
 ---
 
+# Erzwingen von Sicherheit auf Zeilenebene
 
-# **Erzwingen von Sicherheit auf Zeilenebene**
-
-## **Labszenario**
+## Labszenario
 
 In diesem Lab erzwingen Sie die Sicherheit auf Zeilenebene, um sicherzustellen, dass ein Vertriebsmitarbeiter nur die Vertriebsdaten für die ihm zugewiesenen Regionen analysieren kann.
 
@@ -19,33 +17,19 @@ In diesem Lab lernen Sie Folgendes:
 
 **Dieses Lab sollte ungefähr 20 Minuten in Anspruch nehmen.**
 
-## **Erste Schritte**
+## Erste Schritte
 
-In dieser Aufgabe richten Sie die Umgebung für das Lab ein.
+Um diese Übung abzuschließen, öffnen Sie zuerst einen Webbrowser, und geben Sie die folgende URL ein, um den ZIP-Ordner herunterzuladen:
 
-*Wichtig: Wenn Sie nach einem vorherigen Lab fortfahren (und dieses Lab erfolgreich abgeschlossen haben), überspringen Sie diese Aufgabe und fahren mit der nächsten fort.*
+`https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/10-row-level-security/10-row-level-security.zip`
 
-1. Öffnen Sie Power BI Desktop.
+Extrahieren Sie den Ordner in den Ordner **C:\Users\Student\Downloads\10-row-level-security**.
 
-    ![Power BI Desktop-Symbol](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
+Öffnen Sie die Datei **10-Starter-Sales Analysis.pbix** .
 
-1. Um die Power BI Desktop-Starterdatei zu öffnen, wählen Sie **Öffnen > Dieses Gerät durchsuchen**.
+> ***Hinweis**: Sie können die Anmeldung abbrechen, indem Sie **Abbrechen** wählen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später anwenden**, wenn Sie aufgefordert werden, die Änderungen anzuwenden.*
 
-1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\Allfiles\Labs\10-row-level-security\Starter**, und öffnen Sie die Datei **Sales Analysis**.
-
-   *Hinweis: An dieser Stelle werden Sie von Power BI aufgefordert, sich anzumelden, falls Sie das noch nicht getan haben. Sie können sich entweder anmelden oder **Abbrechen** wählen und das Lab fortsetzen.*
-
-1. Schließen Sie alle Informationsfenster, die möglicherweise geöffnet werden.
-
-1. Beachten Sie die Warnmeldung unterhalb des Menübands. *In dieser Meldung werden Sie darauf hingewiesen, dass die Abfragen nicht als Modelltabellen geladen wurden. Sie wenden die Abfragen später in diesem Lab an.*
-    
-    *Wählen Sie rechts auf der Warnmeldung das **X** aus, um die Warnmeldung zu schließen.*
-
-1. Um eine Kopie der Datei zu erstellen, wechseln Sie zu **Datei > Speichern unter**, und speichern Sie sie im Ordner **D:\Allfiles\MySolution**.
-
-1. Wenn Sie aufgefordert werden, Änderungen zu übernehmen, klicken Sie auf **Später übernehmen**.
-
-## **Erzwingen von Sicherheit auf Zeilenebene**
+## Erzwingen von Sicherheit auf Zeilenebene
 
 In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, dass Vertriebsmitarbeiter nur Umsätze in den zugewiesenen Regionen anzeigen können.
 
@@ -55,10 +39,9 @@ In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, 
 
 1. Wählen Sie im Bereich **Daten** die Tabelle **Salesperson (Performance)** aus.
 
-
-1. Wenn Sie die Daten überprüfen, werden Sie bemerken, dass Michael Blythe (EmployeeKey 281) den UPN-Wert **michael-blythe@adventureworks.com** hat.
+1. Wenn Sie die Daten überprüfen, werden Sie bemerken, dass Michael Blythe (EmployeeKey 281) den UPN-Wert **`michael-blythe@adventureworks.com`** hat.
     
-    *Sie werden sich erinnern, dass Michael Blythe drei Vertriebsregionen zugewiesen ist: „USA, Nordosten“, „USA, Mitte“ und „USA, Südosten“.*
+    > *Sie werden sich erinnern, dass Michael Blythe drei Vertriebsregionen zugewiesen ist: „USA, Nordosten“, „USA, Mitte“ und „USA, Südosten“.*
 
 1. Wählen Sie auf der Registerkarte des Menübands **Startseite** innerhalb der Gruppe **Sicherheit** die Option **Rollen verwalten**.
 
@@ -76,15 +59,13 @@ In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, 
 
 1. Geben Sie im DAX-Editorfeld den folgenden Ausdruck ein:
 
-    **DAX**
-
-    ```
+    ```DAX
     [UPN] = USERPRINCIPALNAME()
     ```
-    
-    *USERPRINCIPALNAME() ist eine DAX-Funktion (Data Analysis Expressions), die den Namen des authentifizierten Benutzers zurückgibt. Dies bedeutet, dass die Tabelle **Salesperson (Performance)** nach dem Benutzerprinzipalnamen (User Principal Name, UPN) des Benutzers gefiltert wird, der das Modell abfragt.*
 
-   ![Bild 11](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
+   ![Abbildung 11](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
+
+    > *USERPRINCIPALNAME() ist eine DAX-Funktion (Data Analysis Expressions), die den Namen des authentifizierten Benutzers zurückgibt. Dies bedeutet, dass die Tabelle **Salesperson (Performance)** nach dem Benutzerprinzipalnamen (User Principal Name, UPN) des Benutzers gefiltert wird, der das Modell abfragt.*
 
 1. Wählen Sie **Speichern** und **Schließen** aus.
 
@@ -92,11 +73,11 @@ In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, 
 
    ![Bild 5.708](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
 
-1. Aktivieren Sie im Fenster **Als Rollen anzeigen** das Element **Anderer Benutzer**, und geben Sie dann in das entsprechende Feld Folgendes ein: **michael-blythe@adventureworks.com**
+1. Aktivieren Sie im Fenster **Als Rollen anzeigen** das Element **Anderer Benutzer**, und geben Sie dann in das entsprechende Feld Folgendes ein: **`michael-blythe@adventureworks.com`**
 
 1. Aktivieren Sie die Rolle **Salespeople**, und klicken Sie auf **OK**.
     
-    *Diese Konfiguration führt dazu, dass die Rolle **Salespeople** verwendet und die Identität des Benutzers mit dem Namen „Michael Blythe“ angenommen wird.*
+    > *Diese Konfiguration führt dazu, dass die Rolle **Salespeople** verwendet und die Identität des Benutzers mit dem Namen „Michael Blythe“ angenommen wird.*
 
    ![Bild 5.709](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image28.png)
 
@@ -120,10 +101,6 @@ In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, 
 
    ![Screenshot 2024-04-18 145556](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/deeb4eac-b639-433d-a9d4-29c8e127008e)
 
-### **Abschluss**
-
-Mit dieser Aufgabe schließen Sie das Lab ab.
-
-1. Wählen Sie **Speichern** aus, und speichern Sie dann die Power BI Desktop-Datei, um das Lab zu beenden.
-
 *Hinweis: Wenn die Power BI Desktop-Datei im Power BI-Dienst veröffentlicht wird, müssen Sie noch eine Aufgabe nach der Veröffentlichung durchführen, um der Rolle **Salespeople** Sicherheitsprinzipale zuzuordnen. Das erledigen Sie in diesem Lab nicht.*
+
+## Lab abgeschlossen

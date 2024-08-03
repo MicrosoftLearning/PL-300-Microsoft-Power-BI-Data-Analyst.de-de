@@ -1,14 +1,12 @@
 ---
 lab:
-  course: 'PL-300, DP-605'
   title: Entwerfen eines Berichts in Power BI Desktop
   module: Create Reports in Power BI Desktop
 ---
 
-
 # Entwerfen eines Berichts in Power BI Desktop
 
-## **Labszenario**
+## Labszenario
 
 In diesem Lab erstellen Sie einen dreiseitigen Bericht. Danach veröffentlichen Sie ihn in Power BI, um ihn anschließend zu öffnen und mit ihm zu interagieren.
 
@@ -19,19 +17,20 @@ In diesem Lab lernen Sie Folgendes:
 
 **Dieses Lab sollte ungefähr 45 Minuten in Anspruch nehmen.**
 
-## **Erstellen eines Berichts**
+## Erste Schritte
 
-In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie den Starterbericht öffnen.
+Um diese Übung abzuschließen, öffnen Sie zuerst einen Webbrowser, und geben Sie die folgende URL ein, um den ZIP-Ordner herunterzuladen:
 
-1. Navigieren Sie in Power BI Desktop zu **Öffnen > Dieses Gerät durchsuchen**.
+`https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/06-design-report-in-power-bi-desktop/06-design-report.zip`
 
-1. Öffnen Sie die Datei **Sales Analysis** im Ordner **D:\Allfiles\Labs\06-design-report-in-power-bi-desktop\Starter**.
 
-   *Hinweis: An dieser Stelle werden Sie von Power BI aufgefordert, sich anzumelden, falls Sie das noch nicht getan haben. Sie können sich entweder anmelden oder **Abbrechen** wählen und das Lab fortsetzen.*
+Extrahieren Sie den Ordner in den Ordner **C:\Users\Student\Downloads\06-design-report**.
 
-1. Erstellen Sie eine Kopie der Datei, indem Sie zu **Datei** > **Speichern unter** wechseln, und speichern Sie die Kopie im Ordner **D:\Allfiles\MySolution**.
+Öffnen Sie die Datei **06-Starter-Sales Analysis.pbix** .
 
-## **Entwerfen der ersten Seite**
+> ***Hinweis**: Sie können die Anmeldung abbrechen, indem Sie **Abbrechen** wählen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später anwenden**, wenn Sie aufgefordert werden, die Änderungen anzuwenden.*
+
+## Entwerfen der ersten Seite
 
 In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
 
@@ -39,13 +38,13 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
 
 1. Klicken Sie in Power BI Desktop zum Umbenennen der Seite links unten mit der rechten Maustaste auf **Seite 1**, dann auf **Umbenennen** und benennen Sie die Seite in **Übersicht** um.
 
-    *Tipp: Sie können auch auf den Seitennamen doppelklicken, um die Seite umzubenennen.*
+    > *Tipp: Sie können auch auf den Seitennamen doppelklicken, um die Seite umzubenennen.*
 
 1. Klicken Sie zum Hinzufügen eines Bilds auf der Registerkarte **Einfügen** des Menübands in der Gruppe **Elemente** auf **Bild**.
 
     ![Abbildung 1](Linked_image_Files/07-design-report-in-power-bi-desktop_image15.png)
 
-1. Navigieren Sie im Fenster **Öffnen** zum Ordner **D:\Allfiles\Resources**.
+1. Navigieren Sie im Fenster **Öffnen** zum Ordner **C:\Users\Student\Downloads\06-design-report"**.
 
 1. Wählen Sie die Datei **AdventureWorksLogo.jpg** aus, und klicken Sie anschließend auf **Öffnen**.
 
@@ -58,8 +57,8 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
      ![Bild 49](Linked_image_Files/07-design-report-in-power-bi-desktop_image18.png)
 
 1. Ziehen Sie im Bereich **Daten** das Feld **Datum \| Jahr** (nicht die Ebene **Jahr** der Hierarchie) in den Datenschnitt **Feld** im Bereich „Visualisierungen“.
-    
-    *In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Das sieht folgendermaßen aus: **Date \| Year**. In diesem Beispiel ist **Date** der Tabellenname und **Year** der Feldname.*
+
+    > *In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Das sieht folgendermaßen aus: **Date \| Year**. In diesem Beispiel ist **Date** der Tabellenname und **Year** der Feldname.*
 
 1. Um den Datenschnitt aus einer Liste in eine Dropdownliste zu konvertieren, navigieren Sie zu **Visualisierungen > Visuelles Element formatieren > Visuelles Element > Datenschnitteinstellungen > Stil**, und wählen Sie **Dropdown** aus dem Dropdownmenü aus.
 
@@ -70,7 +69,7 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
      ![Bild 19](Linked_image_Files/07-design-report-in-power-bi-desktop_image20.png)
 
 1. Öffnen Sie die Dropdownliste im Slicer **Year**, wählen Sie **FY2020** aus, und klappen Sie die Dropdownliste dann zu.
-    1. *Die Berichtsseite wird nun nach dem Jahr **FY2020** gefiltert.*
+    > *Die Berichtsseite wird nun nach dem Jahr **FY2020** gefiltert.*
 
      ![Bild 20](Linked_image_Files/07-design-report-in-power-bi-desktop_image21.png)
 
@@ -94,12 +93,12 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
 
 1. Ziehen Sie die folgenden Felder per Drag & Drop in das Visual:
 
-     - Date \| Month
-     - Sales \| Sales
+     - **Date \| Month**
+     - **Sales \| Sales**
 
 1. Im Feldbereich des Visuals (unter dem Bereich **Visualisierungen**) sehen Sie, dass die Felder den Bereichen **x-Achse** und **Spalte y-Achse** zugewiesen sind.
-    
-    *Wenn Sie Felder in ein visuelles Element ziehen, werden sie den Standardbereichen hinzugefügt. Sie können Felder wie im nächsten Schritt auch direkt in die Bereiche ziehen, um eine höhere Genauigkeit zu erzielen.*
+
+    > *Wenn Sie Felder in ein visuelles Element ziehen, werden sie den Standardbereichen hinzugefügt. Sie können Felder wie im nächsten Schritt auch direkt in die Bereiche ziehen, um eine höhere Genauigkeit zu erzielen.*
 
      ![Bild 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28_N.png)
 
@@ -108,12 +107,12 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
      ![Bild 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
 
 1. Beachten Sie, dass das Visual nur 11 Monate umfasst.
-    
-    *Für den letzten Monat des Jahres (Juni 2020) liegen noch keine Verkäufe vor. Monate OHNE Verkaufszahlen werden vom Visual standardmäßig entfernt. Im nächsten Schritt wird das visuelle Element so konfiguriert, dass alle Monate angezeigt werden.*
+
+    > *Für den letzten Monat des Jahres (Juni 2020) liegen noch keine Verkäufe vor. Monate OHNE Verkaufszahlen werden vom Visual standardmäßig entfernt. Im nächsten Schritt wird das visuelle Element so konfiguriert, dass alle Monate angezeigt werden.*
 
 1. Klicken Sie im Feldbereich des visuellen Elements im Bereich **X-Achse** für das Feld **Monat** auf den Pfeil nach unten, und wählen Sie **Elemente ohne Daten anzeigen** aus.
-    
-    *Wie Sie sehen, wird der Monat **Juni 2020** jetzt angezeigt.*
+
+    > *Wie Sie sehen, wird der Monat **Juni 2020** jetzt angezeigt.*
 
      ![Bild 52](Linked_image_Files/07-design-report-in-power-bi-desktop_image30.png)
 
@@ -162,13 +161,13 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
 
 *Damit ist der Entwurf der ersten Seite fertig.*
 
-## **Entwerfen der zweiten Seite**
+## Entwerfen der zweiten Seite
 
 In dieser Aufgabe wird die zweite Berichtsseite entworfen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
 
  ![Abbildung der zweiten Seite, bestehend aus einem Slicer und einer Matrix](Linked_image_Files/07-design-report-in-power-bi-desktop_image37.png)
 
-*Wichtig: Da in den Labs bereits ausführliche Anweisungen bereitgestellt wurden, enthalten die folgenden Schritte zum Lab kurzgefasste Anweisungen. Wenn Sie die ausführlichen Anweisungen benötigen, können Sie zu den anderen Aufgaben in diesem Lab zurückkehren.*
+> ***Wichtig**: Da in den Labs bereits ausführliche Anweisungen bereitgestellt wurden, enthalten die folgenden Schritte zum Lab kurzgefasste Anweisungen. Wenn Sie die ausführlichen Anweisungen benötigen, können Sie zu den anderen Aufgaben in diesem Lab zurückkehren.*
 
 1. Um eine neue Seite zu erstellen, wählen Sie unten links das Plussymbol aus, und benennen Sie die neue Seite in **Gewinn** um.
 
@@ -190,11 +189,12 @@ In dieser Aufgabe wird die zweite Berichtsseite entworfen. Nach der Fertigstellu
 
 1. Fügen Sie dem Bereich **Werte** die folgenden fünf Felder der Tabelle **Sales** hinzu:
 
-     - „Orders“ (Bestellungen) (aus dem Ordner **Counts** (Anzahl))
-     - „Sales“ (Umsatz)
-     - Kosten
-     - Gewinn (aus dem Ordner **Preise**)
-     - Gewinnspanne (aus dem Ordner **Preise**)
+     - **Bestellungen** (aus dem Ordner **Anzahl**)
+     - **Vertrieb**
+     - **Kosten**
+     - **Gewinn** (aus dem Ordner **Preise**)
+     - **Gewinnspanne** (aus dem Ordner **Preise**)
+
 
      ![Bild 55](Linked_image_Files/07-design-report-in-power-bi-desktop_image43.png)
 
@@ -203,26 +203,26 @@ In dieser Aufgabe wird die zweite Berichtsseite entworfen. Nach der Fertigstellu
      ![Bild 57](Linked_image_Files/07-design-report-in-power-bi-desktop_image44.png)
 
 1. Ziehen Sie das Feld **Product \| Category** aus dem Bereich **Daten** in den Bereich **Filter für diese Seite**.
-    
-    *Mit Feldern, die dem Bereich **Filter** hinzugefügt werden, kann das gleiche Ergebnis erzielt werden wie mit einem Slicer. Ein Unterschied besteht darin, dass sie keinen Platz auf der Berichtsseite beanspruchen. Ein weiterer Unterschied besteht darin, dass sie für erweiterte Filteranforderungen konfiguriert werden können.*
+
+    > *Mit Feldern, die dem Bereich **Filter** hinzugefügt werden, kann das gleiche Ergebnis erzielt werden wie mit einem Slicer. Ein Unterschied besteht darin, dass sie keinen Platz auf der Berichtsseite beanspruchen. Ein weiterer Unterschied besteht darin, dass sie für erweiterte Filteranforderungen konfiguriert werden können.*
 
 1. Klicken Sie rechts oben auf der Filterkarte auf den Pfeil, um die Karte zuzuklappen.
 
 1. Fügen Sie dem Bereich **Filter für diese Seite** die folgenden Felder der Tabelle **Product** hinzu, und reduzieren Sie sie jeweils (direkt unterhalb der Karte **Kategorie**):
 
-     - „Subcategory“ (Unterkategorie)
-     - „Product“ (Produkt)
-     - „Color“ (Farbe)
+     - **Unterkategorie**
+     - **Produkt**
+     - **Farbe**
 
      ![Bild 60](Linked_image_Files/07-design-report-in-power-bi-desktop_image46.png)
 
 1. Speichern Sie die Power BI Desktop-Datei.
 
- *Damit ist der Entwurf der zweiten Seite fertig.*
+*Damit ist der Entwurf der zweiten Seite fertig.*
 
-## **Entwerfen der dritten Seite**
+## Entwerfen der dritten Seite
 
-In dieser Aufgabe wird die dritte und letzte Berichtsseite entworfen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
+In dieser Übung wird die dritte und letzte Berichtsseite entworfen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
 
  ![Abbildung der dritten Seite, bestehend aus einem Slicer und drei Visuals](Linked_image_Files/07-design-report-in-power-bi-desktop_image47.png)
 
@@ -250,10 +250,10 @@ In dieser Aufgabe wird die dritte und letzte Berichtsseite entworfen. Nach der F
 
 1. Fügen Sie dem Visual die folgenden vier Felder hinzu:
 
-     - Sales \| Sales
-     - Targets \| Target
-     - Targets \| Variance
-     - Targets \| Variance Margin
+     - **Sales \| Sales**
+     - **Ziele \| Ziel**
+     - **Ziele \| Abweichung**
+     - **Ziele \| Abweichungsspanne**
 
 1. Formatieren Sie das Visual:
 
@@ -284,45 +284,47 @@ In dieser Aufgabe wird die dritte und letzte Berichtsseite entworfen. Nach der F
 
 1. Wählen Sie zum Ändern des Visualisierungstyps im Bereich **Visualisierungen** die Option **Säulendiagramm (gruppiert)** aus.
 
+     > *Nun werden die gleichen Daten mit zwei verschiedenen Visualisierungstypen dargestellt.*
+
      ![Bild 61](Linked_image_Files/07-design-report-in-power-bi-desktop_image58.png)
 
- *Nun werden die gleichen Daten mit zwei verschiedenen Visualisierungstypen dargestellt. Das ist keine gute Verwendung des Seitenlayouts, aber Sie werden dies im Lab **Verbessern eines Berichts in Power BI Desktop** verbessern, indem Sie die visuellen Elemente überlagern. Wenn Sie der Seite Schaltflächen hinzufügen, können die Benutzer der Berichte bestimmen, welches der beiden visuellen Elemente sichtbar sein soll.*
+ *Der Entwurf der ersten Seite ist fertig.*
 
- *Damit ist der Entwurf der dritten und letzten Seite fertig.*
+## Veröffentlichen und Erkunden des Berichts
 
-## **Veröffentlichen des Berichts**
+In dieser Übung veröffentlichen Sie den Bericht im Power BI-Dienst und erkunden das Verhalten des veröffentlichten Berichts.
 
-In dieser Aufgabe veröffentlichen Sie den Bericht im Power BI-Dienst.
+> **Hinweis**: Sie können den Rest der Übung auch einsehen, wenn Sie keinen Zugriff auf den Onlinedienst „Power BI“ haben, um die Aufgaben direkt auszuführen.
 
 1. Wählen Sie die Seite **Übersicht** aus, und speichern Sie dann die Power BI Desktop-Datei.
 
 1. Klicken Sie auf der Registerkarte **Start** des Menübands innerhalb der Gruppe **Freigeben** auf **Veröffentlichen**.
-    
-    *Wenn Sie noch nicht bei Power BI Desktop angemeldet sind, müssen Sie sich für die Veröffentlichung anmelden.*
+
+    > *Wenn Sie noch nicht bei Power BI Desktop angemeldet sind, müssen Sie sich für die Veröffentlichung anmelden.*
 
      ![Bild 67](Linked_image_Files/07-design-report-in-power-bi-desktop_image59.png)
 
 1. Beachten Sie, dass im Fenster **In Power BI veröffentlichen** die Option **Mein Arbeitsbereich** ausgewählt ist.
-    
-    *In diesem Lab werden keine Details zu den verschiedenen Elementen innerhalb des Power BI-Diensts erläutert.*
 
-1. Wählen Sie **Auswählen** aus, um den Bericht zu veröffentlichen. Dies kann einige Zeit dauern. 
+    > *In diesem Lab werden keine Details zu den verschiedenen Elementen innerhalb des Power BI-Diensts erläutert.*
+
+1. Wählen Sie **Auswählen** aus, um den Bericht zu veröffentlichen. Dies kann einige Zeit dauern.
+
 1. Wenn die Veröffentlichung erfolgreich war, klicken Sie auf **OK**.
 
-## **Erkunden des Berichts**
-
-In dieser Aufgabe erkunden Sie den Bericht, der in Power BI veröffentlicht wurde.
-
-1. Öffnen Sie einen Microsoft Edge-Browser, und melden Sie sich unter **https://app.powerbi.com** an.
+1. Öffnen Sie einen Microsoft Edge-Browser, und melden Sie sich unter `https://app.powerbi.com` an.
 
 1. Erweitern Sie im Browserfenster von Microsoft Edge im Power BI-Dienst im Bereich **Navigation** (auf der linken Seite, möglicherweise ist der Bereich zugeklappt) die Option **Mein Arbeitsbereich**.
 
     ![Screenshot 2024-04-18 101424](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/346415bc-e559-4559-84b5-ef3a1f808461)
 
 1. Überprüfen Sie den Inhalt des Arbeitsbereichs.
-    1. *Es gibt vier Arten von Elementen in einem Arbeitsbereich, und wir befassen uns mit **Berichten** und **semantischen Modellen**.*
-    1. *Möglicherweise müssen Sie Ihren Microsoft Edge-Browser aktualisieren, wenn das semantische Modell nicht angezeigt wird.*
-    1. *Wenn Sie die Power BI Desktop-Datei veröffentlicht haben, wurde das Datenmodell als semantisches Modell veröffentlicht.*
+
+    - Es gibt vier Arten von Elementen in einem Arbeitsbereich, und wir befassen uns mit **Berichten** und **semantischen Modellen**.
+
+    - Möglicherweise müssen Sie Ihren Microsoft Edge-Browser aktualisieren, wenn das semantische Modell nicht angezeigt wird.
+
+    - Wenn Sie die Power BI Desktop-Datei veröffentlicht haben, wurde das Datenmodell als semantisches Modell veröffentlicht.
 
 1. Klicken Sie auf den Bericht **Verkaufsanalyse**, um den Bericht zu erkunden.
 
@@ -334,21 +336,21 @@ In dieser Aufgabe erkunden Sie den Bericht, der in Power BI veröffentlicht wur
 
 1. Drücken Sie die Taste **Strg** und wählen Sie einen anderen Monat aus.
 
-     *Hinweis: Bei der Kreuzfilterung werden standardmäßig alle anderen visuellen Elemente auf der Seite gefiltert.*
+     > *Hinweis: Bei der Kreuzfilterung werden standardmäßig alle anderen visuellen Elemente auf der Seite gefiltert.*
 
 1. Wie Sie sehen, wird das Balkendiagramm gefiltert und hervorgehoben. Der fett formatierte Teil der Balken stellt dabei die gefilterten Monate dar.
 
-1. Zeigen Sie mit dem Cursor auf das Visual mit dem Balkendiagramm und anschließend rechts oben auf das Filtersymbol. 
-    
-    *Über das Filtersymbol können Sie nachvollziehen, welche Filter auf das Visual angewendet wurden (einschließlich Datenschnitte und Kreuzfilterungen von anderen Visuals).*
+1. Zeigen Sie mit dem Cursor auf das Visual mit dem Balkendiagramm und anschließend rechts oben auf das Filtersymbol.
+
+    > *Über das Filtersymbol können Sie nachvollziehen, welche Filter auf das Visual angewendet wurden (einschließlich Datenschnitte und Kreuzfilterungen von anderen Visuals).*
 
 1. Zeigen Sie mit dem Mauszeiger auf einen Balken, und sehen Sie sich die QuickInfo an.
 
 1. Klicken Sie zum Rückgängigmachen der Kreuzfilterung im Säulen-/Liniendiagramm auf einen leeren Bereich des Visuals.
 
 1. Zeigen Sie mit dem Mauszeiger auf das Diagramm mit der gestapelten Spalte, und klicken Sie anschließend rechts oben auf das Symbol für den **Fokusmodus**.
-    
-    *Im Fokusmodus wird das Visual auf die volle Seitengröße vergrößert.*
+
+    > *Im Fokusmodus wird das Visual auf die volle Seitengröße vergrößert.*
 
      ![Bild 96](Linked_image_Files/07-published-report-visual-filter.png)
 
@@ -367,12 +369,12 @@ In dieser Aufgabe erkunden Sie den Bericht, der in Power BI veröffentlicht wur
      ![Bild 84](Linked_image_Files/07-design-report-in-power-bi-desktop_image68.png)
 
 1. Beachten Sie, dass der Slicer **Region** über eine andere Auswahl als der Slicer **Region** auf der Seite **Übersicht** verfügt.
-    
-    *Die Datenschnitte werden nicht synchronisiert. Ändern Sie den Berichtsentwurf im Lab **Verbessern eines Berichts in Power BI Desktop**, um sicherzustellen, dass eine Synchronisierung zwischen den Seiten erfolgt.*
+
+    > *Die Datenschnitte werden nicht synchronisiert. Ändern Sie den Berichtsentwurf im Lab **Verbessern eines Berichts in Power BI Desktop**, um sicherzustellen, dass eine Synchronisierung zwischen den Seiten erfolgt.*
 
 1. Erweitern Sie im Bereich **Filter** (rechts) eine Filterkarte, und wenden Sie einige Filter an.
-    
-    *Im Bereich **Filter** können Sie mehr Filter definieren als in Form von Slicern auf eine Seite passen.*
+
+    > *Im Bereich **Filter** können Sie mehr Filter definieren als in Form von Slicern auf eine Seite passen.*
 
 1. Verwenden Sie im Matrixvisual die Plusschaltfläche (+), um die Hierarchie **Geschäftskalender** zu erweitern.
 
@@ -392,10 +394,4 @@ In dieser Aufgabe erkunden Sie den Bericht, der in Power BI veröffentlicht wur
 
      ![Bild 91](Linked_image_Files/07-design-report-in-power-bi-desktop_image71.png)
 
-### **Abschluss**
-
-Mit dieser Aufgabe schließen Sie das Lab ab.
-
-Klicken Sie auf dem Banner auf der Fensterwebseite auf **Mein Arbeitsbereich**, um zurück zu Ihrem Arbeitsbereich zu navigieren.
-
- *Sie können den Berichtsentwurf mit erweiterten Features im Lab **Verbessern eines Berichts in Power BI Desktop** verbessern.*
+## Lab abgeschlossen

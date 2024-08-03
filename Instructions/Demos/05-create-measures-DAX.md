@@ -1,6 +1,5 @@
 ---
 demo:
-  course: 'PL-300, DP-605'
   title: "Erstellen von Measures in Power\_BI mithilfe von DAX"
   module: Create measures using DAX in Power BI
 ---

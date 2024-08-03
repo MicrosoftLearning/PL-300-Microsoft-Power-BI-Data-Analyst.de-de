@@ -1,6 +1,5 @@
 ---
 demo:
-  course: PL-300
   title: "Erstellen von Dashboards im Power\_BI-Dienst"
   module: Deploy and manage Power BI service items
 ---

@@ -1,14 +1,12 @@
 ---
 lab:
-  course: PL-300
   title: "Erstellen eines Power\_BI-Dashboards"
   module: Create Dashboards
 ---
 
+# Erstellen eines Power BI-Dashboards
 
-# **Erstellen eines Power BI-Dashboards**
-
-## **Labszenario**
+## Labszenario
 
 In diesem Lab erstellen Sie das Dashboard **Sales Monitoring** im Power BI-Dienst mithilfe eines vorhandenen Berichts.
 
@@ -19,45 +17,33 @@ In diesem Lab lernen Sie Folgendes:
 
 **Dieses Lab sollte ungefähr 30 Minuten in Anspruch nehmen.**
 
-## **Erste Schritte: Anmelden**
+## Erste Schritte
 
-In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie sich bei Power BI anmelden.
+Um diese Übung abzuschließen, öffnen Sie zuerst einen Webbrowser, und geben Sie die folgende URL ein, um den ZIP-Ordner herunterzuladen:
 
-*Hinweis: Wenn Sie sich bereits bei Power BI angemeldet haben, fahren Sie mit der nächsten Aufgabe fort.*
+`https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/09-create-power-bi-dashboard/09-create-dashboard.zip`
 
-1. Klicken Sie zum Öffnen von Microsoft Edge auf der Taskleiste auf die Programmverknüpfung für Microsoft Edge.
+Extrahieren Sie Sie den Ordner in den Ordner **C:\Users\Student\Downloads\09-create-dashboard**.
 
-     ![Bild 12](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image1.png)
+## **Veröffentlichen des Berichts**
 
-1. Navigieren Sie im Browserfenster von Microsoft Edge zu **https://app.powerbi.com**.
-
-    *Tipp: Sie können auch auf der Favoritenleiste von Microsoft Edge die Option für den Power BI-Dienst verwenden.*
-
-1. Schließen Sie den Anmeldevorgang mit den Anmeldeinformationen Ihrer Organisation (oder den angegebenen Anmeldeinformationen) ab. Wenn Sie von Microsoft Edge gefragt werden, ob Sie angemeldet bleiben möchten, klicken Sie auf **Ja**.
-
-1. Erweitern Sie im Browserfenster von Microsoft Edge im Power BI-Dienst im **Navigationsbereich** die Option **Mein Arbeitsbereich**. Lassen Sie das Browserfenster von Microsoft Edge geöffnet.
-
-     ![Bild 22](Linked_image_Files/07-my-workspace-new.png)
-
-## **Erste Schritte: Veröffentlichen des Berichts**
-
-In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein semantisches Modell erstellen. *Wenn Sie das semantische Modell bereits veröffentlicht haben, fahren Sie mit der nächsten Aufgabe fort.*
+In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein semantisches Modell erstellen.
 
 1. Navigieren Sie im Browserfenster von Microsoft Edge im Power BI-Dienst zu **Mein Arbeitsbereich**.
 
 1. Wählen Sie **Hochladen > Durchsuchen** aus.
 
-1. Navigieren Sie zum Ordner **D:\Allfiles\Labs\09-create-power-bi-dashboard\Starter**.
+1. Navigieren Sie zum Ordner **C:\Users\Student\Downloads\09-create-dashboard**.
 
-1. Wählen Sie die Datei **SalesAnalysis.pbix** und dann **Öffnen** aus.
+1. Wählen Sie die Datei **09-Starter-Sales Analysis.pbix**und dann wählen Sie **Öffnen**.
 
-*Wenn Sie zum Ersetzen des semantischen Modells aufgefordert werden, wählen Sie **Ersetzen** aus.*
+    > *Wenn Sie zum Ersetzen des semantischen Modells aufgefordert werden, wählen Sie **Ersetzen** aus.*
 
 ## **Erstellen eines Dashboards**
 
 In dieser Aufgabe erstellen Sie das Dashboard **Sales Monitoring**. Sie heften ein Visual aus dem Bericht an, fügen eine Kachel auf der Grundlage eines Imagedaten-URIs hinzu, und verwenden Q&A, um eine Kachel zu erstellen.
 
-1. Öffnen Sie im Power BI-Dienst den Bericht **Verkaufsanalyse**.
+1. Im Power-BI-Dienst öffnen Sie den Bericht **09-Starter-Sales Analysis**.
 
 1. Legen Sie auf der Seite **Übersicht** den Slicer **Year** auf **FY2020** fest.
 
@@ -65,7 +51,7 @@ In dieser Aufgabe erstellen Sie das Dashboard **Sales Monitoring**. Sie heften e
 
 1. Legen Sie den Slicer **Region** auf **Alle auswählen** fest.
 
-    *Angeheftete visuelle Elemente werden mit dem Filterkontext zum Zeitpunkt des Anheftens festgelegt. Wenn sich das zugrunde liegende visuelle Element ändert, müssen Sie auch die Dashboardkachel aktualisieren. Für zeitbasierte Filter ist es besser, einen relativen Datumsschnitt zu verwenden (oder Q&A unter Verwendung einer relativen zeitbasierten Frage).*
+    > *Angeheftete visuelle Elemente werden mit dem Filterkontext zum Zeitpunkt des Anheftens festgelegt. Wenn sich das zugrunde liegende visuelle Element ändert, müssen Sie auch die Dashboardkachel aktualisieren. Für zeitbasierte Filter ist es besser, einen relativen Datumsschnitt zu verwenden (oder Q&A unter Verwendung einer relativen zeitbasierten Frage).*
 
 1. Zeigen Sie mit dem Mauszeiger auf das visuelle Element **Umsatz und Gewinnspanne nach Monat** (Spalte/Zeile), um ein Dashboard zu erstellen und ein visuelles Element anzuheften, und wählen Sie die Reißzwecke aus.
 
@@ -81,9 +67,9 @@ In dieser Aufgabe erstellen Sie das Dashboard **Sales Monitoring**. Sie heften e
 
     ![Bild 45](Linked_image_Files/09-create-power-bi-dashboard_image22.png)
 
-1. Zum Hinzufügen einer Kachel, die auf einer Frage basiert, klicken Sie oben links im Dashboard auf **Stellen Sie eine Frage zu Ihren Daten**.
-    
-    *Mithilfe der Q&A-Funktion können Sie eine Frage stellen, und Power BI antwortet mit einem Visual.*
+1. Zum Hinzufügen einer Kachel, die auf einer Frage basiert, klicken Sie oben links im Dashboard auf **Stellen Sie eine Frage zu Ihren Daten**. 
+
+    *Sie können die Q&A-Funktion verwenden, um eine Frage zu stellen, und Power BI antwortet mit einem visuellen Element.*
 
     ![Bild 7](Linked_image_Files/09-create-power-bi-dashboard_image23.png)
 
@@ -92,8 +78,8 @@ In dieser Aufgabe erstellen Sie das Dashboard **Sales Monitoring**. Sie heften e
 1. Entfernen Sie den gesamten Text aus dem Q&A-Feld, und geben Sie Folgendes ein: **Sales YTD**
 
 1. Die Antwort lautet **(Leer)**.
-    
-    *Sie werden sich vielleicht daran erinnern, dass Sie das Measure **Sales YTD** im Lab **Erstellen von erweiterten DAX-Berechnungen in Power BI Desktop** hinzugefügt haben. Dieses Measure ist ein Zeitintelligenzausdruck und erfordert daher einen Filter für die Tabelle **Datum**, damit ein Ergebnis generiert wird.*
+
+    > *Sie erinnern sich vielleicht daran, dass Sie die Kennzahl **Umsätze seit Jahresbeginn** im **Erstellung von erweiterte DAX-Berechnungen in Power BI Desktop** Lab hinzugefügt haben. Diese Kennzahl ist ein Zeitintelligenz-Ausdruck und erfordert daher einen Filter für die Tabelle **Datum**, um ein Ergebnis zu erhalten.*
 
     ![Bild 14](Linked_image_Files/09-create-power-bi-dashboard_image25.png)
 
@@ -107,23 +93,23 @@ In dieser Aufgabe erstellen Sie das Dashboard **Sales Monitoring**. Sie heften e
 
     ![Bild 15](Linked_image_Files/09-create-power-bi-dashboard_image28.png)
 
-1. Wenn Sie aufgefordert werden, die Kachel an das Dashboard anzuheften, klicken Sie auf **Anheften**.
+1. Wenn Sie aufgefordert werden, die Kachel an das Dashboard **Sales Monitoring** (Umsatzüberwachung) anzuheften, klicken Sie auf **Anheften**.
 
 1. Klicken Sie links oben auf **Q&amp;A beenden**, um zum Dashboard zurückzukehren.
 
 1. Wählen Sie in der Menüleiste **Bearbeiten** und **Kachel hinzufügen** aus, um das Firmenlogo hinzuzufügen.
     
-    *Mithilfe dieses Verfahrens zum Hinzufügen einer Dashboardkachel können Sie das Dashboard mit Medien erweitern, einschließlich Webinhalten, Bildern, Textfeldern mit umfangreicher Formatierung und Videos (mit YouTube- oder Vimeo-Links).*
+    > *Mithilfe dieses Verfahrens zum Hinzufügen einer Dashboardkachel können Sie das Dashboard mit Medien erweitern, einschließlich Webinhalten, Bildern, Textfeldern mit umfangreicher Formatierung und Videos (mit YouTube- oder Vimeo-Links).*
 
 1. Klicken Sie im Bereich **Kachel hinzufügen** rechts auf die Kachel **Image** und dann auf **Weiter**.
 
-1. Geben Sie im Bereich **Bildkachel hinzufügen** im Feld **URL** die vollständige URL aus der Datei **D:\Allfiles\Resources\AdventureWorksLogo_DataURL.txt** ein und klicken Sie dann auf **Übernehmen**.
+1. Geben Sie im Bereich **Bildkachel hinzufügen** im Feld **URL** die vollständige URL aus der Datei **C:\Users\Student\Downloads\09-create-dashboard\AdventureWorksLogo_DataURL.txt** ein und klicken Sie dann auf **Übernehmen**.
     
-    *Sie können ein Bild mithilfe der zugehörigen URL einbetten oder eine Daten-URL verwenden, die Inhalte inline einbettet.*
+    > *Sie können ein Bild mithilfe der zugehörigen URL einbetten oder eine Daten-URL verwenden, die Inhalte inline einbettet.*
 
 1. Um die Größe der Logokachel zu ändern, ziehen Sie die untere rechte Ecke. Ändern Sie die Größe der Kachel so, dass sie eine Einheit breit und eine Einheit hoch ist.
     
-    *Kachelgrößen sind auf eine rechteckige Form beschränkt.*
+    > *Kachelgrößen sind auf eine rechteckige Form beschränkt.*
 
 1. Ordnen Sie die Kacheln so, dass das Logo ganz oben links angezeigt wird. Daneben ordnen Sie die Kachel **Sales YTD** und rechts die Kachel **Sales, Profit Margin** an.
 
@@ -157,11 +143,13 @@ In dieser Aufgabe bearbeiten Sie die Details von zwei Kacheln.
 
 In dieser Übung laden Sie zuerst Bestelldaten für Juni 2020 in die Datenbank **AdventureWorksDW2020**. Anschließend öffnen Sie die Power BI Desktop-Datei, führen eine Datenaktualisierung aus und laden die Datei in Ihren Arbeitsbereich hoch.
 
+> ***Hinweis**: Wenn Sie keine Verbindung zur Datenbank herstellen können, können Sie die Datei **09-Solution-Sales-Analysis.pbix** verwenden. Statt die Datenbank zu aktualisieren und das Semantikmodell zu aktualisieren, laden Sie die Lösungsdatei zu **Mein Arbeitsbereich** hoch und sehen Sie sich die Änderungen an, auf die in den folgenden Aufgaben verwiesen wird.*
+
 ## **Aktualisieren der Lab-Datenbank**
 
 In dieser Aufgabe führen Sie ein PowerShell-Skript aus, um Daten in der Datenbank **AdventureWorksDW2020** zu aktualisieren.
 
-1. Klicken Sie im Datei-Explorer im Ordner **D:\Allfiles\Setup** mit der rechten Maustaste auf die Datei **UpdateDatabase-2-AddSales.ps1** und wählen Sie dann **Mit PowerShell ausführen** aus.
+1. Klicken Sie im Datei-Explorer im Ordner **C:\Users\Student\Downloads\09-create-dashboard** mit der rechten Maustaste auf die Datei **UpdateDatabase-2-AddSales.ps1** und wählen Sie dann **Mit PowerShell ausführen** aus.
 
     ![Bild 28](Linked_image_Files/09-create-power-bi-dashboard_image46.png)
 
@@ -173,7 +161,7 @@ In dieser Aufgabe führen Sie ein PowerShell-Skript aus, um Daten in der Datenba
 
 ## **Aktualisieren der Power BI Desktop-Datei**
 
-In dieser Aufgabe öffnen Sie die Power BI Desktop-Datei **Verkaufsanalyse**, führen eine Datenaktualisierung aus und laden die Datei anschließend in den Arbeitsbereich **Verkaufsanalyse** hoch.
+In dieser Aufgabe öffnen Sie die Power BI Desktop-Datei **09-Starter-Sales Analysis**, führen eine Datenaktualisierung aus und laden die Datei anschließend in den Arbeitsbereich **Verkaufsanalyse** hoch.
 
 1. Klicken Sie in der Power BI Desktop-Datei im Bereich **Daten** mit der rechten Maustaste auf die Tabelle **Sales** und dann auf **Daten aktualisieren**.
 
@@ -200,13 +188,9 @@ Bei dieser Aufgabe überprüfen Sie das Dashboard, um aktualisierte Umsatzdaten 
 2. Auf der Kachel **Sales, Profit Margin** (Umsatz, Gewinnspanne) können Sie im Untertitel **Refreshed: NOW** sehen, dass die Daten JETZT aktualisiert wurden.
 
 3. Beachten Sie auch, dass nun eine Spalte für **2020 Jun** vorhanden ist.
-    
-    *Wenn die Daten für Juni 2020 nicht angezeigt werden, müssen Sie möglicherweise **F5** drücken, um den Browser zu aktualisieren.*
+
+    > *Wenn die Daten für Juni 2020 nicht angezeigt werden, müssen Sie möglicherweise **F5** drücken, um den Browser zu aktualisieren.*
 
     ![Bild 33](Linked_image_Files/09-create-power-bi-dashboard_image50.png)
 
-### **Abschluss**
-
-Mit dieser Aufgabe schließen Sie das Lab ab.
-
-1. Speichern Sie den Bericht, und schließen Sie Ihren Browser.
+## Lab abgeschlossen
