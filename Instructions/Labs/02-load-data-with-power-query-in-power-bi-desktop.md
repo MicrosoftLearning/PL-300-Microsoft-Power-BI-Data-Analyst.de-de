@@ -43,6 +43,8 @@ In dieser Aufgabe verwenden Sie den Power Query-Editor zum Konfigurieren der **S
 
      ![Abbildung 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
 
+> **Hinweis:** Wenn Sie eine Warnmeldung erhalten, in der Sie aufgefordert werden, anzugeben, wie die Verbindung hergestellt werden soll, wählen Sie „**Anmeldeinformationen bearbeiten**“ aus, stellen Sie die Verbindung mit den aktuellen Anmeldeinformationen her und wählen Sie „**OK**“, um eine unverschlüsselte Verbindung zu verwenden.
+ 
 1. Ersetzen Sie zum Umbenennen der Abfrage im Bereich **Abfrageeinstellungen** (rechts) den Text im Feld **Name** durch **Salesperson**, und drücken Sie die **EINGABETASTE**. Überprüfen Sie dann, ob der Name im Bereich**Abfragen** aktualisiert wurde.
 
     > *Der Name der Abfrage bestimmt den Namen der Modelltabelle. Es wird empfohlen, präzise und benutzerfreundliche Namen zu definieren.*
@@ -297,6 +299,8 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Sales**.
 In dieser Aufgabe konfigurieren Sie die Abfrage **Targets**.
 
 1. Wählen Sie die Abfrage **ResellerSalesTargets** aus, und benennen Sie sie in **Targets** um.
+
+> **Hinweis:** Wenn Sie eine Warnmeldung erhalten, in der Sie aufgefordert werden, anzugeben, wie die Verbindung hergestellt werden soll, wählen Sie **Zugangsdaten bearbeiten** aus und verwenden Sie den anonymen Zugriff.
 
 1. Wählen Sie zum Entpivotieren der 12 Monatsspalten (**M01**-**M12**) zunächst gleichzeitig die Überschriften der Spalten **Year** und **EmployeeID** aus.
 
