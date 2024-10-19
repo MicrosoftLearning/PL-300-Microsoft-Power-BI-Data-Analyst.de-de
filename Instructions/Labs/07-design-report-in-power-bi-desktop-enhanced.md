@@ -15,7 +15,7 @@ In diesem Lab lernen Sie Folgendes:
 - Synchronisieren von Slicers
 - Erstellen einer Drillthroughseite
 - Anwenden von bedingter Formatierung
-- Erstellen und Verwenden von Lesezeichen
+- Erstellen und Verwenden von Lesezeichen und Schaltflächen
 
 **Dieses Lab sollte ungefähr 45 Minuten in Anspruch nehmen.**
 
