@@ -17,7 +17,7 @@ In diesem Lab lernen Sie Folgendes:
 - Verwenden Sie den optionalen Parameter Axis bei der Erstellung von Vergleichsmetriken.
 - Verwenden Sie den optionalen Parameter Reset, um die kumulativen Berechnungen in einer mehrstufigen Achse anzupassen.
 
-**Dieses Lab sollte ungefähr 45 Minuten in Anspruch nehmen.**
+**Dieses Lab sollte ungefähr 30 Minuten in Anspruch nehmen.**
 
 ## Erste Schritte
 
