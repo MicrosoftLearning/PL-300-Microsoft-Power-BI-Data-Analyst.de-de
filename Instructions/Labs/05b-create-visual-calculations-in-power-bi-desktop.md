@@ -17,7 +17,7 @@ In diesem Lab lernen Sie Folgendes:
 - Verwenden Sie den optionalen Parameter Axis bei der Erstellung von Vergleichsmetriken.
 - Verwenden Sie den optionalen Parameter Reset, um die kumulativen Berechnungen in einer mehrstufigen Achse anzupassen.
 
-**Dieses Lab sollte ungefähr 45 Minuten in Anspruch nehmen.**
+**Dieses Lab sollte ungefähr 30 Minuten in Anspruch nehmen.**
 
 ## Erste Schritte
 
@@ -30,8 +30,6 @@ Entpacken Sie den Ordner in den Ordner **C:\Users\Student\Downloads\05b-visual-c
 Öffnen Sie die Datei **05b-Starter-Verkaufsanalyse.pbix**.
 
 > ***Hinweis**: Sie können die Anmeldung abbrechen, indem Sie **Abbrechen** wählen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später anwenden**, wenn Sie aufgefordert werden, die Änderungen anzuwenden.*
-
-Gehen Sie in Power BI Desktop zu **Datei > Optionen und Einstellungen > Optionen > Vorschaufunktionen**. Wählen Sie **Visuelle Berechnungen** und dann **OK**. Visuelle Berechnungen sind aktiviert, nachdem Power BI Desktop neu gestartet wurde.
 
 ## Erstellen eines Balkendiagramms
 
@@ -128,7 +126,7 @@ In dieser Aufgabe erstellen Sie eine visuelle Matrix, die den Umsatz pro Kategor
 1. Geben Sie im Bearbeitungsfenster für visuelle Berechnungen die folgende Berechnung ein und speichern Sie sie:
 
    ```DAX
-    Versus first = [Sales] - FIRST([Sales])
+    Versus first = [Sum of Sales] - FIRST([Sum of Sales])
    ```
 
 > Beachten Sie, wie die Matrix den Unterschied zwischen den Verkaufsbeträgen der einzelnen Kategorien und denen der ersten Kategorie zeigt.
@@ -136,7 +134,7 @@ In dieser Aufgabe erstellen Sie eine visuelle Matrix, die den Umsatz pro Kategor
 1. Wählen Sie das Feld **Im Vergleich zum ersten** im Bereich **Werte** und aktualisieren Sie Ihre Berechnung, indem Sie den Wert ROWS für den Parameter Axis zu FIRST hinzufügen:
 
    ```DAX
-    Versus first = [Sales] - FIRST([Sales], ROWS)
+    Versus first = [Sum of Sales] - FIRST([Sum of Sales], ROWS)
    ```
 
 > Beachten Sie, dass sich nichts ändert, da ROWS der Standardwert für den Parameter Axis ist.
