@@ -178,7 +178,7 @@ In dieser Aufgabe konfigurieren Sie die Tabelle **Reseller**, um eine Hierarchie
 
     - Country-Region als **Land/Region**
     - State-Province als **Bundesland/Kanton**
-    - City** als **Stadt**
+    - City als **Stadt**
 
 ## Konfigurieren der Tabelle „Sales“
 
@@ -257,7 +257,7 @@ In dieser Aufgabe wechseln Sie zur Berichtsansicht, überprüfen die Benutzerobe
 
       ![Bild 359](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image40.png)
 
-> *Wichtig**: *. Diese Hierarchien wurden nicht von Ihnen erstellt. Sie wurden automatisch als Standardeinstellung erstellt. Es gibt jedoch ein Problem. Das Finanzjahr von Adventure Works beginnt am 1. Juli jedes Jahres. Diese automatisch erstellten Datumshierarchien beginnen jedoch am 1. Januar jedes Jahres.*
+> **Wichtig**: *Diese Hierarchien wurden nicht von Ihnen erstellt. Sie wurden automatisch als Standardeinstellung erstellt. Es gibt jedoch ein Problem. Das Finanzjahr von Adventure Works beginnt am 1. Juli jedes Jahres. Diese automatisch erstellten Datumshierarchien beginnen jedoch am 1. Januar jedes Jahres.*
 
 1. Um die Einstellung **Autom. Datum/Uhrzeit** zu deaktivieren, navigieren Sie zu **Datei > Optionen und Einstellungen > Optionen**.
 
