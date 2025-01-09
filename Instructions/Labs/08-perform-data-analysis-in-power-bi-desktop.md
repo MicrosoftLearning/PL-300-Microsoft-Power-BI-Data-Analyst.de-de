@@ -90,7 +90,7 @@ In dieser Aufgabe erstellen Sie eine Vorhersage, um den möglichen zukünftigen 
 1. Fügen Sie den Visualbereichen die folgenden Felder hinzu:
 
      - x-Achse: **Date \| Date**
-     - y-Achse: **Sales \| Sales**
+     - y-Achse: **Umsatz \| Umsatz**
 
 1. Fügen Sie im Bereich **Filter** das Feld **Date \| Year** im Bereich **Filter für diese Seite** hinzu.
 
