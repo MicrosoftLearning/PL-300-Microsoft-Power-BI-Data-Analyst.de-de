@@ -29,9 +29,9 @@ Extrahieren Sie den Ordner in den Ordner **C:\Users\Student\Downloads\02-load-da
 
 > ***Hinweis**: Sie können die Anmeldung abbrechen, indem Sie **Abbrechen** wählen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später anwenden**, wenn Sie aufgefordert werden, die Änderungen anzuwenden.*
 
-## Konfigurieren der „Salesperson“-Abfrage
+## Konfigurieren der „Vertriebsmitarbeiter“-Abfrage
 
-In dieser Aufgabe verwenden Sie den Power Query-Editor zum Konfigurieren der **Salesperson**-Abfrage.
+In dieser Aufgabe verwenden Sie den Power Query-Editor zum Konfigurieren der **Vertriebsmitarbeiter**-Abfrage.
 
 > ***Wichtig:** Wenn Sie aufgefordert werden, Spalten umzubenennen, ist es wichtig, dass Sie genauso wie beschrieben vorgehen.*
 
@@ -45,7 +45,7 @@ In dieser Aufgabe verwenden Sie den Power Query-Editor zum Konfigurieren der **S
 
 > **Hinweis:** Wenn Sie eine Warnmeldung erhalten, in der Sie aufgefordert werden, anzugeben, wie die Verbindung hergestellt werden soll, wählen Sie „**Anmeldeinformationen bearbeiten**“ aus, stellen Sie die Verbindung mit den aktuellen Anmeldeinformationen her und wählen Sie „**OK**“, um eine unverschlüsselte Verbindung zu verwenden.
  
-1. Ersetzen Sie zum Umbenennen der Abfrage im Bereich **Abfrageeinstellungen** (rechts) den Text im Feld **Name** durch **Salesperson**, und drücken Sie die **EINGABETASTE**. Überprüfen Sie dann, ob der Name im Bereich**Abfragen** aktualisiert wurde.
+1. Ersetzen Sie zum Umbenennen der Abfrage im Bereich **Abfrageeinstellungen** (rechts) den Text im Feld **Name** durch **Vertriebsmitarbeiter**, und drücken Sie die **EINGABETASTE**. Überprüfen Sie dann, ob der Name im Bereich**Abfragen** aktualisiert wurde.
 
     > *Der Name der Abfrage bestimmt den Namen der Modelltabelle. Es wird empfohlen, präzise und benutzerfreundliche Namen zu definieren.*
 
