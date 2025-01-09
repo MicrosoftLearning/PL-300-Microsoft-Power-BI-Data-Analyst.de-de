@@ -47,10 +47,10 @@ In dieser Aufgabe erstellen Sie ein Punktdiagramm, das animiert werden kann.
 
     > *In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Das sieht folgendermaßen aus: **Reseller** **\|** **Unternehmenstyp**. In diesem Beispiel ist **Reseller** der Tabellenname und **Unternehmenstyp** der Feldname.*
 
-     - X-Achse: **Sales \| Umsatz**
-     - Y-Achse: **Sales \| Gewinnspanne**
+     - X-Achse: **Umsatz \| Umsatz**
+     - Y-Achse: **Umsatz \| Gewinnspanne**
      - Legende: **Reseller \| Unternehmenstyp**
-     - Größe: **Sales \| Menge**
+     - Größe: **Umsatz \| Menge**
      - Wiedergabeachse: **Date \| Quartal**
 
 1. Fügen Sie im Bereich **Filter** das Feld **Product \| Category** im Bereich **Filter für diese Seite** hinzu.
