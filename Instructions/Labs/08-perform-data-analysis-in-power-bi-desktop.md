@@ -45,13 +45,13 @@ In dieser Aufgabe erstellen Sie ein Punktdiagramm, das animiert werden kann.
 
 1. Fügen Sie den Visualbereichen die folgenden Felder hinzu:
 
-    > *In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Das sieht folgendermaßen aus: **Reseller** **\|** **Unternehmenstyp**. In diesem Beispiel ist **Reseller** der Tabellenname und **Unternehmenstyp** der Feldname.*
+    > *In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Das sieht folgendermaßen aus: **Reseller** **\|** **Business Type**. In diesem Beispiel ist **Reseller** der Tabellenname und **Business Type** der Feldname.*
 
-     - X-Achse: **Umsatz \| Umsatz**
-     - Y-Achse: **Umsatz \| Gewinnspanne**
-     - Legende: **Reseller \| Unternehmenstyp**
-     - Größe: **Umsatz \| Menge**
-     - Wiedergabeachse: **Date \| Quartal**
+     - X-Achse: **Sales \| Sales**
+     - Y-Achse: **Sales \| Profit Margin**
+     - Legende: **Reseller \| Business Type**
+     - Größe: **Sales \| Quantity**
+     - Wiedergabeachse: **Date \| Quarter**
 
 1. Fügen Sie im Bereich **Filter** das Feld **Product \| Category** im Bereich **Filter für diese Seite** hinzu.
 
@@ -90,7 +90,7 @@ In dieser Aufgabe erstellen Sie eine Vorhersage, um den möglichen zukünftigen 
 1. Fügen Sie den Visualbereichen die folgenden Felder hinzu:
 
      - x-Achse: **Date \| Date**
-     - y-Achse: **Umsatz \| Umsatz**
+     - y-Achse: **Sales \| Sales**
 
 1. Fügen Sie im Bereich **Filter** das Feld **Date \| Year** im Bereich **Filter für diese Seite** hinzu.
 
