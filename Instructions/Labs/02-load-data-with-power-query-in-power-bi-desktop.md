@@ -37,13 +37,13 @@ In dieser Aufgabe verwenden Sie den Power Query-Editor zum Konfigurieren der **S
 
 1. Klicken Sie auf der Registerkarte **Start** des Menübands in der Gruppe **Abfragen** auf das Symbol **Daten transformieren**, um das Fenster **Power Query-Editor** zu öffnen.
 
-     ![„Daten transformieren“ im Menüband „Start“](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image10.png)
+    ![„Daten transformieren“ im Menüband „Start“](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image10.png)
 
 1. Wählen Sie im Fenster **Power Query-Editor** im Bereich **Abfragen** die Abfrage **DimEmployee** aus.
 
-     ![Abbildung 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
+    ![Abbildung 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
 
-> **Hinweis:** Wenn Sie eine Warnmeldung erhalten, in der Sie aufgefordert werden, anzugeben, wie die Verbindung hergestellt werden soll, wählen Sie „**Anmeldeinformationen bearbeiten**“ aus, stellen Sie die Verbindung mit den aktuellen Anmeldeinformationen her und wählen Sie „**OK**“, um eine unverschlüsselte Verbindung zu verwenden.
+    > **Hinweis:** Wenn Sie eine Warnmeldung erhalten, in der Sie aufgefordert werden, anzugeben, wie die Verbindung hergestellt werden soll, wählen Sie „**Anmeldeinformationen bearbeiten**“ aus, stellen Sie die Verbindung mit den aktuellen Anmeldeinformationen her und wählen Sie „**OK**“, um eine unverschlüsselte Verbindung zu verwenden.
  
 1. Ersetzen Sie zum Umbenennen der Abfrage im Bereich **Abfrageeinstellungen** (rechts) den Text im Feld **Name** durch **Salesperson**, und drücken Sie die **EINGABETASTE**. Überprüfen Sie dann, ob der Name im Bereich**Abfragen** aktualisiert wurde.
 
@@ -53,11 +53,11 @@ In dieser Aufgabe verwenden Sie den Power Query-Editor zum Konfigurieren der **S
 
     > *„Zur Spalte wechseln“ ist bei vielen Spalten ein nützliches Feature. Andernfalls können Sie horizontal nach Spalten scrollen.*
 
-     ![Spalten verwalten > Spalten auswählen > Zur Spalte wechseln](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
+    ![Spalten verwalten > Spalten auswählen > Zur Spalte wechseln](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
 1. Klicken Sie im Fenster **Zur Spalte wechseln** auf die Sortierschaltfläche **AZ**, um die Liste nach Spaltennamen zu sortieren, und klicken Sie dann auf **Name** und auf **SalesPersonFlag**. Klicken Sie auf **OK**.
 
-     ![Wechseln zu den Optionen für die Spaltensortierung](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image14.png)
+    ![Wechseln zu den Optionen für die Spaltensortierung](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image14.png)
 
 1. Suchen Sie die Spalte **SalesPersonFlag** , filtern Sie dann die Spalte, um nur Verkaufspersonal (d. h. **TRUE**) auszuwählen, und klicken Sie auf **OK**.
 
@@ -65,7 +65,7 @@ In dieser Aufgabe verwenden Sie den Power Query-Editor zum Konfigurieren der **S
 
     > *Jede Transformation, die Sie erstellen, führt zu einer weiteren Schrittlogik. Schritte können auch bearbeitet oder gelöscht werden. Es ist ebenso möglich, einen Schritt auszuwählen und eine Vorschau der Abfrageergebnisse in dieser Phase der Abfragetransformation anzuzeigen.*
 
-     ![Angewendete Schritte](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image17.png)
+    ![Angewendete Schritte](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image17.png)
 
 1. Klicken Sie auf der Registerkarte **Start** des Menübands in der Gruppe **Spalten verwalten** auf das Symbol **Spalten auswählen**, um Spalten zu entfernen.
 
@@ -82,11 +82,11 @@ In dieser Aufgabe verwenden Sie den Power Query-Editor zum Konfigurieren der **S
 
 1. Beachten Sie in der Liste **Angewendete Schritte**, dass ein weiterer Abfrageschritt hinzugefügt wurde.
 
-     ![Schritt „Andere entfernte Spalten“](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image21.png)
+    ![Schritt „Andere entfernte Spalten“](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image21.png)
 
 1. Klicken Sie zuerst auf die Spaltenüberschrift **FirstName**, um eine einzelne Namensspalte zu erstellen. Klicken Sie auf die Spalte **LastName**, während Sie **STRG** gedrückt halten.
 
-     ![Mehrfachauswahl zweier Spalten zum Erstellen einer einzelnen Spalte](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image22.png)
+    ![Mehrfachauswahl zweier Spalten zum Erstellen einer einzelnen Spalte](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image22.png)
 
 1. Klicken Sie mit der rechten Maustaste auf eine der markierten Spaltenüberschriften, und wählen Sie dann im Kontextmenü **Spalten zusammenführen** aus.
 
@@ -149,7 +149,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Product**.
 1. Wählen Sie **EnglishProductSubcategoryName** und **DimProductCategory** aus, und deaktivieren Sie das Kontrollkästchen **Originalspaltennamen als Präfix verwenden**, bevor Sie **OK** auswählen.
 
     > *Indem Sie diese zwei Spalten auswählen, wird eine Transformation für eine Verknüpfung mit der Tabelle **DimProductSubcategory** durchgeführt. Daraufhin werden diese Spalten eingefügt. Bei der Spalte **DimProductCategory** handelt es sich tatsächlich um eine andere verknüpfte Tabelle in der Datenquelle.*
-    >
+
     > *Abfragespaltennamen müssen immer eindeutig sein. Wenn das Kontrollkästchen aktiviert ist, wird der erweiterte Spaltenname allen Spalten als Präfix vorangestellt (in diesem Fall **DimProductSubcategory**). Da bekannt ist, dass die ausgewählten Spalten keinen Konflikt mit den Spalten in der Abfrage **Product** auslösen, ist diese Option deaktiviert.*
 
 1. Beachten Sie, dass die Transformation dazu geführt hat, dass zwei Spalten hinzugefügt wurden und dass die Spalte **DimProductSubcategory** entfernt wurde.
@@ -193,7 +193,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Reseller**.
     - Geben Sie in das Feld **Zu suchender Wert** **Ware House** ein.
     - Geben Sie in das Feld **Ersetzen durch** **Warehouse** ein.
 
-     ![Dialogfeld „Werte ersetzen“](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image40.png)
+    ![Dialogfeld „Werte ersetzen“](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image40.png)
 
 1. Benennen Sie die folgenden vier Spalten um:
 
@@ -255,7 +255,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Sales**.
 
 1. Klicken Sie zum Erstellen einer benutzerdefinierten Spalte auf der Registerkarte **Spalte hinzufügen** des Menübands in der Gruppe **Allgemein** auf **Benutzerdefinierte Spalte**.
 
-     ![Bild 5.664](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image47.png)
+    ![Bild 5.664](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image47.png)
 
 1. Ersetzen Sie im Fenster **Benutzerdefinierte Spalte** im Feld **Neuer Spaltenname** den Text durch **Cost**.
 
@@ -282,7 +282,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Sales**.
 
     > *Es ist wichtig, den richtigen Datentyp zu konfigurieren. Wenn die Spalte einen numerischen Wert enthält, ist es auch wichtig, den richtigen Typ auszuwählen, wenn Sie planen, mit dem Wert mathematische Berechnungen durchzuführen.*
 
-     ![Bild 5.667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
+    ![Bild 5.667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
 
 1. Ändern Sie bei den folgenden drei Spalten den Datentyp in **Feste Dezimalzahl**.
 
@@ -300,7 +300,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Targets**.
 
 1. Wählen Sie die Abfrage **ResellerSalesTargets** aus, und benennen Sie sie in **Targets** um.
 
-> **Hinweis:** Wenn Sie eine Warnmeldung erhalten, in der Sie aufgefordert werden, anzugeben, wie die Verbindung hergestellt werden soll, wählen Sie **Zugangsdaten bearbeiten** aus und verwenden Sie den anonymen Zugriff.
+    > **Hinweis:** Wenn Sie eine Warnmeldung erhalten, in der Sie aufgefordert werden, anzugeben, wie die Verbindung hergestellt werden soll, wählen Sie **Zugangsdaten bearbeiten** aus und verwenden Sie den anonymen Zugriff.
 
 1. Wählen Sie zum Entpivotieren der 12 Monatsspalten (**M01**-**M12**) zunächst gleichzeitig die Überschriften der Spalten **Year** und **EmployeeID** aus.
 
@@ -341,7 +341,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Targets**.
 
 1. Beachten Sie auch die über dem Abfrageraster angezeigte Formel.
 
-     ![Bild 5.679](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image60.png)
+    ![Bild 5.679](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image60.png)
 
 1. Um die neue Spalte umzubenennen, doppelklicken Sie auf die Spaltenüberschrift **Merged**, und benennen Sie die Spalte in **TargetMonth** um.
 
@@ -359,7 +359,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Targets**.
 
     > *Sicherlich erinnern Sie sich daran, dass die Zielwerte als Tausend gespeichert wurden.*
 
-     ![Bild 5.682](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image63.png)
+    ![Bild 5.682](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image63.png)
 
 1. Geben Sie im Fenster **Multiplizieren** im Feld **Wert** den Wert **1000** an, und wählen Sie **OK** aus.
 
@@ -373,7 +373,7 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **ColorFormats**.
 
 1. Klicken Sie auf der Registerkarte **Start** des Menübands in der Gruppe **Transformieren** auf **Erste Zeile als Überschriften verwenden**.
 
-     ![Bild 5.688](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image68.png)
+    ![Bild 5.688](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image68.png)
 
 **Überprüfen Sie in der Statusleiste, ob die Abfrage 3 Spalten und 10 Zeilen enthält.**
 
@@ -387,15 +387,15 @@ In dieser Aufgabe aktualisieren Sie die Abfrage **Product**, indem Sie sie mit d
 
     > *Das Zusammenführen von Abfragen ermöglicht das Integrieren von Daten, in diesem Fall aus verschiedenen Datenquellen (SQL Server und einer CSV-Datei).*
 
-     ![Bild 5.654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
+    ![Bild 5.654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
 1. Klicken Sie im Fenster **Zusammenführen** im Abfrageraster für **Product** auf die Spaltenüberschrift **Color**.
 
-     ![Bild 5.655](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image72.png)
+    ![Bild 5.655](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image72.png)
 
 1. Wählen Sie in der Dropdownliste unterhalb des Abfragerasters für **Product** die Abfrage **ColorFormats** aus.
 
-     ![Bild 21](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image73.png)
+    ![Bild 21](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image73.png)
 
 1. Klicken Sie im Abfrageraster für **ColorFormats** auf die Spaltenüberschrift **Color**.
 
@@ -403,7 +403,7 @@ In dieser Aufgabe aktualisieren Sie die Abfrage **Product**, indem Sie sie mit d
 
     > *Datenschutzebenen können für Datenquellen konfiguriert werden, um festzulegen, ob Daten zwischen Quellen freigegeben werden können. Wenn Sie für alle Datenquellen **Organisation** festlegen, können diese bei Bedarf Daten freigeben. Private Datenquellen können nicht für andere Datenquellen freigegeben werden. Dies bedeutet nicht, dass private Daten überhaupt nicht freigegeben werden können, sondern lediglich, dass die Power Query-Engine keine Daten zwischen den Quellen freigeben kann.*
 
-     ![Bild 5.691](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image74.png)
+    ![Bild 5.691](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image74.png)
 
 1. Verwenden Sie im Fenster **Zusammenführen** den Standardwert für die **Art des Joins**. Behalten Sie dabei die Auswahl von „Linker äußerer Join“ bei, und klicken Sie auf **OK**.
 
@@ -422,33 +422,33 @@ In dieser Aufgabe aktualisieren Sie **ColorFormats**, um das Laden für diese Ab
 
 1. Klicken Sie im Bereich **Abfrageeinstellungen** auf den Link **Alle Eigenschaften**.
 
-     ![Bild 322](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image80.png)
+    ![Bild 322](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image80.png)
 
 1. Deaktivieren Sie im Fenster **Abfrageeigenschaften** das Kontrollkästchen bei **Laden in Bericht aktivieren**.
 
     > *Wenn Sie den Ladevorgang deaktivieren, wird es nicht als Tabelle in das Datenmodell geladen. Dies geschieht, weil die Abfrage mit der **Product**-Abfrage zusammengeführt wurde, die zum Laden in das Datenmodell aktiviert ist.*
 
-     ![Bild 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
+    ![Bild 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
 ### Überprüfen des endgültigen Produkts
 
-Stellen Sie in Power Query-Editor sicher, dass Sie über **8 Abfragen** verfügen, die wie folgt korrekt benannt sind:
+1. Stellen Sie in Power Query-Editor sicher, dass Sie über **8 Abfragen** verfügen, die wie folgt korrekt benannt sind:
 
-- Salesperson
-- SalespersonRegion
-- Product
-- Reseller
-- Region
-- Sales
-- Targets
-- ColorFormats (wird nicht ins Datenmodell geladen)
+    - Salesperson
+    - SalespersonRegion
+    - Product
+    - Reseller
+    - Region
+    - Sales
+    - Targets
+    - ColorFormats (wird nicht ins Datenmodell geladen)
 
-Wählen Sie **Schließen &amp; Übernehmen** aus, um die Daten in das Modell zu laden und das Fenster des Power Query-Editors zu schießen.
+1. Wählen Sie **Schließen &amp; Übernehmen** aus, um die Daten in das Modell zu laden und das Fenster des Power Query-Editors zu schießen.
 
-![Bild 326](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image83.png)
+    ![Bild 326](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image83.png)
 
-Sie können nun den Zeichenbereich in Power BI Desktop mit Filtern, Visualisierungen und Datenbereichen auf der rechten Seite sehen. Im Bereich „Daten“ sehen Sie die **7 Tabellen**, die in das Datenmodell geladen wurden.
+1. Sie können nun den Zeichenbereich in Power BI Desktop mit Filtern, Visualisierungen und Datenbereichen auf der rechten Seite sehen. Im Bereich „Daten“ sehen Sie die **7 Tabellen**, die in das Datenmodell geladen wurden.
 
-![Abbildung 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
+    ![Abbildung 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
 
 ## Lab abgeschlossen
