@@ -31,7 +31,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein seman
 
 1. Navigieren Sie im Browserfenster von Microsoft Edge im Power BI-Dienst zu **Mein Arbeitsbereich**.
 
-1. Wählen Sie **Hochladen > Durchsuchen** aus.
+1. Wählen Sie **Importieren > Bericht oder Paginierter Bericht > Von diesem Computer** aus.
 
 1. Navigieren Sie zum Ordner **C:\Users\Student\Downloads\09-create-dashboard**.
 
