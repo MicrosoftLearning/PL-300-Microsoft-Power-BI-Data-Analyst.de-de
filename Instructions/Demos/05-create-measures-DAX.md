@@ -51,7 +51,7 @@ Cost = 'Sales'[Quantity] * RELATED('Product'[Cost])
 
 ## Erstellen eines Quickmeasures
 
-1. Fügen Sie der Tabelle Sales ein Quickmeasure hinzu. Ziehen Sie dabei die Spalte Cost von der Spalte Profit ab.
+1. Fügen Sie der Verkaufstabelle ein Quickmeasure hinzu, indem Sie die Spalte „Cost“ von der Spalte „Sales“ abziehen.
 
 1. Benennen Sie das Measure in Profit um.
 
