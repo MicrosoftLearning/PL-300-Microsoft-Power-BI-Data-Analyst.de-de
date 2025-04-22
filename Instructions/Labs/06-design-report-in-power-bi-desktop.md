@@ -211,7 +211,7 @@ In dieser Aufgabe wird die zweite Berichtsseite entworfen. Nach der Fertigstellu
 1. Fügen Sie dem Bereich **Filter für diese Seite** die folgenden Felder der Tabelle **Product** hinzu, und reduzieren Sie sie jeweils (direkt unterhalb der Karte **Kategorie**):
 
      - **Unterkategorie**
-     - **Produkt**
+     - **Product**
      - **Farbe**
 
      ![Bild 60](Linked_image_Files/07-design-report-in-power-bi-desktop_image46.png)
