@@ -103,7 +103,7 @@ In dieser Aufgabe erstellen Sie ein Balkendiagramm, das den Umsatz, die Gesamtpr
 
 > Sie haben nun ein Balkendiagramm mit den folgenden Werten: Summe der Verkäufe, Summe der Kosten, Gewinn und Gewinn *im Vergleich zum vorherigen* mit QuickInfos für Gewinn *Laufende Summe* und Gewinn *Gleitender Durchschnitt*.
 
-## Erstellen eines Matrixvisuals
+## Erstellen eines Visuals mit einer Matrix
 
 In dieser Aufgabe erstellen Sie eine visuelle Matrix, die den Umsatz pro Kategorie für jedes der folgenden Jahre mit dem ersten finanziellen Geschäftsjahr vergleicht.
 
