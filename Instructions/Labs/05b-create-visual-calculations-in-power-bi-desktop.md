@@ -43,13 +43,13 @@ In dieser Aufgabe erstellen Sie ein Balkendiagramm, das den Umsatz, die Gesamtpr
 
 1. Ziehen Sie die Felder **Umsätze** und **Kosten** aus der Tabelle **Umsätze** in den Bereich **X-Achse**.
 
-> Beachten Sie, dass beim Hinzufügen von Umsatz und Kosten zum Bildmaterial die Summe der einzelnen Felder automatisch berechnet wurde.
+    > Beachten Sie, dass beim Hinzufügen von Umsatz und Kosten zum Bildmaterial die Summe der einzelnen Felder automatisch berechnet wurde.
 
 1. Sortieren Sie das resultierende Balkendiagramm nach **Jahr** aufsteigend, indem Sie mithilfe des Drei-Punkte-Menüs **Jahr** und anschließend **Aufsteigend sortieren** auswählen:
 
    ![Abbildung 02](Linked_image_Files/05b-create-visual-calculations-in-power-bi-desktop_image02.png)
 
-> Sie haben nun ein Balkendiagramm, das die Summe der Umsätze und die Summe der Kosten nach Jahren chronologisch sortiert anzeigt.
+    > Sie haben nun ein Balkendiagramm, das die Summe der Umsätze und die Summe der Kosten nach Jahren chronologisch sortiert anzeigt.
 
 ### Hinzufügen von Berechnungen
 
@@ -59,9 +59,9 @@ In dieser Aufgabe erstellen Sie ein Balkendiagramm, das den Umsatz, die Gesamtpr
 
 1. Das Bearbeitungsfenster für visuelle Berechnungen wird geöffnet. Geben Sie in der Formelzeile oberhalb der visuellen Matrix den folgenden Ausdruck ein, und drücken Sie EINGABETASTE, um die Berechnung zu bestätigen:
 
-   ```DAX
+    ```DAX
    Profit = [Sum of Sales] – [Sum of Cost]
-   ```
+    ```
 
 1. Bestätigen Sie, dass Sie nun eine Gewinnspalte in der visuellen Matrix am unteren Rand des Bildschirms sehen:
 
@@ -69,7 +69,7 @@ In dieser Aufgabe erstellen Sie ein Balkendiagramm, das den Umsatz, die Gesamtpr
 
 1. Erweitern Sie das Menü unter **Neue visuelle Berechnung** und wählen Sie **Im Vergleich zum vorherigen** aus den Vorlagenoptionen:
 
-> **Im Vergleich zum vorherigen** vergleicht einen Wert mit einem vorhergehenden Wert, so dass wir den Gewinn im Vergleich zum vorherigen Wert für das Jahr sehen.
+    > **Im Vergleich zum vorherigen** vergleicht einen Wert mit einem vorhergehenden Wert, so dass wir den Gewinn im Vergleich zum vorherigen Wert für das Jahr sehen.
 
    ![Abbildung 05](Linked_image_Files/05b-create-visual-calculations-in-power-bi-desktop_image05.png)
 
@@ -77,23 +77,23 @@ In dieser Aufgabe erstellen Sie ein Balkendiagramm, das den Umsatz, die Gesamtpr
 
 1. Wählen Sie **Laufende Summe** aus dem Menü Vorlagen und ersetzen Sie den Platzhalter `[Field]` durch `[Profit]` und bestätigen Sie die Berechnung.
 
-> **Laufende Summe** berechnet die Summe der Werte, indem der aktuelle Wert zu den vorangegangenen Werten addiert wird, so dass wir die Summe des aktuellen und des vorherigen Jahres sehen.
+    > **Laufende Summe** berechnet die Summe der Werte, indem der aktuelle Wert zu den vorangegangenen Werten addiert wird, so dass wir die Summe des aktuellen und des vorherigen Jahres sehen.
 
 1. Wählen Sie **Gleitender Durchschnitt** aus dem Vorlagenmenü und ersetzen Sie den Platzhalter `[Field]` durch `[Profit]` und den Platzhalter `WindowSize` durch 2. Sie sollten jetzt Folgendes eingerichtet haben:
 
-> **Der gleitende Durchschnitt** berechnet den Durchschnitt einer festgelegten Menge von Werten in einem bestimmten Fenster, indem er die Summe der Werte durch die Größe des Fensters teilt. Indem wir die Fenstergröße auf 2 festlegen, berechnen wir den Durchschnitt von zwei aufeinanderfolgenden Werten. In diesem Beispiel handelt es sich bei den Werten um Jahresgewinne. Der gleitende Durchschnitt für das GJ2019 ist also der Durchschnitt der Gewinne für das GJ2018 und das GJ2019.
+    > **Der gleitende Durchschnitt** berechnet den Durchschnitt einer festgelegten Menge von Werten in einem bestimmten Fenster, indem er die Summe der Werte durch die Größe des Fensters teilt. Indem wir die Fenstergröße auf 2 festlegen, berechnen wir den Durchschnitt von zwei aufeinanderfolgenden Werten. In diesem Beispiel handelt es sich bei den Werten um Jahresgewinne. Der gleitende Durchschnitt für das GJ2019 ist also der Durchschnitt der Gewinne für das GJ2018 und das GJ2019.
 
    ![Abbildung 06](Linked_image_Files/05b-create-visual-calculations-in-power-bi-desktop_image06.png)
 
 1. Wählen Sie unter dem Bereich **X-Achse** das Symbol für die Sichtbarkeit der folgenden Felder, um sie aus der Darstellung auszublenden:
 
-   - Sum of Sales
-   - Sum of Cost
-   - „Profit“ (Gewinn)
+    - Sum of Sales
+    - Sum of Cost
+    - „Profit“ (Gewinn)
 
    ![Abbildung 07](Linked_image_Files/05b-create-visual-calculations-in-power-bi-desktop_image07.png)
 
-> Beachten Sie, dass die von Ihnen ausgeblendeten Felder und Berechnungen jetzt nicht mehr auf dem Bildschirm angezeigt werden.
+    > Beachten Sie, dass die von Ihnen ausgeblendeten Felder und Berechnungen jetzt nicht mehr auf dem Bildschirm angezeigt werden.
 
 1. Ziehen Sie im Bereich **Visualisierungen** **Laufende Summe** und **Gleitender Durchschnitt** in den Bereich **QuickInfos**.  
 
@@ -101,7 +101,7 @@ In dieser Aufgabe erstellen Sie ein Balkendiagramm, das den Umsatz, die Gesamtpr
 
    ![Abbildung 08](Linked_image_Files/05b-create-visual-calculations-in-power-bi-desktop_image08.png)
 
-> Sie haben nun ein Balkendiagramm mit den folgenden Werten: Summe der Verkäufe, Summe der Kosten, Gewinn und Gewinn *im Vergleich zum vorherigen* mit QuickInfos für Gewinn *Laufende Summe* und Gewinn *Gleitender Durchschnitt*.
+    > Sie haben nun ein Balkendiagramm mit den folgenden Werten: Summe der Verkäufe, Summe der Kosten, Gewinn und Gewinn *im Vergleich zum vorherigen* mit QuickInfos für Gewinn *Laufende Summe* und Gewinn *Gleitender Durchschnitt*.
 
 ## Erstellen eines Visuals mit einer Matrix
 
@@ -113,11 +113,11 @@ In dieser Aufgabe erstellen Sie eine visuelle Matrix, die den Umsatz pro Kategor
 
 1. Fügen Sie den Visualbereichen die folgenden Felder hinzu:
 
-     - Zeilen: **Produkt \| Kategorie**
-     - Spalten: **Datum \| Jahr**
-     - Werte: **Umsatz \| Umsatz**
+    - Zeilen: **Produkt \| Kategorie**
+    - Spalten: **Datum \| Jahr**
+    - Werte: **Umsatz \| Umsatz**
 
- > *In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Das sieht folgendermaßen aus: **Date \| Year**. In diesem Beispiel ist **Date** der Tabellenname und **Year** der Feldname.*
+    > *In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Das sieht folgendermaßen aus: **Date \| Year**. In diesem Beispiel ist **Date** der Tabellenname und **Year** der Feldname.*
 
 ### Hinzufügen von Berechnungen
 
@@ -125,25 +125,25 @@ In dieser Aufgabe erstellen Sie eine visuelle Matrix, die den Umsatz pro Kategor
 
 1. Geben Sie im Bearbeitungsfenster für visuelle Berechnungen die folgende Berechnung ein und speichern Sie sie:
 
-   ```DAX
-    Versus first = [Sum of Sales] - FIRST([Sum of Sales])
-   ```
+    ```DAX
+   Versus first = [Sum of Sales] - FIRST([Sum of Sales])
+    ```
 
-> Beachten Sie, wie die Matrix den Unterschied zwischen den Verkaufsbeträgen der einzelnen Kategorien und denen der ersten Kategorie zeigt.
+    > Beachten Sie, wie die Matrix den Unterschied zwischen den Verkaufsbeträgen der einzelnen Kategorien und denen der ersten Kategorie zeigt.
 
 1. Wählen Sie das Feld **Im Vergleich zum ersten** im Bereich **Werte** und aktualisieren Sie Ihre Berechnung, indem Sie den Wert ROWS für den Parameter Axis zu FIRST hinzufügen:
 
-   ```DAX
-    Versus first = [Sum of Sales] - FIRST([Sum of Sales], ROWS)
-   ```
+    ```DAX
+   Versus first = [Sum of Sales] - FIRST([Sum of Sales], ROWS)
+    ```
 
-> Beachten Sie, dass sich nichts ändert, da ROWS der Standardwert für den Parameter Axis ist.
+    > Beachten Sie, dass sich nichts ändert, da ROWS der Standardwert für den Parameter Axis ist.
 
 1. Ersetzen Sie ZEILEN durch SPALTEN und beachten Sie, dass die Berechnung nun den Umsatzbetrag pro Kategorie mit dem ersten Geschäftsjahr vergleicht:
 
    ![Abbildung 11](Linked_image_Files/05b-create-visual-calculations-in-power-bi-desktop_image11.png)
 
-> Beachten Sie, dass die Spalte **Im Vergleich zum ersten** für den **Gesamtumsatz** anstelle der Differenz zum ersten Geschäftsjahr Null ergibt. **Gesamtumsatz** befindet sich auf einer anderen hierarchischen Stufe als die Jahressummen und gilt daher als erste Spalte auf dieser Stufe.
+    > Beachten Sie, dass die Spalte **Im Vergleich zum ersten** für den **Gesamtumsatz** anstelle der Differenz zum ersten Geschäftsjahr Null ergibt. **Gesamtumsatz** befindet sich auf einer anderen hierarchischen Stufe als die Jahressummen und gilt daher als erste Spalte auf dieser Stufe.
 
 1. Beenden Sie den Bearbeitungsbildschirm für visuelle Berechnungen für Ihren Bericht.
 
@@ -157,8 +157,8 @@ In dieser Aufgabe werden Sie ein Liniendiagramm erstellen, das die laufende Summ
 
 1. Fügen Sie den Visualbereichen die folgenden Felder hinzu:
 
-     - X-Achse: **Datum \| Jahr** und **Datum \| Quartal**
-     - y-Achse: **Sales \| Sales**
+    - X-Achse: **Datum \| Jahr** und **Datum \| Quartal**
+    - y-Achse: **Sales \| Sales**
 
 ### Hinzufügen der laufenden Summe
 
@@ -172,9 +172,9 @@ In dieser Aufgabe werden Sie ein Liniendiagramm erstellen, das die laufende Summ
 
 1. Wählen Sie, während Sie sich noch im Bearbeitungsfenster für visuelle Berechnungen befinden, das Feld **Laufende Summe** unter **y-Achse** aus und aktualisieren Sie den Ausdruck für diese Berechnung, indem Sie den Rücksetzparameter HIGHESTPARENT hinzufügen und die Änderungen bestätigen:
 
-   ```DAX
-    Running sum = RUNNINGSUM([Sum of Sales], HIGHESTPARENT)
-   ```
+    ```DAX
+   Running sum = RUNNINGSUM([Sum of Sales], HIGHESTPARENT)
+    ```
 
 Überprüfen Sie, ob die laufende Summe tatsächlich für jedes neue Geschäftsjahr neu beginnt:
 
