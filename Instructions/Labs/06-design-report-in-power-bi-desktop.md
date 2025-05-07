@@ -360,7 +360,7 @@ In dieser Übung veröffentlichen Sie den Bericht im Power BI-Dienst und erkunde
 
      ![Bild 86](Linked_image_Files/07-design-report-in-power-bi-desktop_image66.png)
 
-1. Zeigen Sie mit dem Cursor erneut auf eines der visuellen Elemente, und klicken Sie dann rechts oben auf die Auslassungspunkte (...). Sehen Sie sich die Menüoptionen an. Testen Sie die einzelnen Optionen mit Ausnahme von **In Teams chatten**.
+1. Zeigen Sie mit dem Cursor erneut auf eines der visuellen Elemente, und klicken Sie dann rechts oben auf die Auslassungspunkte (...). Sehen Sie sich die Menüoptionen an. Probieren Sie jede der Optionen aus, mit Ausnahme der Optionen in **Freigeben**.
 
      ![Bild 97](Linked_image_Files/07-design-report-in-power-bi-desktop_image67.png)
 
