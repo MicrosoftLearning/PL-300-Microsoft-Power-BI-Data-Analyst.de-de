@@ -1,7 +1,7 @@
 ---
 demo:
   title: "Erzwingen der Sicherheit auf Zeilenebene in Power\_BI"
-  module: Deploy and manage Power BI service items
+  module: Secure data access in Power BI
 ---
 
 # Erzwingen der Sicherheit auf Zeilenebene in Power BI
