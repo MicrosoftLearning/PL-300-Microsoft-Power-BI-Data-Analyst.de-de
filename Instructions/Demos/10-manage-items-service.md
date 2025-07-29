@@ -5,25 +5,9 @@ demo:
 ---
 # Verwalten von Dateien und semantischen Modellen in Power BI
 
-## Vorbereiten auf die Gatewaydatenaktualisierung
-
-> **Beachten Sie**, dass die folgenden Schritte nicht nötig sind, wenn Sie das Datengateway im persönlichen Modus verwenden. Sie können direkt mit dem nächsten Ziel (Einrichten des Gateways) fortfahren.
-
-1. Öffnen Sie in Power BI Desktop das Power Query-Editor-Fenster, und wählen Sie die Abfrage **ProductCost** aus.
-
-1. Bearbeiten Sie den Schritt „Quelle“, und ändern Sie dann wie folgt den Dateipfad, um die Dateifreigabe zu verwenden:
-
-    `\\DATA-AI\Data\ProductCost.xlsx`
-
-1. Schließen Sie das Fenster des Power Query-Editors, und übernehmen Sie die Änderungen
-
-1. Speichern Sie die Power BI Desktop-Datei.
-
-1. Veröffentlichen Sie die Power BI Desktop-Datei im Arbeitsbereich, und überschreiben Sie dabei das semantische Modell und den Bericht im Dienst.
-
 ## Einrichten des Gateways (persönlicher Modus)
 
-1. Laden Sie im Power BI-Dienst für die Kursleiter*innen die Seite mit den Einstellungen für das semantische Modell neu (F5).
+1. Laden Sie im Power BI-Dienst die Seite mit den Einstellungen für das semantische Modell neu (F5).
 
 1. Erweitern Sie den Abschnitt „Gatewayverbindung“, und weisen Sie darauf hin, dass kein Gateway installiert ist.
 
@@ -33,7 +17,7 @@ demo:
 
 1. Öffnen Sie nach dem Herunterladen die heruntergeladene Datei.
 
-1. Schließen Sie das Gatewaysetup unter Verwendung der Anmeldeinformationen des Kursleiterkontos ab.
+1. Schließen Sie die Gatewayeinrichtung mit Ihrem Organisationskonto ab.
 
 1. Kehren Sie nach der Einrichtung zur Seite mit den semantischen Modelleinstellungen zurück und laden Sie sie erneut.
 
