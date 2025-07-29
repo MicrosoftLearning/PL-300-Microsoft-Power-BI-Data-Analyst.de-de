@@ -8,7 +8,9 @@ layout: home
 
 Hyperlinks zu den Lab-Übungen und Demos sind nachfolgend aufgelistet.
 
-## Labs
+> **Hinweis:** Wenn Fehler mit dem Inhalt auftreten, erstellen Sie [ein neues Problem im GitHub-Repository](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/issues/new/choose).
+
+## Labübungen
 
 {% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
 | Modul | Lab |
@@ -19,7 +21,8 @@ Hyperlinks zu den Lab-Übungen und Demos sind nachfolgend aufgelistet.
 ## Demos
 
 {% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
-| Modul | Demo |
-| --- | --- | 
-{% for activity in demos  %} |{{ activity.demo.module }} | [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
+
+| Demo |
+| --- |
+{% for activity in demos  %}| [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
