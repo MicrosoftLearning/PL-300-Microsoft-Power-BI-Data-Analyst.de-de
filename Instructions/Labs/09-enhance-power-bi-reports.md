@@ -100,10 +100,6 @@ In dieser Übung erweitern Sie die Drillthroughseite mit einer bedingten Formati
 
     ![Abbildung 9](Linked_image_Files/09-enhance-power-bi-reports_image29.png)
 
-1. Wählen Sie im Fenster **Symbole – Profit Margin** in der Dropdownliste **Anwenden auf** die Option **Values and totals** aus.
-
-    ![Abbildung 10](Linked_image_Files/09-enhance-power-bi-reports_image30a.png)
-
 1. Wählen Sie im Fenster **Symbole – Profit Margin** in der Dropdownliste **Symbollayout** die Option **Rechts von den Daten** aus.
 
     ![Abbildung 11](Linked_image_Files/09-enhance-power-bi-reports_image30.png)
@@ -129,6 +125,10 @@ In dieser Übung erweitern Sie die Drillthroughseite mit einer bedingten Formati
     ![Abbildung 13](Linked_image_Files/09-enhance-power-bi-reports_image32.png)
 
     > _Die Regeln können wie folgt interpretiert werden: Anzeige eines roten Karos, wenn der Wert für die Rendite kleiner als 0 ist, und Anzeige des grünen Kreises, wenn der Wert größer oder gleich 0 ist._
+
+1. Wählen Sie im Fenster **Symbole – Profit Margin** in der Dropdownliste **Anwenden auf** die Option **Values and totals** aus.
+
+    ![Abbildung 10](Linked_image_Files/09-enhance-power-bi-reports_image30a.png)
 
 1. Wählen Sie **OK** aus.
 
@@ -249,6 +249,8 @@ In dieser Übung erweitern Sie die Seite _My Performance_ mit Schaltflächen, da
 
 In dieser Übung veröffentlichen Sie den Bericht im Power BI-Dienst und erkunden das Verhalten des veröffentlichten Berichts.
 
+> _**Hinweis**: Sie benötigen mindestens eine **Power BI Free**-Lizenz, um den Bericht zu veröffentlichen. Öffnen Sie den Browser „Microsoft Edge“, und melden Sie sich unter `https://app.powerbi.com` an. Wenn Sie aufgefordert werden, ein Puzzle zu lösen oder eine kostenlose Fabric-Testversion zu starten, können Sie dies überspringen und den Browser schließen.
+
 > _**Hinweis**: Sie können den Rest der Übung auch durchgehen, wenn Sie keinen Zugriff auf den Power BI-Dienst haben, um die Aufgaben direkt auszuführen._
 
 1. Wählen Sie die Seite _Übersicht_ aus.
@@ -277,7 +279,7 @@ In dieser Übung veröffentlichen Sie den Bericht im Power BI-Dienst und erkunde
 
 1. Wählen Sie im Browserfenster im Power BI-Dienst im Bereich **Navigation** (links und möglicherweise zugeklappt) die Option **Mein Arbeitsbereich** aus.
 
-1. Klicken Sie auf den Bericht _07-Starter-Sales Analysis_, um den Bericht zu erkunden.
+1. Klicken Sie auf den Bericht _09-Starter-Sales Analysis_, um sich diesen anzusehen.
 
 1. Wählen Sie zum Testen des Drillthroughfeatures auf der Seite _Übersicht_ im Visual _Sum of Quantity by Category_ mit der rechten Maustaste die Leiste _Clothing_ und dann **Drillthrough > Produktdetails** aus.
 

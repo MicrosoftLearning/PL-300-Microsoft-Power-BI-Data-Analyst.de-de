@@ -325,6 +325,8 @@ In dieser Aufgabe synchronisieren Sie die Datenschnitte _Year_ und _Region_.
 
 In dieser Aufgabe veröffentlichen Sie den Bericht im Power BI-Dienst. Anschließend werden Sie das verhalten des veröffentlichten Berichts untersuchen.
 
+> _**Hinweis**: Sie benötigen mindestens eine **Power BI Free**-Lizenz, um den Bericht zu veröffentlichen. Öffnen Sie den Browser „Microsoft Edge“, und melden Sie sich unter `https://app.powerbi.com` an. Wenn Sie aufgefordert werden, ein Puzzle zu lösen oder eine kostenlose Fabric-Testversion zu starten, können Sie dies überspringen und den Browser schließen.
+
 > _**Hinweis**: Sie können den Rest der Übung auch durchgehen, wenn Sie keinen Zugriff auf den Power BI-Dienst haben, um die Aufgaben direkt auszuführen._
 
 1. Wählen Sie die Seite _Übersicht_ aus, und speichern Sie dann die Power BI Desktop-Datei.
