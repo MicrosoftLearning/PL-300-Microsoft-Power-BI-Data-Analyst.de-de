@@ -27,7 +27,7 @@ Extrahieren Sie Sie den Ordner in den Ordner **C:\Benutzer\Student\Downloads\12-
 
 > _**Hinweis**: Sie benötigen mindestens eine **Power BI Free**-Lizenz, um den Bericht zu veröffentlichen. Öffnen Sie den Browser „Microsoft Edge“, und melden Sie sich unter `https://app.powerbi.com` an. Wenn Sie aufgefordert werden, ein Puzzle zu lösen oder eine kostenlose Fabric-Testversion zu starten, können Sie dies überspringen und den Browser schließen.
 
-## **Veröffentlichen des Berichts**
+## Veröffentlichen des Berichts
 
 In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein semantisches Modell erstellen.
 
@@ -41,7 +41,7 @@ In dieser Aufgabe richten Sie die Umgebung für das Lab ein, indem Sie ein seman
 
     > *Wenn Sie zum Ersetzen des semantischen Modells aufgefordert werden, wählen Sie **Ersetzen** aus.*
 
-## **Erstellen eines Dashboards**
+## Erstellen eines Dashboards
 
 In dieser Aufgabe erstellen Sie das Dashboard **Sales Monitoring**. Sie heften ein Visual aus dem Bericht an, fügen eine Kachel auf der Grundlage eines Imagedaten-URIs hinzu, und verwenden Q&A, um eine Kachel zu erstellen.
 
@@ -119,7 +119,7 @@ In dieser Aufgabe erstellen Sie das Dashboard **Sales Monitoring**. Sie heften e
 
     ![Bild 52](Linked_image_Files/12-create-power-bi-dashboard_image35.png)
 
-## **Bearbeiten von Kacheldetails**
+## Bearbeiten von Kacheldetails
 
 In dieser Aufgabe bearbeiten Sie die Details von zwei Kacheln.
 
@@ -143,13 +143,13 @@ In dieser Aufgabe bearbeiten Sie die Details von zwei Kacheln.
 
 *In der nächsten Übung aktualisieren Sie das semantische Modell. Abhängig von Ihren Daten und Berichten können Sie jederzeit eine Ad-hoc-Datenaktualisierung durchführen oder einen Zeitplan festlegen. Geplante Aktualisierungen erfordern jedoch Gateways, die wir für dieses Lab nicht konfigurieren können. Von Power BI Desktop aus führen Sie also eine manuelle Datenaktualisierung durch und laden die Datei dann in Ihren Arbeitsbereich hoch.*
 
-## **Aktualisieren des semantischen Modells**
+## Aktualisieren des semantischen Modells
 
 In dieser Übung laden Sie zuerst Bestelldaten für Juni 2020 in die Datenbank **AdventureWorksDW2020**. Anschließend öffnen Sie die Power BI Desktop-Datei, führen eine Datenaktualisierung aus und laden die Datei in Ihren Arbeitsbereich hoch.
 
 > ***Hinweis**: Wenn Sie keine Verbindung zur Datenbank herstellen können, können Sie die Datei **12-Solution-Sales-Analysis.pbix** verwenden. Statt die Datenbank zu aktualisieren und das Semantikmodell zu aktualisieren, laden Sie die Lösungsdatei zu **Mein Arbeitsbereich** hoch und sehen Sie sich die Änderungen an, auf die in den folgenden Aufgaben verwiesen wird.*
 
-## **Aktualisieren der Lab-Datenbank**
+## Aktualisieren der Lab-Datenbank
 
 In dieser Aufgabe führen Sie ein PowerShell-Skript aus, um Daten in der Datenbank **AdventureWorksDW2020** zu aktualisieren.
 
@@ -163,7 +163,7 @@ In dieser Aufgabe führen Sie ein PowerShell-Skript aus, um Daten in der Datenba
 
 *Die Datenbank **AdventureWorksDW2020** enthält nun Bestellungen vom Juni 2020.*
 
-## **Aktualisieren der Power BI Desktop-Datei**
+## Aktualisieren der Power BI Desktop-Datei
 
 In dieser Aufgabe öffnen Sie die Power BI Desktop-Datei **12-Starter-Sales Analysis**, führen eine Datenaktualisierung aus, und laden die Datei anschließend in den Arbeitsbereich **Verkaufsanalyse** hoch.
 
@@ -183,7 +183,7 @@ In dieser Aufgabe öffnen Sie die Power BI Desktop-Datei **12-Starter-Sales Anal
 
 *Das semantische Modell im Power BI-Dienst enthält jetzt Umsatzdaten vom Juni 2020.*
 
-### **Überprüfen des Dashboards**
+## Überprüfen des Dashboards
 
 Bei dieser Aufgabe überprüfen Sie das Dashboard, um aktualisierte Umsatzdaten anzuzeigen.
 
@@ -198,3 +198,5 @@ Bei dieser Aufgabe überprüfen Sie das Dashboard, um aktualisierte Umsatzdaten 
     ![Bild 33](Linked_image_Files/12-create-power-bi-dashboard_image50.png)
 
 ## Lab abgeschlossen
+
+1. Schließen Sie das Microsoft Edge-Browserfenster.

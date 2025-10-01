@@ -26,13 +26,13 @@ Extrahieren Sie die Datei in den Ordner **C:\Benutzer\Student\Downloads\06-time-
 
 Öffnen Sie die Datei **06-Starter-Sales Analysis.pbix** .
 
-> _**Hinweis**: Sie können die Anmeldung abbrechen, indem Sie **Abbrechen** auswählen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später übernehmen** aus, wenn Sie aufgefordert werden, die Änderungen anzuwenden._
+> _**Hinweis**: Möglicherweise wird beim Laden der Datei ein Anmeldedialogfeld angezeigt. Wählen Sie **Abbrechen** aus, um das Anmeldedialogfeld zu schließen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später übernehmen** aus, wenn Sie aufgefordert werden, die Änderungen anzuwenden._
 
 ## Erstellen eines YTD-Measures
 
 In dieser Aufgabe erstellen Sie mithilfe von Zeitintelligenzfunktionen ein YTD-Measure (seit Jahresbeginn).
 
-1. Beachten Sie in der Berichtsansicht von Power BI Desktop auf **Seite 2** das Matrixvisual, in dem verschiedene Measures mit Jahren und Monaten in den Zeilen gruppiert dargestellt sind.
+1. Beachten Sie in der **Berichtsansicht** von Power BI Desktop auf **Seite 2** das Matrixvisual, in dem verschiedene Measures mit Jahren und Monaten in den Zeilen gruppiert dargestellt sind.
 
 2. Fügen Sie der Tabelle `Sales` ein Measure hinzu, das auf dem folgenden Ausdruck basiert und ohne Dezimalstellen formatiert ist:
 
@@ -122,10 +122,19 @@ In dieser Aufgabe erstellen Sie ein YoY-Wachstumsmeasure mithilfe einer Variable
 
     > _Das YoY-Wachstumsmeasure identifiziert einen Umsatzanstieg von nahezu 400 % (oder 4x) gegenüber dem gleichen Zeitraum des Vorjahres._
 
-1. Legen Sie in der Ansicht „Modell“ die beiden neuen Measures in einen Anzeigeordner mit dem Namen _Zeitintelligenz_ ab.
+1. Legen Sie in der **Modellansicht** die beiden neuen Measures in einen Anzeigeordner mit dem Namen _Zeitintelligenz_ ab.
 
     ![Bild 4](Linked_image_Files/06-use-dax-time-intelligence-functions_image24.png)
 
 1. Speichern Sie die Power BI Desktop-Datei.
 
 ## Lab abgeschlossen
+
+Sie können Ihren Power BI-Bericht speichern, aber für dieses Lab ist dies nicht erforderlich. In der nächsten Übung arbeiten Sie mit einer vorgefertigten Startdatei.
+
+1. Navigieren Sie zum Menü **Datei** in der oberen linken Ecke, und wählen Sie **Speichern unter** aus. 
+1. Wählen Sie **Dieses Gerät durchsuchen** aus.
+1. Wählen Sie den Ordner aus, in dem Sie die Datei speichern möchten, und geben Sie ihm einen aussagekräftigen Namen. 
+1. Wählen Sie die Schaltfläche **Speichern** aus, um den Bericht als PBIX-Datei zu speichern. 
+1. Wenn ein Dialogfeld angezeigt wird, in dem Sie aufgefordert werden, ausstehende Abfrageänderungen anzuwenden, wählen Sie **Übernehmen** aus.
+1. Schließen Sie Power BI Desktop.

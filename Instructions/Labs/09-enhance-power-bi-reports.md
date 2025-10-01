@@ -28,7 +28,7 @@ Extrahieren Sie die Datei in den Ordner **C:\Benutzer\Student\Downloads\09-enhan
 
 Öffnen Sie die Datei **09-Starter-Sales Analysis.pbix**.
 
-> _**Hinweis**: Sie können die Anmeldung abbrechen, indem Sie **Abbrechen** auswählen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später übernehmen** aus, wenn Sie aufgefordert werden, die Änderungen anzuwenden._
+> _**Hinweis**: Möglicherweise wird beim Laden der Datei ein Anmeldedialogfeld angezeigt. Wählen Sie **Abbrechen** aus, um das Anmeldedialogfeld zu schließen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später übernehmen** aus, wenn Sie aufgefordert werden, die Änderungen anzuwenden._
 
 ## Konfigurieren einer Drillthroughseite
 
@@ -249,7 +249,7 @@ In dieser Übung erweitern Sie die Seite _My Performance_ mit Schaltflächen, da
 
 In dieser Übung veröffentlichen Sie den Bericht im Power BI-Dienst und erkunden das Verhalten des veröffentlichten Berichts.
 
-> _**Hinweis**: Sie benötigen mindestens eine **Power BI Free**-Lizenz, um den Bericht zu veröffentlichen. Öffnen Sie den Browser „Microsoft Edge“, und melden Sie sich unter `https://app.powerbi.com` an. Wenn Sie aufgefordert werden, ein Puzzle zu lösen oder eine kostenlose Fabric-Testversion zu starten, können Sie dies überspringen und den Browser schließen.
+> _**Hinweis**: Sie benötigen mindestens eine **Power BI Free**-Lizenz, um den Bericht zu veröffentlichen. Öffnen Sie den Microsoft Edge-Browser, und navigieren Sie zu _ `https://app.powerbi.com`_.  Melden Sie sich mit den Anmeldeinformationen für den Microsoft 365-Mandanten an, die von Ihrem autorisierten Labhoster (ALH) bereitgestellt werden. Wenn Sie aufgefordert werden, ein Puzzle zu lösen oder eine kostenlose Fabric-Testversion zu starten, können Sie dies überspringen und den Browser schließen._
 
 > _**Hinweis**: Sie können den Rest der Übung auch durchgehen, wenn Sie keinen Zugriff auf den Power BI-Dienst haben, um die Aufgaben direkt auszuführen._
 
@@ -294,3 +294,6 @@ In dieser Übung veröffentlichen Sie den Bericht im Power BI-Dienst und erkunde
 1. Wählen Sie die einzelnen Schaltflächen aus. Sie sehen, dass jeweils ein anderes Visual angezeigt wird.
 
 ## Lab abgeschlossen
+
+1. Schließen Sie den Microsoft Edge-Browser.
+1. Schließen Sie Power BI Desktop.

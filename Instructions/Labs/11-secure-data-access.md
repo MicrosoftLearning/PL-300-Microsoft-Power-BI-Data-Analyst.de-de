@@ -8,12 +8,7 @@ lab:
 
 ## Labszenario
 
-In diesem Lab erzwingen Sie die Sicherheit auf Zeilenebene, um sicherzustellen, dass ein Vertriebsmitarbeiter nur die Vertriebsdaten für die ihm zugewiesenen Regionen analysieren kann.
-
-In diesem Lab lernen Sie Folgendes:
-
-- Erzwingen von Sicherheit auf Zeilenebene
-- Wählen Sie zwischen dynamischen und statischen Methoden aus.
+In diesem Lab erzwingen Sie die Sicherheit auf Zeilenebene, um sicherzustellen, dass ein Vertriebsmitarbeiter nur die Vertriebsdaten für die ihm zugewiesenen Regionen analysieren kann. Sie erzwingen die Sicherheit auf Zeilenebene mithilfe einer dynamischen Methode.
 
 **Dieses Lab sollte ungefähr 20 Minuten in Anspruch nehmen.**
 
@@ -27,13 +22,13 @@ Extrahieren Sie den Ordner in den Ordner **C:\Benutzer\Student\Downloads\11-secu
 
 Öffnen Sie die Datei **11-Starter-Sales Analysis.pbix**.
 
-> ***Hinweis**: Sie können die Anmeldung abbrechen, indem Sie **Abbrechen** wählen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später anwenden**, wenn Sie aufgefordert werden, die Änderungen anzuwenden.*
+> _**Hinweis**: Möglicherweise wird beim Laden der Datei ein Anmeldedialogfeld angezeigt. Wählen Sie **Abbrechen** aus, um das Anmeldedialogfeld zu schließen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später übernehmen** aus, wenn Sie aufgefordert werden, die Änderungen anzuwenden._
 
 ## Erzwingen von Sicherheit auf Zeilenebene
 
 In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, dass Vertriebsmitarbeiter nur Umsätze in den zugewiesenen Regionen anzeigen können.
 
-1. Wechseln Sie zur Tabellenansicht.
+1. Wechseln Sie zur **Tabellenansicht**.
 
    ![Bild 5.701](Linked_image_Files/11-secure-data-access_image20.png)
 
@@ -104,3 +99,13 @@ In dieser Aufgabe erzwingen Sie Sicherheit auf Zeilenebene, um sicherzustellen, 
 *Hinweis: Wenn die Power BI Desktop-Datei im Power BI-Dienst veröffentlicht wird, müssen Sie noch eine Aufgabe nach der Veröffentlichung durchführen, um der Rolle **Salespeople** Sicherheitsprinzipale zuzuordnen. Das erledigen Sie in diesem Lab nicht.*
 
 ## Lab abgeschlossen
+
+Sie können Ihren Power BI-Bericht speichern, aber für dieses Lab ist dies nicht erforderlich. 
+
+1. Schließen Sie das Microsoft Edge-Browserfenster.
+1. Navigieren Sie in Power BI Desktop zum Menü **Datei** in der oberen linken Ecke, und wählen Sie **Speichern unter** aus. 
+1. Wählen Sie **Dieses Gerät durchsuchen** aus.
+1. Wählen Sie den Ordner aus, in dem Sie die Datei speichern möchten, und geben Sie ihm einen aussagekräftigen Namen. 
+1. Wählen Sie die Schaltfläche **Speichern** aus, um den Bericht als PBIX-Datei zu speichern. 
+1. Wenn ein Dialogfeld angezeigt wird, in dem Sie aufgefordert werden, ausstehende Abfrageänderungen anzuwenden, wählen Sie **Übernehmen** aus.
+1. Schließen Sie Power BI Desktop.

@@ -6,7 +6,7 @@ lab:
 
 # Abrufen von Daten in Power BI
 
-## **Labszenario**
+## Labszenario
 
 In diesem Lab erfahren Sie mehr über die Anwendung Power BI Desktop, wie Sie eine Verbindung mit Daten herstellen und wie Sie Datenvorschautechniken verwenden, um die Eigenschaften und die Qualität der Quelldaten zu verstehen.
 
@@ -44,7 +44,7 @@ In dieser Aufgabe erfahren Sie, wie Sie eine Verbindung mit einer SQL Server-Dat
 
 1. Geben Sie im Fenster **SQL Server-Datenbank** im Feld **Server** den Text **localhost** ein. Lassen Sie **Datenbank** leer, und wählen Sie dann **OK** aus.
 
-    > ***Hinweis**: Im Rahmen dieses Labs stellen Sie mit **localhost** eine Verbindung mit der SQL Server-Datenbank her. Dieser Ansatz funktioniert zwar hier, ist jedoch für Ihre eigenen Lösungen nicht zu empfehlen, da Gatewaydatenquellen **localhost** nicht auflösen können.*
+    > ***Hinweis**: Im Rahmen dieses Labs stellen Sie mit **localhost** eine Verbindung mit der SQL Server-Datenbank her. Obwohl dies für das Labor in Ordnung ist, wird es nicht als bewährte Methode für reale Lösungen angesehen.*
 
 1. Wenn Sie zur Eingabe von Anmeldeinformationen aufgefordert werden, wählen Sie **Windows > Aktuelle Anmeldeinformationen verwenden** und dann **Verbinden** aus.
 
@@ -60,7 +60,7 @@ In dieser Aufgabe erfahren Sie, wie Sie eine Verbindung mit einer SQL Server-Dat
 
     > ***Hinweis**: Diesen Vorschaudaten können Sie die Spalten und eine Auswahl von Zeilen entnehmen.*
 
-1. Um die Tabellendaten zu importieren, **aktivieren Sie das Kontrollkästchen** neben den folgenden Tabellen:
+1. Wählen Sie die folgenden Tabellen aus, indem Sie neben ihren Namen **die Kontrollkästchen aktivieren**.
 
     - DimEmployee
     - DimEmployeeSalesTerritory
@@ -73,7 +73,7 @@ In dieser Aufgabe erfahren Sie, wie Sie eine Verbindung mit einer SQL Server-Dat
 
 Sie haben nun eine Verbindung mit sechs Tabellen aus einer SQL Server-Datenbank hergestellt.
 
-## **Vorschau der Daten in Power Query-Editor**
+## Vorschau der Daten in Power Query-Editor
 
 Diese Aufgabe führt den Power Query-Editor ein und ermöglicht es Ihnen, die Daten zu überprüfen und ein Profil zu erstellen. Auf diese Weise können Sie bestimmen, wie die Daten später bereinigt und transformiert werden. Außerdem überprüfen Sie sowohl Dimensionstabellen mit dem Präfix „Dim“ als auch Faktentabellen mit dem Präfix „Fakt“.
 
@@ -81,7 +81,7 @@ Diese Aufgabe führt den Power Query-Editor ein und ermöglicht es Ihnen, die Da
 
      ![Liste der geladenen Abfragen](Linked_image_Files/01-get-data-in-power-bi_image20.png)
 
-1. Wählen Sie die erste Abfrage aus: **DimEmployee**.
+1. Wählen Sie die Abfrage **DimEmployee** aus.
 
     > *Die Tabelle **DimEmployee** in der SQL Server-Datenbank speichert eine Zeile für jeden Mitarbeiter. Eine Teilmenge der Zeilen aus dieser Tabelle stellt die Vertriebsmitarbeiter dar, die für das von Ihnen zu entwickelnde Modell relevant sind.*
 
@@ -141,7 +141,7 @@ Diese Aufgabe führt den Power Query-Editor ein und ermöglicht es Ihnen, die Da
 
     > *Fehlende Werte in der Spalte **TotalProductCost** stellen ein Datenqualitätsproblem dar.*
 
-## **Abrufen von Daten aus einer CSV-Datei**
+## Abrufen von Daten aus einer CSV-Datei
 
 In dieser Aufgabe erstellen Sie eine neue Abfrage basierend auf CSV-Dateien.
 
@@ -155,7 +155,7 @@ In dieser Aufgabe erstellen Sie eine neue Abfrage basierend auf CSV-Dateien.
 
     > *Die CSV-Datei **ResellerSalesTargets** enthält eine Zeile pro Vertriebsmitarbeiter und Jahr. In jeder Zeile werden 12 monatliche Umsatzziele (ausgedrückt in Tausend) aufgezeichnet. Das Geschäftsjahr für die Firma Adventure Works beginnt am 1. Juli.*
 
-1. Beachten Sie auch, dass keine der Spalten leere Werte enthält.  Wenn kein monatliches Verkaufsziel vorhanden ist, wird stattdessen ein Bindestrich eingetragen.
+1. Beachten Sie auch, dass keine der Spalten leere Werte enthält.  Wenn ein monatliches Umsatzziel fehlt, enthält die Spalte stattdessen einen Bindestrich.
 
 1. Überprüfen Sie die Symbole in den einzelnen Spaltenüberschriften links neben dem Spaltennamen. Die Symbole stehen für den Datentyp der jeweiligen Spalte. **123** steht für ganze Zahlen und **ABC** für Text.
 
@@ -170,3 +170,12 @@ Sie sollten jetzt über zwei neue Abfragen verfügen: **ResellerSalesTargets** 
  ![Abfrageliste](Linked_image_Files/01-get-data-in-power-bi_image43.png)
 
 ## Lab abgeschlossen
+
+Sie können Ihren Power BI-Bericht speichern, aber für dieses Lab ist dies nicht erforderlich. In der nächsten Übung arbeiten Sie mit einer vorgefertigten Startdatei.
+
+1. Navigieren Sie zum Menü **Datei** in der oberen linken Ecke, und wählen Sie **Speichern unter** aus. 
+1. Wählen Sie **Dieses Gerät durchsuchen** aus.
+1. Wählen Sie den Ordner aus, in dem Sie die Datei speichern möchten, und geben Sie ihm einen aussagekräftigen Namen. 
+1. Wählen Sie die Schaltfläche **Speichern** aus, um den Bericht als PBIX-Datei zu speichern. 
+1. Wenn ein Dialogfeld angezeigt wird, in dem Sie aufgefordert werden, ausstehende Abfrageänderungen anzuwenden, wählen Sie **Übernehmen** aus.
+1. Schließen Sie Power BI Desktop.
