@@ -28,7 +28,7 @@ Extrahieren Sie die Datei in den Ordner **C:\Benutzer\Student\Downloads\04-dax-c
 
 Öffnen Sie die Datei **04-Starter-Sales Analysis.pbix**.
 
-> _**Hinweis**: Sie können die Anmeldung abbrechen, indem Sie **Abbrechen** auswählen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später übernehmen** aus, wenn Sie aufgefordert werden, die Änderungen anzuwenden._
+> _**Hinweis**: Möglicherweise wird beim Laden der Datei ein Anmeldedialogfeld angezeigt. Wählen Sie **Abbrechen** aus, um das Anmeldedialogfeld zu schließen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später übernehmen** aus, wenn Sie aufgefordert werden, die Änderungen anzuwenden._
 
 ## Erstellen der berechneten Tabelle „Salesperson“
 
@@ -38,7 +38,7 @@ Eine berechnete Tabelle wird erstellt, indem zuerst der Tabellenname eingegeben 
 
 Geben Sie eine gültige DAX-Formel in die _Bearbeitungsleiste_ ein. Die Bearbeitungsleiste bietet Features wie AutoVervollständigen, IntelliSense und Farbcodierung, mit denen Sie die Formel schnell und fehlerfrei eingeben können.
 
-1. Klicken Sie in Power BI Desktop in der Berichtsansicht auf dem Menüband **Modellierung** in der Gruppe **Berechnungen** auf **Neue Tabelle**.
+1. Klicken Sie in Power BI Desktop in der **Berichtsansicht** auf dem Menüband **Modellierung** in der Gruppe **Berechnungen** auf **Neue Tabelle**.
 
     ![Abbildung 1](Linked_image_Files/04-create-dax-calculations_image9.png)
 
@@ -58,7 +58,7 @@ Geben Sie eine gültige DAX-Formel in die _Bearbeitungsleiste_ ein. Die Bearbeit
     >
     > _Im Gegensatz zu auf Power Query basierenden Tabellen können berechnete Tabellen nicht zum Laden von Daten aus externen Datenquellen genutzt werden. Sie können Daten nur auf Grundlage dessen transformieren, was bereits in das Datenmodell geladen wurde._
 
-1. Wechseln Sie zur Modellansicht, und beachten Sie, dass die Tabelle `Salesperson` verfügbar ist.
+1. Wechseln Sie zur **Modellansicht**, und beachten Sie, dass die Tabelle `Salesperson` verfügbar ist.
 
 1. Erstellen Sie eine Beziehung von der `Salesperson | EmployeeKey`-Spalte zur `Sales | EmployeeKey`-Spalte.
 
@@ -86,7 +86,7 @@ Geben Sie eine gültige DAX-Formel in die _Bearbeitungsleiste_ ein. Die Bearbeit
 
 In dieser Aufgabe erstellen Sie die Tabelle `Date`.
 
-1. Wechseln Sie zur Tabellenansicht. Klicken Sie auf der Registerkarte **Start** des Menübands in der Gruppe **Berechnungen** auf **Neue Tabelle**.
+1. Wechseln Sie zur **Tabellenansicht**. Klicken Sie auf der Registerkarte **Start** des Menübands in der Gruppe **Berechnungen** auf **Neue Tabelle**.
 
     ![Bild 4](Linked_image_Files/04-create-dax-calculations_image15.png)
 
@@ -141,7 +141,7 @@ In dieser Aufgabe fügen Sie weitere Spalten hinzu, um das Filtern und Gruppiere
 
     ![Abbildung 9](Linked_image_Files/04-create-dax-calculations_image21.png)
 
-1. Um die Berechnungen zu überprüfen, wechseln Sie zur Ansicht „Bericht“.
+1. Um die Berechnungen zu überprüfen, wechseln Sie zur **Berichtsansicht**.
 
 1. Um eine neue Berichtsseite zu erstellen, wählen Sie das Plussymbol neben **Seite 1** aus.
 
@@ -169,7 +169,7 @@ In dieser Aufgabe fügen Sie weitere Spalten hinzu, um das Filtern und Gruppiere
 
     > _Standardmäßig werden Textwerte alphabetisch, Zahlen vom kleinsten bis zum größten Wert und Datumsangaben vom frühesten bis zum spätesten Wert sortiert._
 
-1. Um die Sortierreihenfolge des Felds `Month` anzupassen, wechseln Sie zur Tabellenansicht.
+1. Um die Sortierreihenfolge des Felds `Month` anzupassen, wechseln Sie zur **Tabellenansicht**.
 
 1. Fügen Sie der Tabelle `Date` die Spalte `MonthKey` hinzu.
 
@@ -180,11 +180,11 @@ In dieser Aufgabe fügen Sie weitere Spalten hinzu, um das Filtern und Gruppiere
 
     > _Diese Formel berechnet für jede Kombination aus Jahr/Monat einen numerischen Wert._
 
-1. Überprüfen Sie in der Tabellenansicht, ob die neue Spalte numerische Werte enthält (z. B. 201707 für Juli 2017 usw.).
+1. Überprüfen Sie in der **Tabellenansicht**, ob die neue Spalte numerische Werte enthält (z. B. 201707 für Juli 2017 usw.).
 
     ![Abbildung 15](Linked_image_Files/04-create-dax-calculations_image28.png)
 
-1. Wechseln Sie zurück zur Berichtsansicht.
+1. Wechseln Sie zurück zur **Berichtsansicht**.
 
 1. Wählen Sie im Bereich **Daten** das Feld `Month` aus.
 
@@ -200,7 +200,7 @@ In dieser Aufgabe fügen Sie weitere Spalten hinzu, um das Filtern und Gruppiere
 
 In dieser Aufgabe vervollständigen Sie den Entwurf der Tabelle `Date`, indem Sie eine Spalte ausblenden und eine Hierarchie erstellen. Anschließend erstellen Sie Beziehungen zu den Tabellen `Sales` und `Targets`.
 
-1. Wechseln Sie zur AnsichtModell.
+1. Wechseln Sie zur Ansicht**Modell**.
 
 1. Blenden Sie in der Tabelle `Date` die Spalte `MonthKey` aus (legen Sie **Ist verborgen** auf _Ja_ fest).
 
@@ -230,7 +230,7 @@ In dieser Aufgabe vervollständigen Sie den Entwurf der Tabelle `Date`, indem Si
 
 In dieser Aufgabe markieren Sie die Tabelle `Date` als Datumstabelle.
 
-1. Wechseln Sie zur Berichtansicht.
+1. Wechseln Sie zur **Berichtansicht**.
 
 1. Wählen Sie im Bereich **Daten** die Tabelle `Date` (nicht das Feld `Date`) aus.
 
@@ -256,7 +256,7 @@ In dieser Aufgabe markieren Sie die Tabelle `Date` als Datumstabelle.
 
 In dieser Aufgabe erstellen Sie einfache Measures. Einfache Measures aggregieren Werte in einer einzelnen Spalte oder zählen die Zeilen einer Tabelle.
 
-1. Ziehen Sie das Feld `Sales | Unit Price` in der Berichtsansicht auf **Seite 2** aus dem Bereich **Daten** in das Matrixvisual.
+1. Ziehen Sie das Feld `Sales | Unit Price` in der **Berichtsansicht** auf **Seite 2** aus dem Bereich **Daten** in das Matrixvisual.
 
     ![Abbildung 23](Linked_image_Files/04-create-dax-calculations_image35.png)
 
@@ -299,7 +299,7 @@ In dieser Aufgabe erstellen Sie einfache Measures. Einfache Measures aggregieren
     >
     > _In diesem Fall wird die Anzahl der Bestellungen durch Zählen der eindeutigen Werte in der Spalte `SalesOrderNumber` berechnet, während die Anzahl der Bestellungszeilen einfach die Anzahl der Tabellenzeilen ist (jede Zeile ist eine Bestellung)._
 
-1. Wechseln Sie zur Modellansicht, und wählen Sie in einer Mehrfachauswahl die vier Preismeasures aus: `Avg Price`, `Max Price`, `Median Price` und `Min Price`.
+1. Wechseln Sie zur **Modellansicht**, und wählen Sie in einer Mehrfachauswahl die vier Preismeasures aus: `Avg Price`, `Max Price`, `Median Price` und `Min Price`.
 
 1. Konfigurieren Sie für die Mehrfachauswahl von Measures die folgenden Anforderungen:
 
@@ -319,7 +319,7 @@ In dieser Aufgabe erstellen Sie einfache Measures. Einfache Measures aggregieren
 
     ![Bild 27](Linked_image_Files/04-create-dax-calculations_image41.png)
 
-1. Klicken Sie in der Berichtsansicht im Bucket **Values** des Matrixvisuals für das Feld **Average of Unit Price** auf **X**, um es zu entfernen.
+1. Wählen Sie in der **Berichtsansicht** im Bucket **Werte** des Matrixvisuals für das Feld **Durchschnittlicher Einzelpreis** das **X** aus, um es zu entfernen.
 
     ![Bild 28](Linked_image_Files/04-create-dax-calculations_image41a.png)
 
@@ -341,7 +341,7 @@ In dieser Aufgabe erstellen Sie einfache Measures. Einfache Measures aggregieren
 
 In dieser Aufgabe erstellen Sie weitere Measures, die komplexere Formeln verwenden.
 
-1. Wählen Sie in der Berichtsansicht **Seite 1** aus, überprüfen Sie das Tabellenvisual für Vertriebsmitarbeitende (rechts), und sehen Sie sich die Spalte **Sum of Target** an.
+1. Wählen Sie in der **Berichtsansicht** die **Seite 1** aus, überprüfen Sie das Tabellenvisual für Vertriebsmitarbeitende (rechts), und sehen Sie sich die Summe der Spalte **Summe des Ziels** an.
 
     ![Bild 30](Linked_image_Files/04-create-dax-calculations_image45.png)
 
@@ -349,7 +349,7 @@ In dieser Aufgabe erstellen Sie weitere Measures, die komplexere Formeln verwend
 
 1. Benennen Sie die Spalte `Targets | Target` um in _TargetAmount_.
 
-    > _Tipp: Es gibt mehrere Möglichkeiten, die Spalte in der Ansicht „Bericht“ umzubenennen: Im Bereich **Daten** können Sie mit der rechten Maustaste auf die Spalte klicken und dann **Umbenennen** auswählen. Alternativ können Sie auf die Spalte doppelklicken oder **F2** drücken._
+    > _Tipp: Es gibt mehrere Möglichkeiten, die Spalte in der **Berichtsansicht** umzubenennen: Im Bereich **Daten** können Sie mit der rechten Maustaste auf die Spalte klicken und dann **Umbenennen** auswählen. Sie können auch auf die Spalte doppelklicken oder **F2** drücken._
 
 1. Erstellen Sie das folgende Measure für die Tabelle `Targets`:
 
@@ -403,3 +403,12 @@ In dieser Aufgabe erstellen Sie weitere Measures, die komplexere Formeln verwend
 1. Speichern Sie die Power BI Desktop-Datei.
 
 ## Lab abgeschlossen
+
+Sie können Ihren Power BI-Bericht speichern, aber für dieses Lab ist dies nicht erforderlich. In der nächsten Übung arbeiten Sie mit einer vorgefertigten Startdatei.
+
+1. Navigieren Sie zum Menü **Datei** in der oberen linken Ecke, und wählen Sie **Speichern unter** aus. 
+1. Wählen Sie **Dieses Gerät durchsuchen** aus.
+1. Wählen Sie den Ordner aus, in dem Sie die Datei speichern möchten, und geben Sie ihm einen aussagekräftigen Namen. 
+1. Wählen Sie die Schaltfläche **Speichern** aus, um den Bericht als PBIX-Datei zu speichern. 
+1. Wenn ein Dialogfeld angezeigt wird, in dem Sie aufgefordert werden, ausstehende Abfrageänderungen anzuwenden, wählen Sie **Übernehmen** aus.
+1. Schließen Sie Power BI Desktop.

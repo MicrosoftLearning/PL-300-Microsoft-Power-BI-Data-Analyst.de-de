@@ -30,7 +30,7 @@ Extrahieren Sie die Datei in den Ordner **C:\Users\Student\Downloads\03-model-da
 
 Öffnen Sie die Datei **03-Starter-Sales Analysis.pbix** .
 
-> _**Hinweis**: Sie können die Anmeldung abbrechen, indem Sie **Abbrechen** auswählen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später anwenden** aus, wenn Sie aufgefordert werden, die Änderungen anzuwenden._
+> _**Hinweis**: Möglicherweise wird beim Laden der Datei ein Anmeldedialogfeld angezeigt. Wählen Sie **Abbrechen** aus, um das Anmeldedialogfeld zu schließen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später übernehmen** aus, wenn Sie aufgefordert werden, die Änderungen anzuwenden._
 
 ## Erstellen von Modellbeziehungen
 
@@ -50,7 +50,7 @@ In dieser Aufgabe erstellen Sie Modellbeziehungen. Die Datei wurde so konfigurie
 
     > _Das Problem besteht darin, dass die Tabelle auf Feldern aus anderen Tabellen basiert. Es wird erwartet, dass jede Produktkategorie den Umsatz für die Kategorie anzeigt. Allerdings wird die Tabelle `Sales` nicht gefiltert, weil zwischen diesen Tabellen keine Modellbeziehung besteht. Im Folgenden fügen Sie eine Beziehung hinzu, um Filter zwischen den Tabellen weiterzugeben._
 
-1. Um zum Modell-Designer zu wechseln, wählen Sie links das Symbol „Modellansicht“ aus.
+1. Um zum Modell-Designer zu wechseln, wählen Sie links das Symbol **Modellansicht** aus.
 
     ![Abbildung 2](Linked_image_Files/03-configure-semantic-model-model-view.png)
 
@@ -89,17 +89,17 @@ In dieser Aufgabe erstellen Sie Modellbeziehungen. Die Datei wurde so konfigurie
     >
     > Tipp: Wenn Sie mit dem Cursor auf die Beziehung zeigen, werden die zugehörigen Spalten hervorgehoben.
 
-1. Wenn Sie zur Berichtsansicht wechseln, werden Sie feststellen, dass das visuelle Tabellenelement aktualisiert wurde und dass verschiedene Werte für alle Produktkategorien angezeigt werden.
+1. Wenn Sie zur **Berichtsansicht** wechseln, werden Sie feststellen, dass das Tabellenvisual aktualisiert wurde und dass verschiedene Werte für alle Produktkategorien angezeigt werden.
 
     > _Filter, die auf die `Product`-Tabelle angewendet werden, werden jetzt an die `Sales`-Tabelle weitergegeben._
 
     ![Bild 7](Linked_image_Files/03-configure-semantic-model-table-with-relationship.png)
 
-### Erstellen zusätzlicher Beziehungen
+## Erstellen zusätzlicher Beziehungen
 
 Es gibt eine einfachere Methode zum Erstellen einer Beziehung. Im Modelldiagramm können Sie Spalten per Drag & Drop gruppieren, um eine neue Beziehung zu erstellen.
 
-1. Um eine neue Beziehung mit einer anderen Methode zu erstellen, wechseln Sie zur Modellansicht.
+1. Um eine neue Beziehung mit einer anderen Methode zu erstellen, wechseln Sie zur **Modellansicht**.
 
 1. Ziehen Sie die `ResellerKey`-Spalte aus der `Reseller`-Tabelle auf die `ResellerKey`-Spalte der `Sales`-Tabelle.
 
@@ -124,7 +124,7 @@ Es gibt eine einfachere Methode zum Erstellen einer Beziehung. Im Modelldiagramm
 
 In dieser Aufgabe konfigurieren Sie die Tabelle `Product` mit einer Hierarchie und einem Anzeigeordner.
 
-1. Wechseln Sie zur AnsichtModell.
+1. Wechseln Sie zur Ansicht**Modell**.
 
 1. Erweitern Sie im Bereich **Daten** bei Bedarf die `Product`-Tabelle, um alle Felder anzuzeigen.
 
@@ -258,9 +258,9 @@ Bei dieser Aufgabe aktualisieren Sie mehrere Spalten mit einer einzelnen Massena
 
 ## Erkunden der Modell-Benutzeroberfläche
 
-In dieser Aufgabe wechseln Sie zur Berichtsansicht, überprüfen die Benutzeroberfläche des Datenmodells und konfigurieren die Einstellung „Autom. Datum/Uhrzeit“.
+In dieser Aufgabe wechseln Sie zur **Berichtsansicht**, überprüfen die Benutzeroberfläche des Datenmodells und konfigurieren die Einstellung „Autom. Datum/Uhrzeit“.
 
-1. Wechseln Sie zur Ansicht „Bericht“.
+1. Wechseln Sie zur **Berichtansicht**.
 
 1. Sehen Sie sich im Bereich **Daten** Folgendes an:
 
@@ -348,7 +348,7 @@ In dieser Aufgabe erstellen Sie zwei Quickmeasures zur Berechnung des Gewinns un
 
 In dieser Aufgabe erstellen Sie eine m:n-Beziehung zwischen der Tabelle `Salesperson` und der Tabelle `Sales`.
 
-1. Wählen Sie in der Ansicht „Bericht“ einen leeren Bereich der Berichtsseite aus.
+1. Wählen Sie in der **Berichtsansicht** einen leeren Bereich der Berichtsseite aus.
 
 1. Um ein neues Tabellenvisual zu erstellen, überprüfen Sie im Bereich **Daten** die folgenden beiden Felder:
 
@@ -363,7 +363,7 @@ In dieser Aufgabe erstellen Sie eine m:n-Beziehung zwischen der Tabelle `Salespe
 
 1. Beachten Sie, dass _Michael Blythe_ fast 9 Millionen Dollar Umsatz generiert hat.
 
-1. Wechseln Sie zur Modellansicht, und ziehen Sie dann die Tabelle `SalespersonRegion`, um sie zwischen den Tabellen `Region` und `Salesperson` zu positionieren.
+1. Wechseln Sie zur **Modellansicht**, und ziehen Sie dann die Tabelle `SalespersonRegion`, um sie zwischen den Tabellen `Region` und `Salesperson` zu positionieren.
 
 1. Erstellen Sie die folgenden zwei Modellbeziehungen per Drag & Drop:
 
@@ -372,9 +372,9 @@ In dieser Aufgabe erstellen Sie eine m:n-Beziehung zwischen der Tabelle `Salespe
 
     > _Die Tabelle `SalespersonRegion` kann als Überbrückungstabelle betrachtet werden._
 
-1. Wechseln Sie zur Berichtsansicht. Sie sollten sehen, dass das visuelle Element nicht aktualisiert wurde, d. h. die Ergebnisse für Michael Blythe wurden nicht geändert.
+1. Wenn Sie zur **Berichtsansicht** wechseln, sehen Sie, dass das Visual nicht aktualisiert wurde, d. h. die Verkaufsergebnisse für Michael Blythe wurden nicht geändert.
 
-1. Wechseln Sie zurück zur Modellansicht, und führen Sie dann die Anweisungen für den Beziehungsfilter (Pfeilspitzen) von der Tabelle `Salesperson`.
+1. Wechseln Sie zurück zur **Modellansicht**, und führen Sie dann die Anweisungen für den Beziehungsfilter (Pfeilspitzen) von der Tabelle `Salesperson` aus.
 
     > _Beachten Sie, dass die Tabelle `Salesperson` die Tabelle `Sales` filtert. Außerdem filtert sie die Tabelle `SalespersonRegion`, gibt aber keine Filter an die Tabelle `Region` weiter (der Pfeil zeigt in die falsche Richtung)._
 
@@ -394,11 +394,11 @@ In dieser Aufgabe erstellen Sie eine m:n-Beziehung zwischen der Tabelle `Salespe
 
     ![Bild 30](Linked_image_Files/03-configure-semantic-model_u_image14.png)
 
-1. Wechseln Sie zur Berichtsansicht, und beachten Sie, dass die Umsätze sich noch immer nicht geändert haben.
+1. Wechseln Sie zur **Berichtsansicht**. Sie sehen, dass sich die Umsatzwerte noch immer nicht geändert haben.
 
     > _Das Problem besteht nun darin, dass es zwei mögliche Pfade für die Filterweiterleitung zwischen den Tabellen `Salesperson` und `Sales` gibt. Diese Mehrdeutigkeit wird anhand einer Bewertung nach „der geringsten Anzahl an Tabellen“ intern aufgelöst. Sie sollten keine Modelle mit einer solchen Mehrdeutigkeit erstellen. Das Problem wird später in diesem Lab und im Laufe des Labs **Erstellen von DAX-Berechnungen in Power BI Desktop** aufgegriffen._
 
-1. Wechseln Sie zur AnsichtModell.
+1. Wechseln Sie zur Ansicht**Modell**.
 
 1. Bearbeiten (doppelklicken) Sie die Beziehung zwischen den Tabellen `Salesperson` und `Sales`, um die Filterweiterleitung über die Bridgingtabelle zu erzwingen.
 
@@ -414,7 +414,7 @@ In dieser Aufgabe erstellen Sie eine m:n-Beziehung zwischen der Tabelle `Salespe
 
     ![Bild 32](Linked_image_Files/03-configure-semantic-model_u_image17.png)
 
-1. Wechseln Sie zur Berichtsansicht, dort sollten Sie nun sehen, dass der Umsatz von Michael Blythe nun nahezu 22 Millionen Dollar beträgt.
+1. Wechseln Sie zur **Berichtsansicht**. Dort sollten Sie nun sehen, dass der Umsatz von Michael Blythe nun nahezu 22 Millionen Dollar beträgt.
 
 1. Beachten Sie, dass die Umsätze aller Vertriebsmitarbeiter*innen die Tabellensumme überschreiten würden, wenn sie summiert werden.
 
@@ -422,7 +422,7 @@ In dieser Aufgabe erstellen Sie eine m:n-Beziehung zwischen der Tabelle `Salespe
      >
      > _Zwar funktionieren die m:n-Beziehungen nun, jedoch ist es nicht möglich, den Umsatz von Vertriebsmitarbeitenden zu analysieren (da die Beziehung inaktiv ist). Sie können die Beziehung reaktivieren, wenn Sie eine berechnete Tabelle einführen, die die Analyse von Umsätzen in den Vertriebsregionen ermöglicht, die den Vertriebsmitarbeitenden (für die Leistungsanalyse) im Lab **Erstellen von DAX-Berechnungen in Power BI Desktop** zugewiesen wurden._
 
-1. Wechseln Sie zur Modellansicht, und wählen Sie dann im Modelldiagramm die Tabelle `Salesperson` aus.
+1. Wechseln Sie zur **Modellansicht**, und wählen Sie dann im Modelldiagramm die Tabelle `Salesperson` aus.
 
 1. Ersetzen Sie im Bereich **Eigenschaften** den Text im Feld **Name** durch _Salesperson (Performance)_.
 
@@ -434,7 +434,7 @@ Im Rahmen dieser Aufgabe erstellen Sie eine Beziehung zur `Targets`-Tabelle.
 
 1. Erstellen Sie eine Beziehung aus der Spalte `Salesperson (Performance) | EmployeeID` und der Spalte `Targets | EmployeeID`.
 
-1. Fügen Sie in der Berichtsansicht das Feld `Targets | Target` zum Tabellenvisual hinzu.
+1. Fügen Sie in der **Berichtsansicht** das Feld `Targets | Target` zum Tabellenvisual hinzu.
 
 1. Ändern Sie die Größe des Tabellenvisuals, sodass alle Spalten angezeigt werden.
 
@@ -445,3 +445,12 @@ Im Rahmen dieser Aufgabe erstellen Sie eine Beziehung zur `Targets`-Tabelle.
 1. Speichern Sie die Power BI Desktop-Datei.
 
 ## Lab abgeschlossen
+
+Sie können Ihren Power BI-Bericht speichern, aber für dieses Lab ist dies nicht erforderlich. In der nächsten Übung arbeiten Sie mit einer vorgefertigten Startdatei.
+
+1. Navigieren Sie zum Menü **Datei** in der oberen linken Ecke, und wählen Sie **Speichern unter** aus. 
+1. Wählen Sie **Dieses Gerät durchsuchen** aus.
+1. Wählen Sie den Ordner aus, in dem Sie die Datei speichern möchten, und geben Sie ihm einen aussagekräftigen Namen. 
+1. Wählen Sie die Schaltfläche **Speichern** aus, um den Bericht als PBIX-Datei zu speichern. 
+1. Wenn ein Dialogfeld angezeigt wird, in dem Sie aufgefordert werden, ausstehende Abfrageänderungen anzuwenden, wählen Sie **Übernehmen** aus.
+1. Schließen Sie Power BI Desktop.

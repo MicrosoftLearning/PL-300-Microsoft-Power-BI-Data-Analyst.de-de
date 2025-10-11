@@ -6,7 +6,7 @@ lab:
 
 # Erstellen visueller Berechnungen in Power BI Desktop
 
-## **Labszenario**
+## Labszenario
 
 In dieser Übung werden Sie visuelle Berechnungen mithilfe von Data Analysis Expressions (DAX) erstellen.
 
@@ -29,7 +29,7 @@ Entpacken Sie den Ordner in den Ordner **C:\Benutzer\Student\Downloads\07-visual
 
 Öffnen Sie die Datei **07-Starter-Sales Analysis.pbix**.
 
-> ***Hinweis**: Sie können die Anmeldung abbrechen, indem Sie **Abbrechen** wählen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später anwenden**, wenn Sie aufgefordert werden, die Änderungen anzuwenden.*
+> _**Hinweis**: Möglicherweise wird beim Laden der Datei ein Anmeldedialogfeld angezeigt. Wählen Sie **Abbrechen** aus, um das Anmeldedialogfeld zu schließen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später übernehmen** aus, wenn Sie aufgefordert werden, die Änderungen anzuwenden._
 
 ## Erstellen eines Balkendiagramms
 
@@ -51,7 +51,7 @@ In dieser Aufgabe erstellen Sie ein Balkendiagramm, das den Umsatz, die Gesamtpr
 
     > Sie haben nun ein Balkendiagramm, das die Summe der Umsätze und die Summe der Kosten nach Jahren chronologisch sortiert anzeigt.
 
-### Hinzufügen von Berechnungen
+## Hinzufügen von Berechnungen
 
 1. Wenn das Balkendiagramm ausgewählt ist, wählen Sie **Neue visuelle Berechnung** im Menüband:
 
@@ -119,7 +119,7 @@ In dieser Aufgabe erstellen Sie eine visuelle Matrix, die den Umsatz pro Kategor
 
     > *In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Das sieht folgendermaßen aus: **Date \| Year**. In diesem Beispiel ist **Date** der Tabellenname und **Year** der Feldname.*
 
-### Hinzufügen von Berechnungen
+## Hinzufügen von Berechnungen
 
 1. Wenn die Matrix ausgewählt ist, wählen Sie **Neue visuelle Berechnung** im Menüband.
 
@@ -160,7 +160,7 @@ In dieser Aufgabe werden Sie ein Liniendiagramm erstellen, das die laufende Summ
     - X-Achse: **Datum \| Jahr** und **Datum \| Quartal**
     - y-Achse: **Sales \| Sales**
 
-### Hinzufügen der laufenden Summe
+## Hinzufügen der laufenden Summe
 
 1. Erweitern Sie bei ausgewähltem Liniendiagramm das Menü unter **Neue visuelle Berechnung** und wählen Sie **Laufende Summe** aus den Vorlagenoptionen aus.
 
@@ -168,7 +168,7 @@ In dieser Aufgabe werden Sie ein Liniendiagramm erstellen, das die laufende Summ
 
    ![Abbildung 09](Linked_image_Files/07-create-visual-calculations_image09.png)
 
-### Aktualisieren der laufenden Summe zum Neustart in jedem neuen Geschäftsjahr
+## Aktualisieren der laufenden Summe zum Neustart in jedem neuen Geschäftsjahr
 
 1. Wählen Sie, während Sie sich noch im Bearbeitungsfenster für visuelle Berechnungen befinden, das Feld **Laufende Summe** unter **y-Achse** aus und aktualisieren Sie den Ausdruck für diese Berechnung, indem Sie den Rücksetzparameter HIGHESTPARENT hinzufügen und die Änderungen bestätigen:
 
@@ -181,3 +181,12 @@ In dieser Aufgabe werden Sie ein Liniendiagramm erstellen, das die laufende Summ
    ![Abbildung 10](Linked_image_Files/07-create-visual-calculations_image10.png)
 
 ## Lab abgeschlossen
+
+Sie können Ihren Power BI-Bericht speichern, aber für dieses Lab ist dies nicht erforderlich. In der nächsten Übung arbeiten Sie mit einer vorgefertigten Startdatei.
+
+1. Navigieren Sie zum Menü **Datei** in der oberen linken Ecke, und wählen Sie **Speichern unter** aus. 
+1. Wählen Sie **Dieses Gerät durchsuchen** aus.
+1. Wählen Sie den Ordner aus, in dem Sie die Datei speichern möchten, und geben Sie ihm einen aussagekräftigen Namen. 
+1. Wählen Sie die Schaltfläche **Speichern** aus, um den Bericht als PBIX-Datei zu speichern. 
+1. Wenn ein Dialogfeld angezeigt wird, in dem Sie aufgefordert werden, ausstehende Abfrageänderungen anzuwenden, wählen Sie **Übernehmen** aus.
+1. Schließen Sie Power BI Desktop.

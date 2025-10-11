@@ -30,7 +30,7 @@ Extrahieren Sie die Datei in den Ordner **C:\Benutzer\Student\Downloads\08-desig
 
 Öffnen Sie die Datei **08-Starter-Sales Analysis.pbix** .
 
-> _**Hinweis**: Sie können die Anmeldung abbrechen, indem Sie **Abbrechen** auswählen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später übernehmen** aus, wenn Sie aufgefordert werden, die Änderungen anzuwenden._
+> _**Hinweis**: Möglicherweise wird beim Laden der Datei ein Anmeldedialogfeld angezeigt. Wählen Sie **Abbrechen** aus, um das Anmeldedialogfeld zu schließen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später übernehmen** aus, wenn Sie aufgefordert werden, die Änderungen anzuwenden._
 
 ## Entwerfen der ersten Seite
 
@@ -61,6 +61,8 @@ In dieser Aufgabe wird die erste Berichtsseite entworfen. Nach der Fertigstellun
 1. Ziehen Sie im Bereich **Daten** das Feld `Date | Year` (nicht die Ebene `Year` der Hierarchie) in den Datenschnitt **Feld** im Bereich **Visualisierungen**.
 
     > _In den Labs wird eine verkürzte Notation verwendet, um auf ein Feld zu verweisen. Sie sieht wie folgt aus: `Date | Year`. In diesem Beispiel ist `Date` der Tabellenname und `Year` der Feldname._
+
+    ![Abbildung 17](Linked_image_Files/08-design-power-bi-reports_image16.png)
 
 1. Wenn Sie den Datenschnitt aus einer Liste in ein Dropdown konvertieren möchten, wählen Sie im Bereich **Visualisierungen** die Option **Visual formatieren** aus. Erweitern Sie die **Datenschnitteinstellungen**, und legen Sie dann das Dropdownmenü **Art** auf **Dropdown** fest.
 
@@ -224,7 +226,7 @@ In dieser Aufgabe wird die zweite Berichtsseite entworfen. Nach der Fertigstellu
 
 ## Entwerfen der dritten Seite
 
-In dieser Übung wird die dritte und letzte Berichtsseite entworfen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
+In dieser Aufgabe wird die dritte und letzte Berichtsseite entworfen. Nach der Fertigstellung des Entwurfs sieht die Seite wie folgt aus:
 
 ![Screenshot der dritten Seite, bestehend aus einem Datenschnitt und drei Visuals](Linked_image_Files/08-design-power-bi-reports_image47.png)
 
@@ -323,9 +325,9 @@ In dieser Aufgabe synchronisieren Sie die Datenschnitte _Year_ und _Region_.
 
 ## Veröffentlichen und Erkunden des Berichts
 
-In dieser Aufgabe veröffentlichen Sie den Bericht im Power BI-Dienst. Anschließend werden Sie das verhalten des veröffentlichten Berichts untersuchen.
+In dieser Aufgabe veröffentlichen Sie den Bericht im Power BI-Dienst. Anschließend werden Sie das verhalten des veröffentlichten Berichts untersuchen.
 
-> _**Hinweis**: Sie benötigen mindestens eine **Power BI Free**-Lizenz, um den Bericht zu veröffentlichen. Öffnen Sie den Browser „Microsoft Edge“, und melden Sie sich unter `https://app.powerbi.com` an. Wenn Sie aufgefordert werden, ein Puzzle zu lösen oder eine kostenlose Fabric-Testversion zu starten, können Sie dies überspringen und den Browser schließen.
+> _**Hinweis**: Sie benötigen mindestens eine **Power BI Free**-Lizenz, um den Bericht zu veröffentlichen. Öffnen Sie den Microsoft Edge-Browser, und navigieren Sie zu _ `https://app.powerbi.com`_.  Melden Sie sich mit den Anmeldeinformationen für den Microsoft 365-Mandanten an, die von Ihrem autorisierten Labhoster (ALH) bereitgestellt werden. Wenn Sie aufgefordert werden, ein Puzzle zu lösen oder eine kostenlose Fabric-Testversion zu starten, können Sie dies überspringen und den Browser schließen._
 
 > _**Hinweis**: Sie können den Rest der Übung auch durchgehen, wenn Sie keinen Zugriff auf den Power BI-Dienst haben, um die Aufgaben direkt auszuführen._
 
@@ -345,7 +347,7 @@ In dieser Aufgabe veröffentlichen Sie den Bericht im Power BI-Dienst. Anschlie
 
 1. Warten Sie, bis die Veröffentlichung erfolgreich abgeschlossen wurde, und wählen Sie dann **Alles klar** aus.
 
-1. Öffnen Sie den Browser „Microsoft Edge“, und melden Sie sich unter `https://app.powerbi.com` an.
+1. Öffnen Sie den Microsoft Edge-Browser, und navigieren Sie zu `https://app.powerbi.com`.
 
 1. Erweitern Sie im Browserfenster im Power BI-Dienst im Bereich **Navigation** (links und möglicherweise zugeklappt) die Option **Mein Arbeitsbereich**.
 
@@ -426,3 +428,6 @@ In dieser Aufgabe veröffentlichen Sie den Bericht im Power BI-Dienst. Anschlie
     ![Bild 48](Linked_image_Files/08-design-power-bi-reports_image71.png)
 
 ## Lab abgeschlossen
+
+1. Schließen Sie den Microsoft Edge-Browser.
+1. Schließen Sie Power BI Desktop.

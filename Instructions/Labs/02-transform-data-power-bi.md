@@ -27,7 +27,7 @@ Extrahieren Sie den Ordner in den Ordner **C:\Benutzer\Student\Downloads\02-tran
 
 Öffnen Sie die Datei **02-Starter-Sales Analysis.pbix** .
 
-> ***Hinweis**: Sie können die Anmeldung abbrechen, indem Sie **Abbrechen** wählen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später anwenden**, wenn Sie aufgefordert werden, die Änderungen anzuwenden.*
+> _**Hinweis**: Möglicherweise wird beim Laden der Datei ein Anmeldedialogfeld angezeigt. Wählen Sie **Abbrechen** aus, um das Anmeldedialogfeld zu schließen. Schließen Sie alle anderen Informationsfenster. Wählen Sie **Später übernehmen** aus, wenn Sie aufgefordert werden, die Änderungen anzuwenden._
 
 ## Konfigurieren der „Salesperson“-Abfrage
 
@@ -51,11 +51,11 @@ In dieser Aufgabe verwenden Sie den Power Query-Editor zum Konfigurieren der **S
 
 1. Klicken Sie auf der Registerkarte **Start** des Menübands in der Gruppe **Spalten verwalten** auf den Abwärtspfeil **Spalten auswählen**, und klicken Sie auf **Zur Spalte wechseln**.
 
-    > *„Zur Spalte wechseln“ ist bei vielen Spalten ein nützliches Feature. Andernfalls können Sie horizontal nach Spalten scrollen.*
+    > _**Zu Spalte wechseln** ist ein nützliches Feature mit vielen Spalten. Andernfalls können Sie horizontal scrollen, um Spalten zu finden._
 
     ![Spalten verwalten > Spalten auswählen > Zur Spalte wechseln](Linked_image_Files/02-transform-data-power-bi_image13.png)
 
-1. Klicken Sie im Fenster **Zur Spalte wechseln** auf die Sortierschaltfläche **AZ**, um die Liste nach Spaltennamen zu sortieren, und klicken Sie dann auf **Name** und auf **SalesPersonFlag**. Klicken Sie auf **OK**.
+1. Klicken Sie im Fenster **Zur Spalte wechseln** auf die Sortierschaltfläche **AZ**, um die Liste nach Spaltennamen zu sortieren, und wählen Sie dann **Name** aus. 
 
     ![Wechseln zu den Optionen für die Spaltensortierung](Linked_image_Files/02-transform-data-power-bi_image14.png)
 
@@ -90,7 +90,7 @@ In dieser Aufgabe verwenden Sie den Power Query-Editor zum Konfigurieren der **S
 
 1. Klicken Sie mit der rechten Maustaste auf eine der markierten Spaltenüberschriften, und wählen Sie dann im Kontextmenü **Spalten zusammenführen** aus.
 
-    > *Viele gängige Transformationen können angewandt werden, indem Sie mit der rechten Maustaste auf die Spaltenüberschrift klicken und die Transformation im Kontextmenü auswählen. Beachten Sie jedoch, dass im Menüband mehr Transformationen verfügbar sind.*
+    > *Viele gängige Transformationen können angewandt werden, indem Sie mit der rechten Maustaste auf die Spaltenüberschrift klicken und die Transformation im Kontextmenü auswählen. Beachten Sie, dass auf dem Menüband zusätzliche Transformationen verfügbar sind.*
 
 1. Wählen Sie im Fenster **Spalten zusammenführen** in der Dropdownliste **Trennlinie** die Option **Leertaste** aus.
 
@@ -98,13 +98,13 @@ In dieser Aufgabe verwenden Sie den Power Query-Editor zum Konfigurieren der **S
 
 1. Um die Spalte **EmployeeNationalIDAlternateKey** umzubenennen, doppelklicken Sie auf die Spaltenüberschrift **EmployeeNationalIDAlternateKey**, ersetzen Sie den Text durch **EmployeeID**, und drücken Sie dann die **Eingabetaste**.
 
-1. Führen Sie die vorherigen Schritte noch einmal aus, um die Spalte **EmailAddress** in **UPN** umzubenennen.
+1. Benennen Sie die Spalte **EmailAddress** in **UPN** um.
 
     > *Das Akronym „UPN“ steht für „User Principal Name“, zu Deutsch: „Benutzerprinzipalname“.*
 
-**Überprüfen Sie links unten in der Statusleiste, ob die Abfrage 5 Spalten und 18 Zeilen enthält.**
+**Überprüfen Sie auf der Statusleiste unten links im Power Query-Editor, ob die Abfrage 5 Spalten und 18 Zeilen enthält.**
 
-## **Konfigurieren der „SalespersonRegion“-Abfrage**
+## Konfigurieren der „SalespersonRegion“-Abfrage
 
 In dieser Aufgabe konfigurieren Sie die **SalespersonRegion**-Abfrage.
 
@@ -186,9 +186,9 @@ In dieser Aufgabe konfigurieren Sie die Abfrage **Reseller**.
     - StateProvinceName
     - EnglishCountryRegionName
 
-1. Klicken Sie in der Spaltenüberschrift **BusinessType** auf den Pfeil nach unten, und überprüfen Sie dann die einzelnen Spaltenwerte. Beachten Sie die unterschiedliche Schreibweise von **Warehouse** und **Ware House**.
+1. Wählen Sie in der Spaltenüberschrift **BusinessType** den Pfeil nach unten aus, und überprüfen Sie dann die einzelnen Spaltenwerte. Beachten Sie die unterschiedliche Schreibweise von **Warehouse** und **Ware House**.
 
-1. Klicken Sie mit der rechten Maustaste auf die Spaltenüberschrift **Business Type**, und wählen Sie dann **Werte ersetzen** aus.
+1. Klicken Sie mit der rechten Maustaste auf die Spaltenüberschrift **BusinessType**, und wählen Sie dann **Werte ersetzen** aus.
 
 1. Konfigurieren Sie im Fenster **Werte ersetzen** die folgenden Werte:
 
@@ -432,7 +432,7 @@ In dieser Aufgabe aktualisieren Sie **ColorFormats**, um das Laden für diese Ab
 
     ![Bild 323](Linked_image_Files/02-transform-data-power-bi_image81.png)
 
-### Überprüfen des endgültigen Produkts
+## Überprüfen des endgültigen Produkts
 
 1. Stellen Sie in Power Query-Editor sicher, dass Sie über **8 Abfragen** verfügen, die wie folgt korrekt benannt sind:
 
@@ -454,3 +454,12 @@ In dieser Aufgabe aktualisieren Sie **ColorFormats**, um das Laden für diese Ab
     ![Abbildung 3](Linked_image_Files/02-transform-data-power-bi_image84.png)
 
 ## Lab abgeschlossen
+
+Sie können Ihren Power BI-Bericht speichern, aber für dieses Lab ist dies nicht erforderlich. In der nächsten Übung arbeiten Sie mit einer vorgefertigten Startdatei.
+
+1. Navigieren Sie zum Menü **Datei** in der oberen linken Ecke, und wählen Sie **Speichern unter** aus. 
+1. Wählen Sie **Dieses Gerät durchsuchen** aus.
+1. Wählen Sie den Ordner aus, in dem Sie die Datei speichern möchten, und geben Sie ihm einen aussagekräftigen Namen. 
+1. Wählen Sie die Schaltfläche **Speichern** aus, um den Bericht als PBIX-Datei zu speichern. 
+1. Wenn ein Dialogfeld angezeigt wird, in dem Sie aufgefordert werden, ausstehende Abfrageänderungen anzuwenden, wählen Sie **Übernehmen** aus.
+1. Schließen Sie Power BI Desktop.
