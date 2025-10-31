@@ -7,7 +7,7 @@ demo:
 
 # Demoeinrichtung
 
-1. Öffnen Sie Microsoft Edge, navigieren Sie dann zu <https://powerbi.com>, und melden Sie sich mit einem Geschäfts- oder Schulkonto (Organisationskonto) an.
+1. Öffnen Sie Microsoft Edge, navigieren Sie dann zu<https://powerbi.com>, und melden Sie sich mit einem Geschäfts- oder Schulkonto (Organisationskonto) an.
     > **Tipp**: Wenn Sie zum Ändern des Kennworts aufgefordert werden, notieren Sie es unbedingt in der Datei D:\Allfiles\Demo\Setup\MySettings.txt.
 
 1. Erstellen Sie einen Arbeitsbereich, und verwenden Sie das Bild „D:\Allfiles\Demo\Resources\Icon-Star.jpg“ als Symbol für ihn.
@@ -26,4 +26,4 @@ demo:
 
 1. Schließen Sie Power BI Desktop.
 
-> **Hinweis**:Im [GitHub-Repository](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/tree/Main/Allfiles/Demo) „PL-300 Power BI Data Analyst“ finden Sie Demoressourcen.
+> **Hinweis**:Im[GitHub-Repository](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/tree/Main/Allfiles/Demo) „PL-300 Power BI Data Analyst“ finden Sie Demoressourcen.
