@@ -8,7 +8,7 @@ layout: home
 
 Hyperlinks zu den Lab-Übungen und Demos sind nachfolgend aufgelistet.
 
-> **Hinweis:** Wenn Fehler mit dem Inhalt auftreten, erstellen Sie [ein neues Problem im GitHub-Repository](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/issues/new/choose).
+> **Hinweis:** Wenn Fehler mit dem Inhalt auftreten, erstellen Sie[ein neues Problem im GitHub-Repository](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/issues/new/choose).
 
 ## Labübungen
 

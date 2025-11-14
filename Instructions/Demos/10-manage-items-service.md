@@ -23,18 +23,18 @@ demo:
 
 1. Weisen Sie das persönliche Gateway zu, und bearbeiten Sie die Anmeldeinformationen für die beiden Datenquellen.
 
-1. Legen Sie für beide Datenquellen die Authentifizierungsmethode auf **WindowsWithoutImpersonation** und die Datenschutzebene auf **Organisation** fest.
+1. Legen Sie für beide Datenquellen die Authentifizierungsmethode auf**WindowsWithoutImpersonation** und die Datenschutzebene auf**Organisation** fest.
 
-1. Erweitern Sie optional den Abschnitt **Geplante Aktualisierung**, und zeigen Sie, wie eine Zeitplanserie konfiguriert wird.
+1. Erweitern Sie optional den Abschnitt**Geplante Aktualisierung**, und zeigen Sie, wie eine Zeitplanserie konfiguriert wird.
 
 ## Aktualisieren Sie das semantische Modell
 
-1. Öffnen Sie vor dem Aktualisieren des semantischen Modells das Dashboard für die **Umsatzüberwachung**.
+1. Öffnen Sie vor dem Aktualisieren des semantischen Modells das Dashboard für die**Umsatzüberwachung**.
 
 1. Bearbeiten Sie die Details für die Kachel „Sales, Profit Margin“ (Umsatz, Rendite), um den letzten Aktualisierungszeitpunkt anzuzeigen.
 
-1. Klicken Sie mit der rechten Maustaste auf die `D:\Allfiles\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1`-Datei, und führen Sie sie dann mit PowerShell aus. *Dieses Skript lädt die Verkaufsdaten vom Dezember 2020 in die Datenbank.*
+1. Klicken Sie mit der rechten Maustaste auf die`D:\Allfiles\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1`-Datei, und führen Sie sie dann mit PowerShell aus. *Dieses Skript lädt die Verkaufsdaten vom Dezember 2020 in die Datenbank.*
 
-1. Aktualisieren Sie im Power BI-Dienst für den*die Kursleiter*in im Navigationsbereich das semantische Modell **Verkaufsanalyse**.
+1. Aktualisieren Sie im Power BI-Dienst für den*die Kursleiter*in im Navigationsbereich das semantische Modell**Verkaufsanalyse**.
 
-1. Weisen Sie nach Abschluss der Aktualisierung darauf hin, dass die Dashboardkachel mit der Spalte für **Dezember 2020** angezeigt wird und dass die Aktualisierungszeit **JETZT** ist.
+1. Weisen Sie nach Abschluss der Aktualisierung darauf hin, dass die Dashboardkachel mit der Spalte für**Dezember 2020** angezeigt wird und dass die Aktualisierungszeit**JETZT** ist.
